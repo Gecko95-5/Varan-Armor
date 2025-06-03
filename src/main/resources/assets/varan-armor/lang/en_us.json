@@ -1,0 +1,99 @@
+{
+  "item.varan-armor.copper_nugget": "Copper Nugget",
+
+  "item.varan-armor.flint_rod": "Flint Rod",
+  "item.varan-armor.copper_rod": "Copper Rod",
+  "item.varan-armor.quartz_rod": "Quartz Rod",
+
+  "item.varan-armor.flint_wooden_sword": "Wooden Sword",
+  "item.varan-armor.flint_wooden_pickaxe": "Wooden Pickaxe",
+  "item.varan-armor.flint_wooden_axe": "Wooden Axe",
+  "item.varan-armor.flint_wooden_shovel": "Wooden Shovel",
+  "item.varan-armor.flint_wooden_hoe": "Wooden Hoe",
+
+  "item.varan-armor.flint_stone_sword": "Stone Sword",
+  "item.varan-armor.flint_stone_pickaxe": "Stone Pickaxe",
+  "item.varan-armor.flint_stone_axe": "Stone Axe",
+  "item.varan-armor.flint_stone_shovel": "Stone Shovel",
+  "item.varan-armor.flint_stone_hoe": "Stone Hoe",
+
+  "item.varan-armor.flint_iron_sword": "Iron Sword",
+  "item.varan-armor.flint_iron_pickaxe": "Iron Pickaxe",
+  "item.varan-armor.flint_iron_axe": "Iron Axe",
+  "item.varan-armor.flint_iron_shovel": "Iron Shovel",
+  "item.varan-armor.flint_iron_hoe": "Iron Hoe",
+
+  "item.varan-armor.flint_golden_sword": "Golden Sword",
+  "item.varan-armor.flint_golden_pickaxe": "Golden Pickaxe",
+  "item.varan-armor.flint_golden_axe": "Golden Axe",
+  "item.varan-armor.flint_golden_shovel": "Golden Shovel",
+  "item.varan-armor.flint_golden_hoe": "Golden Hoe",
+
+  "item.varan-armor.flint_diamond_sword": "Diamond Sword",
+  "item.varan-armor.flint_diamond_pickaxe": "Diamond Pickaxe",
+  "item.varan-armor.flint_diamond_axe": "Diamond Axe",
+  "item.varan-armor.flint_diamond_shovel": "Diamond Shovel",
+  "item.varan-armor.flint_diamond_hoe": "Diamond Hoe",
+
+  "item.varan-armor.copper_wooden_sword": "Wooden Sword",
+  "item.varan-armor.copper_wooden_pickaxe": "Wooden Pickaxe",
+  "item.varan-armor.copper_wooden_axe": "Wooden Axe",
+  "item.varan-armor.copper_wooden_shovel": "Wooden Shovel",
+  "item.varan-armor.copper_wooden_hoe": "Wooden Hoe",
+
+  "item.varan-armor.copper_stone_sword": "Stone Sword",
+  "item.varan-armor.copper_stone_pickaxe": "Stone Pickaxe",
+  "item.varan-armor.copper_stone_axe": "Stone Axe",
+  "item.varan-armor.copper_stone_shovel": "Stone Shovel",
+  "item.varan-armor.copper_stone_hoe": "Stone Hoe",
+
+  "item.varan-armor.copper_iron_sword": "Iron Sword",
+  "item.varan-armor.copper_iron_pickaxe": "Iron Pickaxe",
+  "item.varan-armor.copper_iron_axe": "Iron Axe",
+  "item.varan-armor.copper_iron_shovel": "Iron Shovel",
+  "item.varan-armor.copper_iron_hoe": "Iron Hoe",
+
+  "item.varan-armor.copper_golden_sword": "Golden Sword",
+  "item.varan-armor.copper_golden_pickaxe": "Golden Pickaxe",
+  "item.varan-armor.copper_golden_axe": "Golden Axe",
+  "item.varan-armor.copper_golden_shovel": "Golden Shovel",
+  "item.varan-armor.copper_golden_hoe": "Golden Hoe",
+
+  "item.varan-armor.copper_diamond_sword": "Diamond Sword",
+  "item.varan-armor.copper_diamond_pickaxe": "Diamond Pickaxe",
+  "item.varan-armor.copper_diamond_axe": "Diamond Axe",
+  "item.varan-armor.copper_diamond_shovel": "Diamond Shovel",
+  "item.varan-armor.copper_diamond_hoe": "Diamond Hoe",
+
+  "item.varan-armor.quartz_wooden_sword": "Wooden Sword",
+  "item.varan-armor.quartz_wooden_pickaxe": "Wooden Pickaxe",
+  "item.varan-armor.quartz_wooden_axe": "Wooden Axe",
+  "item.varan-armor.quartz_wooden_shovel": "Wooden Shovel",
+  "item.varan-armor.quartz_wooden_hoe": "Wooden Hoe",
+
+  "item.varan-armor.quartz_stone_sword": "Stone Sword",
+  "item.varan-armor.quartz_stone_pickaxe": "Stone Pickaxe",
+  "item.varan-armor.quartz_stone_axe": "Stone Axe",
+  "item.varan-armor.quartz_stone_shovel": "Stone Shovel",
+  "item.varan-armor.quartz_stone_hoe": "Stone Hoe",
+
+  "item.varan-armor.quartz_iron_sword": "Iron Sword",
+  "item.varan-armor.quartz_iron_pickaxe": "Iron Pickaxe",
+  "item.varan-armor.quartz_iron_axe": "Iron Axe",
+  "item.varan-armor.quartz_iron_shovel": "Iron Shovel",
+  "item.varan-armor.quartz_iron_hoe": "Iron Hoe",
+
+  "item.varan-armor.quartz_golden_sword": "Golden Sword",
+  "item.varan-armor.quartz_golden_pickaxe": "Golden Pickaxe",
+  "item.varan-armor.quartz_golden_axe": "Golden Axe",
+  "item.varan-armor.quartz_golden_shovel": "Golden Shovel",
+  "item.varan-armor.quartz_golden_hoe": "Golden Hoe",
+
+  "item.varan-armor.quartz_diamond_sword": "Diamond Sword",
+  "item.varan-armor.quartz_diamond_pickaxe": "Diamond Pickaxe",
+  "item.varan-armor.quartz_diamond_axe": "Diamond Axe",
+  "item.varan-armor.quartz_diamond_shovel": "Diamond Shovel",
+  "item.varan-armor.quartz_diamond_hoe": "Diamond Hoe",
+
+  "itemGroup.varan-armor.varan_armor": "Varan Armor"
+}
