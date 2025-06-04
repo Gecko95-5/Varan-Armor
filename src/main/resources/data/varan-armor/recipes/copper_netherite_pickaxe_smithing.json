@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "base": {
+    "item": "varan-armor:copper_diamond_pickaxe"
+  },
+  "result": {
+    "item": "varan-armor:copper_netherite_pickaxe"
+  }
+}

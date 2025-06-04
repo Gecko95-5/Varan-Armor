@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "base": {
+    "item": "varan-armor:quartz_diamond_shovel"
+  },
+  "result": {
+    "item": "varan-armor:quartz_netherite_shovel"
+  }
+}

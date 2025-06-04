@@ -18,6 +18,8 @@ public enum DecoToolMaterials implements ToolMaterial {
             () -> Ingredient.ofItems(Items.IRON_INGOT)),
     FLINT_DIAMOND (0, 1748,9.0F, 3.0F, 10,
             () -> Ingredient.ofItems(Items.DIAMOND)),
+    FLINT_NETHERITE (0, 3371,10.0F, 4.0F, 15,
+            () -> Ingredient.ofItems(Items.NETHERITE_INGOT)),
 
     COPPER_WOOD(0, 81, 2.0F, 0.0F, 15,
             () -> Ingredient.fromTag(ItemTags.PLANKS)),
@@ -29,6 +31,8 @@ public enum DecoToolMaterials implements ToolMaterial {
             () -> Ingredient.ofItems(Items.IRON_INGOT)),
     COPPER_DIAMOND (0, 1061,8.0F, 3.0F, 10,
             () -> Ingredient.ofItems(Items.DIAMOND)),
+    COPPER_NETHERITE (0, 1381,9.0F, 4.0F, 15,
+            () -> Ingredient.ofItems(Items.NETHERITE_INGOT)),
 
     QUARTZ_WOOD(0, 101, 1.5F, 0.0F, 17,
             () -> Ingredient.fromTag(ItemTags.PLANKS)),
@@ -39,7 +43,9 @@ public enum DecoToolMaterials implements ToolMaterial {
     QUARTZ_IRON (0, 213, 5.5F, 2.0F, 16,
             () -> Ingredient.ofItems(Items.IRON_INGOT)),
     QUARTZ_DIAMOND (0, 2747,7.5F, 3.0F, 12,
-            () -> Ingredient.ofItems(Items.DIAMOND));
+            () -> Ingredient.ofItems(Items.DIAMOND)),
+    QUARTZ_NETHERITE (0, 3067,8.5F, 4.0F, 17,
+            () -> Ingredient.ofItems(Items.NETHERITE_INGOT));
 
     private final int miningLevel;
     private final int itemDurability;

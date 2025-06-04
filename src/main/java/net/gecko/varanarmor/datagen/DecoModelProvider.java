@@ -109,6 +109,24 @@ public class DecoModelProvider extends FabricModelProvider {
         itemModelGenerator.register(DecoItems.QUARTZ_DIAMOND_AXE, Models.HANDHELD);
         itemModelGenerator.register(DecoItems.QUARTZ_DIAMOND_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(DecoItems.QUARTZ_DIAMOND_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(DecoItems.FLINT_NETHERITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.FLINT_NETHERITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.FLINT_NETHERITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.FLINT_NETHERITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.FLINT_NETHERITE_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(DecoItems.COPPER_NETHERITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.COPPER_NETHERITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.COPPER_NETHERITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.COPPER_NETHERITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.COPPER_NETHERITE_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(DecoItems.QUARTZ_NETHERITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.QUARTZ_NETHERITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.QUARTZ_NETHERITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.QUARTZ_NETHERITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.QUARTZ_NETHERITE_HOE, Models.HANDHELD);
     }
 
     @Override

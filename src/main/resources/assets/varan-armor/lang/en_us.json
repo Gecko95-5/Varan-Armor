@@ -95,5 +95,23 @@
   "item.varan-armor.quartz_diamond_shovel": "Diamond Shovel",
   "item.varan-armor.quartz_diamond_hoe": "Diamond Hoe",
 
+  "item.varan-armor.flint_netherite_sword": "Netherite Sword",
+  "item.varan-armor.flint_netherite_pickaxe": "Netherite Pickaxe",
+  "item.varan-armor.flint_netherite_axe": "Netherite Axe",
+  "item.varan-armor.flint_netherite_shovel": "Netherite Shovel",
+  "item.varan-armor.flint_netherite_hoe": "Netherite Hoe",
+
+  "item.varan-armor.copper_netherite_sword": "Netherite Sword",
+  "item.varan-armor.copper_netherite_pickaxe": "Netherite Pickaxe",
+  "item.varan-armor.copper_netherite_axe": "Netherite Axe",
+  "item.varan-armor.copper_netherite_shovel": "Netherite Shovel",
+  "item.varan-armor.copper_netherite_hoe": "Netherite Hoe",
+
+  "item.varan-armor.quartz_netherite_sword": "Netherite Sword",
+  "item.varan-armor.quartz_netherite_pickaxe": "Netherite Pickaxe",
+  "item.varan-armor.quartz_netherite_axe": "Netherite Axe",
+  "item.varan-armor.quartz_netherite_shovel": "Netherite Shovel",
+  "item.varan-armor.quartz_netherite_hoe": "Netherite Hoe",
+
   "itemGroup.varan-armor.varan_armor": "Varan Armor"
 }
