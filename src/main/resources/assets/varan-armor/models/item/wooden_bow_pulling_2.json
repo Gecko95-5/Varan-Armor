@@ -1,0 +1,6 @@
+{
+    "parent": "varan-armor:item/wooden_bow",
+    "textures": {
+        "layer0": "varan-armor:item/wooden_bow_pulling_2"
+    }
+}

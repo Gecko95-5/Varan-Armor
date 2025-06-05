@@ -1,8 +1,10 @@
 package net.gecko.varanarmor.item;
 
 import net.gecko.varanarmor.VaranArmor;
+import net.gecko.varanarmor.item.arrow.FlintArrowItem;
 import net.gecko.varanarmor.item.components.DecoToolMaterials;
 import net.gecko.varanarmor.item.fixes.FixedHoeItem;
+import net.gecko.varanarmor.item.weapons.CustomBowItem;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -217,6 +219,12 @@ public class DecoItems {
             new AxeItem(DecoToolMaterials.QUARTZ_NETHERITE, 5.0F, -3.0F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
     public static final Item QUARTZ_NETHERITE_HOE = registerItem("quartz_netherite_hoe",
             new FixedHoeItem(DecoToolMaterials.QUARTZ_NETHERITE, -4, 0.0F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+
+    public static final Item WOODEN_BOW = registerItem("wooden_bow",
+            new CustomBowItem(0.5f,new Item.Settings().maxDamage(59).group(DecoItemGroup.VARAN_ARMOR)));
+
+    public static final Item FLINT_ARROW = registerItem("flint_arrow",
+            new FlintArrowItem(new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM, new Identifier(VaranArmor.MOD_ID, name),item);

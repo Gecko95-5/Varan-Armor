@@ -1,5 +1,6 @@
 package net.gecko.varanarmor.item.weapons;
 
+import net.gecko.varanarmor.item.DecoItems;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.LivingEntity;
@@ -9,20 +10,15 @@ import net.minecraft.item.*;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
-import net.minecraft.util.Hand;
-import net.minecraft.util.TypedActionResult;
-import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
-import java.util.function.Predicate;
 
-public class CustomBowItem extends RangedWeaponItem implements Vanishable {
-    private static float drawSpeed;
-    public static final int RANGE = 15;
+public class CustomBowItem extends BowItem {
+    public static float range;
 
-    public CustomBowItem(float draw, Settings settings) {
+    public CustomBowItem(float range, Settings settings) {
         super(settings);
-        drawSpeed = draw;
+        CustomBowItem.range = range;
     }
 
     @Override
@@ -42,7 +38,7 @@ public class CustomBowItem extends RangedWeaponItem implements Vanishable {
                     if (!world.isClient) {
                         ArrowItem arrowItem = (ArrowItem)(itemStack.getItem() instanceof ArrowItem ? itemStack.getItem() : Items.ARROW);
                         PersistentProjectileEntity persistentProjectileEntity = arrowItem.createArrow(world, itemStack, playerEntity);
-                        persistentProjectileEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0F, f * 3.0F, 1.0F);
+                        persistentProjectileEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0F, f * range, 1.0F);
                         if (f == 1.0F) {
                             persistentProjectileEntity.setCritical(true);
                         }
@@ -62,7 +58,8 @@ public class CustomBowItem extends RangedWeaponItem implements Vanishable {
                         }
 
                         stack.damage(1, playerEntity, p -> p.sendToolBreakStatus(playerEntity.getActiveHand()));
-                        if (bl2 || playerEntity.getAbilities().creativeMode && (itemStack.isOf(Items.SPECTRAL_ARROW) || itemStack.isOf(Items.TIPPED_ARROW))) {
+                        if (bl2 || playerEntity.getAbilities().creativeMode && (itemStack.isOf(Items.SPECTRAL_ARROW) || itemStack.isOf(Items.TIPPED_ARROW)
+                                || itemStack.isOf(DecoItems.FLINT_ARROW))) {
                             persistentProjectileEntity.pickupType = PersistentProjectileEntity.PickupPermission.CREATIVE_ONLY;
                         }
 
@@ -93,44 +90,12 @@ public class CustomBowItem extends RangedWeaponItem implements Vanishable {
     }
 
     public static float getPullProgress(int useTicks) {
-        float f = useTicks / 20.0F;
-        f = (f * f + f * 2.0F) / 3.0F;
+        float f = useTicks / 20.0f;
+        f = (f * f + f * 0.5F) / 2.0F;
         if (f > 1.0F) {
             f = 1.0F;
         }
 
         return f;
-    }
-
-    @Override
-    public int getMaxUseTime(ItemStack stack) {
-        return 72000;
-    }
-
-    @Override
-    public UseAction getUseAction(ItemStack stack) {
-        return UseAction.BOW;
-    }
-
-    @Override
-    public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        ItemStack itemStack = user.getStackInHand(hand);
-        boolean bl = !user.getArrowType(itemStack).isEmpty();
-        if (!user.getAbilities().creativeMode && !bl) {
-            return TypedActionResult.fail(itemStack);
-        } else {
-            user.setCurrentHand(hand);
-            return TypedActionResult.consume(itemStack);
-        }
-    }
-
-    @Override
-    public Predicate<ItemStack> getProjectiles() {
-        return BOW_PROJECTILES;
-    }
-
-    @Override
-    public int getRange() {
-        return 15;
     }
 }

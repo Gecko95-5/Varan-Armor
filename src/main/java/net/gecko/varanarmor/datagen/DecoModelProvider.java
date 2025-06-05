@@ -127,6 +127,8 @@ public class DecoModelProvider extends FabricModelProvider {
         itemModelGenerator.register(DecoItems.QUARTZ_NETHERITE_AXE, Models.HANDHELD);
         itemModelGenerator.register(DecoItems.QUARTZ_NETHERITE_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(DecoItems.QUARTZ_NETHERITE_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(DecoItems.FLINT_ARROW, Models.GENERATED);
     }
 
     @Override
