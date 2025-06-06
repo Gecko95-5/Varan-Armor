@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "varan-armor:item/tipped_iron_arrow_head",
+        "layer1": "varan-armor:item/tipped_iron_arrow_base"
+    }
+}

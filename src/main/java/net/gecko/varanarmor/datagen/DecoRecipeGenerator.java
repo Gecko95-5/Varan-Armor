@@ -826,5 +826,51 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(DecoItems.QUARTZ_ROD),
                         RecipeProvider.conditionsFromItem(DecoItems.QUARTZ_ROD))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.QUARTZ_DIAMOND_HOE)));
+
+        ShapedRecipeJsonBuilder.create(DecoItems.FLINT_ARROW,8)
+                .pattern("X")
+                .pattern("#")
+                .pattern("Y")
+                .input('X', Items.FLINT)
+                .input('#', Items.STICK)
+                .input('Y',Items.FEATHER)
+                .criterion(RecipeProvider.hasItem(Items.FLINT),
+                        RecipeProvider.conditionsFromItem(Items.FLINT))
+                .criterion(RecipeProvider.hasItem(Items.STICK),
+                        RecipeProvider.conditionsFromItem(Items.STICK))
+                .criterion(RecipeProvider.hasItem(Items.FEATHER),
+                        RecipeProvider.conditionsFromItem(Items.FEATHER))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.FLINT_ARROW)));
+
+        ShapedRecipeJsonBuilder.create(DecoItems.AMETHYST_ARROW,4)
+                .pattern("X")
+                .pattern("#")
+                .pattern("Y")
+                .input('X', Items.AMETHYST_SHARD)
+                .input('#', DecoItems.COPPER_ROD)
+                .input('Y',Items.FEATHER)
+                .criterion(RecipeProvider.hasItem(Items.AMETHYST_SHARD),
+                        RecipeProvider.conditionsFromItem(Items.AMETHYST_SHARD))
+                .criterion(RecipeProvider.hasItem(DecoItems.COPPER_ROD),
+                        RecipeProvider.conditionsFromItem(DecoItems.COPPER_ROD))
+                .criterion(RecipeProvider.hasItem(Items.FEATHER),
+                        RecipeProvider.conditionsFromItem(Items.FEATHER))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.AMETHYST_ARROW)));
+
+        ShapedRecipeJsonBuilder.create(DecoItems.QUARTZ_ARROW,2)
+                .pattern("X")
+                .pattern("#")
+                .pattern("Y")
+                .input('X', Items.GHAST_TEAR)
+                .input('#', DecoItems.QUARTZ_ROD)
+                .input('Y',Items.FEATHER)
+                .criterion(RecipeProvider.hasItem(Items.GHAST_TEAR),
+                        RecipeProvider.conditionsFromItem(Items.GHAST_TEAR))
+                .criterion(RecipeProvider.hasItem(DecoItems.QUARTZ_ROD),
+                        RecipeProvider.conditionsFromItem(DecoItems.QUARTZ_ROD))
+                .criterion(RecipeProvider.hasItem(Items.FEATHER),
+                        RecipeProvider.conditionsFromItem(Items.FEATHER))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.QUARTZ_ARROW)));
+
     }
 }

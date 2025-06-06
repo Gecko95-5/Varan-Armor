@@ -114,7 +114,10 @@
   "item.varan-armor.quartz_netherite_hoe": "Netherite Hoe",
 
   "item.varan-armor.wooden_bow": "Wooden Bow",
+
   "item.varan-armor.flint_arrow": "Flint Arrow",
+  "item.varan-armor.amethyst_arrow": "Amethyst Arrow",
+  "item.varan-armor.quartz_arrow": "Quartz Arrow",
 
   "itemGroup.varan-armor.varan_armor": "Varan Armor"
 }

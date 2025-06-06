@@ -59,7 +59,7 @@ public class CustomBowItem extends BowItem {
 
                         stack.damage(1, playerEntity, p -> p.sendToolBreakStatus(playerEntity.getActiveHand()));
                         if (bl2 || playerEntity.getAbilities().creativeMode && (itemStack.isOf(Items.SPECTRAL_ARROW) || itemStack.isOf(Items.TIPPED_ARROW)
-                                || itemStack.isOf(DecoItems.FLINT_ARROW))) {
+                                || itemStack.isOf(DecoItems.FLINT_ARROW) || itemStack.isOf(DecoItems.AMETHYST_ARROW) || itemStack.isOf(DecoItems.QUARTZ_ARROW) )) {
                             persistentProjectileEntity.pickupType = PersistentProjectileEntity.PickupPermission.CREATIVE_ONLY;
                         }
 

@@ -1,7 +1,9 @@
 package net.gecko.varanarmor.item;
 
 import net.gecko.varanarmor.VaranArmor;
+import net.gecko.varanarmor.item.arrow.AmethystArrowItem;
 import net.gecko.varanarmor.item.arrow.FlintArrowItem;
+import net.gecko.varanarmor.item.arrow.QuartzArrowItem;
 import net.gecko.varanarmor.item.components.DecoToolMaterials;
 import net.gecko.varanarmor.item.fixes.FixedHoeItem;
 import net.gecko.varanarmor.item.weapons.CustomBowItem;
@@ -221,10 +223,16 @@ public class DecoItems {
             new FixedHoeItem(DecoToolMaterials.QUARTZ_NETHERITE, -4, 0.0F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
 
     public static final Item WOODEN_BOW = registerItem("wooden_bow",
-            new CustomBowItem(0.5f,new Item.Settings().maxDamage(59).group(DecoItemGroup.VARAN_ARMOR)));
+            new CustomBowItem(1.0f,new Item.Settings().maxDamage(59).group(DecoItemGroup.VARAN_ARMOR)));
 
     public static final Item FLINT_ARROW = registerItem("flint_arrow",
             new FlintArrowItem(new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+
+    public static final Item AMETHYST_ARROW = registerItem("amethyst_arrow",
+            new AmethystArrowItem(new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+
+    public static final Item QUARTZ_ARROW = registerItem("quartz_arrow",
+            new QuartzArrowItem(new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM, new Identifier(VaranArmor.MOD_ID, name),item);

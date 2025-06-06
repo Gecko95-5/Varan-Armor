@@ -8,18 +8,18 @@ import net.minecraft.entity.projectile.PersistentProjectileEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class FlintArrowEntity extends PersistentProjectileEntity {
+public class AmethystArrowEntity extends PersistentProjectileEntity {
 
-    public FlintArrowEntity(EntityType<? extends FlintArrowEntity> entityType, World world) {
+    public AmethystArrowEntity(EntityType<? extends AmethystArrowEntity> entityType, World world) {
         super(entityType, world);
     }
 
-    public FlintArrowEntity(World world, LivingEntity owner) {
-        super(DecoEntities.FLINT_ARROW, owner, world);
+    public AmethystArrowEntity(World world, LivingEntity owner) {
+        super(DecoEntities.AMETHYST_ARROW, owner, world);
     }
 
-    public FlintArrowEntity(World world, double x, double y, double z) {
-        super(DecoEntities.FLINT_ARROW, x, y, z, world);
+    public AmethystArrowEntity(World world, double x, double y, double z) {
+        super(DecoEntities.AMETHYST_ARROW, x, y, z, world);
     }
 
     @Override
@@ -32,11 +32,11 @@ public class FlintArrowEntity extends PersistentProjectileEntity {
 
     @Override
     protected ItemStack asItemStack() {
-        return new ItemStack(DecoItems.FLINT_ARROW);
+        return new ItemStack(DecoItems.AMETHYST_ARROW);
     }
 
     @Override
     public void setDamage(double damage) {
-        super.setDamage(damage - 1);
+        super.setDamage(damage + 1);
     }
 }

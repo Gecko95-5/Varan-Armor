@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "varan-armor:flint_arrow"
+    "varan-armor:flint_arrow",
+    "varan-armor:amethyst_arrow",
+    "varan-armor:quartz_arrow"
   ]
 }
