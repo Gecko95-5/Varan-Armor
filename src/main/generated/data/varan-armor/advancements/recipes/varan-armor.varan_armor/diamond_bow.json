@@ -1,24 +1,24 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_feather": {
+    "has_diamond": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:feather"
+              "minecraft:diamond"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_flint": {
+    "has_glowstone_dust": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:flint"
+              "minecraft:glowstone_dust"
             ]
           }
         ]
@@ -37,24 +37,37 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+    "has_string": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:string"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:flint_arrow"
+        "recipe": "minecraft:diamond_bow"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_flint",
+      "has_string",
+      "has_glowstone_dust",
       "has_stick",
-      "has_feather",
+      "has_diamond",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:flint_arrow"
+      "minecraft:diamond_bow"
     ]
   }
 }

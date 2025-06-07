@@ -4,9 +4,9 @@
     "item": "minecraft:netherite_ingot"
   },
   "base": {
-    "item": "varan-armor:quartz_diamond_axe"
+    "item": "varan-armor:diamond_bow"
   },
   "result": {
-    "item": "varan-armor:quartz_netherite_axe"
+    "item": "varan-armor:netherite_bow"
   }
 }

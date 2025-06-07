@@ -12,14 +12,17 @@ public class VaranArmorClient implements ClientModInitializer {
     public void onInitializeClient() {
         DecoModelPredicateProvider.registerChangingModels();
 
-        EntityRendererRegistry.register(DecoEntities.FLINT_ARROW, ctx -> new CustomArrowRenderer
-                (ctx, new Identifier(VaranArmor.MOD_ID,"textures/entity/projectiles/flint_arrow.png")));
+        EntityRendererRegistry.register(DecoEntities.IRON_ARROW, ctx -> new CustomArrowRenderer
+                (ctx, new Identifier(VaranArmor.MOD_ID,"textures/entity/projectiles/iron_arrow.png")));
 
         EntityRendererRegistry.register(DecoEntities.AMETHYST_ARROW, ctx -> new CustomArrowRenderer
                 (ctx, new Identifier(VaranArmor.MOD_ID,"textures/entity/projectiles/amethyst_arrow.png")));
 
         EntityRendererRegistry.register(DecoEntities.QUARTZ_ARROW, ctx -> new CustomArrowRenderer
                 (ctx, new Identifier(VaranArmor.MOD_ID,"textures/entity/projectiles/quartz_arrow.png")));
+
+        EntityRendererRegistry.register(DecoEntities.NETHER_ARROW, ctx -> new CustomArrowRenderer
+                (ctx, new Identifier(VaranArmor.MOD_ID,"textures/entity/projectiles/nether_arrow.png")));
         
     }
 }

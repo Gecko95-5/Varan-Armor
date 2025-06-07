@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "minecraft:stick"
+      "item": "minecraft:nether_brick"
     },
     "X": {
-      "item": "minecraft:flint"
+      "item": "minecraft:nether_wart"
     },
     "Y": {
-      "item": "minecraft:feather"
+      "item": "varan-armor:golden_feather"
     }
   },
   "pattern": [
@@ -17,7 +17,7 @@
     "Y"
   ],
   "result": {
-    "count": 8,
-    "item": "varan-armor:flint_arrow"
+    "count": 2,
+    "item": "varan-armor:nether_arrow"
   }
 }

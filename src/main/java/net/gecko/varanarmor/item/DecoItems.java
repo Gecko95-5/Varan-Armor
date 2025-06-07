@@ -2,14 +2,12 @@ package net.gecko.varanarmor.item;
 
 import net.gecko.varanarmor.VaranArmor;
 import net.gecko.varanarmor.item.arrow.AmethystArrowItem;
-import net.gecko.varanarmor.item.arrow.FlintArrowItem;
+import net.gecko.varanarmor.item.arrow.IronArrowItem;
+import net.gecko.varanarmor.item.arrow.NetherArrowItem;
 import net.gecko.varanarmor.item.arrow.QuartzArrowItem;
 import net.gecko.varanarmor.item.components.DecoToolMaterials;
 import net.gecko.varanarmor.item.fixes.FixedHoeItem;
-import net.gecko.varanarmor.item.weapons.CopperBowItem;
-import net.gecko.varanarmor.item.weapons.DiamondBowItem;
-import net.gecko.varanarmor.item.weapons.NetheriteBowItem;
-import net.gecko.varanarmor.item.weapons.WoodenBowItem;
+import net.gecko.varanarmor.item.weapons.*;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -25,6 +23,9 @@ public class DecoItems {
             new Item(new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
 
     public static final Item COPPER_NUGGET = registerItem("copper_nugget",
+            new Item(new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+
+    public static final Item GOLDEN_FEATHER = registerItem("golden_feather",
             new Item(new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
 
     public static final Item FLINT_WOODEN_SWORD = registerItem("flint_wooden_sword",
@@ -234,12 +235,17 @@ public class DecoItems {
     public static final Item NETHERITE_BOW = registerItem("netherite_bow",
             new NetheriteBowItem(new Item.Settings().maxDamage(2218).group(DecoItemGroup.VARAN_ARMOR)));
 
-    public static final Item FLINT_ARROW = registerItem("flint_arrow",
-            new FlintArrowItem(new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+    public static final Item IRON_ARROW = registerItem("iron_arrow",
+            new IronArrowItem(new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
     public static final Item AMETHYST_ARROW = registerItem("amethyst_arrow",
             new AmethystArrowItem(new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
     public static final Item QUARTZ_ARROW = registerItem("quartz_arrow",
             new QuartzArrowItem(new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+    public static final Item NETHER_ARROW = registerItem("nether_arrow",
+            new NetherArrowItem(new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+
+    public static final Item BLAZING_BOW = registerItem("blazing_bow",
+            new BlazingBowItem(new Item.Settings().maxDamage(522).group(DecoItemGroup.VARAN_ARMOR)));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM, new Identifier(VaranArmor.MOD_ID, name),item);

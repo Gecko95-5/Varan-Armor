@@ -4,8 +4,11 @@
     "#": {
       "item": "minecraft:stick"
     },
+    "&": {
+      "item": "minecraft:glowstone_dust"
+    },
     "C": {
-      "tag": "minecraft:logs"
+      "item": "minecraft:diamond"
     },
     "X": {
       "item": "minecraft:string"
@@ -13,10 +16,10 @@
   },
   "pattern": [
     " #X",
-    "C X",
+    "C &",
     " #X"
   ],
   "result": {
-    "item": "varan-armor:wooden_bow"
+    "item": "varan-armor:diamond_bow"
   }
 }

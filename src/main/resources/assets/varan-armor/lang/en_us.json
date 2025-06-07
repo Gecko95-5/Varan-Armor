@@ -1,5 +1,6 @@
 {
   "item.varan-armor.copper_nugget": "Copper Nugget",
+  "item.varan-armor.golden_feather": "Golden Feather",
 
   "item.varan-armor.flint_rod": "Flint Rod",
   "item.varan-armor.copper_rod": "Copper Rod",
@@ -118,9 +119,17 @@
   "item.varan-armor.diamond_bow": "Diamond Bow",
   "item.varan-armor.netherite_bow": "Netherite Bow",
 
-  "item.varan-armor.flint_arrow": "Flint Arrow",
+  "item.varan-armor.iron_arrow": "Iron Arrow",
   "item.varan-armor.amethyst_arrow": "Amethyst Arrow",
   "item.varan-armor.quartz_arrow": "Quartz Arrow",
+  "item.varan-armor.nether_arrow": "Nether Arrow",
+
+  "entity.varan-armor.iron_arrow": "Iron Arrow",
+  "entity.varan-armor.amethyst_arrow": "Amethyst Arrow",
+  "entity.varan-armor.quartz_arrow": "Quartz Arrow",
+  "entity.varan-armor.nether_arrow": "Nether Arrow",
+
+  "item.varan-armor.blazing_bow": "Blazing Bow",
 
   "itemGroup.varan-armor.varan_armor": "Varan Armor"
 }

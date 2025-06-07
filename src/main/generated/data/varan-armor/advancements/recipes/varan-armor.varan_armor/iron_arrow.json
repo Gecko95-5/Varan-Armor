@@ -1,36 +1,36 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ghast_tear": {
+    "has_feather": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:ghast_tear"
+              "minecraft:feather"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_golden_feather": {
+    "has_flint_rod": {
       "conditions": {
         "items": [
           {
             "items": [
-              "varan-armor:golden_feather"
+              "varan-armor:flint_rod"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_quartz_rod": {
+    "has_iron_nugget": {
       "conditions": {
         "items": [
           {
             "items": [
-              "varan-armor:quartz_rod"
+              "minecraft:iron_nugget"
             ]
           }
         ]
@@ -39,22 +39,22 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:quartz_arrow"
+        "recipe": "minecraft:iron_arrow"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_ghast_tear",
-      "has_quartz_rod",
-      "has_golden_feather",
+      "has_iron_nugget",
+      "has_flint_rod",
+      "has_feather",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:quartz_arrow"
+      "minecraft:iron_arrow"
     ]
   }
 }

@@ -1,18 +1,6 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ghast_tear": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:ghast_tear"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_golden_feather": {
       "conditions": {
         "items": [
@@ -25,12 +13,24 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_quartz_rod": {
+    "has_nether_brick": {
       "conditions": {
         "items": [
           {
             "items": [
-              "varan-armor:quartz_rod"
+              "minecraft:nether_brick"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_nether_wart": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:nether_wart"
             ]
           }
         ]
@@ -39,22 +39,22 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:quartz_arrow"
+        "recipe": "minecraft:nether_arrow"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_ghast_tear",
-      "has_quartz_rod",
+      "has_nether_wart",
+      "has_nether_brick",
       "has_golden_feather",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:quartz_arrow"
+      "minecraft:nether_arrow"
     ]
   }
 }

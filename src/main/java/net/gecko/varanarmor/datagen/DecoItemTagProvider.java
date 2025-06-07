@@ -13,8 +13,9 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
     @Override
     protected void generateTags() {
         getOrCreateTagBuilder(ItemTags.ARROWS)
-                .add(DecoItems.FLINT_ARROW)
+                .add(DecoItems.IRON_ARROW)
                 .add(DecoItems.AMETHYST_ARROW)
-                .add(DecoItems.QUARTZ_ARROW);
+                .add(DecoItems.QUARTZ_ARROW)
+                .add(DecoItems.NETHER_ARROW);
     }
 }

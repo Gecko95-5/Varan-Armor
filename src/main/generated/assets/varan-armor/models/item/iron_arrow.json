@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "varan-armor:item/flint_arrow"
+    "layer0": "varan-armor:item/iron_arrow"
   }
 }

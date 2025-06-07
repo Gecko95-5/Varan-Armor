@@ -827,20 +827,20 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(DecoItems.QUARTZ_ROD))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.QUARTZ_DIAMOND_HOE)));
 
-        ShapedRecipeJsonBuilder.create(DecoItems.FLINT_ARROW,8)
+        ShapedRecipeJsonBuilder.create(DecoItems.IRON_ARROW,4)
                 .pattern("X")
                 .pattern("#")
                 .pattern("Y")
-                .input('X', Items.FLINT)
-                .input('#', Items.STICK)
+                .input('X', Items.IRON_NUGGET)
+                .input('#', DecoItems.FLINT_ROD)
                 .input('Y',Items.FEATHER)
-                .criterion(RecipeProvider.hasItem(Items.FLINT),
-                        RecipeProvider.conditionsFromItem(Items.FLINT))
-                .criterion(RecipeProvider.hasItem(Items.STICK),
-                        RecipeProvider.conditionsFromItem(Items.STICK))
+                .criterion(RecipeProvider.hasItem(Items.IRON_NUGGET),
+                        RecipeProvider.conditionsFromItem(Items.IRON_NUGGET))
+                .criterion(RecipeProvider.hasItem(DecoItems.FLINT_ROD),
+                        RecipeProvider.conditionsFromItem(DecoItems.FLINT_ROD))
                 .criterion(RecipeProvider.hasItem(Items.FEATHER),
                         RecipeProvider.conditionsFromItem(Items.FEATHER))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.FLINT_ARROW)));
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.IRON_ARROW)));
 
         ShapedRecipeJsonBuilder.create(DecoItems.AMETHYST_ARROW,4)
                 .pattern("X")
@@ -863,22 +863,37 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("Y")
                 .input('X', Items.GHAST_TEAR)
                 .input('#', DecoItems.QUARTZ_ROD)
-                .input('Y',Items.FEATHER)
+                .input('Y', DecoItems.GOLDEN_FEATHER)
                 .criterion(RecipeProvider.hasItem(Items.GHAST_TEAR),
                         RecipeProvider.conditionsFromItem(Items.GHAST_TEAR))
                 .criterion(RecipeProvider.hasItem(DecoItems.QUARTZ_ROD),
                         RecipeProvider.conditionsFromItem(DecoItems.QUARTZ_ROD))
-                .criterion(RecipeProvider.hasItem(Items.FEATHER),
-                        RecipeProvider.conditionsFromItem(Items.FEATHER))
+                .criterion(RecipeProvider.hasItem(DecoItems.GOLDEN_FEATHER),
+                        RecipeProvider.conditionsFromItem(DecoItems.GOLDEN_FEATHER))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.QUARTZ_ARROW)));
+
+        ShapedRecipeJsonBuilder.create(DecoItems.NETHER_ARROW,2)
+                .pattern("X")
+                .pattern("#")
+                .pattern("Y")
+                .input('X', Items.NETHER_WART)
+                .input('#', Items.NETHER_BRICK)
+                .input('Y', DecoItems.GOLDEN_FEATHER)
+                .criterion(RecipeProvider.hasItem(Items.NETHER_WART),
+                        RecipeProvider.conditionsFromItem(Items.NETHER_WART))
+                .criterion(RecipeProvider.hasItem(Items.NETHER_BRICK),
+                        RecipeProvider.conditionsFromItem(Items.NETHER_BRICK))
+                .criterion(RecipeProvider.hasItem(DecoItems.GOLDEN_FEATHER),
+                        RecipeProvider.conditionsFromItem(DecoItems.GOLDEN_FEATHER))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.NETHER_ARROW)));
 
         ShapedRecipeJsonBuilder.create(DecoItems.WOODEN_BOW)
                 .pattern(" #X")
-                .pattern("W X")
+                .pattern("C X")
                 .pattern(" #X")
                 .input('X', Items.STRING)
                 .input('#', Items.STICK)
-                .input('W',ItemTags.LOGS)
+                .input('C',ItemTags.LOGS)
                 .criterion(RecipeProvider.hasItem(Items.STRING),
                         RecipeProvider.conditionsFromItem(Items.STRING))
                 .criterion(RecipeProvider.hasItem(Items.STICK),
@@ -899,6 +914,54 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(Items.COPPER_INGOT),
                         RecipeProvider.conditionsFromItem(Items.COPPER_INGOT))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.COPPER_BOW)));
+
+        ShapedRecipeJsonBuilder.create(DecoItems.DIAMOND_BOW)
+                .pattern(" #X")
+                .pattern("C &")
+                .pattern(" #X")
+                .input('X', Items.STRING)
+                .input('&', Items.GLOWSTONE_DUST)
+                .input('#', Items.STICK)
+                .input('C',Items.DIAMOND)
+                .criterion(RecipeProvider.hasItem(Items.STRING),
+                        RecipeProvider.conditionsFromItem(Items.STRING))
+                .criterion(RecipeProvider.hasItem(Items.GLOWSTONE_DUST),
+                        RecipeProvider.conditionsFromItem(Items.GLOWSTONE_DUST))
+                .criterion(RecipeProvider.hasItem(Items.STICK),
+                        RecipeProvider.conditionsFromItem(Items.STICK))
+                .criterion(RecipeProvider.hasItem(Items.DIAMOND),
+                        RecipeProvider.conditionsFromItem(Items.DIAMOND))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.DIAMOND_BOW)));
+
+        ShapedRecipeJsonBuilder.create(DecoItems.GOLDEN_FEATHER,4)
+                .pattern("###")
+                .pattern("#F#")
+                .pattern("###")
+                .input('#', Items.GOLD_NUGGET)
+                .input('F',Items.FEATHER)
+                .criterion(RecipeProvider.hasItem(Items.IRON_NUGGET),
+                        RecipeProvider.conditionsFromItem(Items.IRON_NUGGET))
+                .criterion(RecipeProvider.hasItem(Items.FEATHER),
+                        RecipeProvider.conditionsFromItem(Items.FEATHER))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.GOLDEN_FEATHER)));
+
+        ShapedRecipeJsonBuilder.create(DecoItems.BLAZING_BOW)
+                .pattern(" #X")
+                .pattern("C &")
+                .pattern(" #X")
+                .input('X', Items.STRING)
+                .input('&', Items.GLOWSTONE_DUST)
+                .input('#', Items.BLAZE_ROD)
+                .input('C',Items.MAGMA_CREAM)
+                .criterion(RecipeProvider.hasItem(Items.STRING),
+                        RecipeProvider.conditionsFromItem(Items.STRING))
+                .criterion(RecipeProvider.hasItem(Items.GLOWSTONE_DUST),
+                        RecipeProvider.conditionsFromItem(Items.GLOWSTONE_DUST))
+                .criterion(RecipeProvider.hasItem(Items.BLAZE_ROD),
+                        RecipeProvider.conditionsFromItem(Items.BLAZE_ROD))
+                .criterion(RecipeProvider.hasItem(Items.MAGMA_CREAM),
+                        RecipeProvider.conditionsFromItem(Items.MAGMA_CREAM))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.BLAZING_BOW)));
 
     }
 }

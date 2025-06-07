@@ -11,6 +11,7 @@ public class DecoModelPredicateProvider {
         registerBow(DecoItems.COPPER_BOW);
         registerBow(DecoItems.DIAMOND_BOW);
         registerBow(DecoItems.NETHERITE_BOW);
+        registerBow(DecoItems.BLAZING_BOW);
     }
     private static void registerBow(Item bow) {
         ModelPredicateProviderRegistry.register(bow, new Identifier("pull"),

@@ -11,8 +11,6 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
 import net.minecraft.item.ItemStack;
@@ -27,10 +25,11 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class QuartzArrowEntity extends PersistentProjectileEntity {
+public class NetherArrowEntity extends PersistentProjectileEntity {
+    private double damage;
     protected boolean inGround;
     protected int inGroundTime;
-    public PersistentProjectileEntity.PickupPermission pickupType = PersistentProjectileEntity.PickupPermission.DISALLOWED;
+    public PickupPermission pickupType = PickupPermission.DISALLOWED;
     private final SoundEvent sound = this.getHitSound();
     private int punch;
     @Nullable
@@ -38,25 +37,24 @@ public class QuartzArrowEntity extends PersistentProjectileEntity {
     @Nullable
     private List<Entity> piercingKilledEntities;
     public LivingEntity owner;
-    
-    public QuartzArrowEntity(EntityType<? extends QuartzArrowEntity> entityType, World world) {
+
+    public NetherArrowEntity(EntityType<? extends NetherArrowEntity> entityType, World world) {
         super(entityType, world);
     }
 
-    public QuartzArrowEntity(World world, LivingEntity owner) {
-        super(DecoEntities.QUARTZ_ARROW, owner, world);
+    public NetherArrowEntity(World world, LivingEntity owner) {
+        super(DecoEntities.NETHER_ARROW, owner, world);
         this.owner = owner;
     }
 
-    public QuartzArrowEntity(World world, double x, double y, double z) {
-        super(DecoEntities.QUARTZ_ARROW, x, y, z, world);
+    public NetherArrowEntity(World world, double x, double y, double z) {
+        super(DecoEntities.NETHER_ARROW, x, y, z, world);
     }
     @Override
     public void onEntityHit(EntityHitResult entityHitResult) {
         super.onEntityHit(entityHitResult);
         Entity entity = entityHitResult.getEntity();
         float f = (float)this.getVelocity().length();
-        double damage = 2.5;
         int i = MathHelper.ceil(MathHelper.clamp(f * damage, 0.0, 2.147483647E9));
         if (this.getPierceLevel() > 0) {
             if (this.piercedEntities == null) {
@@ -150,7 +148,7 @@ public class QuartzArrowEntity extends PersistentProjectileEntity {
             this.setYaw(this.getYaw() + 180.0F);
             this.prevYaw += 180.0F;
             if (!this.world.isClient && this.getVelocity().lengthSquared() < 1.0E-7) {
-                if (this.pickupType == PersistentProjectileEntity.PickupPermission.ALLOWED) {
+                if (this.pickupType == PickupPermission.ALLOWED) {
                     this.dropStack(this.asItemStack(), 0.1F);
                 }
 
@@ -162,29 +160,30 @@ public class QuartzArrowEntity extends PersistentProjectileEntity {
     public void setPunch(int punch) {
         this.punch = punch;
     }
+
+    public double getDamage() {
+        if (owner.getHealth() > owner.getMaxHealth() / 2) {
+            damage = 2.5f;
+        }
+        if (owner.getHealth() <= owner.getMaxHealth() / 10){
+            damage = 3.5f;
+        }
+        if (owner.getHealth() <= owner.getMaxHealth() / 2){
+            damage = 3.0f;
+        }
+        return this.damage;
+    }
+
     @Override
     public void tick() {
         super.tick();
-        if (this.inGround && this.inGroundTime != 0 && this.inGroundTime >= 1200) {
+        if (this.inGround && this.inGroundTime != 0 && this.inGroundTime >= 600) {
             this.world.sendEntityStatus(this, (byte)0);
         }
     }
 
     @Override
     protected ItemStack asItemStack() {
-        return new ItemStack(DecoItems.QUARTZ_ARROW);
+        return new ItemStack(DecoItems.NETHER_ARROW);
     }
-
-    @Override
-    public void onHit(LivingEntity target) {
-            if (owner.getHealth() < owner.getMaxHealth()) {
-                owner.heal(1.0F);
-            }
-            else {
-                owner.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 400));
-            }
-            super.onHit(target);
-        }
-
 }
-
