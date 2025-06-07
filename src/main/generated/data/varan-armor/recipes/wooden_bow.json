@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "W": {
+      "tag": "minecraft:logs"
+    },
+    "X": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    " #X",
+    "W X",
+    " #X"
+  ],
+  "result": {
+    "item": "varan-armor:wooden_bow"
+  }
+}
