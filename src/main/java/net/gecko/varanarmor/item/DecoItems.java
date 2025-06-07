@@ -6,7 +6,10 @@ import net.gecko.varanarmor.item.arrow.FlintArrowItem;
 import net.gecko.varanarmor.item.arrow.QuartzArrowItem;
 import net.gecko.varanarmor.item.components.DecoToolMaterials;
 import net.gecko.varanarmor.item.fixes.FixedHoeItem;
-import net.gecko.varanarmor.item.weapons.CustomBowItem;
+import net.gecko.varanarmor.item.weapons.CopperBowItem;
+import net.gecko.varanarmor.item.weapons.DiamondBowItem;
+import net.gecko.varanarmor.item.weapons.NetheriteBowItem;
+import net.gecko.varanarmor.item.weapons.WoodenBowItem;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -223,14 +226,18 @@ public class DecoItems {
             new FixedHoeItem(DecoToolMaterials.QUARTZ_NETHERITE, -4, 0.0F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
 
     public static final Item WOODEN_BOW = registerItem("wooden_bow",
-            new CustomBowItem(1.0f,new Item.Settings().maxDamage(59).group(DecoItemGroup.VARAN_ARMOR)));
+            new WoodenBowItem(new Item.Settings().maxDamage(90).group(DecoItemGroup.VARAN_ARMOR)));
+    public static final Item COPPER_BOW = registerItem("copper_bow",
+            new CopperBowItem(new Item.Settings().maxDamage(201).group(DecoItemGroup.VARAN_ARMOR)));
+    public static final Item DIAMOND_BOW = registerItem("diamond_bow",
+            new DiamondBowItem(new Item.Settings().maxDamage(1787).group(DecoItemGroup.VARAN_ARMOR)));
+    public static final Item NETHERITE_BOW = registerItem("netherite_bow",
+            new NetheriteBowItem(new Item.Settings().maxDamage(2218).group(DecoItemGroup.VARAN_ARMOR)));
 
     public static final Item FLINT_ARROW = registerItem("flint_arrow",
             new FlintArrowItem(new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
-
     public static final Item AMETHYST_ARROW = registerItem("amethyst_arrow",
             new AmethystArrowItem(new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
-
     public static final Item QUARTZ_ARROW = registerItem("quartz_arrow",
             new QuartzArrowItem(new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
 

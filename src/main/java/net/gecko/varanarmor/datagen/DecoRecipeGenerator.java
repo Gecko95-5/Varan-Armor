@@ -872,5 +872,33 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(Items.FEATHER))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.QUARTZ_ARROW)));
 
+        ShapedRecipeJsonBuilder.create(DecoItems.WOODEN_BOW)
+                .pattern(" #X")
+                .pattern("W X")
+                .pattern(" #X")
+                .input('X', Items.STRING)
+                .input('#', Items.STICK)
+                .input('W',ItemTags.LOGS)
+                .criterion(RecipeProvider.hasItem(Items.STRING),
+                        RecipeProvider.conditionsFromItem(Items.STRING))
+                .criterion(RecipeProvider.hasItem(Items.STICK),
+                        RecipeProvider.conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.WOODEN_BOW)));
+
+        ShapedRecipeJsonBuilder.create(DecoItems.COPPER_BOW)
+                .pattern(" #X")
+                .pattern("C X")
+                .pattern(" #X")
+                .input('X', Items.STRING)
+                .input('#', Items.STICK)
+                .input('C',Items.COPPER_INGOT)
+                .criterion(RecipeProvider.hasItem(Items.STRING),
+                        RecipeProvider.conditionsFromItem(Items.STRING))
+                .criterion(RecipeProvider.hasItem(Items.STICK),
+                        RecipeProvider.conditionsFromItem(Items.STICK))
+                .criterion(RecipeProvider.hasItem(Items.COPPER_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.COPPER_BOW)));
+
     }
 }

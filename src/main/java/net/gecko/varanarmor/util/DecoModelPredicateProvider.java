@@ -8,6 +8,9 @@ import net.minecraft.util.Identifier;
 public class DecoModelPredicateProvider {
     public static void registerChangingModels(){
         registerBow(DecoItems.WOODEN_BOW);
+        registerBow(DecoItems.COPPER_BOW);
+        registerBow(DecoItems.DIAMOND_BOW);
+        registerBow(DecoItems.NETHERITE_BOW);
     }
     private static void registerBow(Item bow) {
         ModelPredicateProviderRegistry.register(bow, new Identifier("pull"),

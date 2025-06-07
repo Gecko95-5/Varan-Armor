@@ -7,16 +7,16 @@
     "X": {
       "item": "minecraft:string"
     },
-    "L": {
-      "tag": "minecraft:logs"
+    "I": {
+      "item": "minecraft:iron_ingot"
     }
   },
   "pattern": [
     " #X",
-    "L X",
+    "I X",
     " #X"
   ],
   "result": {
-    "item": "varan-armor:bow"
+    "item": "minecraft:bow"
   }
 }

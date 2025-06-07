@@ -13,12 +13,10 @@ import net.minecraft.stat.Stats;
 import net.minecraft.world.World;
 
 
-public class CustomBowItem extends BowItem {
-    public static float range;
+public class WoodenBowItem extends BowItem {
 
-    public CustomBowItem(float range, Settings settings) {
+    public WoodenBowItem(Settings settings) {
         super(settings);
-        CustomBowItem.range = range;
     }
 
     @Override
@@ -38,7 +36,7 @@ public class CustomBowItem extends BowItem {
                     if (!world.isClient) {
                         ArrowItem arrowItem = (ArrowItem)(itemStack.getItem() instanceof ArrowItem ? itemStack.getItem() : Items.ARROW);
                         PersistentProjectileEntity persistentProjectileEntity = arrowItem.createArrow(world, itemStack, playerEntity);
-                        persistentProjectileEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0F, f * range, 1.0F);
+                        persistentProjectileEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0F, f, 3.0f);
                         if (f == 1.0F) {
                             persistentProjectileEntity.setCritical(true);
                         }
