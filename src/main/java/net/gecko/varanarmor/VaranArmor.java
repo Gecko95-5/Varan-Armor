@@ -3,8 +3,12 @@ package net.gecko.varanarmor;
 import net.fabricmc.api.ModInitializer;
 
 import net.gecko.varanarmor.item.DecoItems;
+import net.gecko.varanarmor.util.DecoLootTables;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.Locale;
 
 public class VaranArmor implements ModInitializer {
 	public static final String MOD_ID = "varan-armor";
@@ -17,6 +21,8 @@ public class VaranArmor implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		DecoItems.registerDecoItems();
+		DecoLootTables.registerDecoLootTables();
+
 
 		LOGGER.info("Hello Fabric world!");
 	}

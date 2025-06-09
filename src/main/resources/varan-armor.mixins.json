@@ -3,7 +3,8 @@
 	"package": "net.gecko.varanarmor.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"FishingBobberEntityMixin",
+		"FishingBobberRendererMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

@@ -38,5 +38,5 @@ public class DecoEntities {
     public static final EntityType<SquidFishingBobberEntity> SQUID_BOBBER = Registry.register(Registry.ENTITY_TYPE,
             new Identifier(VaranArmor.MOD_ID, "squid_bobber"),
             FabricEntityTypeBuilder.<SquidFishingBobberEntity>create(SpawnGroup.MISC, SquidFishingBobberEntity::new)
-                    .dimensions(EntityDimensions.fixed(0.5F, 0.5F)).build());
+                    .dimensions(EntityDimensions.fixed(0.25F, 0.25F)).build());
 }

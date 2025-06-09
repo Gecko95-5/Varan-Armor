@@ -1,0 +1,6 @@
+{
+    "parent": "varan-armor:item/squid_fishing_rod",
+    "textures": {
+        "layer0": "varan-armor:item/squid_fishing_rod_cast"
+    }
+}
