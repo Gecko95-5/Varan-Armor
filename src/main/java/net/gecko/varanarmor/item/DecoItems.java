@@ -5,6 +5,7 @@ import net.gecko.varanarmor.item.arrow.AmethystArrowItem;
 import net.gecko.varanarmor.item.arrow.IronArrowItem;
 import net.gecko.varanarmor.item.arrow.NetherArrowItem;
 import net.gecko.varanarmor.item.arrow.QuartzArrowItem;
+import net.gecko.varanarmor.item.components.DecoFoodComponents;
 import net.gecko.varanarmor.item.components.DecoToolMaterials;
 import net.gecko.varanarmor.item.fixes.FixedHoeItem;
 import net.gecko.varanarmor.item.weapons.*;
@@ -27,6 +28,13 @@ public class DecoItems {
 
     public static final Item GOLDEN_FEATHER = registerItem("golden_feather",
             new Item(new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+
+    public static final Item SQUID_TENTACLES = registerItem("squid_tentacles",
+            new Item(new Item.Settings().food(DecoFoodComponents.SQUID_TENTACLES).group(DecoItemGroup.VARAN_ARMOR)));
+    public static final Item GLOW_SQUID_TENTACLES = registerItem("glow_squid_tentacles",
+            new Item(new Item.Settings().food(DecoFoodComponents.GLOW_SQUID_TENTACLES).group(DecoItemGroup.VARAN_ARMOR)));
+    public static final Item COOKED_SQUID_TENTACLES = registerItem("cooked_squid_tentacles",
+            new Item(new Item.Settings().food(DecoFoodComponents.COOKED_SQUID_TENTACLES).group(DecoItemGroup.VARAN_ARMOR)));
 
     public static final Item FLINT_WOODEN_SWORD = registerItem("flint_wooden_sword",
             new SwordItem(DecoToolMaterials.FLINT_WOOD, 3, -2.4F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
@@ -234,6 +242,9 @@ public class DecoItems {
             new DiamondBowItem(new Item.Settings().maxDamage(1787).group(DecoItemGroup.VARAN_ARMOR)));
     public static final Item NETHERITE_BOW = registerItem("netherite_bow",
             new NetheriteBowItem(new Item.Settings().maxDamage(2218).group(DecoItemGroup.VARAN_ARMOR)));
+
+    public static final Item SQUID_FISHING_ROD = registerItem("squid_fishing_rod",
+            new FishingRodItem(new Item.Settings().maxDamage(270).group(DecoItemGroup.VARAN_ARMOR)));
 
     public static final Item IRON_ARROW = registerItem("iron_arrow",
             new IronArrowItem(new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));

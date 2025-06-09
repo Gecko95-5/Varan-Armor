@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "varan-armor:glow_squid_tentacles"
+  },
+  "result": "varan-armor:cooked_squid_tentacles"
+}

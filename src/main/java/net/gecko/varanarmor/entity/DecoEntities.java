@@ -6,6 +6,7 @@ import net.gecko.varanarmor.entity.arrow.AmethystArrowEntity;
 import net.gecko.varanarmor.entity.arrow.IronArrowEntity;
 import net.gecko.varanarmor.entity.arrow.NetherArrowEntity;
 import net.gecko.varanarmor.entity.arrow.QuartzArrowEntity;
+import net.gecko.varanarmor.entity.bobbers.SquidFishingBobberEntity;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
@@ -32,5 +33,10 @@ public class DecoEntities {
     public static final EntityType<NetherArrowEntity> NETHER_ARROW = Registry.register(Registry.ENTITY_TYPE,
             new Identifier(VaranArmor.MOD_ID, "nether_arrow"),
             FabricEntityTypeBuilder.<NetherArrowEntity>create(SpawnGroup.MISC, NetherArrowEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.5F, 0.5F)).build());
+
+    public static final EntityType<SquidFishingBobberEntity> SQUID_BOBBER = Registry.register(Registry.ENTITY_TYPE,
+            new Identifier(VaranArmor.MOD_ID, "squid_bobber"),
+            FabricEntityTypeBuilder.<SquidFishingBobberEntity>create(SpawnGroup.MISC, SquidFishingBobberEntity::new)
                     .dimensions(EntityDimensions.fixed(0.5F, 0.5F)).build());
 }

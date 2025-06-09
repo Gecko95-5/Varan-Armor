@@ -1,5 +1,6 @@
-// 1.19.2	2025-06-07T19:13:42.4272331	Models
+// 1.19.2	2025-06-09T00:01:24.3722179	Models
 886a21bdf05fc6b6f9ff68bf5d86b37bb32c6333 assets\varan-armor\models\item\copper_wooden_pickaxe.json
+4d75fd6e60c11fef881960bf3d4023863c9e35af assets\varan-armor\models\item\glow_squid_tentacles.json
 19de092c6d3735aa9c9a2517a09f2bc4735e2f53 assets\varan-armor\models\item\flint_iron_hoe.json
 023df13b22b000b9d5621988b8f72aa802cc7f35 assets\varan-armor\models\item\copper_wooden_hoe.json
 00dc7e773d23264034b036374bfa3c300abe978a assets\varan-armor\models\item\copper_netherite_hoe.json
@@ -34,6 +35,7 @@ f62be2cd10120250b33100d2363ecbfb90dabedf assets\varan-armor\models\item\quartz_s
 3358b51a585a11197fa7b9471a276a3da274da25 assets\varan-armor\models\item\quartz_wooden_shovel.json
 d5e45b516eaf153af9fbc6d4f2447af96375fdab assets\varan-armor\models\item\iron_arrow.json
 49456ac98f572dbc5a1268cdef0643e5c8b43019 assets\varan-armor\models\item\copper_iron_sword.json
+ab02db6b5bf45dfa642bd023c42267bc73580dc2 assets\varan-armor\models\item\cooked_squid_tentacles.json
 44626df970a0b4527999a1292c0284c2bdc1362b assets\varan-armor\models\item\copper_netherite_axe.json
 cf099bcd1485219e2a18fa66192bcdf981727ea5 assets\varan-armor\models\item\quartz_golden_axe.json
 d9168dbf5c76c69d1669ba0c8daab5e836c1f463 assets\varan-armor\models\item\flint_diamond_pickaxe.json
@@ -45,6 +47,7 @@ ea1b79e2187409a1713367b80a17f3f0dffeff37 assets\varan-armor\models\item\flint_wo
 3d2dc7def600ec5df2fd44739910905990b3db0d assets\varan-armor\models\item\copper_iron_shovel.json
 2b6f648a46fff24c354ca8eced1efe88dec0a634 assets\varan-armor\models\item\flint_netherite_shovel.json
 22ca6d5277f271677b12ee2d8350427286a06015 assets\varan-armor\models\item\copper_nugget.json
+5ed972489b712a65d1d0120deee6a2dd630c03d1 assets\varan-armor\models\item\squid_tentacles.json
 6a9caa697afeeb2ad3fcb9825636926037802d6d assets\varan-armor\models\item\copper_stone_hoe.json
 56c44db049e10a48abd40c588ea92351427afd36 assets\varan-armor\models\item\copper_wooden_shovel.json
 5b26d56664c9b8af11f5c49ec505b63ffc777a1f assets\varan-armor\models\item\amethyst_arrow.json

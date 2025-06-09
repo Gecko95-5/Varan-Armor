@@ -4,9 +4,11 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.gecko.varanarmor.item.DecoItems;
 import net.minecraft.data.server.RecipeProvider;
+import net.minecraft.data.server.recipe.CookingRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.tag.ItemTags;
 import net.minecraft.util.Identifier;
 
@@ -962,6 +964,14 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(Items.MAGMA_CREAM),
                         RecipeProvider.conditionsFromItem(Items.MAGMA_CREAM))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.BLAZING_BOW)));
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoItems.SQUID_TENTACLES), DecoItems.COOKED_SQUID_TENTACLES,
+                0.35f, 200).criterion(hasItem(DecoItems.SQUID_TENTACLES),conditionsFromItem(DecoItems.SQUID_TENTACLES))
+                .offerTo(exporter,new Identifier("cooked_squid_tentacles_form_squid_tentacles"));
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoItems.GLOW_SQUID_TENTACLES), DecoItems.COOKED_SQUID_TENTACLES,
+                0.35f, 200).criterion(hasItem(DecoItems.GLOW_SQUID_TENTACLES),conditionsFromItem(DecoItems.GLOW_SQUID_TENTACLES))
+                .offerTo(exporter,new Identifier("cooked_squid_tentacles_form_glow_squid_tentacles"));
 
     }
 }
