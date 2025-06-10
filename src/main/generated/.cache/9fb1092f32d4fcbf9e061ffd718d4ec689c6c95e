@@ -1,4 +1,4 @@
-// 1.19.2	2025-06-09T15:12:49.6157048	Recipes
+// 1.19.2	2025-06-10T00:48:58.8281571	Recipes
 b3bd8e794d84deceaded702a4df5cff0d3c346eb data\varan-armor\advancements\recipes\varan-armor.varan_armor\flint_wooden_sword.json
 634d62e868d6ef5929af21e15a6c110bc9595df9 data\varan-armor\recipes\flint_iron_pickaxe.json
 f5100dff6712c9c5d8d90e788d9966ec658ea68b data\varan-armor\advancements\recipes\varan-armor.varan_armor\copper_golden_pickaxe.json
@@ -16,9 +16,11 @@ cd311c73e496b0203ae42a7b505735071baee9a3 data\varan-armor\advancements\recipes\v
 5c435432d700a40c70504f4b78ff75a38175c436 data\varan-armor\advancements\recipes\varan-armor.varan_armor\nether_arrow.json
 314bba5c2949354a84a592a1a6494eb16701789b data\varan-armor\recipes\quartz_diamond_axe.json
 025a4709e8e94c1dbaf9c1ebda9cb36a64259b2f data\varan-armor\recipes\copper_wooden_shovel.json
+b462f28de0f44f8a266a88b28b6e3f2a400e3bcc data\varan-armor\recipes\nautilus_fishing_rod.json
 84260ced2e95c9577bcaa92b2bf31abac44f7e11 data\varan-armor\advancements\recipes\varan-armor.varan_armor\copper_iron_axe.json
 7a57c051b56f14013dda044744f8cfba3b9f79b3 data\varan-armor\recipes\copper_stone_pickaxe.json
 bcf2f6531b9d96198518de4f64192b0ecc55c114 data\varan-armor\recipes\quartz_golden_axe.json
+e59cf73165480d73eff8134fa6c43250391eedd3 data\varan-armor\advancements\recipes\varan-armor.varan_armor\squid_fishing_rod.json
 a1003e92b128b2caa6db15d0b96138eb66770126 data\varan-armor\recipes\quartz_stone_axe.json
 3a2ecf7234086cfa0c67081cfb37290776f97bf8 data\varan-armor\recipes\flint_diamond_pickaxe.json
 88028f1e13c45f272ca2585e7a789d1a7fa82b8b data\varan-armor\advancements\recipes\varan-armor.varan_armor\flint_golden_shovel.json
@@ -74,6 +76,7 @@ e556841cd3d4ab97e8c9d7a87c89233d0339c3ac data\varan-armor\recipes\quartz_wooden_
 0141fc8ab11eb575458b7daaf604a3c3e7205ac8 data\varan-armor\advancements\recipes\varan-armor.varan_armor\copper_golden_hoe.json
 a285c4647b39b9eb83a4c7d5f7d94c05f68b8796 data\varan-armor\advancements\recipes\varan-armor.varan_armor\flint_iron_sword.json
 9e6ef8c8532cff38a7e04724f1012e047c51bc5a data\varan-armor\advancements\recipes\varan-armor.varan_armor\quartz_iron_shovel.json
+ab2b746a0b6f80c3db6a421656c8361acb083b53 data\varan-armor\recipes\squid_fishing_rod.json
 42e1191cfd7e7bcf6cd55f2aea78944d23a21f22 data\varan-armor\advancements\recipes\varan-armor.varan_armor\copper_golden_shovel.json
 6631a3102687bc3c5ccf72b2a7bce6aaf91ef620 data\varan-armor\advancements\recipes\varan-armor.varan_armor\copper_diamond_pickaxe.json
 a41ee8a085b74dbcc04396199f91e8ac5d56b1e7 data\varan-armor\recipes\copper_golden_axe.json
@@ -153,6 +156,7 @@ e2319e61d80f00092c8d546707ae7dcadba583af data\varan-armor\recipes\quartz_wooden_
 2afb03bcf355e2ff328fc008b50a1db6b5c2e478 data\varan-armor\advancements\recipes\varan-armor.varan_armor\copper_golden_sword.json
 73c02f81806f0e55aedaa33dd01bfd20a3005e4a data\varan-armor\recipes\quartz_golden_sword.json
 757276caccda205a796c144e83d0fc7a2b223b0a data\varan-armor\advancements\recipes\varan-armor.varan_armor\quartz_iron_sword.json
+978303d2dcddc0f78d56ecdd5519e2c482f334ae data\varan-armor\advancements\recipes\varan-armor.varan_armor\nautilus_fishing_rod.json
 9b8d20369ded7f9f16bd392add3083acb332d679 data\varan-armor\recipes\golden_feather.json
 882815a088b8844fa5c31560e4229c8f8607956e data\varan-armor\advancements\recipes\varan-armor.varan_armor\copper_stone_pickaxe.json
 5ec32b07742b6ed08bc8fcfb45ad28229b0ee9b0 data\varan-armor\recipes\copper_iron_shovel.json

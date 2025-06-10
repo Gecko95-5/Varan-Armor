@@ -7,7 +7,8 @@ import net.gecko.varanarmor.item.arrow.NetherArrowItem;
 import net.gecko.varanarmor.item.arrow.QuartzArrowItem;
 import net.gecko.varanarmor.item.components.DecoFoodComponents;
 import net.gecko.varanarmor.item.components.DecoToolMaterials;
-import net.gecko.varanarmor.item.fishing_rods.SuperFishingRodItem;
+import net.gecko.varanarmor.item.fishing_rods.NautilusFishingRodItem;
+import net.gecko.varanarmor.item.fishing_rods.SquidFishingRodItem;
 import net.gecko.varanarmor.item.fixes.FixedHoeItem;
 import net.gecko.varanarmor.item.weapons.*;
 import net.minecraft.item.*;
@@ -245,7 +246,9 @@ public class DecoItems {
             new NetheriteBowItem(new Item.Settings().maxDamage(2218).group(DecoItemGroup.VARAN_ARMOR)));
 
     public static final Item SQUID_FISHING_ROD = registerItem("squid_fishing_rod",
-            new SuperFishingRodItem(new Item.Settings().maxDamage(270).group(DecoItemGroup.VARAN_ARMOR)));
+            new SquidFishingRodItem(new Item.Settings().maxDamage(270).group(DecoItemGroup.VARAN_ARMOR)));
+    public static final Item NAUTILUS_FISHING_ROD = registerItem("nautilus_fishing_rod",
+            new NautilusFishingRodItem(new Item.Settings().maxDamage(1686).group(DecoItemGroup.VARAN_ARMOR)));
 
     public static final Item IRON_ARROW = registerItem("iron_arrow",
             new IronArrowItem(new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));

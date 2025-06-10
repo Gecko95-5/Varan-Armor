@@ -56,6 +56,26 @@
           "type": "minecraft:item",
           "functions": [
             {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.1,
+                "min": 0.0
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 15.0,
+              "treasure": false
+            }
+          ],
+          "name": "varan-armor:squid_fishing_rod"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
               "function": "minecraft:enchant_with_levels",
               "levels": 30.0,
               "treasure": true
@@ -66,6 +86,14 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:nautilus_shell"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:prismarine_shard"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:prismarine_crystals"
         }
       ],
       "rolls": 1.0

@@ -7,6 +7,7 @@ import net.minecraft.data.server.RecipeProvider;
 import net.minecraft.data.server.recipe.CookingRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.tag.ItemTags;
@@ -969,9 +970,58 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 0.35f, 200).criterion(hasItem(DecoItems.SQUID_TENTACLES),conditionsFromItem(DecoItems.SQUID_TENTACLES))
                 .offerTo(exporter,new Identifier("cooked_squid_tentacles_form_squid_tentacles"));
 
+        ShapelessRecipeJsonBuilder.create(Items.INK_SAC,2)
+                        .input(DecoItems.SQUID_TENTACLES)
+                                .criterion(hasItem(DecoItems.SQUID_TENTACLES),conditionsFromItem(DecoItems.SQUID_TENTACLES))
+                                        .offerTo(exporter, new Identifier("ink_sacs_from_tentacles"));
+
         CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(DecoItems.GLOW_SQUID_TENTACLES), DecoItems.COOKED_SQUID_TENTACLES,
                 0.35f, 200).criterion(hasItem(DecoItems.GLOW_SQUID_TENTACLES),conditionsFromItem(DecoItems.GLOW_SQUID_TENTACLES))
                 .offerTo(exporter,new Identifier("cooked_squid_tentacles_form_glow_squid_tentacles"));
+
+        ShapelessRecipeJsonBuilder.create(Items.GLOW_INK_SAC,2)
+                .input(DecoItems.GLOW_SQUID_TENTACLES)
+                .criterion(hasItem(DecoItems.GLOW_SQUID_TENTACLES),conditionsFromItem(DecoItems.GLOW_SQUID_TENTACLES))
+                .offerTo(exporter, new Identifier("glow_ink_sacs_from_tentacles"));
+
+        ShapedRecipeJsonBuilder.create(DecoItems.SQUID_FISHING_ROD)
+                .pattern("  #")
+                .pattern(" /X")
+                .pattern("# -")
+                .input('X', Items.STRING)
+                .input('/', Items.STICK)
+                .input('#', DecoItems.SQUID_TENTACLES)
+                .input('-',Items.GLOW_INK_SAC)
+                .criterion(RecipeProvider.hasItem(Items.STRING),
+                        RecipeProvider.conditionsFromItem(Items.STRING))
+                .criterion(RecipeProvider.hasItem(Items.STICK),
+                        RecipeProvider.conditionsFromItem(Items.STICK))
+                .criterion(RecipeProvider.hasItem(DecoItems.SQUID_TENTACLES),
+                        RecipeProvider.conditionsFromItem(DecoItems.SQUID_TENTACLES))
+                .criterion(RecipeProvider.hasItem(Items.GLOW_INK_SAC),
+                        RecipeProvider.conditionsFromItem(Items.GLOW_INK_SAC))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.SQUID_FISHING_ROD)));
+
+        ShapedRecipeJsonBuilder.create(DecoItems.NAUTILUS_FISHING_ROD)
+                .pattern("  #")
+                .pattern(" /G")
+                .pattern("#-X")
+                .input('X', Items.STRING)
+                .input('/', DecoItems.QUARTZ_ROD)
+                .input('#', Items.NAUTILUS_SHELL)
+                .input('G', Items.GLOWSTONE_DUST)
+                .input('-',Items.HEART_OF_THE_SEA)
+                .criterion(RecipeProvider.hasItem(Items.STRING),
+                        RecipeProvider.conditionsFromItem(Items.STRING))
+                .criterion(RecipeProvider.hasItem(DecoItems.QUARTZ_ROD),
+                        RecipeProvider.conditionsFromItem(DecoItems.QUARTZ_ROD))
+                .criterion(RecipeProvider.hasItem(Items.NAUTILUS_SHELL),
+                        RecipeProvider.conditionsFromItem(Items.NAUTILUS_SHELL))
+                .criterion(RecipeProvider.hasItem(Items.GLOWSTONE_DUST),
+                        RecipeProvider.conditionsFromItem(Items.GLOWSTONE_DUST))
+                .criterion(RecipeProvider.hasItem(Items.HEART_OF_THE_SEA),
+                        RecipeProvider.conditionsFromItem(Items.HEART_OF_THE_SEA))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.NAUTILUS_FISHING_ROD)));
 
     }
 }

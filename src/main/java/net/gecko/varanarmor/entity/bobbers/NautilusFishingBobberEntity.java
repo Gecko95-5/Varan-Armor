@@ -9,17 +9,17 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 //I got this code from Scouter456 Nether Depths Upgrade Mod https://github.com/Scouter456/Nether_Depths_Upgrade/tree/nether_depths_upgrade_1.19.2-fabric
 
-public class SquidFishingBobberEntity extends FishingBobberEntity {
-	public SquidFishingBobberEntity(EntityType<? extends FishingBobberEntity> type, World world, int luckOfTheSeaLevel, int lureLevel) {
+public class NautilusFishingBobberEntity extends FishingBobberEntity {
+	public NautilusFishingBobberEntity(EntityType<? extends FishingBobberEntity> type, World world, int luckOfTheSeaLevel, int lureLevel) {
 		super(type, world, luckOfTheSeaLevel, lureLevel);
 	}
 
-	public SquidFishingBobberEntity(EntityType<? extends FishingBobberEntity> entityType, World world) {
+	public NautilusFishingBobberEntity(EntityType<? extends FishingBobberEntity> entityType, World world) {
 		super(entityType, world);
 	}
 
-	public SquidFishingBobberEntity(PlayerEntity thrower, World world, int luckOfTheSeaLevel, int lureLevel) {
-		this(DecoEntities.SQUID_BOBBER, world, luckOfTheSeaLevel, lureLevel);
+	public NautilusFishingBobberEntity(PlayerEntity thrower, World world, int luckOfTheSeaLevel, int lureLevel) {
+		this(DecoEntities.NAUTILUS_BOBBER, world, luckOfTheSeaLevel, lureLevel);
 		this.setOwner(thrower);
 		float f = thrower.getPitch();
 		float g = thrower.getYaw();

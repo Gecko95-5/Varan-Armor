@@ -15,6 +15,7 @@ public class DecoModelPredicateProvider {
         registerBow(DecoItems.NETHERITE_BOW);
         registerBow(DecoItems.BLAZING_BOW);
         registerFishingRod(DecoItems.SQUID_FISHING_ROD);
+        registerFishingRod(DecoItems.NAUTILUS_FISHING_ROD);
     }
     private static void registerBow(Item bow) {
         ModelPredicateProviderRegistry.register(bow, new Identifier("pull"),

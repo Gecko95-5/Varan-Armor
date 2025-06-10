@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "varan-armor:squid_tentacles"
+    },
+    "-": {
+      "item": "minecraft:glow_ink_sac"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "  #",
+    " /X",
+    "# -"
+  ],
+  "result": {
+    "item": "varan-armor:squid_fishing_rod"
+  }
+}

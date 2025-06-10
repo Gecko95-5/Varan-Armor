@@ -1,7 +1,7 @@
 package net.gecko.varanarmor.entity.renderer;
 
 import net.gecko.varanarmor.VaranArmor;
-import net.gecko.varanarmor.entity.bobbers.SquidFishingBobberEntity;
+import net.gecko.varanarmor.entity.bobbers.NautilusFishingBobberEntity;
 import net.gecko.varanarmor.item.DecoItems;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.OverlayTexture;
@@ -18,15 +18,15 @@ import net.minecraft.util.Arm;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.*;
 
-public class SquidBobberRenderer extends EntityRenderer<SquidFishingBobberEntity> {
-    private static final Identifier TEXTURE = new Identifier(VaranArmor.MOD_ID, "textures/entity/bobber/squid_fishing_hook.png");
+public class NautilusBobberRenderer extends EntityRenderer<NautilusFishingBobberEntity> {
+    private static final Identifier TEXTURE = new Identifier(VaranArmor.MOD_ID, "textures/entity/bobber/fishing_hook_of_the_sea.png");
     private static final RenderLayer LAYER = RenderLayer.getEntityCutout(TEXTURE);
 
-    public SquidBobberRenderer(EntityRendererFactory.Context context) {
+    public NautilusBobberRenderer(EntityRendererFactory.Context context) {
         super(context);
     }
 
-    public void render(SquidFishingBobberEntity fishingBobberEntity, float f, float g, MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i) {
+    public void render(NautilusFishingBobberEntity fishingBobberEntity, float f, float g, MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i) {
         PlayerEntity playerEntity = fishingBobberEntity.getPlayerOwner();
         if (playerEntity != null) {
             matrixStack.push();
@@ -125,7 +125,7 @@ public class SquidBobberRenderer extends EntityRenderer<SquidFishingBobberEntity
         buffer.vertex(matrices.getPositionMatrix(), f, g, h).color(0, 0, 0, 255).normal(matrices.getNormalMatrix(), i, j, k).next();
     }
 
-    public Identifier getTexture(SquidFishingBobberEntity fishingBobberEntity) {
+    public Identifier getTexture(NautilusFishingBobberEntity fishingBobberEntity) {
         return TEXTURE;
     }
 }

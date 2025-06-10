@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:nautilus_shell"
+    },
+    "-": {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    "/": {
+      "item": "varan-armor:quartz_rod"
+    },
+    "G": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "X": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "  #",
+    " /G",
+    "#-X"
+  ],
+  "result": {
+    "item": "varan-armor:nautilus_fishing_rod"
+  }
+}
