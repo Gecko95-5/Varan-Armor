@@ -1,4 +1,4 @@
-package net.gecko.varanarmor.item.weapons;
+package net.gecko.varanarmor.item.tools.bow;
 
 import net.gecko.varanarmor.item.DecoItems;
 import net.minecraft.enchantment.EnchantmentHelper;
@@ -16,9 +16,9 @@ import net.minecraft.stat.Stats;
 import net.minecraft.world.World;
 
 
-public class BlazingBowItem extends BowItem {
+public class CopperBowItem extends BowItem {
 
-    public BlazingBowItem(Settings settings) {
+    public CopperBowItem(Settings settings) {
         super(settings);
     }
 
@@ -39,7 +39,7 @@ public class BlazingBowItem extends BowItem {
                     if (!world.isClient) {
                         ArrowItem arrowItem = (ArrowItem)(itemStack.getItem() instanceof ArrowItem ? itemStack.getItem() : Items.ARROW);
                         PersistentProjectileEntity persistentProjectileEntity = arrowItem.createArrow(world, itemStack, playerEntity);
-                        persistentProjectileEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0F, f * 3.0f, 0.0f);
+                        persistentProjectileEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0F, f * 2.0f, 2.0f);
                         if (f == 1.0F) {
                             persistentProjectileEntity.setCritical(true);
                         }
@@ -55,9 +55,7 @@ public class BlazingBowItem extends BowItem {
                         }
 
                         if (EnchantmentHelper.getLevel(Enchantments.FLAME, stack) > 0) {
-                            persistentProjectileEntity.setOnFireFor(500);
-                        } else {
-                            persistentProjectileEntity.setOnFireFor(250);
+                            persistentProjectileEntity.setOnFireFor(100);
                         }
 
                         stack.damage(1, playerEntity, p -> p.sendToolBreakStatus(playerEntity.getActiveHand()));
@@ -66,6 +64,7 @@ public class BlazingBowItem extends BowItem {
                                 || itemStack.isOf(DecoItems.NETHER_ARROW))) {
                             persistentProjectileEntity.pickupType = PersistentProjectileEntity.PickupPermission.CREATIVE_ONLY;
                         }
+
                         world.spawnEntity(persistentProjectileEntity);
                     }
 

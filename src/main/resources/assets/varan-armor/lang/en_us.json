@@ -138,5 +138,7 @@
   "item.varan-armor.squid_fishing_rod": "Squid Fishing Rod",
   "item.varan-armor.nautilus_fishing_rod": "Fishing Rod of the Sea",
 
-  "itemGroup.varan-armor.varan_armor": "Varan Armor"
+  "item.varan-armor.wooden_sickle": "Wooden Sickle",
+
+  "itemGroup.varan-armor.varan_armor": "Variant Armoury"
 }

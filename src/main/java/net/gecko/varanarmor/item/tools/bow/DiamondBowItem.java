@@ -1,4 +1,4 @@
-package net.gecko.varanarmor.item.weapons;
+package net.gecko.varanarmor.item.tools.bow;
 
 import net.gecko.varanarmor.item.DecoItems;
 import net.minecraft.enchantment.EnchantmentHelper;
@@ -6,16 +6,19 @@ import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
-import net.minecraft.item.*;
+import net.minecraft.item.ArrowItem;
+import net.minecraft.item.BowItem;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
 import net.minecraft.world.World;
 
 
-public class WoodenBowItem extends BowItem {
+public class DiamondBowItem extends BowItem {
 
-    public WoodenBowItem(Settings settings) {
+    public DiamondBowItem(Settings settings) {
         super(settings);
     }
 
@@ -36,7 +39,7 @@ public class WoodenBowItem extends BowItem {
                     if (!world.isClient) {
                         ArrowItem arrowItem = (ArrowItem)(itemStack.getItem() instanceof ArrowItem ? itemStack.getItem() : Items.ARROW);
                         PersistentProjectileEntity persistentProjectileEntity = arrowItem.createArrow(world, itemStack, playerEntity);
-                        persistentProjectileEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0F, f, 3.0f);
+                        persistentProjectileEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0F, f * 4.0f, 0.0f);
                         if (f == 1.0F) {
                             persistentProjectileEntity.setCritical(true);
                         }

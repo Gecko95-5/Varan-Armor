@@ -7,10 +7,11 @@ import net.gecko.varanarmor.item.arrow.NetherArrowItem;
 import net.gecko.varanarmor.item.arrow.QuartzArrowItem;
 import net.gecko.varanarmor.item.components.DecoFoodComponents;
 import net.gecko.varanarmor.item.components.DecoToolMaterials;
-import net.gecko.varanarmor.item.fishing_rods.NautilusFishingRodItem;
-import net.gecko.varanarmor.item.fishing_rods.SquidFishingRodItem;
+import net.gecko.varanarmor.item.tools.SickleItem;
+import net.gecko.varanarmor.item.tools.fishing_rods.NautilusFishingRodItem;
+import net.gecko.varanarmor.item.tools.fishing_rods.SquidFishingRodItem;
 import net.gecko.varanarmor.item.fixes.FixedHoeItem;
-import net.gecko.varanarmor.item.weapons.*;
+import net.gecko.varanarmor.item.tools.bow.*;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -235,6 +236,9 @@ public class DecoItems {
             new AxeItem(DecoToolMaterials.QUARTZ_NETHERITE, 5.0F, -3.0F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
     public static final Item QUARTZ_NETHERITE_HOE = registerItem("quartz_netherite_hoe",
             new FixedHoeItem(DecoToolMaterials.QUARTZ_NETHERITE, -4, 0.0F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+
+    public static final Item WOODEN_SICKLE = registerItem("wooden_sickle",
+            new SickleItem(ToolMaterials.WOOD, 1.75F, -2.1F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
 
     public static final Item WOODEN_BOW = registerItem("wooden_bow",
             new WoodenBowItem(new Item.Settings().maxDamage(90).group(DecoItemGroup.VARAN_ARMOR)));

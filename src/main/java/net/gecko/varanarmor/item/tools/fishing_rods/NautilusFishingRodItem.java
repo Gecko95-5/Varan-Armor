@@ -1,4 +1,4 @@
-package net.gecko.varanarmor.item.fishing_rods;
+package net.gecko.varanarmor.item.tools.fishing_rods;
 
 import net.gecko.varanarmor.entity.bobbers.NautilusFishingBobberEntity;
 import net.minecraft.enchantment.EnchantmentHelper;

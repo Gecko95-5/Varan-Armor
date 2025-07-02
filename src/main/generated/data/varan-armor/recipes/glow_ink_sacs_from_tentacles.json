@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "varan-armor:glow_squid_tentacles"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:glow_ink_sac"
+  }
+}

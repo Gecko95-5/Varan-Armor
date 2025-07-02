@@ -138,6 +138,8 @@ public class DecoModelProvider extends FabricModelProvider {
         itemModelGenerator.register(DecoItems.SQUID_TENTACLES, Models.HANDHELD);
         itemModelGenerator.register(DecoItems.GLOW_SQUID_TENTACLES, Models.HANDHELD);
         itemModelGenerator.register(DecoItems.COOKED_SQUID_TENTACLES, Models.HANDHELD);
+
+        itemModelGenerator.register(DecoItems.WOODEN_SICKLE, Models.HANDHELD);
     }
 
     @Override

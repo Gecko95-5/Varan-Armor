@@ -1,4 +1,4 @@
-package net.gecko.varanarmor.item.weapons;
+package net.gecko.varanarmor.item.tools.bow;
 
 import net.gecko.varanarmor.item.DecoItems;
 import net.minecraft.enchantment.EnchantmentHelper;
