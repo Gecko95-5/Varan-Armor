@@ -39,7 +39,8 @@ public class DiamondBowItem extends BowItem {
                     if (!world.isClient) {
                         ArrowItem arrowItem = (ArrowItem)(itemStack.getItem() instanceof ArrowItem ? itemStack.getItem() : Items.ARROW);
                         PersistentProjectileEntity persistentProjectileEntity = arrowItem.createArrow(world, itemStack, playerEntity);
-                        persistentProjectileEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0F, f * 4.0f, 0.0f);
+                        persistentProjectileEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0F, f * 2.5f, 0.0f);
+                        persistentProjectileEntity.setPierceLevel((byte)1);
                         if (f == 1.0F) {
                             persistentProjectileEntity.setCritical(true);
                         }

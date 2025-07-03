@@ -140,6 +140,33 @@ public class DecoModelProvider extends FabricModelProvider {
         itemModelGenerator.register(DecoItems.COOKED_SQUID_TENTACLES, Models.HANDHELD);
 
         itemModelGenerator.register(DecoItems.WOODEN_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.STONE_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.GOLDEN_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.IRON_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.DIAMOND_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.NETHERITE_SICKLE, Models.HANDHELD);
+
+        itemModelGenerator.register(DecoItems.FLINT_WOODEN_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.FLINT_STONE_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.FLINT_GOLDEN_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.FLINT_IRON_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.FLINT_DIAMOND_SICKLE, Models.HANDHELD);
+
+        itemModelGenerator.register(DecoItems.COPPER_WOODEN_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.COPPER_STONE_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.COPPER_GOLDEN_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.COPPER_IRON_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.COPPER_DIAMOND_SICKLE, Models.HANDHELD);
+
+        itemModelGenerator.register(DecoItems.QUARTZ_WOODEN_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.QUARTZ_STONE_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.QUARTZ_GOLDEN_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.QUARTZ_IRON_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.QUARTZ_DIAMOND_SICKLE, Models.HANDHELD);
+
+        itemModelGenerator.register(DecoItems.FLINT_NETHERITE_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.COPPER_NETHERITE_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.QUARTZ_NETHERITE_SICKLE, Models.HANDHELD);
     }
 
     @Override

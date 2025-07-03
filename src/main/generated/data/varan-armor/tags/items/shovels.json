@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:wooden_shovel",
+    "minecraft:stone_shovel",
+    "minecraft:iron_shovel",
+    "minecraft:golden_shovel",
+    "minecraft:diamond_shovel",
+    "minecraft:netherite_shovel",
+    "varan-armor:flint_wooden_shovel",
+    "varan-armor:flint_stone_shovel",
+    "varan-armor:flint_iron_shovel",
+    "varan-armor:flint_golden_shovel",
+    "varan-armor:flint_diamond_shovel",
+    "varan-armor:flint_netherite_shovel",
+    "varan-armor:copper_wooden_shovel",
+    "varan-armor:copper_stone_shovel",
+    "varan-armor:copper_iron_shovel",
+    "varan-armor:copper_golden_shovel",
+    "varan-armor:copper_diamond_shovel",
+    "varan-armor:copper_netherite_shovel",
+    "varan-armor:quartz_wooden_shovel",
+    "varan-armor:quartz_stone_shovel",
+    "varan-armor:quartz_iron_shovel",
+    "varan-armor:quartz_golden_shovel",
+    "varan-armor:quartz_diamond_shovel",
+    "varan-armor:quartz_netherite_shovel"
+  ]
+}

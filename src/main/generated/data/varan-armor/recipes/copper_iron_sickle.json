@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "varan-armor:copper_rod"
+    },
+    "X": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    " XX",
+    "X X",
+    " # "
+  ],
+  "result": {
+    "item": "varan-armor:copper_iron_sickle"
+  }
+}

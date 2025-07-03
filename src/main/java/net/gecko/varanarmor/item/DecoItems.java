@@ -239,6 +239,57 @@ public class DecoItems {
 
     public static final Item WOODEN_SICKLE = registerItem("wooden_sickle",
             new SickleItem(ToolMaterials.WOOD, 1.75F, -2.1F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+    public static final Item FLINT_WOODEN_SICKLE = registerItem("flint_wooden_sickle",
+            new SickleItem(DecoToolMaterials.FLINT_WOOD, 1.75F, -2.1F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+    public static final Item COPPER_WOODEN_SICKLE = registerItem("copper_wooden_sickle",
+            new SickleItem(DecoToolMaterials.COPPER_WOOD, 1.75F, -1.9F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+    public static final Item QUARTZ_WOODEN_SICKLE = registerItem("quartz_wooden_sickle",
+            new SickleItem(DecoToolMaterials.QUARTZ_WOOD, 1.75F, -2.1F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+
+    public static final Item STONE_SICKLE = registerItem("stone_sickle",
+            new SickleItem(ToolMaterials.STONE, 1.75F, -2.1F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+    public static final Item FLINT_STONE_SICKLE = registerItem("flint_stone_sickle",
+            new SickleItem(DecoToolMaterials.FLINT_STONE, 1.75F, -2.1F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+    public static final Item COPPER_STONE_SICKLE = registerItem("copper_stone_sickle",
+            new SickleItem(DecoToolMaterials.COPPER_STONE, 1.75F, -1.9F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+    public static final Item QUARTZ_STONE_SICKLE = registerItem("quartz_stone_sickle",
+            new SickleItem(DecoToolMaterials.QUARTZ_STONE, 1.75F, -2.1F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+
+    public static final Item GOLDEN_SICKLE = registerItem("golden_sickle",
+            new SickleItem(ToolMaterials.GOLD, 1.75F, -2.1F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+    public static final Item FLINT_GOLDEN_SICKLE = registerItem("flint_golden_sickle",
+            new SickleItem(DecoToolMaterials.FLINT_GOLD, 1.75F, -2.1F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+    public static final Item COPPER_GOLDEN_SICKLE = registerItem("copper_golden_sickle",
+            new SickleItem(DecoToolMaterials.COPPER_GOLD, 1.75F, -1.9F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+    public static final Item QUARTZ_GOLDEN_SICKLE = registerItem("quartz_golden_sickle",
+            new SickleItem(DecoToolMaterials.QUARTZ_GOLD, 1.75F, -2.1F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+
+    public static final Item IRON_SICKLE = registerItem("iron_sickle",
+            new SickleItem(ToolMaterials.IRON, 1.75F, -2.1F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+    public static final Item FLINT_IRON_SICKLE = registerItem("flint_iron_sickle",
+            new SickleItem(DecoToolMaterials.FLINT_IRON, 1.75F, -2.1F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+    public static final Item COPPER_IRON_SICKLE = registerItem("copper_iron_sickle",
+            new SickleItem(DecoToolMaterials.COPPER_IRON, 1.75F, -1.9F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+    public static final Item QUARTZ_IRON_SICKLE = registerItem("quartz_iron_sickle",
+            new SickleItem(DecoToolMaterials.QUARTZ_IRON, 1.75F, -2.1F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+
+    public static final Item DIAMOND_SICKLE = registerItem("diamond_sickle",
+            new SickleItem(ToolMaterials.DIAMOND, 1.75F, -2.1F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+    public static final Item FLINT_DIAMOND_SICKLE = registerItem("flint_diamond_sickle",
+            new SickleItem(DecoToolMaterials.FLINT_DIAMOND, 1.75F, -2.1F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+    public static final Item COPPER_DIAMOND_SICKLE = registerItem("copper_diamond_sickle",
+            new SickleItem(DecoToolMaterials.COPPER_DIAMOND, 1.75F, -1.9F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+    public static final Item QUARTZ_DIAMOND_SICKLE = registerItem("quartz_diamond_sickle",
+            new SickleItem(DecoToolMaterials.QUARTZ_DIAMOND, 1.75F, -2.1F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+
+    public static final Item NETHERITE_SICKLE = registerItem("netherite_sickle",
+            new SickleItem(ToolMaterials.NETHERITE, 1.75F, -2.1F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+    public static final Item FLINT_NETHERITE_SICKLE = registerItem("flint_netherite_sickle",
+            new SickleItem(DecoToolMaterials.FLINT_NETHERITE, 1.75F, -2.1F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+    public static final Item COPPER_NETHERITE_SICKLE = registerItem("copper_netherite_sickle",
+            new SickleItem(DecoToolMaterials.COPPER_NETHERITE, 1.75F, -1.9F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+    public static final Item QUARTZ_NETHERITE_SICKLE = registerItem("quartz_netherite_sickle",
+            new SickleItem(DecoToolMaterials.QUARTZ_NETHERITE, 1.75F, -2.1F, new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
 
     public static final Item WOODEN_BOW = registerItem("wooden_bow",
             new WoodenBowItem(new Item.Settings().maxDamage(90).group(DecoItemGroup.VARAN_ARMOR)));

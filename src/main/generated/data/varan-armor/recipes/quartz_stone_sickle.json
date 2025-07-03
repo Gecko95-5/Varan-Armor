@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "varan-armor:quartz_rod"
+    },
+    "X": {
+      "tag": "minecraft:stone_tool_materials"
+    }
+  },
+  "pattern": [
+    " XX",
+    "X X",
+    " # "
+  ],
+  "result": {
+    "item": "varan-armor:quartz_stone_sickle"
+  }
+}

@@ -13,7 +13,6 @@ import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.util.Arm;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.*;
@@ -45,7 +44,7 @@ public class SquidBobberRenderer extends EntityRenderer<SquidFishingBobberEntity
             matrixStack.pop();
             int j = playerEntity.getMainArm() == Arm.RIGHT ? 1 : -1;
             ItemStack itemStack = playerEntity.getMainHandStack();
-            if (!itemStack.isOf(Items.FISHING_ROD)|| itemStack.isOf(DecoItems.SQUID_FISHING_ROD) || itemStack.isOf(DecoItems.NAUTILUS_FISHING_ROD)) {
+            if (!itemStack.isOf(DecoItems.SQUID_FISHING_ROD)) {
                 j = -j;
             }
 
@@ -55,7 +54,6 @@ public class SquidBobberRenderer extends EntityRenderer<SquidFishingBobberEntity
             double d = MathHelper.sin(l);
             double e = MathHelper.cos(l);
             double m = j * 0.35;
-            double n = 0.8;
             double o;
             double p;
             double q;
@@ -86,7 +84,6 @@ public class SquidBobberRenderer extends EntityRenderer<SquidFishingBobberEntity
             float x = (float)(q - u);
             VertexConsumer vertexConsumer2 = vertexConsumerProvider.getBuffer(RenderLayer.getLineStrip());
             MatrixStack.Entry entry2 = matrixStack.peek();
-            int y = 16;
 
             for (int z = 0; z <= 16; z++) {
                 renderFishingLine(v, w, x, vertexConsumer2, entry2, percentage(z, 16), percentage(z + 1, 16));

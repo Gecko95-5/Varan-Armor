@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:wooden_pickaxe",
+    "minecraft:stone_pickaxe",
+    "minecraft:iron_pickaxe",
+    "minecraft:golden_pickaxe",
+    "minecraft:diamond_pickaxe",
+    "minecraft:netherite_pickaxe",
+    "varan-armor:flint_wooden_pickaxe",
+    "varan-armor:flint_stone_pickaxe",
+    "varan-armor:flint_iron_pickaxe",
+    "varan-armor:flint_golden_pickaxe",
+    "varan-armor:flint_diamond_pickaxe",
+    "varan-armor:flint_netherite_pickaxe",
+    "varan-armor:copper_wooden_pickaxe",
+    "varan-armor:copper_stone_pickaxe",
+    "varan-armor:copper_iron_pickaxe",
+    "varan-armor:copper_golden_pickaxe",
+    "varan-armor:copper_diamond_pickaxe",
+    "varan-armor:copper_netherite_pickaxe",
+    "varan-armor:quartz_wooden_pickaxe",
+    "varan-armor:quartz_stone_pickaxe",
+    "varan-armor:quartz_iron_pickaxe",
+    "varan-armor:quartz_golden_pickaxe",
+    "varan-armor:quartz_diamond_pickaxe",
+    "varan-armor:quartz_netherite_pickaxe"
+  ]
+}

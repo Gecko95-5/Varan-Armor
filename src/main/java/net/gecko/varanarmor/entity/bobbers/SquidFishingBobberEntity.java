@@ -43,4 +43,3 @@ public class SquidFishingBobberEntity extends FishingBobberEntity {
 		this.prevPitch = this.getPitch();
 	}
 }
-

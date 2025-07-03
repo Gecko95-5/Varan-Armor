@@ -43,4 +43,3 @@ public class NautilusFishingBobberEntity extends FishingBobberEntity {
 		this.prevPitch = this.getPitch();
 	}
 }
-

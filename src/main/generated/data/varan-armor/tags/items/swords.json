@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:wooden_sword",
+    "minecraft:stone_sword",
+    "minecraft:iron_sword",
+    "minecraft:golden_sword",
+    "minecraft:diamond_sword",
+    "minecraft:netherite_sword",
+    "varan-armor:flint_wooden_sword",
+    "varan-armor:flint_stone_sword",
+    "varan-armor:flint_iron_sword",
+    "varan-armor:flint_golden_sword",
+    "varan-armor:flint_diamond_sword",
+    "varan-armor:flint_netherite_sword",
+    "varan-armor:copper_wooden_sword",
+    "varan-armor:copper_stone_sword",
+    "varan-armor:copper_iron_sword",
+    "varan-armor:copper_golden_sword",
+    "varan-armor:copper_diamond_sword",
+    "varan-armor:copper_netherite_sword",
+    "varan-armor:quartz_wooden_sword",
+    "varan-armor:quartz_stone_sword",
+    "varan-armor:quartz_iron_sword",
+    "varan-armor:quartz_golden_sword",
+    "varan-armor:quartz_diamond_sword",
+    "varan-armor:quartz_netherite_sword"
+  ]
+}

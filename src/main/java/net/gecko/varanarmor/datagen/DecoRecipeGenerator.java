@@ -308,6 +308,12 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(DecoItems.FLINT_ROD))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.FLINT_DIAMOND_HOE)));
 
+        offerNetheriteUpgradeRecipe(exporter, DecoItems.FLINT_DIAMOND_SWORD,DecoItems.FLINT_NETHERITE_SWORD);
+        offerNetheriteUpgradeRecipe(exporter, DecoItems.FLINT_DIAMOND_PICKAXE,DecoItems.FLINT_NETHERITE_PICKAXE);
+        offerNetheriteUpgradeRecipe(exporter, DecoItems.FLINT_DIAMOND_SHOVEL,DecoItems.FLINT_NETHERITE_SHOVEL);
+        offerNetheriteUpgradeRecipe(exporter, DecoItems.FLINT_DIAMOND_AXE,DecoItems.FLINT_NETHERITE_AXE);
+        offerNetheriteUpgradeRecipe(exporter, DecoItems.FLINT_DIAMOND_HOE,DecoItems.FLINT_NETHERITE_HOE);
+
         ShapedRecipeJsonBuilder.create(DecoItems.COPPER_WOODEN_SWORD)
                 .pattern("X")
                 .pattern("X")
@@ -568,6 +574,12 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(DecoItems.COPPER_ROD),
                         RecipeProvider.conditionsFromItem(DecoItems.COPPER_ROD))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.COPPER_DIAMOND_HOE)));
+
+        offerNetheriteUpgradeRecipe(exporter, DecoItems.COPPER_DIAMOND_SWORD,DecoItems.COPPER_NETHERITE_SWORD);
+        offerNetheriteUpgradeRecipe(exporter, DecoItems.COPPER_DIAMOND_PICKAXE,DecoItems.COPPER_NETHERITE_PICKAXE);
+        offerNetheriteUpgradeRecipe(exporter, DecoItems.COPPER_DIAMOND_SHOVEL,DecoItems.COPPER_NETHERITE_SHOVEL);
+        offerNetheriteUpgradeRecipe(exporter, DecoItems.COPPER_DIAMOND_AXE,DecoItems.COPPER_NETHERITE_AXE);
+        offerNetheriteUpgradeRecipe(exporter, DecoItems.COPPER_DIAMOND_HOE,DecoItems.COPPER_NETHERITE_HOE);
 
         ShapedRecipeJsonBuilder.create(DecoItems.QUARTZ_WOODEN_SWORD)
                 .pattern("X")
@@ -830,6 +842,12 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(DecoItems.QUARTZ_ROD))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.QUARTZ_DIAMOND_HOE)));
 
+        offerNetheriteUpgradeRecipe(exporter, DecoItems.QUARTZ_DIAMOND_SWORD,DecoItems.QUARTZ_NETHERITE_SWORD);
+        offerNetheriteUpgradeRecipe(exporter, DecoItems.QUARTZ_DIAMOND_PICKAXE,DecoItems.QUARTZ_NETHERITE_PICKAXE);
+        offerNetheriteUpgradeRecipe(exporter, DecoItems.QUARTZ_DIAMOND_SHOVEL,DecoItems.QUARTZ_NETHERITE_SHOVEL);
+        offerNetheriteUpgradeRecipe(exporter, DecoItems.QUARTZ_DIAMOND_AXE,DecoItems.QUARTZ_NETHERITE_AXE);
+        offerNetheriteUpgradeRecipe(exporter, DecoItems.QUARTZ_DIAMOND_HOE,DecoItems.QUARTZ_NETHERITE_HOE);
+
         ShapedRecipeJsonBuilder.create(DecoItems.IRON_ARROW,4)
                 .pattern("X")
                 .pattern("#")
@@ -936,6 +954,8 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(Items.DIAMOND))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.DIAMOND_BOW)));
 
+        offerNetheriteUpgradeRecipe(exporter, DecoItems.DIAMOND_BOW,DecoItems.NETHERITE_BOW);
+
         ShapedRecipeJsonBuilder.create(DecoItems.GOLDEN_FEATHER,4)
                 .pattern("###")
                 .pattern("#F#")
@@ -1023,5 +1043,218 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(Items.HEART_OF_THE_SEA))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.NAUTILUS_FISHING_ROD)));
 
+        ShapedRecipeJsonBuilder.create(DecoItems.WOODEN_SICKLE)
+                .pattern(" XX")
+                .pattern("X X")
+                .pattern(" # ")
+                .input('X', ItemTags.PLANKS)
+                .input('#', Items.STICK)
+                .criterion(RecipeProvider.hasItem(Items.STICK),
+                        RecipeProvider.conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.WOODEN_SICKLE)));
+        ShapedRecipeJsonBuilder.create(DecoItems.STONE_SICKLE)
+                .pattern(" XX")
+                .pattern("X X")
+                .pattern(" # ")
+                .input('X', ItemTags.STONE_TOOL_MATERIALS)
+                .input('#', Items.STICK)
+                .criterion(RecipeProvider.hasItem(Items.STICK),
+                        RecipeProvider.conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.STONE_SICKLE)));
+        ShapedRecipeJsonBuilder.create(DecoItems.GOLDEN_SICKLE)
+                .pattern(" XX")
+                .pattern("X X")
+                .pattern(" # ")
+                .input('X', Items.GOLD_INGOT)
+                .input('#', Items.STICK)
+                .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
+                .criterion(RecipeProvider.hasItem(Items.STICK),
+                        RecipeProvider.conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.GOLDEN_SICKLE)));
+        ShapedRecipeJsonBuilder.create(DecoItems.IRON_SICKLE)
+                .pattern(" XX")
+                .pattern("X X")
+                .pattern(" # ")
+                .input('X', Items.IRON_INGOT)
+                .input('#', Items.STICK)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Items.STICK),
+                        RecipeProvider.conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.IRON_SICKLE)));
+        ShapedRecipeJsonBuilder.create(DecoItems.DIAMOND_SICKLE)
+                .pattern(" XX")
+                .pattern("X X")
+                .pattern(" # ")
+                .input('X', Items.DIAMOND)
+                .input('#', Items.STICK)
+                .criterion(RecipeProvider.hasItem(Items.DIAMOND),
+                        RecipeProvider.conditionsFromItem(Items.DIAMOND))
+                .criterion(RecipeProvider.hasItem(Items.STICK),
+                        RecipeProvider.conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.DIAMOND_SICKLE)));
+
+        offerNetheriteUpgradeRecipe(exporter, DecoItems.DIAMOND_SICKLE,DecoItems.NETHERITE_SICKLE);
+
+        ShapedRecipeJsonBuilder.create(DecoItems.FLINT_WOODEN_SICKLE)
+                .pattern(" XX")
+                .pattern("X X")
+                .pattern(" # ")
+                .input('X', ItemTags.PLANKS)
+                .input('#', DecoItems.FLINT_ROD)
+                .criterion(RecipeProvider.hasItem(DecoItems.FLINT_ROD),
+                        RecipeProvider.conditionsFromItem(DecoItems.FLINT_ROD))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.FLINT_WOODEN_SICKLE)));
+        ShapedRecipeJsonBuilder.create(DecoItems.FLINT_STONE_SICKLE)
+                .pattern(" XX")
+                .pattern("X X")
+                .pattern(" # ")
+                .input('X', ItemTags.STONE_TOOL_MATERIALS)
+                .input('#', DecoItems.FLINT_ROD)
+                .criterion(RecipeProvider.hasItem(DecoItems.FLINT_ROD),
+                        RecipeProvider.conditionsFromItem(DecoItems.FLINT_ROD))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.FLINT_STONE_SICKLE)));
+        ShapedRecipeJsonBuilder.create(DecoItems.FLINT_GOLDEN_SICKLE)
+                .pattern(" XX")
+                .pattern("X X")
+                .pattern(" # ")
+                .input('X', Items.GOLD_INGOT)
+                .input('#', DecoItems.FLINT_ROD)
+                .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
+                .criterion(RecipeProvider.hasItem(DecoItems.FLINT_ROD),
+                        RecipeProvider.conditionsFromItem(DecoItems.FLINT_ROD))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.FLINT_GOLDEN_SICKLE)));
+        ShapedRecipeJsonBuilder.create(DecoItems.FLINT_IRON_SICKLE)
+                .pattern(" XX")
+                .pattern("X X")
+                .pattern(" # ")
+                .input('X', Items.IRON_INGOT)
+                .input('#', DecoItems.FLINT_ROD)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(DecoItems.FLINT_ROD),
+                        RecipeProvider.conditionsFromItem(DecoItems.FLINT_ROD))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.FLINT_IRON_SICKLE)));
+        ShapedRecipeJsonBuilder.create(DecoItems.FLINT_DIAMOND_SICKLE)
+                .pattern(" XX")
+                .pattern("X X")
+                .pattern(" # ")
+                .input('X', Items.DIAMOND)
+                .input('#', DecoItems.FLINT_ROD)
+                .criterion(RecipeProvider.hasItem(Items.DIAMOND),
+                        RecipeProvider.conditionsFromItem(Items.DIAMOND))
+                .criterion(RecipeProvider.hasItem(DecoItems.FLINT_ROD),
+                        RecipeProvider.conditionsFromItem(DecoItems.FLINT_ROD))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.FLINT_DIAMOND_SICKLE)));
+
+        ShapedRecipeJsonBuilder.create(DecoItems.COPPER_WOODEN_SICKLE)
+                .pattern(" XX")
+                .pattern("X X")
+                .pattern(" # ")
+                .input('X', ItemTags.PLANKS)
+                .input('#', DecoItems.COPPER_ROD)
+                .criterion(RecipeProvider.hasItem(DecoItems.COPPER_ROD),
+                        RecipeProvider.conditionsFromItem(DecoItems.COPPER_ROD))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.COPPER_WOODEN_SICKLE)));
+        ShapedRecipeJsonBuilder.create(DecoItems.COPPER_STONE_SICKLE)
+                .pattern(" XX")
+                .pattern("X X")
+                .pattern(" # ")
+                .input('X', ItemTags.STONE_TOOL_MATERIALS)
+                .input('#', DecoItems.COPPER_ROD)
+                .criterion(RecipeProvider.hasItem(DecoItems.COPPER_ROD),
+                        RecipeProvider.conditionsFromItem(DecoItems.COPPER_ROD))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.COPPER_STONE_SICKLE)));
+        ShapedRecipeJsonBuilder.create(DecoItems.COPPER_GOLDEN_SICKLE)
+                .pattern(" XX")
+                .pattern("X X")
+                .pattern(" # ")
+                .input('X', Items.GOLD_INGOT)
+                .input('#', DecoItems.COPPER_ROD)
+                .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
+                .criterion(RecipeProvider.hasItem(DecoItems.COPPER_ROD),
+                        RecipeProvider.conditionsFromItem(DecoItems.COPPER_ROD))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.COPPER_GOLDEN_SICKLE)));
+        ShapedRecipeJsonBuilder.create(DecoItems.COPPER_IRON_SICKLE)
+                .pattern(" XX")
+                .pattern("X X")
+                .pattern(" # ")
+                .input('X', Items.IRON_INGOT)
+                .input('#', DecoItems.COPPER_ROD)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(DecoItems.COPPER_ROD),
+                        RecipeProvider.conditionsFromItem(DecoItems.COPPER_ROD))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.COPPER_IRON_SICKLE)));
+        ShapedRecipeJsonBuilder.create(DecoItems.COPPER_DIAMOND_SICKLE)
+                .pattern(" XX")
+                .pattern("X X")
+                .pattern(" # ")
+                .input('X', Items.DIAMOND)
+                .input('#', DecoItems.COPPER_ROD)
+                .criterion(RecipeProvider.hasItem(Items.DIAMOND),
+                        RecipeProvider.conditionsFromItem(Items.DIAMOND))
+                .criterion(RecipeProvider.hasItem(DecoItems.COPPER_ROD),
+                        RecipeProvider.conditionsFromItem(DecoItems.COPPER_ROD))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.COPPER_DIAMOND_SICKLE)));
+
+        ShapedRecipeJsonBuilder.create(DecoItems.QUARTZ_WOODEN_SICKLE)
+                .pattern(" XX")
+                .pattern("X X")
+                .pattern(" # ")
+                .input('X', ItemTags.PLANKS)
+                .input('#', DecoItems.QUARTZ_ROD)
+                .criterion(RecipeProvider.hasItem(DecoItems.QUARTZ_ROD),
+                        RecipeProvider.conditionsFromItem(DecoItems.QUARTZ_ROD))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.QUARTZ_WOODEN_SICKLE)));
+        ShapedRecipeJsonBuilder.create(DecoItems.QUARTZ_STONE_SICKLE)
+                .pattern(" XX")
+                .pattern("X X")
+                .pattern(" # ")
+                .input('X', ItemTags.STONE_TOOL_MATERIALS)
+                .input('#', DecoItems.QUARTZ_ROD)
+                .criterion(RecipeProvider.hasItem(DecoItems.QUARTZ_ROD),
+                        RecipeProvider.conditionsFromItem(DecoItems.QUARTZ_ROD))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.QUARTZ_STONE_SICKLE)));
+        ShapedRecipeJsonBuilder.create(DecoItems.QUARTZ_GOLDEN_SICKLE)
+                .pattern(" XX")
+                .pattern("X X")
+                .pattern(" # ")
+                .input('X', Items.GOLD_INGOT)
+                .input('#', DecoItems.QUARTZ_ROD)
+                .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
+                .criterion(RecipeProvider.hasItem(DecoItems.QUARTZ_ROD),
+                        RecipeProvider.conditionsFromItem(DecoItems.QUARTZ_ROD))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.QUARTZ_GOLDEN_SICKLE)));
+        ShapedRecipeJsonBuilder.create(DecoItems.QUARTZ_IRON_SICKLE)
+                .pattern(" XX")
+                .pattern("X X")
+                .pattern(" # ")
+                .input('X', Items.IRON_INGOT)
+                .input('#', DecoItems.QUARTZ_ROD)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(DecoItems.QUARTZ_ROD),
+                        RecipeProvider.conditionsFromItem(DecoItems.QUARTZ_ROD))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.QUARTZ_IRON_SICKLE)));
+        ShapedRecipeJsonBuilder.create(DecoItems.QUARTZ_DIAMOND_SICKLE)
+                .pattern(" XX")
+                .pattern("X X")
+                .pattern(" # ")
+                .input('X', Items.DIAMOND)
+                .input('#', DecoItems.QUARTZ_ROD)
+                .criterion(RecipeProvider.hasItem(Items.DIAMOND),
+                        RecipeProvider.conditionsFromItem(Items.DIAMOND))
+                .criterion(RecipeProvider.hasItem(DecoItems.QUARTZ_ROD),
+                        RecipeProvider.conditionsFromItem(DecoItems.QUARTZ_ROD))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.QUARTZ_DIAMOND_SICKLE)));
+
+        offerNetheriteUpgradeRecipe(exporter, DecoItems.FLINT_DIAMOND_SICKLE,DecoItems.FLINT_NETHERITE_SICKLE);
+        offerNetheriteUpgradeRecipe(exporter, DecoItems.COPPER_DIAMOND_SICKLE,DecoItems.COPPER_NETHERITE_SICKLE);
+        offerNetheriteUpgradeRecipe(exporter, DecoItems.QUARTZ_DIAMOND_SICKLE,DecoItems.QUARTZ_NETHERITE_SICKLE);
     }
 }

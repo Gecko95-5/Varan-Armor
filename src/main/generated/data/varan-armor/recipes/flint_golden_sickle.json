@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "varan-armor:flint_rod"
+    },
+    "X": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    " XX",
+    "X X",
+    " # "
+  ],
+  "result": {
+    "item": "varan-armor:flint_golden_sickle"
+  }
+}

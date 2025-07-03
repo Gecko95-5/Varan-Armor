@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:wooden_hoe",
+    "minecraft:stone_hoe",
+    "minecraft:iron_hoe",
+    "minecraft:golden_hoe",
+    "minecraft:diamond_hoe",
+    "minecraft:netherite_hoe",
+    "varan-armor:flint_wooden_hoe",
+    "varan-armor:flint_stone_hoe",
+    "varan-armor:flint_iron_hoe",
+    "varan-armor:flint_golden_hoe",
+    "varan-armor:flint_diamond_hoe",
+    "varan-armor:flint_netherite_hoe",
+    "varan-armor:copper_wooden_hoe",
+    "varan-armor:copper_stone_hoe",
+    "varan-armor:copper_iron_hoe",
+    "varan-armor:copper_golden_hoe",
+    "varan-armor:copper_diamond_hoe",
+    "varan-armor:copper_netherite_hoe",
+    "varan-armor:quartz_wooden_hoe",
+    "varan-armor:quartz_stone_hoe",
+    "varan-armor:quartz_iron_hoe",
+    "varan-armor:quartz_golden_hoe",
+    "varan-armor:quartz_diamond_hoe",
+    "varan-armor:quartz_netherite_hoe"
+  ]
+}

@@ -13,7 +13,6 @@ import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.util.Arm;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.*;
@@ -45,7 +44,7 @@ public class NautilusBobberRenderer extends EntityRenderer<NautilusFishingBobber
             matrixStack.pop();
             int j = playerEntity.getMainArm() == Arm.RIGHT ? 1 : -1;
             ItemStack itemStack = playerEntity.getMainHandStack();
-            if (!itemStack.isOf(Items.FISHING_ROD)|| itemStack.isOf(DecoItems.SQUID_FISHING_ROD) || itemStack.isOf(DecoItems.NAUTILUS_FISHING_ROD)) {
+            if (!itemStack.isOf(DecoItems.NAUTILUS_FISHING_ROD)){
                 j = -j;
             }
 

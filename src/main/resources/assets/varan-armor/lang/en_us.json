@@ -139,6 +139,33 @@
   "item.varan-armor.nautilus_fishing_rod": "Fishing Rod of the Sea",
 
   "item.varan-armor.wooden_sickle": "Wooden Sickle",
+  "item.varan-armor.stone_sickle": "Stone Sickle",
+  "item.varan-armor.iron_sickle": "Iron Sickle",
+  "item.varan-armor.golden_sickle": "Golden Sickle",
+  "item.varan-armor.diamond_sickle": "Diamond Sickle",
+  "item.varan-armor.netherite_sickle": "Netherite Sickle",
+
+  "item.varan-armor.flint_wooden_sickle": "Wooden Sickle",
+  "item.varan-armor.flint_stone_sickle": "Stone Sickle",
+  "item.varan-armor.flint_iron_sickle": "Iron Sickle",
+  "item.varan-armor.flint_golden_sickle": "Golden Sickle",
+  "item.varan-armor.flint_diamond_sickle": "Diamond Sickle",
+
+  "item.varan-armor.copper_wooden_sickle": "Wooden Sickle",
+  "item.varan-armor.copper_stone_sickle": "Stone Sickle",
+  "item.varan-armor.copper_iron_sickle": "Iron Sickle",
+  "item.varan-armor.copper_golden_sickle": "Golden Sickle",
+  "item.varan-armor.copper_diamond_sickle": "Diamond Sickle",
+
+  "item.varan-armor.quartz_wooden_sickle": "Wooden Sickle",
+  "item.varan-armor.quartz_stone_sickle": "Stone Sickle",
+  "item.varan-armor.quartz_iron_sickle": "Iron Sickle",
+  "item.varan-armor.quartz_golden_sickle": "Golden Sickle",
+  "item.varan-armor.quartz_diamond_sickle": "Diamond Sickle",
+
+  "item.varan-armor.flint_netherite_sickle": "Netherite Sickle",
+  "item.varan-armor.copper_netherite_sickle": "Netherite Sickle",
+  "item.varan-armor.quartz_netherite_sickle": "Netherite Sickle",
 
   "itemGroup.varan-armor.varan_armor": "Variant Armoury"
 }
