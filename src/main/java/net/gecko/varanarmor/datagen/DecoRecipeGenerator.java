@@ -1513,5 +1513,19 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
         offerNetheriteUpgradeRecipe(exporter, DecoItems.FLINT_DIAMOND_CLAYMORE,DecoItems.FLINT_NETHERITE_CLAYMORE);
         offerNetheriteUpgradeRecipe(exporter, DecoItems.COPPER_DIAMOND_CLAYMORE,DecoItems.COPPER_NETHERITE_CLAYMORE);
         offerNetheriteUpgradeRecipe(exporter, DecoItems.QUARTZ_DIAMOND_CLAYMORE,DecoItems.QUARTZ_NETHERITE_CLAYMORE);
+
+        ShapedRecipeJsonBuilder.create(DecoItems.SWIFT_BOOTS)
+                .pattern("#Y#")
+                .pattern("XYX")
+                .input('X', Items.RABBIT_FOOT)
+                .input('#', Items.LAPIS_LAZULI)
+                .input('Y', DecoItems.GOLDEN_FEATHER)
+                .criterion(RecipeProvider.hasItem(Items.RABBIT_FOOT),
+                        RecipeProvider.conditionsFromItem(Items.RABBIT_FOOT))
+                .criterion(RecipeProvider.hasItem(Items.LAPIS_LAZULI),
+                        RecipeProvider.conditionsFromItem(Items.LAPIS_LAZULI))
+                .criterion(RecipeProvider.hasItem(DecoItems.GOLDEN_FEATHER),
+                        RecipeProvider.conditionsFromItem(DecoItems.GOLDEN_FEATHER))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.SWIFT_BOOTS)));
     }
 }

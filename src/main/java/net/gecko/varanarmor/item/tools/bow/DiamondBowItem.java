@@ -101,4 +101,8 @@ public class DiamondBowItem extends BowItem {
 
         return f;
     }
+    @Override
+    public int getEnchantability() {
+        return 10;
+    }
 }

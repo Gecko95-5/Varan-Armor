@@ -5,14 +5,16 @@ import net.gecko.varanarmor.item.arrow.AmethystArrowItem;
 import net.gecko.varanarmor.item.arrow.IronArrowItem;
 import net.gecko.varanarmor.item.arrow.NetherArrowItem;
 import net.gecko.varanarmor.item.arrow.QuartzArrowItem;
+import net.gecko.varanarmor.item.components.DecoArmourMaterials;
 import net.gecko.varanarmor.item.components.DecoFoodComponents;
 import net.gecko.varanarmor.item.components.DecoToolMaterials;
+import net.gecko.varanarmor.item.fixes.FixedHoeItem;
 import net.gecko.varanarmor.item.tools.ClaymoreItem;
 import net.gecko.varanarmor.item.tools.SickleItem;
+import net.gecko.varanarmor.item.tools.bow.*;
 import net.gecko.varanarmor.item.tools.fishing_rods.NautilusFishingRodItem;
 import net.gecko.varanarmor.item.tools.fishing_rods.SquidFishingRodItem;
-import net.gecko.varanarmor.item.fixes.FixedHoeItem;
-import net.gecko.varanarmor.item.tools.bow.*;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -426,6 +428,10 @@ public class DecoItems {
             new QuartzArrowItem(new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
     public static final Item NETHER_ARROW = registerItem("nether_arrow",
             new NetherArrowItem(new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+
+    public static final Item SWIFT_BOOTS = registerItem("swift_boots",
+            new ArmorItem(DecoArmourMaterials.SWIFT, EquipmentSlot.FEET,
+                    new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM, new Identifier(VaranArmor.MOD_ID, name),item);

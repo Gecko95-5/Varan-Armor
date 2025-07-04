@@ -101,4 +101,8 @@ public class BlazingBowItem extends BowItem {
 
         return f;
     }
+    @Override
+    public int getEnchantability() {
+        return 4;
+    }
 }

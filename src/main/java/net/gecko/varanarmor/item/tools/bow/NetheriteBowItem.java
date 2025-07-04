@@ -101,4 +101,8 @@ public class NetheriteBowItem extends BowItem {
 
         return f;
     }
+    @Override
+    public int getEnchantability() {
+        return 15;
+    }
 }

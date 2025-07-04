@@ -1,4 +1,4 @@
-// 1.19.2	2025-07-03T22:16:26.6724606	Models
+// 1.19.2	2025-07-04T13:48:33.9294897	Models
 886a21bdf05fc6b6f9ff68bf5d86b37bb32c6333 assets\varan-armor\models\item\copper_wooden_pickaxe.json
 4d75fd6e60c11fef881960bf3d4023863c9e35af assets\varan-armor\models\item\glow_squid_tentacles.json
 5dc93fd3ef0e7271bae7bbaecb876121b7a7d201 assets\varan-armor\models\item\braced_stick.json
@@ -51,6 +51,7 @@ ab02db6b5bf45dfa642bd023c42267bc73580dc2 assets\varan-armor\models\item\cooked_s
 cf099bcd1485219e2a18fa66192bcdf981727ea5 assets\varan-armor\models\item\quartz_golden_axe.json
 4490c5d6c743dfe52e70c56c1f197dae15e3ba8b assets\varan-armor\models\item\copper_netherite_sickle.json
 d9168dbf5c76c69d1669ba0c8daab5e836c1f463 assets\varan-armor\models\item\flint_diamond_pickaxe.json
+0da0c5decb673a262803d760ee3d12228add87d0 assets\varan-armor\models\item\swift_boots.json
 a660106f1da1f10c6e970e3896bf071646d9f88c assets\varan-armor\models\item\quartz_netherite_axe.json
 dda669b6aa46d65a405a514cdfd18af7f61ab296 assets\varan-armor\models\item\quartz_arrow.json
 7813ba4c169fe5ea8c3069a97f556e553ec225ad assets\varan-armor\models\item\quartz_stone_hoe.json

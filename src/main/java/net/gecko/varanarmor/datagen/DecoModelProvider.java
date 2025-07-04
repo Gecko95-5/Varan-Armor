@@ -172,6 +172,8 @@ public class DecoModelProvider extends FabricModelProvider {
         itemModelGenerator.register(DecoItems.HEAVY_FLINT_ROD, Models.HANDHELD);
         itemModelGenerator.register(DecoItems.HEAVY_COPPER_ROD, Models.HANDHELD);
         itemModelGenerator.register(DecoItems.HEAVY_QUARTZ_ROD, Models.HANDHELD);
+
+        itemModelGenerator.register(DecoItems.SWIFT_BOOTS,Models.GENERATED);
     }
 
     @Override
