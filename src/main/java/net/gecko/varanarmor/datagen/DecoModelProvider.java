@@ -167,6 +167,11 @@ public class DecoModelProvider extends FabricModelProvider {
         itemModelGenerator.register(DecoItems.FLINT_NETHERITE_SICKLE, Models.HANDHELD);
         itemModelGenerator.register(DecoItems.COPPER_NETHERITE_SICKLE, Models.HANDHELD);
         itemModelGenerator.register(DecoItems.QUARTZ_NETHERITE_SICKLE, Models.HANDHELD);
+
+        itemModelGenerator.register(DecoItems.BRACED_STICK, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.HEAVY_FLINT_ROD, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.HEAVY_COPPER_ROD, Models.HANDHELD);
+        itemModelGenerator.register(DecoItems.HEAVY_QUARTZ_ROD, Models.HANDHELD);
     }
 
     @Override

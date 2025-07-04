@@ -10,6 +10,11 @@
   "item.varan-armor.copper_rod": "Copper Rod",
   "item.varan-armor.quartz_rod": "Quartz Rod",
 
+  "item.varan-armor.braced_stick": "Braced Stick",
+  "item.varan-armor.heavy_flint_rod": "Heavy Flint Rod",
+  "item.varan-armor.heavy_copper_rod": "Heavy Copper Rod",
+  "item.varan-armor.heavy_quartz_rod": "Heavy Quartz Rod",
+
   "item.varan-armor.flint_wooden_sword": "Wooden Sword",
   "item.varan-armor.flint_wooden_pickaxe": "Wooden Pickaxe",
   "item.varan-armor.flint_wooden_axe": "Wooden Axe",
@@ -166,6 +171,34 @@
   "item.varan-armor.flint_netherite_sickle": "Netherite Sickle",
   "item.varan-armor.copper_netherite_sickle": "Netherite Sickle",
   "item.varan-armor.quartz_netherite_sickle": "Netherite Sickle",
+
+  "item.varan-armor.wooden_claymore": "Wooden Claymore",
+  "item.varan-armor.stone_claymore": "Stone Claymore",
+  "item.varan-armor.golden_claymore": "Golden Claymore",
+  "item.varan-armor.iron_claymore": "Iron Claymore",
+  "item.varan-armor.diamond_claymore": "Diamond Claymore",
+  "item.varan-armor.netherite_claymore": "Netherite Claymore",
+
+  "item.varan-armor.flint_wooden_claymore": "Wooden Claymore",
+  "item.varan-armor.flint_stone_claymore": "Stone Claymore",
+  "item.varan-armor.flint_golden_claymore": "Golden Claymore",
+  "item.varan-armor.flint_iron_claymore": "Iron Claymore",
+  "item.varan-armor.flint_diamond_claymore": "Diamond Claymore",
+  "item.varan-armor.flint_netherite_claymore": "Netherite Claymore",
+
+  "item.varan-armor.copper_wooden_claymore": "Wooden Claymore",
+  "item.varan-armor.copper_stone_claymore": "Stone Claymore",
+  "item.varan-armor.copper_golden_claymore": "Golden Claymore",
+  "item.varan-armor.copper_iron_claymore": "Iron Claymore",
+  "item.varan-armor.copper_diamond_claymore": "Diamond Claymore",
+  "item.varan-armor.copper_netherite_claymore": "Netherite Claymore",
+
+  "item.varan-armor.quartz_wooden_claymore": "Wooden Claymore",
+  "item.varan-armor.quartz_stone_claymore": "Stone Claymore",
+  "item.varan-armor.quartz_golden_claymore": "Golden Claymore",
+  "item.varan-armor.quartz_iron_claymore": "Iron Claymore",
+  "item.varan-armor.quartz_diamond_claymore": "Diamond Claymore",
+  "item.varan-armor.quartz_netherite_claymore": "Netherite Claymore",
 
   "itemGroup.varan-armor.varan_armor": "Variant Armoury"
 }

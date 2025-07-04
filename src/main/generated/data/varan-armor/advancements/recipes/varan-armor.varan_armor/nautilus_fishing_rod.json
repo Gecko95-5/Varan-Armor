@@ -25,24 +25,24 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_nautilus_shell": {
+    "has_heavy_quartz_rod": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:nautilus_shell"
+              "varan-armor:heavy_quartz_rod"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_quartz_rod": {
+    "has_nautilus_shell": {
       "conditions": {
         "items": [
           {
             "items": [
-              "varan-armor:quartz_rod"
+              "minecraft:nautilus_shell"
             ]
           }
         ]
@@ -71,7 +71,7 @@
   "requirements": [
     [
       "has_string",
-      "has_quartz_rod",
+      "has_heavy_quartz_rod",
       "has_nautilus_shell",
       "has_glowstone_dust",
       "has_heart_of_the_sea",

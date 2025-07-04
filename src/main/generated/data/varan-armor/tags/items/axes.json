@@ -1,29 +1,6 @@
 {
   "replace": false,
   "values": [
-    "minecraft:wooden_axe",
-    "minecraft:stone_axe",
-    "minecraft:iron_axe",
-    "minecraft:golden_axe",
-    "minecraft:diamond_axe",
-    "minecraft:netherite_axe",
-    "varan-armor:flint_wooden_axe",
-    "varan-armor:flint_stone_axe",
-    "varan-armor:flint_iron_axe",
-    "varan-armor:flint_golden_axe",
-    "varan-armor:flint_diamond_axe",
-    "varan-armor:flint_netherite_axe",
-    "varan-armor:copper_wooden_axe",
-    "varan-armor:copper_stone_axe",
-    "varan-armor:copper_iron_axe",
-    "varan-armor:copper_golden_axe",
-    "varan-armor:copper_diamond_axe",
-    "varan-armor:copper_netherite_axe",
-    "varan-armor:quartz_wooden_axe",
-    "varan-armor:quartz_stone_axe",
-    "varan-armor:quartz_iron_axe",
-    "varan-armor:quartz_golden_axe",
-    "varan-armor:quartz_diamond_axe",
-    "varan-armor:quartz_netherite_axe"
+    "#varan-armor:single_axes"
   ]
 }

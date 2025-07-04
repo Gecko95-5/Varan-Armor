@@ -24,6 +24,9 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
             .addTag(DecoTags.Items.SICKLES)
             .addTag(DecoTags.Items.HOES);
 
+        getOrCreateTagBuilder(DecoTags.Items.AXES)
+                .addTag(DecoTags.Items.SINGLE_AXES);
+
     getOrCreateTagBuilder(DecoTags.Items.SICKLES)
             .add(DecoItems.WOODEN_SICKLE)
             .add(DecoItems.FLINT_WOODEN_SICKLE)
@@ -50,6 +53,32 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
             .add(DecoItems.COPPER_NETHERITE_SICKLE)
             .add(DecoItems.QUARTZ_NETHERITE_SICKLE);
 
+        getOrCreateTagBuilder(DecoTags.Items.CLAYMORES)
+                .add(DecoItems.WOODEN_CLAYMORE)
+                .add(DecoItems.FLINT_WOODEN_CLAYMORE)
+                .add(DecoItems.COPPER_WOODEN_CLAYMORE)
+                .add(DecoItems.QUARTZ_WOODEN_CLAYMORE)
+                .add(DecoItems.STONE_CLAYMORE)
+                .add(DecoItems.FLINT_STONE_CLAYMORE)
+                .add(DecoItems.COPPER_STONE_CLAYMORE)
+                .add(DecoItems.QUARTZ_STONE_CLAYMORE)
+                .add(DecoItems.IRON_CLAYMORE)
+                .add(DecoItems.FLINT_IRON_CLAYMORE)
+                .add(DecoItems.COPPER_IRON_CLAYMORE)
+                .add(DecoItems.QUARTZ_IRON_CLAYMORE)
+                .add(DecoItems.GOLDEN_CLAYMORE)
+                .add(DecoItems.FLINT_GOLDEN_CLAYMORE)
+                .add(DecoItems.COPPER_GOLDEN_CLAYMORE)
+                .add(DecoItems.QUARTZ_GOLDEN_CLAYMORE)
+                .add(DecoItems.DIAMOND_CLAYMORE)
+                .add(DecoItems.FLINT_DIAMOND_CLAYMORE)
+                .add(DecoItems.COPPER_DIAMOND_CLAYMORE)
+                .add(DecoItems.QUARTZ_DIAMOND_CLAYMORE)
+                .add(DecoItems.NETHERITE_CLAYMORE)
+                .add(DecoItems.FLINT_NETHERITE_CLAYMORE)
+                .add(DecoItems.COPPER_NETHERITE_CLAYMORE)
+                .add(DecoItems.QUARTZ_NETHERITE_CLAYMORE);
+
     getOrCreateTagBuilder(DecoTags.Items.SWORDS)
             .add(Items.WOODEN_SWORD)
             .add(Items.STONE_SWORD)
@@ -74,7 +103,8 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
             .add(DecoItems.QUARTZ_IRON_SWORD)
             .add(DecoItems.QUARTZ_GOLDEN_SWORD)
             .add(DecoItems.QUARTZ_DIAMOND_SWORD)
-            .add(DecoItems.QUARTZ_NETHERITE_SWORD);
+            .add(DecoItems.QUARTZ_NETHERITE_SWORD)
+            .addTag(DecoTags.Items.CLAYMORES);
 
     getOrCreateTagBuilder(DecoTags.Items.PICKAXES)
             .add(Items.WOODEN_PICKAXE)
@@ -102,7 +132,7 @@ public class DecoItemTagProvider extends FabricTagProvider.ItemTagProvider {
             .add(DecoItems.QUARTZ_DIAMOND_PICKAXE)
             .add(DecoItems.QUARTZ_NETHERITE_PICKAXE);
 
-        getOrCreateTagBuilder(DecoTags.Items.AXES)
+        getOrCreateTagBuilder(DecoTags.Items.SINGLE_AXES)
                 .add(Items.WOODEN_AXE)
                 .add(Items.STONE_AXE)
                 .add(Items.IRON_AXE)

@@ -56,7 +56,7 @@ public class NetheriteBowItem extends BowItem {
                         }
 
                         if (EnchantmentHelper.getLevel(Enchantments.FLAME, stack) > 0) {
-                            persistentProjectileEntity.setOnFireFor(100);
+                            persistentProjectileEntity.setOnFireFor(200);
                         }
 
                         stack.damage(1, playerEntity, p -> p.sendToolBreakStatus(playerEntity.getActiveHand()));

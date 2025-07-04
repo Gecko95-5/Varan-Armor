@@ -22,14 +22,20 @@ public class DecoTags {
         public static final TagKey<Item> HARVESTERS =
                 createTag("harvesters");
 
+        public static final TagKey<Item> AXES =
+                createTag("axes");
+
         public static final TagKey<Item> SWORDS =
                 createTag("swords");
+
+        public static final TagKey<Item> CLAYMORES =
+                createTag("claymores");
 
         public static final TagKey<Item> PICKAXES =
                 createTag("pickaxes");
 
-        public static final TagKey<Item> AXES =
-                createTag("axes");
+        public static final TagKey<Item> SINGLE_AXES =
+                createTag("single_axes");
 
         public static final TagKey<Item> SHOVELS =
                 createTag("shovels");
