@@ -27,7 +27,7 @@
                 {
                   "condition": "minecraft:match_tool",
                   "predicate": {
-                    "tag": "varan-armor:harvesters"
+                    "tag": "varan-armor:sickles"
                   }
                 }
               ],

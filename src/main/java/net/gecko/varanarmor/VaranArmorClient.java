@@ -6,8 +6,11 @@ import net.gecko.varanarmor.entity.DecoEntities;
 import net.gecko.varanarmor.entity.renderer.CustomArrowRenderer;
 import net.gecko.varanarmor.entity.renderer.NautilusBobberRenderer;
 import net.gecko.varanarmor.entity.renderer.SquidBobberRenderer;
+import net.gecko.varanarmor.entity.renderer.armour.SwiftBootsRenderer;
+import net.gecko.varanarmor.item.DecoItems;
 import net.gecko.varanarmor.util.DecoModelPredicateProvider;
 import net.minecraft.util.Identifier;
+import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 
 public class VaranArmorClient implements ClientModInitializer {
     @Override
@@ -28,6 +31,7 @@ public class VaranArmorClient implements ClientModInitializer {
 
         EntityRendererRegistry.register(DecoEntities.NETHER_ARROW, ctx -> new CustomArrowRenderer
                 (ctx, new Identifier(VaranArmor.MOD_ID,"textures/entity/projectiles/nether_arrow.png")));
-        
+
+        GeoArmorRenderer.registerArmorRenderer(new SwiftBootsRenderer(), DecoItems.SWIFT_BOOTS);
     }
 }

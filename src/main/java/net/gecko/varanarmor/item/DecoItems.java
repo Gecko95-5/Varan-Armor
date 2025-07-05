@@ -1,6 +1,7 @@
 package net.gecko.varanarmor.item;
 
 import net.gecko.varanarmor.VaranArmor;
+import net.gecko.varanarmor.item.armour.model.SwiftBootsItem;
 import net.gecko.varanarmor.item.arrow.AmethystArrowItem;
 import net.gecko.varanarmor.item.arrow.IronArrowItem;
 import net.gecko.varanarmor.item.arrow.NetherArrowItem;
@@ -430,7 +431,7 @@ public class DecoItems {
             new NetherArrowItem(new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
 
     public static final Item SWIFT_BOOTS = registerItem("swift_boots",
-            new ArmorItem(DecoArmourMaterials.SWIFT, EquipmentSlot.FEET,
+            new SwiftBootsItem(DecoArmourMaterials.SWIFT, EquipmentSlot.FEET,
                     new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
 
     private static Item registerItem(String name, Item item){

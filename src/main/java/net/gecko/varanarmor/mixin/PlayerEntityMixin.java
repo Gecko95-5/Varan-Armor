@@ -13,6 +13,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(PlayerEntity.class)
 public abstract class PlayerEntityMixin extends LivingEntity {
@@ -23,15 +24,15 @@ public abstract class PlayerEntityMixin extends LivingEntity {
     @Inject(
             method = "tick",
             at = @At("TAIL"))
-    protected void injectTickMethod() {
+    private void tick_TAIL(CallbackInfo swift) {
         this.updateSwiftBoots();
     }
 
     @Unique
     private void updateSwiftBoots() {
         ItemStack itemStack = this.getEquippedStack(EquipmentSlot.FEET);
-        if (itemStack.isOf(DecoItems.SWIFT_BOOTS) && !this.isSprinting()) {
-            this.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 0, false, false, true));
+        if (itemStack.isOf(DecoItems.SWIFT_BOOTS) && this.isSprinting()) {
+            this.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 1, false, false, true));
         }
     }
 }
