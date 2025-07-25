@@ -6,6 +6,9 @@
   "item.varan-armor.cooked_squid_tentacles": "Cooked Squid Tentacles",
   "item.varan-armor.glow_squid_tentacles": "Glow Squid Tentacles",
 
+  "item.varan-armor.hard_boiled_egg": "Hard Boiled Egg",
+  "item.varan-armor.fried_egg": "Fried Egg",
+
   "item.varan-armor.flint_rod": "Flint Rod",
   "item.varan-armor.copper_rod": "Copper Rod",
   "item.varan-armor.quartz_rod": "Quartz Rod",
@@ -14,6 +17,8 @@
   "item.varan-armor.heavy_flint_rod": "Heavy Flint Rod",
   "item.varan-armor.heavy_copper_rod": "Heavy Copper Rod",
   "item.varan-armor.heavy_quartz_rod": "Heavy Quartz Rod",
+
+  "item.varan-armor.wither_bone": "Wither Bone",
 
   "item.varan-armor.flint_wooden_sword": "Wooden Sword",
   "item.varan-armor.flint_wooden_pickaxe": "Wooden Pickaxe",

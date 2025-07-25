@@ -48,6 +48,14 @@ public class DecoItems {
     public static final Item GOLDEN_FEATHER = registerItem("golden_feather",
             new Item(new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
 
+    public static final Item WITHER_BONE = registerItem("wither_bone",
+            new Item(new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
+
+    public static final Item HARD_BOILED_EGG = registerItem("hard_boiled_egg",
+            new Item(new Item.Settings().food(DecoFoodComponents.HARD_BOILED_EGG).maxCount(16).group(DecoItemGroup.VARAN_ARMOR)));
+    public static final Item FRIED_EGG = registerItem("fried_egg",
+            new Item(new Item.Settings().food(DecoFoodComponents.FRIED_EGG).group(DecoItemGroup.VARAN_ARMOR)));
+
     public static final Item SQUID_TENTACLES = registerItem("squid_tentacles",
             new Item(new Item.Settings().food(DecoFoodComponents.SQUID_TENTACLES).group(DecoItemGroup.VARAN_ARMOR)));
     public static final Item GLOW_SQUID_TENTACLES = registerItem("glow_squid_tentacles",

@@ -1,5 +1,6 @@
 package net.gecko.varanarmor.item.components;
 
+import net.gecko.varanarmor.item.DecoItems;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -97,7 +98,10 @@ public enum DecoToolMaterials implements ToolMaterial {
     HEAVY_QUARTZ_DIAMOND (3, 3028,6.0F, 3.0F, 12,
             () -> Ingredient.ofItems(Items.DIAMOND)),
     HEAVY_QUARTZ_NETHERITE (4, 3635,7.0F, 4.0F, 17,
-            () -> Ingredient.ofItems(Items.NETHERITE_INGOT));
+            () -> Ingredient.ofItems(Items.NETHERITE_INGOT)),
+
+    FIREBRAND (3, 1748,5.0F, 3.0F, 6,
+                           () -> Ingredient.ofItems(DecoItems.WITHER_BONE));
 
     private final int miningLevel;
     private final int itemDurability;

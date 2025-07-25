@@ -1,11 +1,13 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_planks": {
+    "has_egg": {
       "conditions": {
         "items": [
           {
-            "tag": "minecraft:planks"
+            "items": [
+              "minecraft:egg"
+            ]
           }
         ]
       },
@@ -13,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:wooden_claymore"
+        "recipe": "minecraft:hard_boiled_egg_from_smoking"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_planks",
+      "has_egg",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:wooden_claymore"
+      "minecraft:hard_boiled_egg_from_smoking"
     ]
   }
 }

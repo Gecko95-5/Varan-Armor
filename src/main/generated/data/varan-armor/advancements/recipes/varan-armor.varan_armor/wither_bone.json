@@ -1,11 +1,13 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_planks": {
+    "has_nether_wart": {
       "conditions": {
         "items": [
           {
-            "tag": "minecraft:planks"
+            "items": [
+              "minecraft:nether_wart"
+            ]
           }
         ]
       },
@@ -13,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:wooden_claymore"
+        "recipe": "minecraft:wither_bone"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_planks",
+      "has_nether_wart",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:wooden_claymore"
+      "minecraft:wither_bone"
     ]
   }
 }

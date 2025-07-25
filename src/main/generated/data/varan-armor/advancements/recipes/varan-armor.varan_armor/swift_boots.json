@@ -1,11 +1,13 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_planks": {
+    "has_rabbit_foot": {
       "conditions": {
         "items": [
           {
-            "tag": "minecraft:planks"
+            "items": [
+              "minecraft:rabbit_foot"
+            ]
           }
         ]
       },
@@ -13,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:wooden_claymore"
+        "recipe": "minecraft:swift_boots"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_planks",
+      "has_rabbit_foot",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:wooden_claymore"
+      "minecraft:swift_boots"
     ]
   }
 }

@@ -10,6 +10,7 @@ import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.tag.ItemTags;
 import net.minecraft.util.Identifier;
 
@@ -1306,8 +1307,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("#X ")
                 .input('X', ItemTags.PLANKS)
                 .input('#', DecoItems.BRACED_STICK)
-                .criterion(RecipeProvider.hasItem(DecoItems.BRACED_STICK),
-                        RecipeProvider.conditionsFromItem(DecoItems.BRACED_STICK))
+                .criterion("has_planks", conditionsFromTag(ItemTags.PLANKS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.WOODEN_CLAYMORE)));
         ShapedRecipeJsonBuilder.create(DecoItems.STONE_CLAYMORE)
                 .pattern(" XX")
@@ -1315,8 +1315,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("#X ")
                 .input('X', ItemTags.STONE_TOOL_MATERIALS)
                 .input('#', DecoItems.BRACED_STICK)
-                .criterion(RecipeProvider.hasItem(DecoItems.BRACED_STICK),
-                        RecipeProvider.conditionsFromItem(DecoItems.BRACED_STICK))
+                .criterion("has_cobblestone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.STONE_CLAYMORE)));
         ShapedRecipeJsonBuilder.create(DecoItems.IRON_CLAYMORE)
                 .pattern(" XX")
@@ -1326,8 +1325,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .input('#', DecoItems.BRACED_STICK)
                 .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
                         RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
-                .criterion(RecipeProvider.hasItem(DecoItems.BRACED_STICK),
-                        RecipeProvider.conditionsFromItem(DecoItems.BRACED_STICK))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.IRON_CLAYMORE)));
         ShapedRecipeJsonBuilder.create(DecoItems.GOLDEN_CLAYMORE)
                 .pattern(" XX")
@@ -1337,8 +1334,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .input('#', DecoItems.BRACED_STICK)
                 .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
                         RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
-                .criterion(RecipeProvider.hasItem(DecoItems.BRACED_STICK),
-                        RecipeProvider.conditionsFromItem(DecoItems.BRACED_STICK))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.GOLDEN_CLAYMORE)));
         ShapedRecipeJsonBuilder.create(DecoItems.DIAMOND_CLAYMORE)
                 .pattern(" XX")
@@ -1348,8 +1343,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .input('#', DecoItems.BRACED_STICK)
                 .criterion(RecipeProvider.hasItem(Items.DIAMOND),
                         RecipeProvider.conditionsFromItem(Items.DIAMOND))
-                .criterion(RecipeProvider.hasItem(DecoItems.BRACED_STICK),
-                        RecipeProvider.conditionsFromItem(DecoItems.BRACED_STICK))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.DIAMOND_CLAYMORE)));
 
         offerNetheriteUpgradeRecipe(exporter, DecoItems.DIAMOND_CLAYMORE,DecoItems.NETHERITE_CLAYMORE);
@@ -1360,8 +1353,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("#X ")
                 .input('X', ItemTags.PLANKS)
                 .input('#', DecoItems.HEAVY_FLINT_ROD)
-                .criterion(RecipeProvider.hasItem(DecoItems.HEAVY_FLINT_ROD),
-                        RecipeProvider.conditionsFromItem(DecoItems.HEAVY_FLINT_ROD))
+                .criterion("has_planks", conditionsFromTag(ItemTags.PLANKS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.FLINT_WOODEN_CLAYMORE)));
         ShapedRecipeJsonBuilder.create(DecoItems.FLINT_STONE_CLAYMORE)
                 .pattern(" XX")
@@ -1369,8 +1361,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("#X ")
                 .input('X', ItemTags.STONE_TOOL_MATERIALS)
                 .input('#', DecoItems.HEAVY_FLINT_ROD)
-                .criterion(RecipeProvider.hasItem(DecoItems.HEAVY_FLINT_ROD),
-                        RecipeProvider.conditionsFromItem(DecoItems.HEAVY_FLINT_ROD))
+                .criterion("has_cobblestone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.FLINT_STONE_CLAYMORE)));
         ShapedRecipeJsonBuilder.create(DecoItems.FLINT_IRON_CLAYMORE)
                 .pattern(" XX")
@@ -1380,8 +1371,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .input('#', DecoItems.HEAVY_FLINT_ROD)
                 .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
                         RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
-                .criterion(RecipeProvider.hasItem(DecoItems.HEAVY_FLINT_ROD),
-                        RecipeProvider.conditionsFromItem(DecoItems.HEAVY_FLINT_ROD))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.FLINT_IRON_CLAYMORE)));
         ShapedRecipeJsonBuilder.create(DecoItems.FLINT_GOLDEN_CLAYMORE)
                 .pattern(" XX")
@@ -1391,8 +1380,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .input('#', DecoItems.HEAVY_FLINT_ROD)
                 .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
                         RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
-                .criterion(RecipeProvider.hasItem(DecoItems.HEAVY_FLINT_ROD),
-                        RecipeProvider.conditionsFromItem(DecoItems.HEAVY_FLINT_ROD))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.FLINT_GOLDEN_CLAYMORE)));
         ShapedRecipeJsonBuilder.create(DecoItems.FLINT_DIAMOND_CLAYMORE)
                 .pattern(" XX")
@@ -1402,8 +1389,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .input('#', DecoItems.HEAVY_FLINT_ROD)
                 .criterion(RecipeProvider.hasItem(Items.DIAMOND),
                         RecipeProvider.conditionsFromItem(Items.DIAMOND))
-                .criterion(RecipeProvider.hasItem(DecoItems.HEAVY_FLINT_ROD),
-                        RecipeProvider.conditionsFromItem(DecoItems.HEAVY_FLINT_ROD))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.FLINT_DIAMOND_CLAYMORE)));
 
         ShapedRecipeJsonBuilder.create(DecoItems.COPPER_WOODEN_CLAYMORE)
@@ -1412,8 +1397,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("#X ")
                 .input('X', ItemTags.PLANKS)
                 .input('#', DecoItems.HEAVY_COPPER_ROD)
-                .criterion(RecipeProvider.hasItem(DecoItems.HEAVY_COPPER_ROD),
-                        RecipeProvider.conditionsFromItem(DecoItems.HEAVY_COPPER_ROD))
+                .criterion("has_planks", conditionsFromTag(ItemTags.PLANKS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.COPPER_WOODEN_CLAYMORE)));
         ShapedRecipeJsonBuilder.create(DecoItems.COPPER_STONE_CLAYMORE)
                 .pattern(" XX")
@@ -1421,8 +1405,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("#X ")
                 .input('X', ItemTags.STONE_TOOL_MATERIALS)
                 .input('#', DecoItems.HEAVY_COPPER_ROD)
-                .criterion(RecipeProvider.hasItem(DecoItems.HEAVY_COPPER_ROD),
-                        RecipeProvider.conditionsFromItem(DecoItems.HEAVY_COPPER_ROD))
+                .criterion("has_cobblestone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.COPPER_STONE_CLAYMORE)));
         ShapedRecipeJsonBuilder.create(DecoItems.COPPER_IRON_CLAYMORE)
                 .pattern(" XX")
@@ -1432,8 +1415,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .input('#', DecoItems.HEAVY_COPPER_ROD)
                 .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
                         RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
-                .criterion(RecipeProvider.hasItem(DecoItems.HEAVY_COPPER_ROD),
-                        RecipeProvider.conditionsFromItem(DecoItems.HEAVY_COPPER_ROD))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.COPPER_IRON_CLAYMORE)));
         ShapedRecipeJsonBuilder.create(DecoItems.COPPER_GOLDEN_CLAYMORE)
                 .pattern(" XX")
@@ -1443,8 +1424,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .input('#', DecoItems.HEAVY_COPPER_ROD)
                 .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
                         RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
-                .criterion(RecipeProvider.hasItem(DecoItems.HEAVY_COPPER_ROD),
-                        RecipeProvider.conditionsFromItem(DecoItems.HEAVY_COPPER_ROD))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.COPPER_GOLDEN_CLAYMORE)));
         ShapedRecipeJsonBuilder.create(DecoItems.COPPER_DIAMOND_CLAYMORE)
                 .pattern(" XX")
@@ -1454,8 +1433,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .input('#', DecoItems.HEAVY_COPPER_ROD)
                 .criterion(RecipeProvider.hasItem(Items.DIAMOND),
                         RecipeProvider.conditionsFromItem(Items.DIAMOND))
-                .criterion(RecipeProvider.hasItem(DecoItems.HEAVY_COPPER_ROD),
-                        RecipeProvider.conditionsFromItem(DecoItems.HEAVY_COPPER_ROD))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.COPPER_DIAMOND_CLAYMORE)));
 
         ShapedRecipeJsonBuilder.create(DecoItems.QUARTZ_WOODEN_CLAYMORE)
@@ -1464,8 +1441,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("#X ")
                 .input('X', ItemTags.PLANKS)
                 .input('#', DecoItems.HEAVY_QUARTZ_ROD)
-                .criterion(RecipeProvider.hasItem(DecoItems.HEAVY_QUARTZ_ROD),
-                        RecipeProvider.conditionsFromItem(DecoItems.HEAVY_QUARTZ_ROD))
+                .criterion("has_planks", conditionsFromTag(ItemTags.PLANKS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.QUARTZ_WOODEN_CLAYMORE)));
         ShapedRecipeJsonBuilder.create(DecoItems.QUARTZ_STONE_CLAYMORE)
                 .pattern(" XX")
@@ -1473,8 +1449,7 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .pattern("#X ")
                 .input('X', ItemTags.STONE_TOOL_MATERIALS)
                 .input('#', DecoItems.HEAVY_QUARTZ_ROD)
-                .criterion(RecipeProvider.hasItem(DecoItems.HEAVY_QUARTZ_ROD),
-                        RecipeProvider.conditionsFromItem(DecoItems.HEAVY_QUARTZ_ROD))
+                .criterion("has_cobblestone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.QUARTZ_STONE_CLAYMORE)));
         ShapedRecipeJsonBuilder.create(DecoItems.QUARTZ_IRON_CLAYMORE)
                 .pattern(" XX")
@@ -1484,8 +1459,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .input('#', DecoItems.HEAVY_QUARTZ_ROD)
                 .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
                         RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
-                .criterion(RecipeProvider.hasItem(DecoItems.HEAVY_QUARTZ_ROD),
-                        RecipeProvider.conditionsFromItem(DecoItems.HEAVY_QUARTZ_ROD))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.QUARTZ_IRON_CLAYMORE)));
         ShapedRecipeJsonBuilder.create(DecoItems.QUARTZ_GOLDEN_CLAYMORE)
                 .pattern(" XX")
@@ -1495,8 +1468,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .input('#', DecoItems.HEAVY_QUARTZ_ROD)
                 .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
                         RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
-                .criterion(RecipeProvider.hasItem(DecoItems.HEAVY_QUARTZ_ROD),
-                        RecipeProvider.conditionsFromItem(DecoItems.HEAVY_QUARTZ_ROD))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.QUARTZ_GOLDEN_CLAYMORE)));
         ShapedRecipeJsonBuilder.create(DecoItems.QUARTZ_DIAMOND_CLAYMORE)
                 .pattern(" XX")
@@ -1506,8 +1477,6 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .input('#', DecoItems.HEAVY_QUARTZ_ROD)
                 .criterion(RecipeProvider.hasItem(Items.DIAMOND),
                         RecipeProvider.conditionsFromItem(Items.DIAMOND))
-                .criterion(RecipeProvider.hasItem(DecoItems.HEAVY_QUARTZ_ROD),
-                        RecipeProvider.conditionsFromItem(DecoItems.HEAVY_QUARTZ_ROD))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.QUARTZ_DIAMOND_CLAYMORE)));
 
         offerNetheriteUpgradeRecipe(exporter, DecoItems.FLINT_DIAMOND_CLAYMORE,DecoItems.FLINT_NETHERITE_CLAYMORE);
@@ -1522,10 +1491,24 @@ public class DecoRecipeGenerator extends FabricRecipeProvider {
                 .input('Y', DecoItems.GOLDEN_FEATHER)
                 .criterion(RecipeProvider.hasItem(Items.RABBIT_FOOT),
                         RecipeProvider.conditionsFromItem(Items.RABBIT_FOOT))
-                .criterion(RecipeProvider.hasItem(Items.LAPIS_LAZULI),
-                        RecipeProvider.conditionsFromItem(Items.LAPIS_LAZULI))
-                .criterion(RecipeProvider.hasItem(DecoItems.GOLDEN_FEATHER),
-                        RecipeProvider.conditionsFromItem(DecoItems.GOLDEN_FEATHER))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.SWIFT_BOOTS)));
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.EGG), DecoItems.HARD_BOILED_EGG,
+                        0.35f, 200).criterion(hasItem(Items.EGG), conditionsFromItem(Items.EGG))
+                .offerTo(exporter, new Identifier("hard_boiled_egg_from_smelting"));
+
+        CookingRecipeJsonBuilder.createSmoking(Ingredient.ofItems(Items.EGG), DecoItems.HARD_BOILED_EGG,
+                        0.35f, 200).criterion(hasItem(Items.EGG), conditionsFromItem(Items.EGG))
+                .offerTo(exporter, new Identifier("hard_boiled_egg_from_smoking"));
+
+        offerCookingRecipe(exporter, "campfire", RecipeSerializer.CAMPFIRE_COOKING, 600,Items.EGG, DecoItems.FRIED_EGG,0.35f);
+
+        ShapelessRecipeJsonBuilder.create(DecoItems.WITHER_BONE)
+                .input(Items.COAL)
+                .input(Items.BONE)
+                .input(Items.NETHER_WART)
+                .criterion(RecipeProvider.hasItem(Items.NETHER_WART),
+                        RecipeProvider.conditionsFromItem(Items.NETHER_WART))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(DecoItems.WITHER_BONE)));
     }
 }
