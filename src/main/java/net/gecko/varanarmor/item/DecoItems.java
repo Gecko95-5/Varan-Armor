@@ -11,6 +11,7 @@ import net.gecko.varanarmor.item.components.DecoFoodComponents;
 import net.gecko.varanarmor.item.components.DecoToolMaterials;
 import net.gecko.varanarmor.item.fixes.FixedHoeItem;
 import net.gecko.varanarmor.item.tools.ClaymoreItem;
+import net.gecko.varanarmor.item.tools.FirebrandItem;
 import net.gecko.varanarmor.item.tools.SickleItem;
 import net.gecko.varanarmor.item.tools.bow.*;
 import net.gecko.varanarmor.item.tools.fishing_rods.NautilusFishingRodItem;
@@ -333,6 +334,10 @@ public class DecoItems {
     public static final Item QUARTZ_NETHERITE_SICKLE = registerItem("quartz_netherite_sickle",
             new SickleItem(DecoToolMaterials.QUARTZ_NETHERITE, 1.75F, -2.1F,
                     new Item.Settings().group(DecoItemGroup.VARAN_ARMOR).fireproof()));
+
+    public static final Item FIREBRAND = registerItem("firebrand",
+            new FirebrandItem(DecoToolMaterials.FIREBRAND, 7.0F, -3.2F,
+                    new Item.Settings().group(DecoItemGroup.VARAN_ARMOR)));
 
     public static final Item WOODEN_CLAYMORE = registerItem("wooden_claymore",
             new ClaymoreItem(DecoToolMaterials.HEAVY_WOOD, 8, -3.4F, 600, 3,

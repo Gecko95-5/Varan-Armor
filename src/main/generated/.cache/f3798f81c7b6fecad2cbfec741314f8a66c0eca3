@@ -1,4 +1,4 @@
-// 1.19.2	2025-07-25T00:22:15.2544665	Models
+// 1.19.2	2025-07-25T09:55:42.0637308	Models
 886a21bdf05fc6b6f9ff68bf5d86b37bb32c6333 assets\varan-armor\models\item\copper_wooden_pickaxe.json
 4d75fd6e60c11fef881960bf3d4023863c9e35af assets\varan-armor\models\item\glow_squid_tentacles.json
 5dc93fd3ef0e7271bae7bbaecb876121b7a7d201 assets\varan-armor\models\item\braced_stick.json
@@ -111,6 +111,7 @@ f2c8d0309dcd1d39192ad85c1fc786f1bbcdfdeb assets\varan-armor\models\item\hard_boi
 7bcf5ce7691ff25e5e955a0fa5a1d5362cc57f6c assets\varan-armor\models\item\flint_iron_axe.json
 e7bcb991d5ee15f71f4ef8facb3e6126721fcbed assets\varan-armor\models\item\quartz_golden_sickle.json
 65f2d602e478e058addcd057d5d0c2fd83660f14 assets\varan-armor\models\item\copper_wooden_axe.json
+d4c6ce411e94c5385286fd3d70aa3e2465e3d6b8 assets\varan-armor\models\item\firebrand.json
 d8b97824f63aa90b6b2f3475a3644ba86ab96ccf assets\varan-armor\models\item\copper_golden_sickle.json
 2893fa4e451e20a28372298c821c2474631d311b assets\varan-armor\models\item\copper_diamond_sword.json
 c3eb834809d54dc7006d4268dae79845528a7173 assets\varan-armor\models\item\copper_diamond_sickle.json

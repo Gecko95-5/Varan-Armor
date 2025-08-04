@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_quartz_rod": {
+    "has_planks": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-armor:quartz_rod"
-            ]
+            "tag": "minecraft:planks"
           }
         ]
       },
@@ -22,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_quartz_rod",
+      "has_planks",
       "has_the_recipe"
     ]
   ],

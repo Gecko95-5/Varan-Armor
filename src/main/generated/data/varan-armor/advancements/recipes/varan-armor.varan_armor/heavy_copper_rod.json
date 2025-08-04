@@ -13,18 +13,6 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_iron_nugget": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:iron_nugget"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_the_recipe": {
       "conditions": {
         "recipe": "minecraft:heavy_copper_rod"
@@ -35,7 +23,6 @@
   "requirements": [
     [
       "has_copper_rod",
-      "has_iron_nugget",
       "has_the_recipe"
     ]
   ],

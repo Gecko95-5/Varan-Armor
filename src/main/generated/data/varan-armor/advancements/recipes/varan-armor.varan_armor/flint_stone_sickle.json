@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_flint_rod": {
+    "has_cobblestone": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "varan-armor:flint_rod"
-            ]
+            "tag": "minecraft:stone_tool_materials"
           }
         ]
       },
@@ -22,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_flint_rod",
+      "has_cobblestone",
       "has_the_recipe"
     ]
   ],

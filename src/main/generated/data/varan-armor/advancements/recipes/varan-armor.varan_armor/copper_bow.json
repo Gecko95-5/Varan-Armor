@@ -13,30 +13,6 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_stick": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:stick"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_string": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:string"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_the_recipe": {
       "conditions": {
         "recipe": "minecraft:copper_bow"
@@ -46,8 +22,6 @@
   },
   "requirements": [
     [
-      "has_string",
-      "has_stick",
       "has_copper_ingot",
       "has_the_recipe"
     ]
