@@ -1,6 +1,6 @@
 package net.gecko.varanarmor.entity.bobbers;
 
-import net.gecko.varanarmor.entity.DecoEntities;
+import net.gecko.varanarmor.entity.ArmoryEntities;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.FishingBobberEntity;
@@ -19,7 +19,7 @@ public class SquidFishingBobberEntity extends FishingBobberEntity {
 	}
 
 	public SquidFishingBobberEntity(PlayerEntity thrower, World world, int luckOfTheSeaLevel, int lureLevel) {
-		this(DecoEntities.SQUID_BOBBER, world, luckOfTheSeaLevel, lureLevel);
+		this(ArmoryEntities.SQUID_BOBBER, world, luckOfTheSeaLevel, lureLevel);
 		this.setOwner(thrower);
 		float f = thrower.getPitch();
 		float g = thrower.getYaw();

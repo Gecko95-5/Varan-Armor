@@ -14,7 +14,7 @@ import net.minecraft.entity.SpawnGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class DecoEntities {
+public class ArmoryEntities {
 //I got this code from Scouter456 Nether Depths Upgrade Mod https://github.com/Scouter456/Nether_Depths_Upgrade/tree/nether_depths_upgrade_1.19.2-fabric
 
     public static final EntityType<IronArrowEntity> IRON_ARROW = Registry.register(Registry.ENTITY_TYPE,

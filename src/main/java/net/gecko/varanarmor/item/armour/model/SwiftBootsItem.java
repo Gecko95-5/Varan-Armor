@@ -1,6 +1,6 @@
 package net.gecko.varanarmor.item.armour.model;
 
-import net.gecko.varanarmor.item.DecoItems;
+import net.gecko.varanarmor.item.ArmoryItems;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.decoration.ArmorStandEntity;
@@ -42,7 +42,7 @@ public class SwiftBootsItem extends ArmorItem implements IAnimatable {
                 }
             }
         }
-        boolean isWearingAll = new HashSet<>(armorList).contains(DecoItems.SWIFT_BOOTS);
+        boolean isWearingAll = new HashSet<>(armorList).contains(ArmoryItems.SWIFT_BOOTS);
         return isWearingAll ? PlayState.CONTINUE : PlayState.STOP;
     }
 

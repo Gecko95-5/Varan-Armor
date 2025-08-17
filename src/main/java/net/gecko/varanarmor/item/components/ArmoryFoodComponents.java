@@ -4,7 +4,7 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
 
-public class DecoFoodComponents {
+public class ArmoryFoodComponents {
     public static final FoodComponent SQUID_TENTACLES = new FoodComponent.Builder().hunger(2).saturationModifier(0.1F)
             .statusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 600),0.8f).build();
 

@@ -1,8 +1,8 @@
 package net.gecko.varanarmor;
 
 import net.fabricmc.api.ModInitializer;
-import net.gecko.varanarmor.entity.DecoEntities;
-import net.gecko.varanarmor.item.DecoItems;
+import net.gecko.varanarmor.entity.ArmoryEntities;
+import net.gecko.varanarmor.item.ArmoryItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,8 +12,8 @@ public class VaranArmor implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		DecoItems.registerDecoItems();
-		DecoEntities.registerDecoEntities();
+		ArmoryItems.registerDecoItems();
+		ArmoryEntities.registerDecoEntities();
 
 		LOGGER.info("Hello Fabric world!");
 	}

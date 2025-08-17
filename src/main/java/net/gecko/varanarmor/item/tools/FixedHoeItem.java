@@ -1,4 +1,4 @@
-package net.gecko.varanarmor.item.fixes;
+package net.gecko.varanarmor.item.tools;
 
 import net.minecraft.item.HoeItem;
 import net.minecraft.item.ToolMaterial;

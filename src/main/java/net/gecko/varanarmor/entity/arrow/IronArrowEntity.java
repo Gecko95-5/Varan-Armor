@@ -2,8 +2,8 @@ package net.gecko.varanarmor.entity.arrow;
 
 import com.google.common.collect.Lists;
 import it.unimi.dsi.fastutil.ints.IntOpenHashSet;
-import net.gecko.varanarmor.entity.DecoEntities;
-import net.gecko.varanarmor.item.DecoItems;
+import net.gecko.varanarmor.entity.ArmoryEntities;
+import net.gecko.varanarmor.item.ArmoryItems;
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
@@ -41,11 +41,11 @@ public class IronArrowEntity extends PersistentProjectileEntity {
     }
 
     public IronArrowEntity(World world, LivingEntity owner) {
-        super(DecoEntities.IRON_ARROW, owner, world);
+        super(ArmoryEntities.IRON_ARROW, owner, world);
     }
 
     public IronArrowEntity(World world, double x, double y, double z) {
-        super(DecoEntities.IRON_ARROW, x, y, z, world);
+        super(ArmoryEntities.IRON_ARROW, x, y, z, world);
     }
     @Override
     public void onEntityHit(EntityHitResult entityHitResult) {
@@ -168,6 +168,6 @@ public class IronArrowEntity extends PersistentProjectileEntity {
 
     @Override
     protected ItemStack asItemStack() {
-        return new ItemStack(DecoItems.IRON_ARROW);
+        return new ItemStack(ArmoryItems.IRON_ARROW);
     }
 }

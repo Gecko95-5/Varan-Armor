@@ -2,18 +2,18 @@ package net.gecko.varanarmor.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
-import net.gecko.varanarmor.util.DecoTags;
+import net.gecko.varanarmor.util.ArmoryTags;
 import net.minecraft.block.Blocks;
 import net.minecraft.tag.BlockTags;
 
-public class DecoBlockTagProvider extends FabricTagProvider.BlockTagProvider {
-    public DecoBlockTagProvider(FabricDataGenerator dataGenerator) {
+public class ArmoryBlockTagProvider extends FabricTagProvider.BlockTagProvider {
+    public ArmoryBlockTagProvider(FabricDataGenerator dataGenerator) {
         super(dataGenerator);
     }
 
     @Override
     protected void generateTags() {
-        getOrCreateTagBuilder(DecoTags.Blocks.SICKLES_MINEABLE)
+        getOrCreateTagBuilder(ArmoryTags.Blocks.SICKLES_MINEABLE)
                 .forceAddTag(BlockTags.HOE_MINEABLE)
                 .forceAddTag(BlockTags.SAPLINGS)
                 .forceAddTag(BlockTags.FLOWERS)

@@ -1,6 +1,6 @@
 package net.gecko.varanarmor.mixin;
 
-import net.gecko.varanarmor.item.DecoItems;
+import net.gecko.varanarmor.item.ArmoryItems;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.player.PlayerEntity;
@@ -33,11 +33,11 @@ public abstract class FishingBobberEntityMixin extends Entity {
 		ItemStack offHandStack = playerEntity.getOffHandStack();
 
 		boolean mainHandHasRod = mainHandStack.isOf(Items.FISHING_ROD)
-				|| mainHandStack.isOf(DecoItems.SQUID_FISHING_ROD)
-				|| mainHandStack.isOf(DecoItems.NAUTILUS_FISHING_ROD);
+				|| mainHandStack.isOf(ArmoryItems.SQUID_FISHING_ROD)
+				|| mainHandStack.isOf(ArmoryItems.NAUTILUS_FISHING_ROD);
 		boolean offHandHasRod = offHandStack.isOf(Items.FISHING_ROD)
-				|| offHandStack.isOf(DecoItems.SQUID_FISHING_ROD)
-				|| offHandStack.isOf(DecoItems.NAUTILUS_FISHING_ROD);
+				|| offHandStack.isOf(ArmoryItems.SQUID_FISHING_ROD)
+				|| offHandStack.isOf(ArmoryItems.NAUTILUS_FISHING_ROD);
 
 		if (!playerEntity.isRemoved() && playerEntity.isAlive() && (mainHandHasRod || offHandHasRod) && this.squaredDistanceTo(playerEntity) <= 1024.0D) {
 			cir.setReturnValue(false);

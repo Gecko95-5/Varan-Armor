@@ -6,7 +6,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 
-public class DecoItemGroup {
+public class ArmoryItemGroup {
     public static final ItemGroup VARAN_ARMOR = FabricItemGroupBuilder.build(
-            new Identifier(VaranArmor.MOD_ID,"varan_armor"), () -> new ItemStack(DecoItems.QUARTZ_ROD));
+            new Identifier(VaranArmor.MOD_ID,"varan_armor"), () -> new ItemStack(ArmoryItems.QUARTZ_ROD));
 }

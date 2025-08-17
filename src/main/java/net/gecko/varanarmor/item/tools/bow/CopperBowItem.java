@@ -1,6 +1,6 @@
 package net.gecko.varanarmor.item.tools.bow;
 
-import net.gecko.varanarmor.item.DecoItems;
+import net.gecko.varanarmor.item.ArmoryItems;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.LivingEntity;
@@ -60,8 +60,8 @@ public class CopperBowItem extends BowItem {
 
                         stack.damage(1, playerEntity, p -> p.sendToolBreakStatus(playerEntity.getActiveHand()));
                         if (bl2 || playerEntity.getAbilities().creativeMode && (itemStack.isOf(Items.SPECTRAL_ARROW) || itemStack.isOf(Items.TIPPED_ARROW)
-                                || itemStack.isOf(DecoItems.IRON_ARROW) || itemStack.isOf(DecoItems.AMETHYST_ARROW) || itemStack.isOf(DecoItems.QUARTZ_ARROW)
-                                || itemStack.isOf(DecoItems.NETHER_ARROW))) {
+                                || itemStack.isOf(ArmoryItems.IRON_ARROW) || itemStack.isOf(ArmoryItems.AMETHYST_ARROW) || itemStack.isOf(ArmoryItems.QUARTZ_ARROW)
+                                || itemStack.isOf(ArmoryItems.NETHER_ARROW))) {
                             persistentProjectileEntity.pickupType = PersistentProjectileEntity.PickupPermission.CREATIVE_ONLY;
                         }
 

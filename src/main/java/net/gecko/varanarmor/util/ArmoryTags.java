@@ -7,7 +7,7 @@ import net.minecraft.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class DecoTags {
+public class ArmoryTags {
     public static class Blocks {
 
         public static final TagKey<Block> SICKLES_MINEABLE =

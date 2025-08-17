@@ -2,8 +2,8 @@ package net.gecko.varanarmor.entity.arrow;
 
 import com.google.common.collect.Lists;
 import it.unimi.dsi.fastutil.ints.IntOpenHashSet;
-import net.gecko.varanarmor.entity.DecoEntities;
-import net.gecko.varanarmor.item.DecoItems;
+import net.gecko.varanarmor.entity.ArmoryEntities;
+import net.gecko.varanarmor.item.ArmoryItems;
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
@@ -44,12 +44,12 @@ public class QuartzArrowEntity extends PersistentProjectileEntity {
     }
 
     public QuartzArrowEntity(World world, LivingEntity owner) {
-        super(DecoEntities.QUARTZ_ARROW, owner, world);
+        super(ArmoryEntities.QUARTZ_ARROW, owner, world);
         this.owner = owner;
     }
 
     public QuartzArrowEntity(World world, double x, double y, double z) {
-        super(DecoEntities.QUARTZ_ARROW, x, y, z, world);
+        super(ArmoryEntities.QUARTZ_ARROW, x, y, z, world);
     }
     @Override
     public void onEntityHit(EntityHitResult entityHitResult) {
@@ -172,7 +172,7 @@ public class QuartzArrowEntity extends PersistentProjectileEntity {
 
     @Override
     protected ItemStack asItemStack() {
-        return new ItemStack(DecoItems.QUARTZ_ARROW);
+        return new ItemStack(ArmoryItems.QUARTZ_ARROW);
     }
 
     @Override

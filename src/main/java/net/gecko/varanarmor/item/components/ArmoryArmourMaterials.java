@@ -10,7 +10,7 @@ import net.minecraft.sound.SoundEvents;
 
 import java.util.function.Supplier;
 
-public enum DecoArmourMaterials implements ArmorMaterial {
+public enum ArmoryArmourMaterials implements ArmorMaterial {
     SWIFT("swift", 12, new int[] { 2, 4, 3, 2}, 9,
             SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0f, 0f, () -> Ingredient.ofItems(Items.LAPIS_LAZULI));
 
@@ -25,8 +25,8 @@ public enum DecoArmourMaterials implements ArmorMaterial {
 
     private static final  int[] BASE_DURABILITY = { 11, 16, 15, 13};
 
-    DecoArmourMaterials(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantability, SoundEvent equipSound,
-                      float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
+    ArmoryArmourMaterials(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantability, SoundEvent equipSound,
+                          float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
         this.name = name;
         this.durabilityMultiplier = durabilityMultiplier;
         this.protectionAmounts = protectionAmounts;

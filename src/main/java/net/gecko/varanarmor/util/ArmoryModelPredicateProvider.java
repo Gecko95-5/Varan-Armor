@@ -1,21 +1,21 @@
 package net.gecko.varanarmor.util;
 
-import net.gecko.varanarmor.item.DecoItems;
+import net.gecko.varanarmor.item.ArmoryItems;
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.FishingRodItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 
-public class DecoModelPredicateProvider {
+public class ArmoryModelPredicateProvider {
     public static void registerChangingModels(){
-        registerBow(DecoItems.WOODEN_BOW);
-        registerBow(DecoItems.COPPER_BOW);
-        registerBow(DecoItems.DIAMOND_BOW);
-        registerBow(DecoItems.NETHERITE_BOW);
-        registerBow(DecoItems.BLAZING_BOW);
-        registerFishingRod(DecoItems.SQUID_FISHING_ROD);
-        registerFishingRod(DecoItems.NAUTILUS_FISHING_ROD);
+        registerBow(ArmoryItems.WOODEN_BOW);
+        registerBow(ArmoryItems.COPPER_BOW);
+        registerBow(ArmoryItems.DIAMOND_BOW);
+        registerBow(ArmoryItems.NETHERITE_BOW);
+        registerBow(ArmoryItems.BLAZING_BOW);
+        registerFishingRod(ArmoryItems.SQUID_FISHING_ROD);
+        registerFishingRod(ArmoryItems.NAUTILUS_FISHING_ROD);
     }
     private static void registerBow(Item bow) {
         ModelPredicateProviderRegistry.register(bow, new Identifier("pull"),

@@ -1,6 +1,6 @@
 package net.gecko.varanarmor.item.components;
 
-import net.gecko.varanarmor.item.DecoItems;
+import net.gecko.varanarmor.item.ArmoryItems;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -8,7 +8,7 @@ import net.minecraft.tag.ItemTags;
 
 import java.util.function.Supplier;
 
-public enum DecoToolMaterials implements ToolMaterial {
+public enum ArmoryToolMaterials implements ToolMaterial {
     FLINT_WOOD(0, 72, 3.0F, 0.0F, 15,
             () -> Ingredient.fromTag(ItemTags.PLANKS)),
     FLINT_STONE (1, 189, 5.0F, 1.0F, 5,
@@ -101,7 +101,7 @@ public enum DecoToolMaterials implements ToolMaterial {
             () -> Ingredient.ofItems(Items.NETHERITE_INGOT)),
 
     FIREBRAND (3, 1748,5.0F, 3.0F, 6,
-                           () -> Ingredient.ofItems(DecoItems.WITHER_BONE));
+                           () -> Ingredient.ofItems(ArmoryItems.WITHER_BONE));
 
     private final int miningLevel;
     private final int itemDurability;
@@ -110,7 +110,7 @@ public enum DecoToolMaterials implements ToolMaterial {
     private final int enchantability;
     private final Supplier<Ingredient> repairIngredient;
 
-    DecoToolMaterials(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
+    ArmoryToolMaterials(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
         this.miningLevel = miningLevel;
         this.itemDurability = itemDurability;
         this.miningSpeed = miningSpeed;

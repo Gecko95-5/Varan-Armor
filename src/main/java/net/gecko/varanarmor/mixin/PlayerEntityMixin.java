@@ -1,6 +1,6 @@
 package net.gecko.varanarmor.mixin;
 
-import net.gecko.varanarmor.item.DecoItems;
+import net.gecko.varanarmor.item.ArmoryItems;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
@@ -31,7 +31,7 @@ public abstract class PlayerEntityMixin extends LivingEntity {
     @Unique
     private void updateSwiftBoots() {
         ItemStack itemStack = this.getEquippedStack(EquipmentSlot.FEET);
-        if (itemStack.isOf(DecoItems.SWIFT_BOOTS) && this.isSprinting()) {
+        if (itemStack.isOf(ArmoryItems.SWIFT_BOOTS) && this.isSprinting()) {
             this.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 1, false, false, true));
         }
     }

@@ -2,7 +2,7 @@ package net.gecko.varanarmor.entity.renderer;
 
 import net.gecko.varanarmor.VaranArmor;
 import net.gecko.varanarmor.entity.bobbers.NautilusFishingBobberEntity;
-import net.gecko.varanarmor.item.DecoItems;
+import net.gecko.varanarmor.item.ArmoryItems;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.OverlayTexture;
 import net.minecraft.client.render.RenderLayer;
@@ -44,7 +44,7 @@ public class NautilusBobberRenderer extends EntityRenderer<NautilusFishingBobber
             matrixStack.pop();
             int j = playerEntity.getMainArm() == Arm.RIGHT ? 1 : -1;
             ItemStack itemStack = playerEntity.getMainHandStack();
-            if (!itemStack.isOf(DecoItems.NAUTILUS_FISHING_ROD)){
+            if (!itemStack.isOf(ArmoryItems.NAUTILUS_FISHING_ROD)){
                 j = -j;
             }
 

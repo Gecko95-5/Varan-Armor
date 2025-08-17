@@ -1,0 +1,189 @@
+package net.gecko.varanarmor.datagen;
+
+import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.gecko.varanarmor.item.ArmoryItems;
+import net.minecraft.data.client.BlockStateModelGenerator;
+import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.Models;
+
+public class ArmoryModelProvider extends FabricModelProvider {
+    public ArmoryModelProvider(FabricDataGenerator dataGenerator) {
+        super(dataGenerator);
+    }
+
+    @Override
+    public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        itemModelGenerator.register(ArmoryItems.COPPER_NUGGET, Models.GENERATED);
+
+        itemModelGenerator.register(ArmoryItems.FLINT_ROD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_ROD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_ROD, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.FLINT_WOODEN_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_WOODEN_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_WOODEN_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_WOODEN_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_WOODEN_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.FLINT_STONE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_STONE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_STONE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_STONE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_STONE_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.FLINT_IRON_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_IRON_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_IRON_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_IRON_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_IRON_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.FLINT_GOLDEN_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_GOLDEN_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_GOLDEN_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_GOLDEN_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_GOLDEN_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.FLINT_DIAMOND_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_DIAMOND_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_DIAMOND_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_DIAMOND_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_DIAMOND_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.COPPER_WOODEN_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_WOODEN_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_WOODEN_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_WOODEN_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_WOODEN_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.COPPER_STONE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_STONE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_STONE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_STONE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_STONE_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.COPPER_IRON_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_IRON_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_IRON_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_IRON_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_IRON_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.COPPER_GOLDEN_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_GOLDEN_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_GOLDEN_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_GOLDEN_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_GOLDEN_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.COPPER_DIAMOND_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_DIAMOND_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_DIAMOND_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_DIAMOND_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_DIAMOND_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.QUARTZ_WOODEN_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_WOODEN_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_WOODEN_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_WOODEN_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_WOODEN_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.QUARTZ_STONE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_STONE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_STONE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_STONE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_STONE_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.QUARTZ_IRON_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_IRON_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_IRON_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_IRON_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_IRON_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.QUARTZ_GOLDEN_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_GOLDEN_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_GOLDEN_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_GOLDEN_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_GOLDEN_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.QUARTZ_DIAMOND_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_DIAMOND_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_DIAMOND_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_DIAMOND_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_DIAMOND_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.FLINT_NETHERITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_NETHERITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_NETHERITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_NETHERITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_NETHERITE_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.COPPER_NETHERITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_NETHERITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_NETHERITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_NETHERITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_NETHERITE_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.QUARTZ_NETHERITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_NETHERITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_NETHERITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_NETHERITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_NETHERITE_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.IRON_ARROW, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.AMETHYST_ARROW, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_ARROW, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.NETHER_ARROW, Models.GENERATED);
+
+        itemModelGenerator.register(ArmoryItems.GOLDEN_FEATHER, Models.GENERATED);
+
+        itemModelGenerator.register(ArmoryItems.SQUID_TENTACLES, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.GLOW_SQUID_TENTACLES, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COOKED_SQUID_TENTACLES, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.WOODEN_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.STONE_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.GOLDEN_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.IRON_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.DIAMOND_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.NETHERITE_SICKLE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.FLINT_WOODEN_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_STONE_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_GOLDEN_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_IRON_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_DIAMOND_SICKLE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.COPPER_WOODEN_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_STONE_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_GOLDEN_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_IRON_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_DIAMOND_SICKLE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.QUARTZ_WOODEN_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_STONE_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_GOLDEN_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_IRON_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_DIAMOND_SICKLE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.FLINT_NETHERITE_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_NETHERITE_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_NETHERITE_SICKLE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.BRACED_STICK, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.HEAVY_FLINT_ROD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.HEAVY_COPPER_ROD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.HEAVY_QUARTZ_ROD, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.SWIFT_BOOTS,Models.GENERATED);
+
+        itemModelGenerator.register(ArmoryItems.HARD_BOILED_EGG,Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.FRIED_EGG,Models.GENERATED);
+
+        itemModelGenerator.register(ArmoryItems.WITHER_BONE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FIREBRAND, Models.HANDHELD);
+    }
+
+    @Override
+    public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+
+    }
+}
