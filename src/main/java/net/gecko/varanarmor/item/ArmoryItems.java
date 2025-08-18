@@ -451,7 +451,7 @@ public class ArmoryItems {
         return Registry.register(Registry.ITEM, new Identifier(VaranArmor.MOD_ID, name),item);
     }
 
-    public static void registerDecoItems() {
+    public static void registerArmoryItems() {
         VaranArmor.LOGGER.debug("Registering Items for" + VaranArmor.MOD_ID);
     }
 }

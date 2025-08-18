@@ -1,0 +1,34 @@
+package net.gecko.varanarmor.effects.statuseffects;
+
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.attribute.EntityAttributeModifier;
+import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.entity.effect.StatusEffectCategory;
+
+public class FatalPoisonEffect extends StatusEffect {
+    protected final double modifier;
+    public FatalPoisonEffect(StatusEffectCategory category, int color, double modifier) {
+        super(category, color);
+        this.modifier = modifier;
+    }
+
+    @Override
+    public void applyUpdateEffect(LivingEntity entity, int amplifier) {
+        super.applyUpdateEffect(entity, amplifier);
+        entity.damage(DamageSource.MAGIC, 1.0F);
+    }
+
+    @Override
+    public boolean canApplyUpdateEffect(int duration, int amplifier) {
+        int i = 25 >> amplifier;
+        if (i > 0) {
+            return duration % i == 0;
+        }
+        return true;
+    }
+    @Override
+    public double adjustModifierAmount(int amplifier, EntityAttributeModifier modifier) {
+        return this.modifier * (amplifier + 1);
+    }
+}

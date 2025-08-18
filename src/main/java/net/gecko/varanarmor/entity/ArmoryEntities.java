@@ -47,7 +47,7 @@ public class ArmoryEntities {
             FabricEntityTypeBuilder.<NautilusFishingBobberEntity>create(SpawnGroup.MISC, NautilusFishingBobberEntity::new)
                     .dimensions(EntityDimensions.fixed(0.25F, 0.25F)).build());
 
-    public static void registerDecoEntities(){
+    public static void registerArmoryEntities(){
         VaranArmor.LOGGER.info("Registering Deco Entities for " + VaranArmor.MOD_ID);
     }
 }
