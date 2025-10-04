@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "varan-armor:heavy_lapis_rod"
+    },
+    "X": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    " XX",
+    "XXX",
+    "#X "
+  ],
+  "result": {
+    "item": "varan-armor:lapis_diamond_claymore"
+  }
+}

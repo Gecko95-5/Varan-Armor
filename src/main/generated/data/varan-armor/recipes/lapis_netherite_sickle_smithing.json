@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "base": {
+    "item": "varan-armor:lapis_diamond_sickle"
+  },
+  "result": {
+    "item": "varan-armor:lapis_netherite_sickle"
+  }
+}

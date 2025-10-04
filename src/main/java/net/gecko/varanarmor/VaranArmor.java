@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 import net.gecko.varanarmor.effects.ArmoryEffects;
 import net.gecko.varanarmor.entity.ArmoryEntities;
 import net.gecko.varanarmor.item.ArmoryItems;
+import net.gecko.varanarmor.util.ArmoryPotions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,6 +17,7 @@ public class VaranArmor implements ModInitializer {
 		ArmoryItems.registerArmoryItems();
 		ArmoryEntities.registerArmoryEntities();
 		ArmoryEffects.registerArmoryEffects();
+		ArmoryPotions.registerPotions();
 
 		LOGGER.info("Hello Fabric world!");
 	}

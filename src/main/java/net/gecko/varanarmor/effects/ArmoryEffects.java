@@ -11,9 +11,8 @@ import net.minecraft.util.registry.Registry;
 
 public class ArmoryEffects{
 
-    public static StatusEffect FATAL_POISON = register("fatal_poison",new FatalPoisonEffect(StatusEffectCategory.HARMFUL,0x3fd11b, -4.0)
-            .addAttributeModifier(EntityAttributes.GENERIC_ATTACK_DAMAGE, "55FCED67-E92A-486E-9800-B47F202C4386",
-                     0.0, EntityAttributeModifier.Operation.ADDITION));
+    public static StatusEffect FATAL_POISON = register("fatal_poison",
+            new FatalPoisonEffect(StatusEffectCategory.HARMFUL,0x3fd11b));
 
     private static StatusEffect register(String name, StatusEffect effect) {
         return Registry.register(Registry.STATUS_EFFECT, new Identifier(VaranArmor.MOD_ID,name),effect);

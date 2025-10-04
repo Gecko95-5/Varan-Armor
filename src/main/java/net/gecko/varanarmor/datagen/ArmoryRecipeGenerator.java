@@ -8,6 +8,7 @@ import net.minecraft.data.server.recipe.CookingRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
+import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.RecipeSerializer;
@@ -32,13 +33,13 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(Items.FLINT))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.FLINT_ROD)));
 
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_ROD,2)
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_ROD,4)
                 .pattern("#")
                 .pattern("#")
-                .input('#', ArmoryItems.COPPER_NUGGET)
-                .criterion(RecipeProvider.hasItem(ArmoryItems.COPPER_NUGGET),
-                        RecipeProvider.conditionsFromItem(ArmoryItems.COPPER_NUGGET))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_ROD)));
+                .input('#', Items.LAPIS_LAZULI)
+                .criterion(RecipeProvider.hasItem(Items.LAPIS_LAZULI),
+                        RecipeProvider.conditionsFromItem(Items.LAPIS_LAZULI))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_ROD)));
 
         ShapedRecipeJsonBuilder.create(ArmoryItems.QUARTZ_ROD,4)
                 .pattern("#")
@@ -275,232 +276,232 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
         offerNetheriteUpgradeRecipe(exporter, ArmoryItems.FLINT_DIAMOND_AXE, ArmoryItems.FLINT_NETHERITE_AXE);
         offerNetheriteUpgradeRecipe(exporter, ArmoryItems.FLINT_DIAMOND_HOE, ArmoryItems.FLINT_NETHERITE_HOE);
 
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_WOODEN_SWORD)
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_WOODEN_SWORD)
                 .pattern("X")
                 .pattern("X")
                 .pattern("#")
                 .input('X', ItemTags.PLANKS)
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .criterion("has_planks", conditionsFromTag(ItemTags.PLANKS))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_WOODEN_SWORD)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_WOODEN_PICKAXE)
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_WOODEN_SWORD)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_WOODEN_PICKAXE)
                 .pattern("XXX")
                 .pattern(" # ")
                 .pattern(" # ")
                 .input('X', ItemTags.PLANKS)
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .criterion("has_planks", conditionsFromTag(ItemTags.PLANKS))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_WOODEN_PICKAXE)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_WOODEN_AXE)
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_WOODEN_PICKAXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_WOODEN_AXE)
                 .pattern("XX")
                 .pattern("X#")
                 .pattern(" #")
                 .input('X', ItemTags.PLANKS)
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .criterion("has_planks", conditionsFromTag(ItemTags.PLANKS))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_WOODEN_AXE)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_WOODEN_SHOVEL)
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_WOODEN_AXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_WOODEN_SHOVEL)
                 .pattern("X")
                 .pattern("#")
                 .pattern("#")
                 .input('X', ItemTags.PLANKS)
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .criterion("has_planks", conditionsFromTag(ItemTags.PLANKS))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_WOODEN_SHOVEL)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_WOODEN_HOE)
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_WOODEN_SHOVEL)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_WOODEN_HOE)
                 .pattern("XX")
                 .pattern(" #")
                 .pattern(" #")
                 .input('X', ItemTags.PLANKS)
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .criterion("has_planks", conditionsFromTag(ItemTags.PLANKS))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_WOODEN_HOE)));
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_WOODEN_HOE)));
 
 
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_STONE_SWORD)
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_STONE_SWORD)
                 .pattern("X")
                 .pattern("X")
                 .pattern("#")
                 .input('X', ItemTags.STONE_TOOL_MATERIALS)
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .criterion("has_cobblestone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_STONE_SWORD)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_STONE_PICKAXE)
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_STONE_SWORD)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_STONE_PICKAXE)
                 .pattern("XXX")
                 .pattern(" # ")
                 .pattern(" # ")
                 .input('X', ItemTags.STONE_TOOL_MATERIALS)
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .criterion("has_cobblestone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_STONE_PICKAXE)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_STONE_AXE)
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_STONE_PICKAXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_STONE_AXE)
                 .pattern("XX")
                 .pattern("X#")
                 .pattern(" #")
                 .input('X', ItemTags.STONE_TOOL_MATERIALS)
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .criterion("has_cobblestone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_STONE_AXE)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_STONE_SHOVEL)
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_STONE_AXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_STONE_SHOVEL)
                 .pattern("X")
                 .pattern("#")
                 .pattern("#")
                 .input('X', ItemTags.STONE_TOOL_MATERIALS)
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .criterion("has_cobblestone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_STONE_SHOVEL)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_STONE_HOE)
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_STONE_SHOVEL)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_STONE_HOE)
                 .pattern("XX")
                 .pattern(" #")
                 .pattern(" #")
                 .input('X', ItemTags.STONE_TOOL_MATERIALS)
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .criterion("has_cobblestone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_STONE_HOE)));
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_STONE_HOE)));
 
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_IRON_SWORD)
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_IRON_SWORD)
                 .pattern("X")
                 .pattern("X")
                 .pattern("#")
                 .input('X', Items.IRON_INGOT)
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
                         RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_IRON_SWORD)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_IRON_PICKAXE)
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_IRON_SWORD)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_IRON_PICKAXE)
                 .pattern("XXX")
                 .pattern(" # ")
                 .pattern(" # ")
                 .input('X', Items.IRON_INGOT)
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
                         RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_IRON_PICKAXE)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_IRON_AXE)
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_IRON_PICKAXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_IRON_AXE)
                 .pattern("XX")
                 .pattern("X#")
                 .pattern(" #")
                 .input('X', Items.IRON_INGOT)
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
                         RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_IRON_AXE)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_IRON_SHOVEL)
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_IRON_AXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_IRON_SHOVEL)
                 .pattern("X")
                 .pattern("#")
                 .pattern("#")
                 .input('X', Items.IRON_INGOT)
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
                         RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_IRON_SHOVEL)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_IRON_HOE)
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_IRON_SHOVEL)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_IRON_HOE)
                 .pattern("XX")
                 .pattern(" #")
                 .pattern(" #")
                 .input('X', Items.IRON_INGOT)
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
                         RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_IRON_HOE)));
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_IRON_HOE)));
 
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_GOLDEN_SWORD)
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_GOLDEN_SWORD)
                 .pattern("X")
                 .pattern("X")
                 .pattern("#")
                 .input('X', Items.GOLD_INGOT)
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
                         RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_GOLDEN_SWORD)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_GOLDEN_PICKAXE)
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_GOLDEN_SWORD)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_GOLDEN_PICKAXE)
                 .pattern("XXX")
                 .pattern(" # ")
                 .pattern(" # ")
                 .input('X', Items.GOLD_INGOT)
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
                         RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_GOLDEN_PICKAXE)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_GOLDEN_AXE)
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_GOLDEN_PICKAXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_GOLDEN_AXE)
                 .pattern("XX")
                 .pattern("X#")
                 .pattern(" #")
                 .input('X', Items.GOLD_INGOT)
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
                         RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_GOLDEN_AXE)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_GOLDEN_SHOVEL)
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_GOLDEN_AXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_GOLDEN_SHOVEL)
                 .pattern("X")
                 .pattern("#")
                 .pattern("#")
                 .input('X', Items.GOLD_INGOT)
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
                         RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_GOLDEN_SHOVEL)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_GOLDEN_HOE)
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_GOLDEN_SHOVEL)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_GOLDEN_HOE)
                 .pattern("XX")
                 .pattern(" #")
                 .pattern(" #")
                 .input('X', Items.GOLD_INGOT)
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
                         RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_GOLDEN_HOE)));
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_GOLDEN_HOE)));
 
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_DIAMOND_SWORD)
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_DIAMOND_SWORD)
                 .pattern("X")
                 .pattern("X")
                 .pattern("#")
                 .input('X', Items.DIAMOND)
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .criterion(RecipeProvider.hasItem(Items.DIAMOND),
                         RecipeProvider.conditionsFromItem(Items.DIAMOND))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_DIAMOND_SWORD)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_DIAMOND_PICKAXE)
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_DIAMOND_SWORD)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_DIAMOND_PICKAXE)
                 .pattern("XXX")
                 .pattern(" # ")
                 .pattern(" # ")
                 .input('X', Items.DIAMOND)
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .criterion(RecipeProvider.hasItem(Items.DIAMOND),
                         RecipeProvider.conditionsFromItem(Items.DIAMOND))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_DIAMOND_PICKAXE)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_DIAMOND_AXE)
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_DIAMOND_PICKAXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_DIAMOND_AXE)
                 .pattern("XX")
                 .pattern("X#")
                 .pattern(" #")
                 .input('X', Items.DIAMOND)
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .criterion(RecipeProvider.hasItem(Items.DIAMOND),
                         RecipeProvider.conditionsFromItem(Items.DIAMOND))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_DIAMOND_AXE)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_DIAMOND_SHOVEL)
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_DIAMOND_AXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_DIAMOND_SHOVEL)
                 .pattern("X")
                 .pattern("#")
                 .pattern("#")
                 .input('X', Items.DIAMOND)
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .criterion(RecipeProvider.hasItem(Items.DIAMOND),
                         RecipeProvider.conditionsFromItem(Items.DIAMOND))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_DIAMOND_SHOVEL)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_DIAMOND_HOE)
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_DIAMOND_SHOVEL)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_DIAMOND_HOE)
                 .pattern("XX")
                 .pattern(" #")
                 .pattern(" #")
                 .input('X', Items.DIAMOND)
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .criterion(RecipeProvider.hasItem(Items.DIAMOND),
                         RecipeProvider.conditionsFromItem(Items.DIAMOND))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_DIAMOND_HOE)));
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_DIAMOND_HOE)));
 
-        offerNetheriteUpgradeRecipe(exporter, ArmoryItems.COPPER_DIAMOND_SWORD, ArmoryItems.COPPER_NETHERITE_SWORD);
-        offerNetheriteUpgradeRecipe(exporter, ArmoryItems.COPPER_DIAMOND_PICKAXE, ArmoryItems.COPPER_NETHERITE_PICKAXE);
-        offerNetheriteUpgradeRecipe(exporter, ArmoryItems.COPPER_DIAMOND_SHOVEL, ArmoryItems.COPPER_NETHERITE_SHOVEL);
-        offerNetheriteUpgradeRecipe(exporter, ArmoryItems.COPPER_DIAMOND_AXE, ArmoryItems.COPPER_NETHERITE_AXE);
-        offerNetheriteUpgradeRecipe(exporter, ArmoryItems.COPPER_DIAMOND_HOE, ArmoryItems.COPPER_NETHERITE_HOE);
+        offerNetheriteUpgradeRecipe(exporter, ArmoryItems.LAPIS_DIAMOND_SWORD, ArmoryItems.LAPIS_NETHERITE_SWORD);
+        offerNetheriteUpgradeRecipe(exporter, ArmoryItems.LAPIS_DIAMOND_PICKAXE, ArmoryItems.LAPIS_NETHERITE_PICKAXE);
+        offerNetheriteUpgradeRecipe(exporter, ArmoryItems.LAPIS_DIAMOND_SHOVEL, ArmoryItems.LAPIS_NETHERITE_SHOVEL);
+        offerNetheriteUpgradeRecipe(exporter, ArmoryItems.LAPIS_DIAMOND_AXE, ArmoryItems.LAPIS_NETHERITE_AXE);
+        offerNetheriteUpgradeRecipe(exporter, ArmoryItems.LAPIS_DIAMOND_HOE, ArmoryItems.LAPIS_NETHERITE_HOE);
 
         ShapedRecipeJsonBuilder.create(ArmoryItems.QUARTZ_WOODEN_SWORD)
                 .pattern("X")
@@ -749,12 +750,12 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                 .pattern("#")
                 .pattern("Y")
                 .input('X', Items.AMETHYST_SHARD)
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .input('Y',Items.FEATHER)
                 .criterion(RecipeProvider.hasItem(Items.AMETHYST_SHARD),
                         RecipeProvider.conditionsFromItem(Items.AMETHYST_SHARD))
-                .criterion(RecipeProvider.hasItem(ArmoryItems.COPPER_ROD),
-                        RecipeProvider.conditionsFromItem(ArmoryItems.COPPER_ROD))
+                .criterion(RecipeProvider.hasItem(ArmoryItems.LAPIS_ROD),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.LAPIS_ROD))
                 .criterion(RecipeProvider.hasItem(Items.FEATHER),
                         RecipeProvider.conditionsFromItem(Items.FEATHER))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.AMETHYST_ARROW)));
@@ -982,49 +983,49 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(Items.DIAMOND))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.FLINT_DIAMOND_SICKLE)));
 
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_WOODEN_SICKLE)
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_WOODEN_SICKLE)
                 .pattern(" XX")
                 .pattern("X X")
                 .pattern(" # ")
                 .input('X', ItemTags.PLANKS)
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .criterion("has_planks", conditionsFromTag(ItemTags.PLANKS))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_WOODEN_SICKLE)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_STONE_SICKLE)
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_WOODEN_SICKLE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_STONE_SICKLE)
                 .pattern(" XX")
                 .pattern("X X")
                 .pattern(" # ")
                 .input('X', ItemTags.STONE_TOOL_MATERIALS)
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .criterion("has_cobblestone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_STONE_SICKLE)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_GOLDEN_SICKLE)
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_STONE_SICKLE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_GOLDEN_SICKLE)
                 .pattern(" XX")
                 .pattern("X X")
                 .pattern(" # ")
                 .input('X', Items.GOLD_INGOT)
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
                         RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_GOLDEN_SICKLE)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_IRON_SICKLE)
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_GOLDEN_SICKLE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_IRON_SICKLE)
                 .pattern(" XX")
                 .pattern("X X")
                 .pattern(" # ")
                 .input('X', Items.IRON_INGOT)
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
                         RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_IRON_SICKLE)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_DIAMOND_SICKLE)
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_IRON_SICKLE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_DIAMOND_SICKLE)
                 .pattern(" XX")
                 .pattern("X X")
                 .pattern(" # ")
                 .input('X', Items.DIAMOND)
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .criterion(RecipeProvider.hasItem(Items.DIAMOND),
                         RecipeProvider.conditionsFromItem(Items.DIAMOND))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_DIAMOND_SICKLE)));
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_DIAMOND_SICKLE)));
 
         ShapedRecipeJsonBuilder.create(ArmoryItems.QUARTZ_WOODEN_SICKLE)
                 .pattern(" XX")
@@ -1071,7 +1072,7 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.QUARTZ_DIAMOND_SICKLE)));
 
         offerNetheriteUpgradeRecipe(exporter, ArmoryItems.FLINT_DIAMOND_SICKLE, ArmoryItems.FLINT_NETHERITE_SICKLE);
-        offerNetheriteUpgradeRecipe(exporter, ArmoryItems.COPPER_DIAMOND_SICKLE, ArmoryItems.COPPER_NETHERITE_SICKLE);
+        offerNetheriteUpgradeRecipe(exporter, ArmoryItems.LAPIS_DIAMOND_SICKLE, ArmoryItems.LAPIS_NETHERITE_SICKLE);
         offerNetheriteUpgradeRecipe(exporter, ArmoryItems.QUARTZ_DIAMOND_SICKLE, ArmoryItems.QUARTZ_NETHERITE_SICKLE);
 
         ShapedRecipeJsonBuilder.create(ArmoryItems.BRACED_STICK,2)
@@ -1094,15 +1095,15 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(ArmoryItems.FLINT_ROD),
                         RecipeProvider.conditionsFromItem(ArmoryItems.FLINT_ROD))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.HEAVY_FLINT_ROD)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.HEAVY_COPPER_ROD)
+        ShapedRecipeJsonBuilder.create(ArmoryItems.HEAVY_LAPIS_ROD)
                 .pattern("#")
                 .pattern("X")
                 .pattern("#")
-                .input('#', ArmoryItems.COPPER_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
                 .input('X', Items.IRON_NUGGET)
-                .criterion(RecipeProvider.hasItem(ArmoryItems.COPPER_ROD),
-                        RecipeProvider.conditionsFromItem(ArmoryItems.COPPER_ROD))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.HEAVY_COPPER_ROD)));
+                .criterion(RecipeProvider.hasItem(ArmoryItems.LAPIS_ROD),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.LAPIS_ROD))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.HEAVY_LAPIS_ROD)));
         ShapedRecipeJsonBuilder.create(ArmoryItems.HEAVY_QUARTZ_ROD)
                 .pattern("#")
                 .pattern("X")
@@ -1203,49 +1204,49 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(Items.DIAMOND))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.FLINT_DIAMOND_CLAYMORE)));
 
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_WOODEN_CLAYMORE)
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_WOODEN_CLAYMORE)
                 .pattern(" XX")
                 .pattern("XXX")
                 .pattern("#X ")
                 .input('X', ItemTags.PLANKS)
-                .input('#', ArmoryItems.HEAVY_COPPER_ROD)
+                .input('#', ArmoryItems.HEAVY_LAPIS_ROD)
                 .criterion("has_planks", conditionsFromTag(ItemTags.PLANKS))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_WOODEN_CLAYMORE)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_STONE_CLAYMORE)
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_WOODEN_CLAYMORE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_STONE_CLAYMORE)
                 .pattern(" XX")
                 .pattern("XXX")
                 .pattern("#X ")
                 .input('X', ItemTags.STONE_TOOL_MATERIALS)
-                .input('#', ArmoryItems.HEAVY_COPPER_ROD)
+                .input('#', ArmoryItems.HEAVY_LAPIS_ROD)
                 .criterion("has_cobblestone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_STONE_CLAYMORE)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_IRON_CLAYMORE)
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_STONE_CLAYMORE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_IRON_CLAYMORE)
                 .pattern(" XX")
                 .pattern("XXX")
                 .pattern("#X ")
                 .input('X', Items.IRON_INGOT)
-                .input('#', ArmoryItems.HEAVY_COPPER_ROD)
+                .input('#', ArmoryItems.HEAVY_LAPIS_ROD)
                 .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
                         RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_IRON_CLAYMORE)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_GOLDEN_CLAYMORE)
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_IRON_CLAYMORE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_GOLDEN_CLAYMORE)
                 .pattern(" XX")
                 .pattern("XXX")
                 .pattern("#X ")
                 .input('X', Items.GOLD_INGOT)
-                .input('#', ArmoryItems.HEAVY_COPPER_ROD)
+                .input('#', ArmoryItems.HEAVY_LAPIS_ROD)
                 .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
                         RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_GOLDEN_CLAYMORE)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_DIAMOND_CLAYMORE)
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_GOLDEN_CLAYMORE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_DIAMOND_CLAYMORE)
                 .pattern(" XX")
                 .pattern("XXX")
                 .pattern("#X ")
                 .input('X', Items.DIAMOND)
-                .input('#', ArmoryItems.HEAVY_COPPER_ROD)
+                .input('#', ArmoryItems.HEAVY_LAPIS_ROD)
                 .criterion(RecipeProvider.hasItem(Items.DIAMOND),
                         RecipeProvider.conditionsFromItem(Items.DIAMOND))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_DIAMOND_CLAYMORE)));
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_DIAMOND_CLAYMORE)));
 
         ShapedRecipeJsonBuilder.create(ArmoryItems.QUARTZ_WOODEN_CLAYMORE)
                 .pattern(" XX")
@@ -1292,7 +1293,7 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.QUARTZ_DIAMOND_CLAYMORE)));
 
         offerNetheriteUpgradeRecipe(exporter, ArmoryItems.FLINT_DIAMOND_CLAYMORE, ArmoryItems.FLINT_NETHERITE_CLAYMORE);
-        offerNetheriteUpgradeRecipe(exporter, ArmoryItems.COPPER_DIAMOND_CLAYMORE, ArmoryItems.COPPER_NETHERITE_CLAYMORE);
+        offerNetheriteUpgradeRecipe(exporter, ArmoryItems.LAPIS_DIAMOND_CLAYMORE, ArmoryItems.LAPIS_NETHERITE_CLAYMORE);
         offerNetheriteUpgradeRecipe(exporter, ArmoryItems.QUARTZ_DIAMOND_CLAYMORE, ArmoryItems.QUARTZ_NETHERITE_CLAYMORE);
 
         ShapedRecipeJsonBuilder.create(ArmoryItems.SWIFT_BOOTS)
@@ -1323,5 +1324,13 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(Items.NETHER_WART),
                         RecipeProvider.conditionsFromItem(Items.NETHER_WART))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.WITHER_BONE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.WOODEN_DAGGER)
+                .pattern(" X")
+                .pattern("# ")
+                .input('X', ItemTags.PLANKS)
+                .input('#', Items.STICK)
+                .criterion("has_planks", conditionsFromTag(ItemTags.PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.WOODEN_DAGGER)));
     }
 }

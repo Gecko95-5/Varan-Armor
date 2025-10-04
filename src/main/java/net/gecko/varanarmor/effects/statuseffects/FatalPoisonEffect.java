@@ -7,10 +7,8 @@ import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 
 public class FatalPoisonEffect extends StatusEffect {
-    protected final double modifier;
-    public FatalPoisonEffect(StatusEffectCategory category, int color, double modifier) {
+    public FatalPoisonEffect(StatusEffectCategory category, int color) {
         super(category, color);
-        this.modifier = modifier;
     }
 
     @Override
@@ -26,9 +24,5 @@ public class FatalPoisonEffect extends StatusEffect {
             return duration % i == 0;
         }
         return true;
-    }
-    @Override
-    public double adjustModifierAmount(int amplifier, EntityAttributeModifier modifier) {
-        return this.modifier * (amplifier + 1);
     }
 }

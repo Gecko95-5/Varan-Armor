@@ -1,5 +1,5 @@
 {
-  "item.varan-armor.copper_nugget": "Copper Nugget",
+  "item.varan-armor.lapis_nugget": "Lapis Nugget",
   "item.varan-armor.golden_feather": "Golden Feather",
 
   "item.varan-armor.squid_tentacles": "Squid Tentacles",
@@ -10,15 +10,17 @@
   "item.varan-armor.fried_egg": "Fried Egg",
 
   "item.varan-armor.flint_rod": "Flint Rod",
-  "item.varan-armor.copper_rod": "Copper Rod",
+  "item.varan-armor.lapis_rod": "Lapis Rod",
   "item.varan-armor.quartz_rod": "Quartz Rod",
 
   "item.varan-armor.braced_stick": "Braced Stick",
   "item.varan-armor.heavy_flint_rod": "Heavy Flint Rod",
-  "item.varan-armor.heavy_copper_rod": "Heavy Copper Rod",
+  "item.varan-armor.heavy_lapis_rod": "Heavy Lapis Rod",
   "item.varan-armor.heavy_quartz_rod": "Heavy Quartz Rod",
 
   "item.varan-armor.wither_bone": "Wither Bone",
+
+  "item.varan-armor.poisonous_needle": "Poisonous Needle",
 
   "item.varan-armor.firebrand": "Firebrand",
 
@@ -52,35 +54,35 @@
   "item.varan-armor.flint_diamond_shovel": "Diamond Shovel",
   "item.varan-armor.flint_diamond_hoe": "Diamond Hoe",
 
-  "item.varan-armor.copper_wooden_sword": "Wooden Sword",
-  "item.varan-armor.copper_wooden_pickaxe": "Wooden Pickaxe",
-  "item.varan-armor.copper_wooden_axe": "Wooden Axe",
-  "item.varan-armor.copper_wooden_shovel": "Wooden Shovel",
-  "item.varan-armor.copper_wooden_hoe": "Wooden Hoe",
+  "item.varan-armor.lapis_wooden_sword": "Wooden Sword",
+  "item.varan-armor.lapis_wooden_pickaxe": "Wooden Pickaxe",
+  "item.varan-armor.lapis_wooden_axe": "Wooden Axe",
+  "item.varan-armor.lapis_wooden_shovel": "Wooden Shovel",
+  "item.varan-armor.lapis_wooden_hoe": "Wooden Hoe",
 
-  "item.varan-armor.copper_stone_sword": "Stone Sword",
-  "item.varan-armor.copper_stone_pickaxe": "Stone Pickaxe",
-  "item.varan-armor.copper_stone_axe": "Stone Axe",
-  "item.varan-armor.copper_stone_shovel": "Stone Shovel",
-  "item.varan-armor.copper_stone_hoe": "Stone Hoe",
+  "item.varan-armor.lapis_stone_sword": "Stone Sword",
+  "item.varan-armor.lapis_stone_pickaxe": "Stone Pickaxe",
+  "item.varan-armor.lapis_stone_axe": "Stone Axe",
+  "item.varan-armor.lapis_stone_shovel": "Stone Shovel",
+  "item.varan-armor.lapis_stone_hoe": "Stone Hoe",
 
-  "item.varan-armor.copper_iron_sword": "Iron Sword",
-  "item.varan-armor.copper_iron_pickaxe": "Iron Pickaxe",
-  "item.varan-armor.copper_iron_axe": "Iron Axe",
-  "item.varan-armor.copper_iron_shovel": "Iron Shovel",
-  "item.varan-armor.copper_iron_hoe": "Iron Hoe",
+  "item.varan-armor.lapis_iron_sword": "Iron Sword",
+  "item.varan-armor.lapis_iron_pickaxe": "Iron Pickaxe",
+  "item.varan-armor.lapis_iron_axe": "Iron Axe",
+  "item.varan-armor.lapis_iron_shovel": "Iron Shovel",
+  "item.varan-armor.lapis_iron_hoe": "Iron Hoe",
 
-  "item.varan-armor.copper_golden_sword": "Golden Sword",
-  "item.varan-armor.copper_golden_pickaxe": "Golden Pickaxe",
-  "item.varan-armor.copper_golden_axe": "Golden Axe",
-  "item.varan-armor.copper_golden_shovel": "Golden Shovel",
-  "item.varan-armor.copper_golden_hoe": "Golden Hoe",
+  "item.varan-armor.lapis_golden_sword": "Golden Sword",
+  "item.varan-armor.lapis_golden_pickaxe": "Golden Pickaxe",
+  "item.varan-armor.lapis_golden_axe": "Golden Axe",
+  "item.varan-armor.lapis_golden_shovel": "Golden Shovel",
+  "item.varan-armor.lapis_golden_hoe": "Golden Hoe",
 
-  "item.varan-armor.copper_diamond_sword": "Diamond Sword",
-  "item.varan-armor.copper_diamond_pickaxe": "Diamond Pickaxe",
-  "item.varan-armor.copper_diamond_axe": "Diamond Axe",
-  "item.varan-armor.copper_diamond_shovel": "Diamond Shovel",
-  "item.varan-armor.copper_diamond_hoe": "Diamond Hoe",
+  "item.varan-armor.lapis_diamond_sword": "Diamond Sword",
+  "item.varan-armor.lapis_diamond_pickaxe": "Diamond Pickaxe",
+  "item.varan-armor.lapis_diamond_axe": "Diamond Axe",
+  "item.varan-armor.lapis_diamond_shovel": "Diamond Shovel",
+  "item.varan-armor.lapis_diamond_hoe": "Diamond Hoe",
 
   "item.varan-armor.quartz_wooden_sword": "Wooden Sword",
   "item.varan-armor.quartz_wooden_pickaxe": "Wooden Pickaxe",
@@ -118,11 +120,11 @@
   "item.varan-armor.flint_netherite_shovel": "Netherite Shovel",
   "item.varan-armor.flint_netherite_hoe": "Netherite Hoe",
 
-  "item.varan-armor.copper_netherite_sword": "Netherite Sword",
-  "item.varan-armor.copper_netherite_pickaxe": "Netherite Pickaxe",
-  "item.varan-armor.copper_netherite_axe": "Netherite Axe",
-  "item.varan-armor.copper_netherite_shovel": "Netherite Shovel",
-  "item.varan-armor.copper_netherite_hoe": "Netherite Hoe",
+  "item.varan-armor.lapis_netherite_sword": "Netherite Sword",
+  "item.varan-armor.lapis_netherite_pickaxe": "Netherite Pickaxe",
+  "item.varan-armor.lapis_netherite_axe": "Netherite Axe",
+  "item.varan-armor.lapis_netherite_shovel": "Netherite Shovel",
+  "item.varan-armor.lapis_netherite_hoe": "Netherite Hoe",
 
   "item.varan-armor.quartz_netherite_sword": "Netherite Sword",
   "item.varan-armor.quartz_netherite_pickaxe": "Netherite Pickaxe",
@@ -163,11 +165,11 @@
   "item.varan-armor.flint_golden_sickle": "Golden Sickle",
   "item.varan-armor.flint_diamond_sickle": "Diamond Sickle",
 
-  "item.varan-armor.copper_wooden_sickle": "Wooden Sickle",
-  "item.varan-armor.copper_stone_sickle": "Stone Sickle",
-  "item.varan-armor.copper_iron_sickle": "Iron Sickle",
-  "item.varan-armor.copper_golden_sickle": "Golden Sickle",
-  "item.varan-armor.copper_diamond_sickle": "Diamond Sickle",
+  "item.varan-armor.lapis_wooden_sickle": "Wooden Sickle",
+  "item.varan-armor.lapis_stone_sickle": "Stone Sickle",
+  "item.varan-armor.lapis_iron_sickle": "Iron Sickle",
+  "item.varan-armor.lapis_golden_sickle": "Golden Sickle",
+  "item.varan-armor.lapis_diamond_sickle": "Diamond Sickle",
 
   "item.varan-armor.quartz_wooden_sickle": "Wooden Sickle",
   "item.varan-armor.quartz_stone_sickle": "Stone Sickle",
@@ -176,7 +178,7 @@
   "item.varan-armor.quartz_diamond_sickle": "Diamond Sickle",
 
   "item.varan-armor.flint_netherite_sickle": "Netherite Sickle",
-  "item.varan-armor.copper_netherite_sickle": "Netherite Sickle",
+  "item.varan-armor.lapis_netherite_sickle": "Netherite Sickle",
   "item.varan-armor.quartz_netherite_sickle": "Netherite Sickle",
 
   "item.varan-armor.wooden_claymore": "Wooden Claymore",
@@ -193,12 +195,12 @@
   "item.varan-armor.flint_diamond_claymore": "Diamond Claymore",
   "item.varan-armor.flint_netherite_claymore": "Netherite Claymore",
 
-  "item.varan-armor.copper_wooden_claymore": "Wooden Claymore",
-  "item.varan-armor.copper_stone_claymore": "Stone Claymore",
-  "item.varan-armor.copper_golden_claymore": "Golden Claymore",
-  "item.varan-armor.copper_iron_claymore": "Iron Claymore",
-  "item.varan-armor.copper_diamond_claymore": "Diamond Claymore",
-  "item.varan-armor.copper_netherite_claymore": "Netherite Claymore",
+  "item.varan-armor.lapis_wooden_claymore": "Wooden Claymore",
+  "item.varan-armor.lapis_stone_claymore": "Stone Claymore",
+  "item.varan-armor.lapis_golden_claymore": "Golden Claymore",
+  "item.varan-armor.lapis_iron_claymore": "Iron Claymore",
+  "item.varan-armor.lapis_diamond_claymore": "Diamond Claymore",
+  "item.varan-armor.lapis_netherite_claymore": "Netherite Claymore",
 
   "item.varan-armor.quartz_wooden_claymore": "Wooden Claymore",
   "item.varan-armor.quartz_stone_claymore": "Stone Claymore",
@@ -207,7 +209,41 @@
   "item.varan-armor.quartz_diamond_claymore": "Diamond Claymore",
   "item.varan-armor.quartz_netherite_claymore": "Netherite Claymore",
 
+  "item.varan-armor.wooden_dagger": "Wooden Dagger",
+
   "item.varan-armor.swift_boots": "Swift Boots",
+
+  "item.minecraft.potion.effect.fatal_poison_potion": "Potion of Fatal Poison",
+  "item.minecraft.splash_potion.effect.fatal_poison_potion": "Splash Potion of Fatal Poison",
+  "item.minecraft.lingering_potion.effect.fatal_poison_potion": "Lingering Potion of Fatal Poison",
+  "item.minecraft.tipped_arrow.effect.fatal_poison_potion": "Arrow of Fatal Poison",
+
+  "item.minecraft.potion.effect.long_fatal_poison_potion": "Potion of Fatal Poison",
+  "item.minecraft.splash_potion.effect.long_fatal_poison_potion": "Splash Potion of Fatal Poison",
+  "item.minecraft.lingering_potion.effect.long_fatal_poison_potion": "Lingering Potion of Fatal Poison",
+  "item.minecraft.tipped_arrow.effect.long_fatal_poison_potion": "Arrow of Fatal Poison",
+
+  "item.minecraft.potion.effect.wither_potion": "Potion of Decay",
+  "item.minecraft.splash_potion.effect.wither_potion": "Splash Potion of Decay",
+  "item.minecraft.lingering_potion.effect.wither_potion": "Lingering Potion of Decay",
+  "item.minecraft.tipped_arrow.effect.wither_potion": "Arrow of Decay",
+
+  "item.minecraft.potion.effect.long_wither_potion": "Potion of Decay",
+  "item.minecraft.splash_potion.effect.long_wither_potion": "Splash Potion of Decay",
+  "item.minecraft.lingering_potion.effect.long_wither_potion": "Lingering Potion of Decay",
+  "item.minecraft.tipped_arrow.effect.long_wither_potion": "Arrow of Decay",
+
+  "item.minecraft.potion.effect.blindness_potion": "Potion of Blindness",
+  "item.minecraft.splash_potion.effect.blindness_potion": "Splash Potion of Blindness",
+  "item.minecraft.lingering_potion.effect.blindness_potion": "Lingering Potion of Blindness",
+  "item.minecraft.tipped_arrow.effect.blindness_potion": "Arrow of Blindness",
+
+  "item.minecraft.potion.effect.long_blindness_potion": "Potion of Blindness",
+  "item.minecraft.splash_potion.effect.long_blindness_potion": "Splash Potion of Blindness",
+  "item.minecraft.lingering_potion.effect.long_blindness_potion": "Lingering Potion of Blindness",
+  "item.minecraft.tipped_arrow.effect.long_blindness_potion": "Arrow of Blindness",
+
+  "effect.varan-armor.fatal_poison": "Fatal Poison",
 
   "itemGroup.varan-armor.varan_armor": "Variant Armoury"
 }

@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "varan-armor:copper_rod"
+      "item": "varan-armor:lapis_rod"
     },
     "X": {
       "item": "minecraft:amethyst_shard"
