@@ -25,6 +25,7 @@
     "varan-armor:quartz_golden_sword",
     "varan-armor:quartz_diamond_sword",
     "varan-armor:quartz_netherite_sword",
-    "#varan-armor:claymores"
+    "#varan-armor:claymores",
+    "#varan-armor:daggers"
   ]
 }

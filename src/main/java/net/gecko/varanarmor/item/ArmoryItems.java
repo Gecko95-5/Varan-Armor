@@ -11,11 +11,12 @@ import net.gecko.varanarmor.item.components.ArmoryFoodComponents;
 import net.gecko.varanarmor.item.components.ArmoryToolMaterials;
 import net.gecko.varanarmor.item.tools.FixedHoeItem;
 import net.gecko.varanarmor.item.tools.ClaymoreItem;
-import net.gecko.varanarmor.item.tools.FirebrandItem;
+import net.gecko.varanarmor.item.tools.special.FirebrandItem;
 import net.gecko.varanarmor.item.tools.SickleItem;
 import net.gecko.varanarmor.item.tools.bow.*;
 import net.gecko.varanarmor.item.tools.fishing_rods.NautilusFishingRodItem;
 import net.gecko.varanarmor.item.tools.fishing_rods.SquidFishingRodItem;
+import net.gecko.varanarmor.item.tools.special.PoisonDaggerItem;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
@@ -282,7 +283,81 @@ public class ArmoryItems {
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item WOODEN_DAGGER = registerItem("wooden_dagger",
-            new SwordItem(ToolMaterials.WOOD, 1, -2.0F,
+            new SwordItem(ToolMaterials.WOOD, 1, -1.4F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item FLINT_WOODEN_DAGGER = registerItem("flint_wooden_dagger",
+            new SwordItem(ArmoryToolMaterials.FLINT_WOOD, 1, -1.4F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item LAPIS_WOODEN_DAGGER = registerItem("lapis_wooden_dagger",
+            new SwordItem(ArmoryToolMaterials.LAPIS_WOOD, 1, -1.2F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item QUARTZ_WOODEN_DAGGER = registerItem("quartz_wooden_dagger",
+            new SwordItem(ArmoryToolMaterials.QUARTZ_WOOD, 1, -1.4F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item STONE_DAGGER = registerItem("stone_dagger",
+            new SwordItem(ToolMaterials.STONE, 0, -1.2F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item FLINT_STONE_DAGGER = registerItem("flint_stone_dagger",
+            new SwordItem(ArmoryToolMaterials.FLINT_STONE, 0, -1.2F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item LAPIS_STONE_DAGGER = registerItem("lapis_stone_dagger",
+            new SwordItem(ArmoryToolMaterials.LAPIS_STONE, 0, -1.0F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item QUARTZ_STONE_DAGGER = registerItem("quartz_stone_dagger",
+            new SwordItem(ArmoryToolMaterials.QUARTZ_STONE, 0, -1.2F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item GOLDEN_DAGGER = registerItem("golden_dagger",
+            new SwordItem(ToolMaterials.GOLD, 1, -1.0F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item FLINT_GOLDEN_DAGGER = registerItem("flint_golden_dagger",
+            new SwordItem(ArmoryToolMaterials.FLINT_GOLD, 1, -1.0F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item LAPIS_GOLDEN_DAGGER = registerItem("lapis_golden_dagger",
+            new SwordItem(ArmoryToolMaterials.LAPIS_GOLD, 1, -0.8F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item QUARTZ_GOLDEN_DAGGER = registerItem("quartz_golden_dagger",
+            new SwordItem(ArmoryToolMaterials.QUARTZ_GOLD, 1, -1.0F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item IRON_DAGGER = registerItem("iron_dagger",
+            new SwordItem(ToolMaterials.IRON, 0, -1.2F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item FLINT_IRON_DAGGER = registerItem("flint_iron_dagger",
+            new SwordItem(ArmoryToolMaterials.FLINT_IRON, 0, -1.2F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item LAPIS_IRON_DAGGER = registerItem("lapis_iron_dagger",
+            new SwordItem(ArmoryToolMaterials.LAPIS_IRON, 0, -1.0F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item QUARTZ_IRON_DAGGER = registerItem("quartz_iron_dagger",
+            new SwordItem(ArmoryToolMaterials.QUARTZ_IRON, 0, -1.2F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item DIAMOND_DAGGER = registerItem("diamond_dagger",
+            new SwordItem(ToolMaterials.DIAMOND, -1, -1.0F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item FLINT_DIAMOND_DAGGER = registerItem("flint_diamond_dagger",
+            new SwordItem(ArmoryToolMaterials.FLINT_DIAMOND, -1, -1.0F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item LAPIS_DIAMOND_DAGGER = registerItem("lapis_diamond_dagger",
+            new SwordItem(ArmoryToolMaterials.LAPIS_DIAMOND, -1, -0.8F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item QUARTZ_DIAMOND_DAGGER = registerItem("quartz_diamond_dagger",
+            new SwordItem(ArmoryToolMaterials.QUARTZ_DIAMOND, -1, -1.0F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item NETHERITE_DAGGER = registerItem("netherite_dagger",
+            new SwordItem(ToolMaterials.NETHERITE, -1, -1.0F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item FLINT_NETHERITE_DAGGER = registerItem("flint_netherite_dagger",
+            new SwordItem(ArmoryToolMaterials.FLINT_NETHERITE, -1, -1.0F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item LAPIS_NETHERITE_DAGGER = registerItem("lapis_netherite_dagger",
+            new SwordItem(ArmoryToolMaterials.LAPIS_NETHERITE, -1, -0.8F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item QUARTZ_NETHERITE_DAGGER = registerItem("quartz_netherite_dagger",
+            new SwordItem(ArmoryToolMaterials.QUARTZ_NETHERITE, -1, -1.0F,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item WOODEN_CLAYMORE = registerItem("wooden_claymore",
@@ -362,6 +437,10 @@ public class ArmoryItems {
     public static final Item QUARTZ_NETHERITE_CLAYMORE = registerItem("quartz_netherite_claymore",
             new ClaymoreItem(ArmoryToolMaterials.HEAVY_QUARTZ_NETHERITE, 7, -3.4F, 200, 1,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
+
+    public static final Item SPINDTOX = registerItem("spindtox",
+            new PoisonDaggerItem(ArmoryToolMaterials.SPINDTOX, 2, -1.2F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item WOODEN_SICKLE = registerItem("wooden_sickle",
             new SickleItem(ToolMaterials.WOOD, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));

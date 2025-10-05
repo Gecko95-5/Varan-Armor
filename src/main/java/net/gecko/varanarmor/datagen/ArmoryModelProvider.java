@@ -175,6 +175,37 @@ public class ArmoryModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ArmoryItems.HEAVY_QUARTZ_ROD, Models.HANDHELD);
 
         itemModelGenerator.register(ArmoryItems.WOODEN_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.STONE_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.IRON_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.GOLDEN_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.DIAMOND_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.NETHERITE_DAGGER, Models.HANDHELD);
+        
+        itemModelGenerator.register(ArmoryItems.FLINT_WOODEN_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.LAPIS_WOODEN_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_WOODEN_DAGGER, Models.HANDHELD);
+                
+        itemModelGenerator.register(ArmoryItems.FLINT_STONE_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.LAPIS_STONE_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_STONE_DAGGER, Models.HANDHELD);
+                
+        itemModelGenerator.register(ArmoryItems.FLINT_IRON_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.LAPIS_IRON_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_IRON_DAGGER, Models.HANDHELD);
+                
+        itemModelGenerator.register(ArmoryItems.FLINT_GOLDEN_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.LAPIS_GOLDEN_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_GOLDEN_DAGGER, Models.HANDHELD);
+                
+        itemModelGenerator.register(ArmoryItems.FLINT_DIAMOND_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.LAPIS_DIAMOND_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_DIAMOND_DAGGER, Models.HANDHELD);
+                
+        itemModelGenerator.register(ArmoryItems.FLINT_NETHERITE_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.LAPIS_NETHERITE_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_NETHERITE_DAGGER, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.SPINDTOX, Models.HANDHELD);
 
         itemModelGenerator.register(ArmoryItems.SWIFT_BOOTS,Models.GENERATED);
 

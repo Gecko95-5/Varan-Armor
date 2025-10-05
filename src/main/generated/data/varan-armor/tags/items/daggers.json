@@ -1,6 +1,30 @@
 {
   "replace": false,
   "values": [
-    "varan-armor:wooden_dagger"
+    "varan-armor:wooden_dagger",
+    "varan-armor:stone_dagger",
+    "varan-armor:iron_dagger",
+    "varan-armor:golden_dagger",
+    "varan-armor:diamond_dagger",
+    "varan-armor:netherite_dagger",
+    "varan-armor:flint_wooden_dagger",
+    "varan-armor:lapis_wooden_dagger",
+    "varan-armor:quartz_wooden_dagger",
+    "varan-armor:flint_stone_dagger",
+    "varan-armor:lapis_stone_dagger",
+    "varan-armor:quartz_stone_dagger",
+    "varan-armor:flint_iron_dagger",
+    "varan-armor:lapis_iron_dagger",
+    "varan-armor:quartz_iron_dagger",
+    "varan-armor:flint_golden_dagger",
+    "varan-armor:lapis_golden_dagger",
+    "varan-armor:quartz_golden_dagger",
+    "varan-armor:flint_diamond_dagger",
+    "varan-armor:lapis_diamond_dagger",
+    "varan-armor:quartz_diamond_dagger",
+    "varan-armor:flint_netherite_dagger",
+    "varan-armor:lapis_netherite_dagger",
+    "varan-armor:quartz_netherite_dagger",
+    "varan-armor:spindtox"
   ]
 }

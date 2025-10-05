@@ -8,7 +8,6 @@ import net.minecraft.data.server.recipe.CookingRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
-import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.RecipeSerializer;
@@ -1332,5 +1331,42 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                 .input('#', Items.STICK)
                 .criterion("has_planks", conditionsFromTag(ItemTags.PLANKS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.WOODEN_DAGGER)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.STONE_DAGGER)
+                .pattern(" X")
+                .pattern("# ")
+                .input('X', ItemTags.STONE_TOOL_MATERIALS)
+                .input('#', Items.STICK)
+                .criterion("has_cobblestone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.STONE_DAGGER)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.IRON_DAGGER)
+                .pattern(" X")
+                .pattern("# ")
+                .input('X', Items.IRON_INGOT)
+                .input('#', Items.STICK)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.IRON_DAGGER)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.GOLDEN_DAGGER)
+                .pattern(" X")
+                .pattern("# ")
+                .input('X', Items.GOLD_INGOT)
+                .input('#', Items.STICK)
+                .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.GOLDEN_DAGGER)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.DIAMOND_DAGGER)
+                .pattern(" X")
+                .pattern("# ")
+                .input('X', Items.DIAMOND)
+                .input('#', Items.STICK)
+                .criterion(RecipeProvider.hasItem(Items.DIAMOND),
+                        RecipeProvider.conditionsFromItem(Items.DIAMOND))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.DIAMOND_DAGGER)));
+
+        offerNetheriteUpgradeRecipe(exporter, ArmoryItems.DIAMOND_DAGGER, ArmoryItems.NETHERITE_DAGGER);
     }
 }

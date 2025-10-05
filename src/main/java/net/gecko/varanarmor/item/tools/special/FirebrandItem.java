@@ -1,4 +1,4 @@
-package net.gecko.varanarmor.item.tools;
+package net.gecko.varanarmor.item.tools.special;
 
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.block.*;
@@ -26,6 +26,7 @@ public class FirebrandItem extends AxeItem {
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         if (target.isOnFire()){
+            target.playSound(SoundEvents.BLOCK_FIRE_EXTINGUISH, 1.0f, 1.0f);
             target.extinguish();
             target.damage(DamageSource.GENERIC,5);
         } else {

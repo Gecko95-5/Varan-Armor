@@ -1,5 +1,5 @@
-// 1.19.2	2025-10-04T02:39:14.8771422	Tags for minecraft:item
-519feef35fdbbde13e489d4eb1d06084f40eb805 data\varan-armor\tags\items\daggers.json
+// 1.19.2	2025-10-05T01:02:41.9548664	Tags for minecraft:item
+c7121f78a7be6464310fbd57d5c8eae8114205e0 data\varan-armor\tags\items\daggers.json
 23d97df561945e91e848c7ad30521d5eb1cd839f data\varan-armor\tags\items\axes.json
 ddaf42bf734fd744b867307cca090d69226e28aa data\minecraft\tags\items\arrows.json
 697cf628fcb7c5ab71e1d59a7928496f1e6b0cc3 data\varan-armor\tags\items\shovels.json
@@ -9,4 +9,4 @@ bac12a9e8bf415a32047a879fcb3dc460b684e78 data\varan-armor\tags\items\pickaxes.js
 8c3511d2ba6df7e002c41f9b9b1eabe2cd383bdb data\varan-armor\tags\items\sickles.json
 b9304b2a721445e944fabf1f7545034887cf08f7 data\varan-armor\tags\items\claymores.json
 31fbeacc9bbbe79d09d5c40644e0edd577c9487d data\varan-armor\tags\items\single_axes.json
-afca18c49f735598b496322dd387bd24ee056840 data\varan-armor\tags\items\swords.json
+3f937a2fd6750b2199b5046974cf625b2431d258 data\varan-armor\tags\items\swords.json

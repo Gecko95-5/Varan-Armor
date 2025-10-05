@@ -80,7 +80,31 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ArmoryItems.QUARTZ_NETHERITE_CLAYMORE);
 
         getOrCreateTagBuilder(ArmoryTags.Items.DAGGERS)
-                .add(ArmoryItems.WOODEN_DAGGER);
+                .add(ArmoryItems.WOODEN_DAGGER)
+                .add(ArmoryItems.STONE_DAGGER)
+                .add(ArmoryItems.IRON_DAGGER)
+                .add(ArmoryItems.GOLDEN_DAGGER)
+                .add(ArmoryItems.DIAMOND_DAGGER)
+                .add(ArmoryItems.NETHERITE_DAGGER)
+                .add(ArmoryItems.FLINT_WOODEN_DAGGER)
+                .add(ArmoryItems.LAPIS_WOODEN_DAGGER)
+                .add(ArmoryItems.QUARTZ_WOODEN_DAGGER)
+                .add(ArmoryItems.FLINT_STONE_DAGGER)
+                .add(ArmoryItems.LAPIS_STONE_DAGGER)
+                .add(ArmoryItems.QUARTZ_STONE_DAGGER)
+                .add(ArmoryItems.FLINT_IRON_DAGGER)
+                .add(ArmoryItems.LAPIS_IRON_DAGGER)
+                .add(ArmoryItems.QUARTZ_IRON_DAGGER)
+                .add(ArmoryItems.FLINT_GOLDEN_DAGGER)
+                .add(ArmoryItems.LAPIS_GOLDEN_DAGGER)
+                .add(ArmoryItems.QUARTZ_GOLDEN_DAGGER)
+                .add(ArmoryItems.FLINT_DIAMOND_DAGGER)
+                .add(ArmoryItems.LAPIS_DIAMOND_DAGGER)
+                .add(ArmoryItems.QUARTZ_DIAMOND_DAGGER)
+                .add(ArmoryItems.FLINT_NETHERITE_DAGGER)
+                .add(ArmoryItems.LAPIS_NETHERITE_DAGGER)
+                .add(ArmoryItems.QUARTZ_NETHERITE_DAGGER)
+                .add(ArmoryItems.SPINDTOX);
 
     getOrCreateTagBuilder(ArmoryTags.Items.SWORDS)
             .add(Items.WOODEN_SWORD)
@@ -107,7 +131,8 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
             .add(ArmoryItems.QUARTZ_GOLDEN_SWORD)
             .add(ArmoryItems.QUARTZ_DIAMOND_SWORD)
             .add(ArmoryItems.QUARTZ_NETHERITE_SWORD)
-            .addTag(ArmoryTags.Items.CLAYMORES);
+            .addTag(ArmoryTags.Items.CLAYMORES)
+            .addTag(ArmoryTags.Items.DAGGERS);
 
     getOrCreateTagBuilder(ArmoryTags.Items.PICKAXES)
             .add(Items.WOODEN_PICKAXE)

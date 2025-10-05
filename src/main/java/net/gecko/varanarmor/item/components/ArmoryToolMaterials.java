@@ -101,7 +101,10 @@ public enum ArmoryToolMaterials implements ToolMaterial {
             () -> Ingredient.ofItems(Items.NETHERITE_INGOT)),
 
     FIREBRAND (3, 1748,5.0F, 3.0F, 6,
-                           () -> Ingredient.ofItems(ArmoryItems.WITHER_BONE));
+                           () -> Ingredient.ofItems(ArmoryItems.WITHER_BONE)),
+
+    SPINDTOX (3, 562,2.0F, 0.0F, 2,
+                           () -> Ingredient.ofItems(ArmoryItems.POISONOUS_NEEDLE));
 
     private final int miningLevel;
     private final int itemDurability;
