@@ -169,11 +169,6 @@ public class ArmoryModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ArmoryItems.LAPIS_NETHERITE_SICKLE, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.QUARTZ_NETHERITE_SICKLE, Models.HANDHELD);
 
-        itemModelGenerator.register(ArmoryItems.BRACED_STICK, Models.HANDHELD);
-        itemModelGenerator.register(ArmoryItems.HEAVY_FLINT_ROD, Models.HANDHELD);
-        itemModelGenerator.register(ArmoryItems.HEAVY_LAPIS_ROD, Models.HANDHELD);
-        itemModelGenerator.register(ArmoryItems.HEAVY_QUARTZ_ROD, Models.HANDHELD);
-
         itemModelGenerator.register(ArmoryItems.WOODEN_DAGGER, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.STONE_DAGGER, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.IRON_DAGGER, Models.HANDHELD);
@@ -208,6 +203,7 @@ public class ArmoryModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ArmoryItems.SPINDTOX, Models.HANDHELD);
 
         itemModelGenerator.register(ArmoryItems.SWIFT_BOOTS,Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.MINING_GOOGLES,Models.GENERATED);
 
         itemModelGenerator.register(ArmoryItems.HARD_BOILED_EGG,Models.GENERATED);
         itemModelGenerator.register(ArmoryItems.FRIED_EGG,Models.GENERATED);

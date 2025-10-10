@@ -1,6 +1,7 @@
 package net.gecko.varanarmor.item;
 
 import net.gecko.varanarmor.VaranArmor;
+import net.gecko.varanarmor.item.armour.model.MiningGooglesItem;
 import net.gecko.varanarmor.item.armour.model.SwiftBootsItem;
 import net.gecko.varanarmor.item.arrow.AmethystArrowItem;
 import net.gecko.varanarmor.item.arrow.IronArrowItem;
@@ -525,6 +526,10 @@ public class ArmoryItems {
             new QuartzArrowItem(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item NETHER_ARROW = registerItem("nether_arrow",
             new NetherArrowItem(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item MINING_GOOGLES = registerItem("mining_googles",
+            new MiningGooglesItem(ArmoryArmourMaterials.GOOGLES, EquipmentSlot.HEAD,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item SWIFT_BOOTS = registerItem("swift_boots",
             new SwiftBootsItem(ArmoryArmourMaterials.SWIFT, EquipmentSlot.FEET,

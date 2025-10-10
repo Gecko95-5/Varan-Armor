@@ -26,7 +26,9 @@ public abstract class PlayerEntityMixin extends LivingEntity {
             at = @At("TAIL"))
     private void tick_TAIL(CallbackInfo swift) {
         this.updateSwiftBoots();
+        this.updateMiningGoogles();
     }
+
 
     @Unique
     private void updateSwiftBoots() {
@@ -35,4 +37,26 @@ public abstract class PlayerEntityMixin extends LivingEntity {
             this.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 1, false, false, true));
         }
     }
+
+    @Unique
+    private void updateMiningGoogles() {
+        ItemStack itemStack = this.getEquippedStack(EquipmentSlot.HEAD);
+        if (itemStack.isOf(ArmoryItems.MINING_GOOGLES)) {
+            this.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 400, 0, false, false, true));
+        }
+    }
+    //    @Unique
+//    private void updateBracerSuit() {
+//        ItemStack itemStack = this.getEquippedStack(EquipmentSlot.CHEST);
+//        if (itemStack.isOf(ArmoryItems.MINING_GOOGLES) && this.getHealth() < this.getMaxHealth()/2) {
+//            this.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 500, 0, false, false, true));//
+//            }
+//    }
+    //    @Unique
+//    private void updateBracerSuit() {
+//        ItemStack itemStack = this.getEquippedStack(EquipmentSlot.CHEST);
+//        if (itemStack.isOf(ArmoryItems.MINING_GOOGLES) && this.getHealth() > this.getMaxHealth()/2) {
+//            this.addStatusEffect(new StatusEffectInstance(StatusEffects.STREGHT, 500, 0, false, false, true));
+//        }
+//    }
 }

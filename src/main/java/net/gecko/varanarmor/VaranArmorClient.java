@@ -6,6 +6,7 @@ import net.gecko.varanarmor.entity.ArmoryEntities;
 import net.gecko.varanarmor.entity.renderer.CustomArrowRenderer;
 import net.gecko.varanarmor.entity.renderer.NautilusBobberRenderer;
 import net.gecko.varanarmor.entity.renderer.SquidBobberRenderer;
+import net.gecko.varanarmor.entity.renderer.armour.MiningGooglesRenderer;
 import net.gecko.varanarmor.entity.renderer.armour.SwiftBootsRenderer;
 import net.gecko.varanarmor.item.ArmoryItems;
 import net.gecko.varanarmor.util.ArmoryModelPredicateProvider;
@@ -33,5 +34,6 @@ public class VaranArmorClient implements ClientModInitializer {
                 (ctx, new Identifier(VaranArmor.MOD_ID,"textures/entity/projectiles/nether_arrow.png")));
 
         GeoArmorRenderer.registerArmorRenderer(new SwiftBootsRenderer(), ArmoryItems.SWIFT_BOOTS);
+        GeoArmorRenderer.registerArmorRenderer(new MiningGooglesRenderer(), ArmoryItems.MINING_GOOGLES);
     }
 }

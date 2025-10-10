@@ -1368,5 +1368,150 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.DIAMOND_DAGGER)));
 
         offerNetheriteUpgradeRecipe(exporter, ArmoryItems.DIAMOND_DAGGER, ArmoryItems.NETHERITE_DAGGER);
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.FLINT_WOODEN_DAGGER)
+                .pattern(" X")
+                .pattern("# ")
+                .input('X', ItemTags.PLANKS)
+                .input('#', ArmoryItems.FLINT_ROD)
+                .criterion("has_planks", conditionsFromTag(ItemTags.PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.FLINT_WOODEN_DAGGER)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.FLINT_STONE_DAGGER)
+                .pattern(" X")
+                .pattern("# ")
+                .input('X', ItemTags.STONE_TOOL_MATERIALS)
+                .input('#', ArmoryItems.FLINT_ROD)
+                .criterion("has_cobblestone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.FLINT_STONE_DAGGER)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.FLINT_IRON_DAGGER)
+                .pattern(" X")
+                .pattern("# ")
+                .input('X', Items.IRON_INGOT)
+                .input('#', ArmoryItems.FLINT_ROD)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.FLINT_IRON_DAGGER)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.FLINT_GOLDEN_DAGGER)
+                .pattern(" X")
+                .pattern("# ")
+                .input('X', Items.GOLD_INGOT)
+                .input('#', ArmoryItems.FLINT_ROD)
+                .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.FLINT_GOLDEN_DAGGER)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.FLINT_DIAMOND_DAGGER)
+                .pattern(" X")
+                .pattern("# ")
+                .input('X', Items.DIAMOND)
+                .input('#', ArmoryItems.FLINT_ROD)
+                .criterion(RecipeProvider.hasItem(Items.DIAMOND),
+                        RecipeProvider.conditionsFromItem(Items.DIAMOND))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.FLINT_DIAMOND_DAGGER)));
+
+        offerNetheriteUpgradeRecipe(exporter, ArmoryItems.FLINT_DIAMOND_DAGGER, ArmoryItems.FLINT_NETHERITE_DAGGER);
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_WOODEN_DAGGER)
+                .pattern(" X")
+                .pattern("# ")
+                .input('X', ItemTags.PLANKS)
+                .input('#', ArmoryItems.LAPIS_ROD)
+                .criterion("has_planks", conditionsFromTag(ItemTags.PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_WOODEN_DAGGER)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_STONE_DAGGER)
+                .pattern(" X")
+                .pattern("# ")
+                .input('X', ItemTags.STONE_TOOL_MATERIALS)
+                .input('#', ArmoryItems.LAPIS_ROD)
+                .criterion("has_cobblestone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_STONE_DAGGER)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_IRON_DAGGER)
+                .pattern(" X")
+                .pattern("# ")
+                .input('X', Items.IRON_INGOT)
+                .input('#', ArmoryItems.LAPIS_ROD)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_IRON_DAGGER)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_GOLDEN_DAGGER)
+                .pattern(" X")
+                .pattern("# ")
+                .input('X', Items.GOLD_INGOT)
+                .input('#', ArmoryItems.LAPIS_ROD)
+                .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_GOLDEN_DAGGER)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_DIAMOND_DAGGER)
+                .pattern(" X")
+                .pattern("# ")
+                .input('X', Items.DIAMOND)
+                .input('#', ArmoryItems.LAPIS_ROD)
+                .criterion(RecipeProvider.hasItem(Items.DIAMOND),
+                        RecipeProvider.conditionsFromItem(Items.DIAMOND))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_DIAMOND_DAGGER)));
+
+        offerNetheriteUpgradeRecipe(exporter, ArmoryItems.LAPIS_DIAMOND_DAGGER, ArmoryItems.LAPIS_NETHERITE_DAGGER);
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.QUARTZ_WOODEN_DAGGER)
+                .pattern(" X")
+                .pattern("# ")
+                .input('X', ItemTags.PLANKS)
+                .input('#', ArmoryItems.QUARTZ_ROD)
+                .criterion("has_planks", conditionsFromTag(ItemTags.PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.QUARTZ_WOODEN_DAGGER)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.QUARTZ_STONE_DAGGER)
+                .pattern(" X")
+                .pattern("# ")
+                .input('X', ItemTags.STONE_TOOL_MATERIALS)
+                .input('#', ArmoryItems.QUARTZ_ROD)
+                .criterion("has_cobblestone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.QUARTZ_STONE_DAGGER)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.QUARTZ_IRON_DAGGER)
+                .pattern(" X")
+                .pattern("# ")
+                .input('X', Items.IRON_INGOT)
+                .input('#', ArmoryItems.QUARTZ_ROD)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.QUARTZ_IRON_DAGGER)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.QUARTZ_GOLDEN_DAGGER)
+                .pattern(" X")
+                .pattern("# ")
+                .input('X', Items.GOLD_INGOT)
+                .input('#', ArmoryItems.QUARTZ_ROD)
+                .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.QUARTZ_GOLDEN_DAGGER)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.QUARTZ_DIAMOND_DAGGER)
+                .pattern(" X")
+                .pattern("# ")
+                .input('X', Items.DIAMOND)
+                .input('#', ArmoryItems.QUARTZ_ROD)
+                .criterion(RecipeProvider.hasItem(Items.DIAMOND),
+                        RecipeProvider.conditionsFromItem(Items.DIAMOND))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.QUARTZ_DIAMOND_DAGGER)));
+
+        offerNetheriteUpgradeRecipe(exporter, ArmoryItems.QUARTZ_DIAMOND_DAGGER, ArmoryItems.QUARTZ_NETHERITE_DAGGER);
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.MINING_GOOGLES)
+                .pattern("#X#")
+                .pattern("X X")
+                .pattern(" X ")
+                .input('X', Items.COPPER_INGOT)
+                .input('#', Items.AMETHYST_SHARD)
+                .criterion(RecipeProvider.hasItem(Items.AMETHYST_SHARD),
+                        RecipeProvider.conditionsFromItem(Items.AMETHYST_SHARD))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.MINING_GOOGLES)));
     }
 }

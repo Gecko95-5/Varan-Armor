@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "varan-armor:lapis_rod"
+    },
+    "X": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    " X",
+    "# "
+  ],
+  "result": {
+    "item": "varan-armor:lapis_diamond_dagger"
+  }
+}

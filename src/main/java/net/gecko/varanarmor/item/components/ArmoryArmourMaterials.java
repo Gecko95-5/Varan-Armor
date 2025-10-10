@@ -11,8 +11,11 @@ import net.minecraft.sound.SoundEvents;
 import java.util.function.Supplier;
 
 public enum ArmoryArmourMaterials implements ArmorMaterial {
-    SWIFT("swift", 12, new int[] { 2, 4, 3, 2}, 9,
-            SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0f, 0f, () -> Ingredient.ofItems(Items.LAPIS_LAZULI));
+    SWIFT("swift", 12, new int[] { 2, 0, 0, 0}, 9,
+            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0f, 0f, () -> Ingredient.ofItems(Items.LAPIS_LAZULI)),
+
+    GOOGLES("googles", 6, new int[] { 0, 0, 0, 1}, 6,
+            SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0f, 0f, () -> Ingredient.ofItems(Items.AMETHYST_SHARD));
 
     private final String name;
     private final int durabilityMultiplier;

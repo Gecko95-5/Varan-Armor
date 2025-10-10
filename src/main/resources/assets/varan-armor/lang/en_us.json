@@ -1,5 +1,4 @@
 {
-  "item.varan-armor.lapis_nugget": "Lapis Nugget",
   "item.varan-armor.golden_feather": "Golden Feather",
 
   "item.varan-armor.squid_tentacles": "Squid Tentacles",
@@ -216,9 +215,31 @@
   "item.varan-armor.diamond_dagger": "Diamond Dagger",
   "item.varan-armor.netherite_dagger": "Netherite Dagger",
 
+  "item.varan-armor.flint_wooden_dagger": "Wooden Dagger",
+  "item.varan-armor.flint_stone_dagger": "Stone Dagger",
+  "item.varan-armor.flint_iron_dagger": "Iron Dagger",
+  "item.varan-armor.flint_golden_dagger": "Golden Dagger",
+  "item.varan-armor.flint_diamond_dagger": "Diamond Dagger",
+  "item.varan-armor.flint_netherite_dagger": "Netherite Dagger",
+
+  "item.varan-armor.lapis_wooden_dagger": "Wooden Dagger",
+  "item.varan-armor.lapis_stone_dagger": "Stone Dagger",
+  "item.varan-armor.lapis_iron_dagger": "Iron Dagger",
+  "item.varan-armor.lapis_golden_dagger": "Golden Dagger",
+  "item.varan-armor.lapis_diamond_dagger": "Diamond Dagger",
+  "item.varan-armor.lapis_netherite_dagger": "Netherite Dagger",
+
+  "item.varan-armor.quartz_wooden_dagger": "Wooden Dagger",
+  "item.varan-armor.quartz_stone_dagger": "Stone Dagger",
+  "item.varan-armor.quartz_iron_dagger": "Iron Dagger",
+  "item.varan-armor.quartz_golden_dagger": "Golden Dagger",
+  "item.varan-armor.quartz_diamond_dagger": "Diamond Dagger",
+  "item.varan-armor.quartz_netherite_dagger": "Netherite Dagger",
+
   "item.varan-armor.spindtox": "Spindtox",
 
   "item.varan-armor.swift_boots": "Swift Boots",
+  "item.varan-armor.mining_googles": "Mining Googles",
 
   "item.minecraft.potion.effect.fatal_poison_potion": "Potion of Fatal Poison",
   "item.minecraft.splash_potion.effect.fatal_poison_potion": "Splash Potion of Fatal Poison",
