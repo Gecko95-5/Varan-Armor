@@ -203,6 +203,7 @@ public class ArmoryModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ArmoryItems.SPINDTOX, Models.HANDHELD);
 
         itemModelGenerator.register(ArmoryItems.SWIFT_BOOTS,Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.BRACER_SUIT,Models.GENERATED);
         itemModelGenerator.register(ArmoryItems.MINING_GOOGLES,Models.GENERATED);
 
         itemModelGenerator.register(ArmoryItems.HARD_BOILED_EGG,Models.GENERATED);

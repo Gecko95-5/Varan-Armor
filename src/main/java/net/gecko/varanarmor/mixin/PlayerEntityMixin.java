@@ -27,6 +27,8 @@ public abstract class PlayerEntityMixin extends LivingEntity {
     private void tick_TAIL(CallbackInfo swift) {
         this.updateSwiftBoots();
         this.updateMiningGoogles();
+        this.updateBracerSuitAttack();
+        this.updateBracerSuitDefence();
     }
 
 
@@ -45,18 +47,18 @@ public abstract class PlayerEntityMixin extends LivingEntity {
             this.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 400, 0, false, false, true));
         }
     }
-    //    @Unique
-//    private void updateBracerSuit() {
-//        ItemStack itemStack = this.getEquippedStack(EquipmentSlot.CHEST);
-//        if (itemStack.isOf(ArmoryItems.MINING_GOOGLES) && this.getHealth() < this.getMaxHealth()/2) {
-//            this.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 500, 0, false, false, true));//
-//            }
-//    }
-    //    @Unique
-//    private void updateBracerSuit() {
-//        ItemStack itemStack = this.getEquippedStack(EquipmentSlot.CHEST);
-//        if (itemStack.isOf(ArmoryItems.MINING_GOOGLES) && this.getHealth() > this.getMaxHealth()/2) {
-//            this.addStatusEffect(new StatusEffectInstance(StatusEffects.STREGHT, 500, 0, false, false, true));
-//        }
-//    }
+        @Unique
+        private void updateBracerSuitDefence() {
+            ItemStack itemStack = this.getEquippedStack(EquipmentSlot.CHEST);
+            if (itemStack.isOf(ArmoryItems.BRACER_SUIT) && this.getHealth() < this.getMaxHealth()/2) {
+                this.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 0, false, false, true));
+             }
+        }
+        @Unique
+        private void updateBracerSuitAttack() {
+        ItemStack itemStack = this.getEquippedStack(EquipmentSlot.CHEST);
+        if (itemStack.isOf(ArmoryItems.BRACER_SUIT) && this.getHealth() > this.getMaxHealth()/2) {
+        this.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 200, 0, false, false, true));
+            }
+        }
 }

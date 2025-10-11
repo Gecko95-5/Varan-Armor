@@ -1,6 +1,7 @@
 package net.gecko.varanarmor.item;
 
 import net.gecko.varanarmor.VaranArmor;
+import net.gecko.varanarmor.item.armour.model.BracerSuitItem;
 import net.gecko.varanarmor.item.armour.model.MiningGooglesItem;
 import net.gecko.varanarmor.item.armour.model.SwiftBootsItem;
 import net.gecko.varanarmor.item.arrow.AmethystArrowItem;
@@ -362,16 +363,16 @@ public class ArmoryItems {
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item WOODEN_CLAYMORE = registerItem("wooden_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_WOOD, 8, -3.4F, 600, 3,
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_WOOD, 9, -3.4F, 600, 3,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item FLINT_WOODEN_CLAYMORE = registerItem("flint_wooden_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_FLINT_WOOD, 8, -3.4F, 600, 3,
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_FLINT_WOOD, 9, -3.4F, 600, 3,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item LAPIS_WOODEN_CLAYMORE = registerItem("lapis_wooden_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_LAPIS_WOOD, 8, -3.2F, 600, 3,
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_LAPIS_WOOD, 9, -3.2F, 600, 3,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item QUARTZ_WOODEN_CLAYMORE = registerItem("quartz_wooden_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_QUARTZ_WOOD, 8, -3.4F, 600, 3,
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_QUARTZ_WOOD, 9, -3.4F, 600, 3,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item STONE_CLAYMORE = registerItem("stone_claymore",
@@ -388,16 +389,16 @@ public class ArmoryItems {
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item GOLDEN_CLAYMORE = registerItem("golden_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_GOLD, 8, -3.4F, 200, 1,
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_GOLD, 9, -3.4F, 200, 1,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item FLINT_GOLDEN_CLAYMORE = registerItem("flint_golden_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_FLINT_GOLD, 8, -3.4F, 200, 1,
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_FLINT_GOLD, 9, -3.4F, 200, 1,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item LAPIS_GOLDEN_CLAYMORE = registerItem("lapis_golden_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_LAPIS_GOLD, 8, -3.2F, 200, 1,
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_LAPIS_GOLD, 9, -3.2F, 200, 1,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item QUARTZ_GOLDEN_CLAYMORE = registerItem("quartz_golden_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_QUARTZ_GOLD, 8, -3.4F, 200, 1,
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_QUARTZ_GOLD, 9, -3.4F, 200, 1,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item IRON_CLAYMORE = registerItem("iron_claymore",
@@ -529,6 +530,10 @@ public class ArmoryItems {
 
     public static final Item MINING_GOOGLES = registerItem("mining_googles",
             new MiningGooglesItem(ArmoryArmourMaterials.GOOGLES, EquipmentSlot.HEAD,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item BRACER_SUIT = registerItem("bracer_suit",
+            new BracerSuitItem(ArmoryArmourMaterials.SUIT, EquipmentSlot.CHEST,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item SWIFT_BOOTS = registerItem("swift_boots",

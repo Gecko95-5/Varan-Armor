@@ -15,7 +15,10 @@ public enum ArmoryArmourMaterials implements ArmorMaterial {
             SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0f, 0f, () -> Ingredient.ofItems(Items.LAPIS_LAZULI)),
 
     GOOGLES("googles", 6, new int[] { 0, 0, 0, 1}, 6,
-            SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0f, 0f, () -> Ingredient.ofItems(Items.AMETHYST_SHARD));
+            SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0f, 0f, () -> Ingredient.ofItems(Items.AMETHYST_SHARD)),
+
+    SUIT("suit", 15, new int[] { 0, 0, 4, 0}, 2,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0f, 0f, () -> Ingredient.ofItems(Items.IRON_BARS));
 
     private final String name;
     private final int durabilityMultiplier;

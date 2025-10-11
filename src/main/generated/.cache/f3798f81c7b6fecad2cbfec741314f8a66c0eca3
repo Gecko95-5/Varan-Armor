@@ -1,4 +1,4 @@
-// 1.19.2	2025-10-09T21:05:04.4742632	Models
+// 1.19.2	2025-10-11T00:56:21.0558707	Models
 23767a77c2c480851bd87a45940b86b174f6a407 assets\varan-armor\models\item\lapis_iron_hoe.json
 53b2f11baaf2366daa67094d9d3e5b2c1105419b assets\varan-armor\models\item\flint_diamond_dagger.json
 4d75fd6e60c11fef881960bf3d4023863c9e35af assets\varan-armor\models\item\glow_squid_tentacles.json
@@ -84,6 +84,7 @@ ffbc4d0551ecc0e67186ad74b0b95a0b8b62915f assets\varan-armor\models\item\fried_eg
 a1147c2976c7a42abc6ffd5ed0b04e5ef28c4b97 assets\varan-armor\models\item\lapis_netherite_sickle.json
 f424cf71f9216bd3415f3fe365fd246bc33d44e4 assets\varan-armor\models\item\quartz_netherite_shovel.json
 f9a8cab3e171513dbba660ffc4de5c4fae844f79 assets\varan-armor\models\item\lapis_diamond_pickaxe.json
+090b5bd2a17fa9e1288568402c159bae06f5c1ba assets\varan-armor\models\item\bracer_suit.json
 5047ac71e993a66c0a4ef534c9285a5bfabb0fdf assets\varan-armor\models\item\lapis_diamond_shovel.json
 80fc308f839dc6bdb6809efc060b8c2bdcb0b511 assets\varan-armor\models\item\lapis_golden_pickaxe.json
 150722c306991b577a55472ee4c5b6e4f95d7d07 assets\varan-armor\models\item\lapis_iron_sickle.json

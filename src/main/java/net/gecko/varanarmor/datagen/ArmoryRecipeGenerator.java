@@ -1513,5 +1513,19 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(Items.AMETHYST_SHARD),
                         RecipeProvider.conditionsFromItem(Items.AMETHYST_SHARD))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.MINING_GOOGLES)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BRACER_SUIT)
+                .pattern("# #")
+                .pattern("XWX")
+                .pattern("X-X")
+                .input('X', Items.IRON_BARS)
+                .input('#', Items.IRON_BLOCK)
+                .input('-', Items.SCUTE)
+                .input('W', Items.BLAZE_POWDER)
+                .criterion(RecipeProvider.hasItem(Items.SCUTE),
+                        RecipeProvider.conditionsFromItem(Items.SCUTE))
+                .criterion(RecipeProvider.hasItem(Items.BLAZE_POWDER),
+                        RecipeProvider.conditionsFromItem(Items.BLAZE_POWDER))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BRACER_SUIT)));
     }
 }
