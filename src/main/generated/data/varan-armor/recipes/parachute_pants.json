@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "X": {
+      "tag": "minecraft:wool"
+    }
+  },
+  "pattern": [
+    "###",
+    "X X",
+    "X X"
+  ],
+  "result": {
+    "item": "varan-armor:parachute_pants"
+  }
+}

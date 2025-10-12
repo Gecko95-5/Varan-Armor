@@ -8,6 +8,7 @@ import net.gecko.varanarmor.entity.renderer.NautilusBobberRenderer;
 import net.gecko.varanarmor.entity.renderer.SquidBobberRenderer;
 import net.gecko.varanarmor.entity.renderer.armour.BracerSuitRenderer;
 import net.gecko.varanarmor.entity.renderer.armour.MiningGooglesRenderer;
+import net.gecko.varanarmor.entity.renderer.armour.ParachutePantsRenderer;
 import net.gecko.varanarmor.entity.renderer.armour.SwiftBootsRenderer;
 import net.gecko.varanarmor.item.ArmoryItems;
 import net.gecko.varanarmor.util.ArmoryModelPredicateProvider;
@@ -37,5 +38,6 @@ public class VaranArmorClient implements ClientModInitializer {
         GeoArmorRenderer.registerArmorRenderer(new SwiftBootsRenderer(), ArmoryItems.SWIFT_BOOTS);
         GeoArmorRenderer.registerArmorRenderer(new MiningGooglesRenderer(), ArmoryItems.MINING_GOOGLES);
         GeoArmorRenderer.registerArmorRenderer(new BracerSuitRenderer(), ArmoryItems.BRACER_SUIT);
+        GeoArmorRenderer.registerArmorRenderer(new ParachutePantsRenderer(), ArmoryItems.PARACHUTE_PANTS);
     }
 }

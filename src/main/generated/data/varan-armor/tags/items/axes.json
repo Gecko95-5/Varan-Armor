@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#varan-armor:single_axes"
+    "#varan-armor:single_axes",
+    "#varan-armor:double_axes"
   ]
 }

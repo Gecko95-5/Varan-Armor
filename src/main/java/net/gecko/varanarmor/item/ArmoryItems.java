@@ -3,6 +3,7 @@ package net.gecko.varanarmor.item;
 import net.gecko.varanarmor.VaranArmor;
 import net.gecko.varanarmor.item.armour.model.BracerSuitItem;
 import net.gecko.varanarmor.item.armour.model.MiningGooglesItem;
+import net.gecko.varanarmor.item.armour.model.ParachutePantsItem;
 import net.gecko.varanarmor.item.armour.model.SwiftBootsItem;
 import net.gecko.varanarmor.item.arrow.AmethystArrowItem;
 import net.gecko.varanarmor.item.arrow.IronArrowItem;
@@ -11,6 +12,7 @@ import net.gecko.varanarmor.item.arrow.QuartzArrowItem;
 import net.gecko.varanarmor.item.components.ArmoryArmourMaterials;
 import net.gecko.varanarmor.item.components.ArmoryFoodComponents;
 import net.gecko.varanarmor.item.components.ArmoryToolMaterials;
+import net.gecko.varanarmor.item.tools.DoubleAxeItem;
 import net.gecko.varanarmor.item.tools.FixedHoeItem;
 import net.gecko.varanarmor.item.tools.ClaymoreItem;
 import net.gecko.varanarmor.item.tools.special.FirebrandItem;
@@ -440,8 +442,8 @@ public class ArmoryItems {
             new ClaymoreItem(ArmoryToolMaterials.HEAVY_QUARTZ_NETHERITE, 7, -3.4F, 200, 1,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
 
-    public static final Item SPINDTOX = registerItem("spindtox",
-            new PoisonDaggerItem(ArmoryToolMaterials.SPINDTOX, 2, -1.2F,
+    public static final Item WOODEN_DOUBLE_AXE = registerItem("wooden_double_axe",
+            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_WOOD, 6, -3.4F, 200, 0,25,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item WOODEN_SICKLE = registerItem("wooden_sickle",
@@ -502,6 +504,10 @@ public class ArmoryItems {
             new SickleItem(ArmoryToolMaterials.QUARTZ_NETHERITE, 1.75F, -2.1F,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
 
+    public static final Item SPINDTOX = registerItem("spindtox",
+            new PoisonDaggerItem(ArmoryToolMaterials.SPINDTOX, 2, -1.2F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
     public static final Item WOODEN_BOW = registerItem("wooden_bow",
             new WoodenBowItem(new Item.Settings().maxDamage(90).group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item COPPER_BOW = registerItem("copper_bow",
@@ -533,7 +539,11 @@ public class ArmoryItems {
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item BRACER_SUIT = registerItem("bracer_suit",
-            new BracerSuitItem(ArmoryArmourMaterials.SUIT, EquipmentSlot.CHEST,
+            new BracerSuitItem(ArmoryArmourMaterials.BRACER, EquipmentSlot.CHEST,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item PARACHUTE_PANTS = registerItem("parachute_pants",
+            new ParachutePantsItem(ArmoryArmourMaterials.PARACHUTE, EquipmentSlot.LEGS,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item SWIFT_BOOTS = registerItem("swift_boots",

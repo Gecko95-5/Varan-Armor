@@ -40,6 +40,9 @@ public class ArmoryTags {
         public static final TagKey<Item> SINGLE_AXES =
                 createTag("single_axes");
 
+        public static final TagKey<Item> DOUBLE_AXES =
+                createTag("double_axes");
+
         public static final TagKey<Item> SHOVELS =
                 createTag("shovels");
 

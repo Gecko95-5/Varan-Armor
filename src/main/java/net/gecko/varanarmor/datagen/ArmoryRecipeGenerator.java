@@ -1527,5 +1527,25 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(Items.BLAZE_POWDER),
                         RecipeProvider.conditionsFromItem(Items.BLAZE_POWDER))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BRACER_SUIT)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.PARACHUTE_PANTS)
+                .pattern("###")
+                .pattern("X X")
+                .pattern("X X")
+                .input('X', ItemTags.WOOL)
+                .input('#', Items.PHANTOM_MEMBRANE)
+                .criterion(RecipeProvider.hasItem(Items.PHANTOM_MEMBRANE),
+                        RecipeProvider.conditionsFromItem(Items.PHANTOM_MEMBRANE))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.PARACHUTE_PANTS)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.WOODEN_DOUBLE_AXE)
+                .pattern("XXX")
+                .pattern("X/X")
+                .pattern(" # ")
+                .input('X', ItemTags.PLANKS)
+                .input('/', ArmoryItems.BRACED_STICK)
+                .input('#', Items.STICK)
+                .criterion("has_planks", conditionsFromTag(ItemTags.PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.WOODEN_DOUBLE_AXE)));
     }
 }

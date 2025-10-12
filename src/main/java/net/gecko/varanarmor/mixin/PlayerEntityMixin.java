@@ -29,6 +29,7 @@ public abstract class PlayerEntityMixin extends LivingEntity {
         this.updateMiningGoogles();
         this.updateBracerSuitAttack();
         this.updateBracerSuitDefence();
+        this.updateParachutePants();
     }
 
 
@@ -59,6 +60,13 @@ public abstract class PlayerEntityMixin extends LivingEntity {
         ItemStack itemStack = this.getEquippedStack(EquipmentSlot.CHEST);
         if (itemStack.isOf(ArmoryItems.BRACER_SUIT) && this.getHealth() > this.getMaxHealth()/2) {
         this.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 200, 0, false, false, true));
+            }
+        }
+        @Unique
+        private void updateParachutePants() {
+        ItemStack itemStack = this.getEquippedStack(EquipmentSlot.LEGS);
+        if (itemStack.isOf(ArmoryItems.PARACHUTE_PANTS) && this.onGround) {
+        this.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING, 200, 0, false, false, true));
             }
         }
 }

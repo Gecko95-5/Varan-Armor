@@ -3,6 +3,7 @@ package net.gecko.varanarmor.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.gecko.varanarmor.item.ArmoryItems;
+import net.gecko.varanarmor.util.ArmoryModels;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
@@ -200,11 +201,47 @@ public class ArmoryModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ArmoryItems.LAPIS_NETHERITE_DAGGER, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.QUARTZ_NETHERITE_DAGGER, Models.HANDHELD);
 
+        itemModelGenerator.register(ArmoryItems.BRACED_STICK, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.HEAVY_FLINT_ROD, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.HEAVY_LAPIS_ROD, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.HEAVY_QUARTZ_ROD, ArmoryModels.BRACED_HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.WOODEN_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.STONE_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.IRON_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.GOLDEN_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.DIAMOND_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.NETHERITE_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.FLINT_WOODEN_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_STONE_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_IRON_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_GOLDEN_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_DIAMOND_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_NETHERITE_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.LAPIS_WOODEN_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.LAPIS_STONE_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.LAPIS_IRON_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.LAPIS_GOLDEN_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.LAPIS_DIAMOND_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.LAPIS_NETHERITE_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.QUARTZ_WOODEN_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_STONE_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_IRON_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_GOLDEN_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_DIAMOND_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_NETHERITE_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.WOODEN_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+
         itemModelGenerator.register(ArmoryItems.SPINDTOX, Models.HANDHELD);
 
         itemModelGenerator.register(ArmoryItems.SWIFT_BOOTS,Models.GENERATED);
         itemModelGenerator.register(ArmoryItems.BRACER_SUIT,Models.GENERATED);
         itemModelGenerator.register(ArmoryItems.MINING_GOOGLES,Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.PARACHUTE_PANTS,Models.GENERATED);
 
         itemModelGenerator.register(ArmoryItems.HARD_BOILED_EGG,Models.GENERATED);
         itemModelGenerator.register(ArmoryItems.FRIED_EGG,Models.GENERATED);

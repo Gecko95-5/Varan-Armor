@@ -25,7 +25,8 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
             .addTag(ArmoryTags.Items.HOES);
 
         getOrCreateTagBuilder(ArmoryTags.Items.AXES)
-                .addTag(ArmoryTags.Items.SINGLE_AXES);
+                .addTag(ArmoryTags.Items.SINGLE_AXES)
+                .addTag(ArmoryTags.Items.DOUBLE_AXES);
 
     getOrCreateTagBuilder(ArmoryTags.Items.SICKLES)
             .add(ArmoryItems.WOODEN_SICKLE)
@@ -185,6 +186,9 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ArmoryItems.QUARTZ_GOLDEN_AXE)
                 .add(ArmoryItems.QUARTZ_DIAMOND_AXE)
                 .add(ArmoryItems.QUARTZ_NETHERITE_AXE);
+
+        getOrCreateTagBuilder(ArmoryTags.Items.DOUBLE_AXES)
+                .add(ArmoryItems.WOODEN_DOUBLE_AXE);
 
         getOrCreateTagBuilder(ArmoryTags.Items.SHOVELS)
                 .add(Items.WOODEN_SHOVEL)
