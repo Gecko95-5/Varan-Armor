@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "/": {
+      "item": "varan-armor:braced_stick"
+    },
+    "X": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "X/X",
+    " # "
+  ],
+  "result": {
+    "item": "varan-armor:golden_double_axe"
+  }
+}

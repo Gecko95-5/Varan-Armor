@@ -188,7 +188,12 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ArmoryItems.QUARTZ_NETHERITE_AXE);
 
         getOrCreateTagBuilder(ArmoryTags.Items.DOUBLE_AXES)
-                .add(ArmoryItems.WOODEN_DOUBLE_AXE);
+                .add(ArmoryItems.WOODEN_DOUBLE_AXE)
+                .add(ArmoryItems.STONE_DOUBLE_AXE)
+                .add(ArmoryItems.IRON_DOUBLE_AXE)
+                .add(ArmoryItems.GOLDEN_DOUBLE_AXE)
+                .add(ArmoryItems.DIAMOND_DOUBLE_AXE)
+                .add(ArmoryItems.NETHERITE_DOUBLE_AXE);
 
         getOrCreateTagBuilder(ArmoryTags.Items.SHOVELS)
                 .add(Items.WOODEN_SHOVEL)

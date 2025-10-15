@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
-    "varan-armor:wooden_double_axe"
+    "varan-armor:wooden_double_axe",
+    "varan-armor:stone_double_axe",
+    "varan-armor:iron_double_axe",
+    "varan-armor:golden_double_axe",
+    "varan-armor:diamond_double_axe"
   ]
 }

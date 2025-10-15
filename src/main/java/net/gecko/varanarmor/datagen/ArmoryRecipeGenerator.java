@@ -1547,5 +1547,50 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                 .input('#', Items.STICK)
                 .criterion("has_planks", conditionsFromTag(ItemTags.PLANKS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.WOODEN_DOUBLE_AXE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.STONE_DOUBLE_AXE)
+                .pattern("XXX")
+                .pattern("X/X")
+                .pattern(" # ")
+                .input('X', ItemTags.STONE_TOOL_MATERIALS)
+                .input('/', ArmoryItems.BRACED_STICK)
+                .input('#', Items.STICK)
+                .criterion("has_cobblestone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.STONE_DOUBLE_AXE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.IRON_DOUBLE_AXE)
+                .pattern("XXX")
+                .pattern("X/X")
+                .pattern(" # ")
+                .input('X', Items.IRON_INGOT)
+                .input('/', ArmoryItems.BRACED_STICK)
+                .input('#', Items.STICK)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.IRON_DOUBLE_AXE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.GOLDEN_DOUBLE_AXE)
+                .pattern("XXX")
+                .pattern("X/X")
+                .pattern(" # ")
+                .input('X', Items.GOLD_INGOT)
+                .input('/', ArmoryItems.BRACED_STICK)
+                .input('#', Items.STICK)
+                .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.GOLDEN_DOUBLE_AXE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.DIAMOND_DOUBLE_AXE)
+                .pattern("XXX")
+                .pattern("X/X")
+                .pattern(" # ")
+                .input('X', Items.DIAMOND)
+                .input('/', ArmoryItems.BRACED_STICK)
+                .input('#', Items.STICK)
+                .criterion(RecipeProvider.hasItem(Items.DIAMOND),
+                        RecipeProvider.conditionsFromItem(Items.DIAMOND))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.DIAMOND_DOUBLE_AXE)));
+
+        offerNetheriteUpgradeRecipe(exporter, ArmoryItems.DIAMOND_DOUBLE_AXE, ArmoryItems.NETHERITE_DOUBLE_AXE);
     }
 }

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "/": {
+      "item": "varan-armor:braced_stick"
+    },
+    "X": {
+      "tag": "minecraft:stone_tool_materials"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "X/X",
+    " # "
+  ],
+  "result": {
+    "item": "varan-armor:stone_double_axe"
+  }
+}

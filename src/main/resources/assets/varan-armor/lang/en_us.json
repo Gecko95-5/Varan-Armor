@@ -236,7 +236,12 @@
   "item.varan-armor.quartz_diamond_dagger": "Diamond Dagger",
   "item.varan-armor.quartz_netherite_dagger": "Netherite Dagger",
 
-  "item.varan-armor.wooden_double_axe": "Wooden Double Axe",
+  "item.varan-armor.wooden_double_axe": "Wooden Double-Axe",
+  "item.varan-armor.stone_double_axe": "Stone Double-Axe",
+  "item.varan-armor.iron_double_axe": "Iron Double-Axe",
+  "item.varan-armor.golden_double_axe": "Golden Double-Axe",
+  "item.varan-armor.diamond_double_axe": "Diamond Double-Axe",
+  "item.varan-armor.netherite_double_axe": "Netherite Double-Axe",
 
   "item.varan-armor.spindtox": "Spindtox",
 
