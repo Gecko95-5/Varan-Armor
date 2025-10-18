@@ -1,0 +1,6 @@
+{
+  "parent": "varan-armor:item/braced_handheld",
+  "textures": {
+    "layer0": "varan-armor:item/lapis_wooden_double_axe"
+  }
+}

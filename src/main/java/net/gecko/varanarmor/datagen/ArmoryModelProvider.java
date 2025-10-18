@@ -240,6 +240,28 @@ public class ArmoryModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ArmoryItems.IRON_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
         itemModelGenerator.register(ArmoryItems.DIAMOND_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
         itemModelGenerator.register(ArmoryItems.NETHERITE_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+        
+        itemModelGenerator.register(ArmoryItems.FLINT_WOODEN_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_STONE_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_IRON_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_GOLDEN_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_DIAMOND_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_NETHERITE_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.LAPIS_WOODEN_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.LAPIS_STONE_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.LAPIS_IRON_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.LAPIS_GOLDEN_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.LAPIS_DIAMOND_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.LAPIS_NETHERITE_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.QUARTZ_WOODEN_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_STONE_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_IRON_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_GOLDEN_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_DIAMOND_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_NETHERITE_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+
 
         itemModelGenerator.register(ArmoryItems.SPINDTOX, Models.HANDHELD);
 

@@ -1592,5 +1592,170 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.DIAMOND_DOUBLE_AXE)));
 
         offerNetheriteUpgradeRecipe(exporter, ArmoryItems.DIAMOND_DOUBLE_AXE, ArmoryItems.NETHERITE_DOUBLE_AXE);
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.FLINT_WOODEN_DOUBLE_AXE)
+                .pattern("XXX")
+                .pattern("X/X")
+                .pattern(" # ")
+                .input('X', ItemTags.PLANKS)
+                .input('/', ArmoryItems.HEAVY_FLINT_ROD)
+                .input('#', ArmoryItems.FLINT_ROD)
+                .criterion("has_planks", conditionsFromTag(ItemTags.PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.FLINT_WOODEN_DOUBLE_AXE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.FLINT_STONE_DOUBLE_AXE)
+                .pattern("XXX")
+                .pattern("X/X")
+                .pattern(" # ")
+                .input('X', ItemTags.STONE_TOOL_MATERIALS)
+                .input('/', ArmoryItems.HEAVY_FLINT_ROD)
+                .input('#', ArmoryItems.FLINT_ROD)
+                .criterion("has_cobblestone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.FLINT_STONE_DOUBLE_AXE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.FLINT_IRON_DOUBLE_AXE)
+                .pattern("XXX")
+                .pattern("X/X")
+                .pattern(" # ")
+                .input('X', Items.IRON_INGOT)
+                .input('/', ArmoryItems.HEAVY_FLINT_ROD)
+                .input('#', ArmoryItems.FLINT_ROD)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.FLINT_IRON_DOUBLE_AXE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.FLINT_GOLDEN_DOUBLE_AXE)
+                .pattern("XXX")
+                .pattern("X/X")
+                .pattern(" # ")
+                .input('X', Items.GOLD_INGOT)
+                .input('/', ArmoryItems.HEAVY_FLINT_ROD)
+                .input('#', ArmoryItems.FLINT_ROD)
+                .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.FLINT_GOLDEN_DOUBLE_AXE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.FLINT_DIAMOND_DOUBLE_AXE)
+                .pattern("XXX")
+                .pattern("X/X")
+                .pattern(" # ")
+                .input('X', Items.DIAMOND)
+                .input('/', ArmoryItems.HEAVY_FLINT_ROD)
+                .input('#', ArmoryItems.FLINT_ROD)
+                .criterion(RecipeProvider.hasItem(Items.DIAMOND),
+                        RecipeProvider.conditionsFromItem(Items.DIAMOND))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.FLINT_DIAMOND_DOUBLE_AXE)));
+
+        offerNetheriteUpgradeRecipe(exporter, ArmoryItems.FLINT_DIAMOND_DOUBLE_AXE, ArmoryItems.FLINT_NETHERITE_DOUBLE_AXE);
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_WOODEN_DOUBLE_AXE)
+                .pattern("XXX")
+                .pattern("X/X")
+                .pattern(" # ")
+                .input('X', ItemTags.PLANKS)
+                .input('/', ArmoryItems.HEAVY_LAPIS_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
+                .criterion("has_planks", conditionsFromTag(ItemTags.PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_WOODEN_DOUBLE_AXE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_STONE_DOUBLE_AXE)
+                .pattern("XXX")
+                .pattern("X/X")
+                .pattern(" # ")
+                .input('X', ItemTags.STONE_TOOL_MATERIALS)
+                .input('/', ArmoryItems.HEAVY_LAPIS_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
+                .criterion("has_cobblestone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_STONE_DOUBLE_AXE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_IRON_DOUBLE_AXE)
+                .pattern("XXX")
+                .pattern("X/X")
+                .pattern(" # ")
+                .input('X', Items.IRON_INGOT)
+                .input('/', ArmoryItems.HEAVY_LAPIS_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_IRON_DOUBLE_AXE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_GOLDEN_DOUBLE_AXE)
+                .pattern("XXX")
+                .pattern("X/X")
+                .pattern(" # ")
+                .input('X', Items.GOLD_INGOT)
+                .input('/', ArmoryItems.HEAVY_LAPIS_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
+                .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_GOLDEN_DOUBLE_AXE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.LAPIS_DIAMOND_DOUBLE_AXE)
+                .pattern("XXX")
+                .pattern("X/X")
+                .pattern(" # ")
+                .input('X', Items.DIAMOND)
+                .input('/', ArmoryItems.HEAVY_LAPIS_ROD)
+                .input('#', ArmoryItems.LAPIS_ROD)
+                .criterion(RecipeProvider.hasItem(Items.DIAMOND),
+                        RecipeProvider.conditionsFromItem(Items.DIAMOND))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.LAPIS_DIAMOND_DOUBLE_AXE)));
+
+        offerNetheriteUpgradeRecipe(exporter, ArmoryItems.LAPIS_DIAMOND_DOUBLE_AXE, ArmoryItems.LAPIS_NETHERITE_DOUBLE_AXE);
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.QUARTZ_WOODEN_DOUBLE_AXE)
+                .pattern("XXX")
+                .pattern("X/X")
+                .pattern(" # ")
+                .input('X', ItemTags.PLANKS)
+                .input('/', ArmoryItems.HEAVY_QUARTZ_ROD)
+                .input('#', ArmoryItems.QUARTZ_ROD)
+                .criterion("has_planks", conditionsFromTag(ItemTags.PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.QUARTZ_WOODEN_DOUBLE_AXE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.QUARTZ_STONE_DOUBLE_AXE)
+                .pattern("XXX")
+                .pattern("X/X")
+                .pattern(" # ")
+                .input('X', ItemTags.STONE_TOOL_MATERIALS)
+                .input('/', ArmoryItems.HEAVY_QUARTZ_ROD)
+                .input('#', ArmoryItems.QUARTZ_ROD)
+                .criterion("has_cobblestone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.QUARTZ_STONE_DOUBLE_AXE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.QUARTZ_IRON_DOUBLE_AXE)
+                .pattern("XXX")
+                .pattern("X/X")
+                .pattern(" # ")
+                .input('X', Items.IRON_INGOT)
+                .input('/', ArmoryItems.HEAVY_QUARTZ_ROD)
+                .input('#', ArmoryItems.QUARTZ_ROD)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.QUARTZ_IRON_DOUBLE_AXE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.QUARTZ_GOLDEN_DOUBLE_AXE)
+                .pattern("XXX")
+                .pattern("X/X")
+                .pattern(" # ")
+                .input('X', Items.GOLD_INGOT)
+                .input('/', ArmoryItems.HEAVY_QUARTZ_ROD)
+                .input('#', ArmoryItems.QUARTZ_ROD)
+                .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.QUARTZ_GOLDEN_DOUBLE_AXE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.QUARTZ_DIAMOND_DOUBLE_AXE)
+                .pattern("XXX")
+                .pattern("X/X")
+                .pattern(" # ")
+                .input('X', Items.DIAMOND)
+                .input('/', ArmoryItems.HEAVY_QUARTZ_ROD)
+                .input('#', ArmoryItems.QUARTZ_ROD)
+                .criterion(RecipeProvider.hasItem(Items.DIAMOND),
+                        RecipeProvider.conditionsFromItem(Items.DIAMOND))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.QUARTZ_DIAMOND_DOUBLE_AXE)));
+
+        offerNetheriteUpgradeRecipe(exporter, ArmoryItems.QUARTZ_DIAMOND_DOUBLE_AXE, ArmoryItems.QUARTZ_NETHERITE_DOUBLE_AXE);
     }
 }

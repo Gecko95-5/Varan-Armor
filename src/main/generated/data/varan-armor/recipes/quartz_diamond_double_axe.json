@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "varan-armor:quartz_rod"
+    },
+    "/": {
+      "item": "varan-armor:heavy_quartz_rod"
+    },
+    "X": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "X/X",
+    " # "
+  ],
+  "result": {
+    "item": "varan-armor:quartz_diamond_double_axe"
+  }
+}

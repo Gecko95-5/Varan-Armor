@@ -1,8 +1,8 @@
-// 1.19.2	2025-10-14T21:39:06.4112331	Tags for minecraft:item
+// 1.19.2	2025-10-15T22:13:28.9826503	Tags for minecraft:item
 c7121f78a7be6464310fbd57d5c8eae8114205e0 data\varan-armor\tags\items\daggers.json
 405eb8d3767b24720b98a08992a8145adb91dd4f data\varan-armor\tags\items\axes.json
 ddaf42bf734fd744b867307cca090d69226e28aa data\minecraft\tags\items\arrows.json
-f6c0bc687f5b9947d1d5dd39e0d6f1eb435e3bd1 data\varan-armor\tags\items\double_axes.json
+4f2cab78e08da3898a991b89135460f928d42b7f data\varan-armor\tags\items\double_axes.json
 697cf628fcb7c5ab71e1d59a7928496f1e6b0cc3 data\varan-armor\tags\items\shovels.json
 cf84b5777022a49099165f0173a9882ef868884a data\varan-armor\tags\items\hoes.json
 bac12a9e8bf415a32047a879fcb3dc460b684e78 data\varan-armor\tags\items\pickaxes.json
