@@ -13,7 +13,7 @@ public class MiningGooglesModel extends AnimatedGeoModel<MiningGooglesItem> {
 
     @Override
     public Identifier getTextureResource(MiningGooglesItem object) {
-        return new Identifier(VaranArmor.MOD_ID,"textures/models/armour/mining_googles.png");
+        return new Identifier(VaranArmor.MOD_ID,"textures/models/armor/mining_googles.png");
     }
 
     @Override

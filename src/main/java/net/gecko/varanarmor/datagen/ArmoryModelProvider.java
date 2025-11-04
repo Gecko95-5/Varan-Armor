@@ -262,6 +262,17 @@ public class ArmoryModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ArmoryItems.QUARTZ_DIAMOND_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
         itemModelGenerator.register(ArmoryItems.QUARTZ_NETHERITE_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
 
+        itemModelGenerator.register(ArmoryItems.COPPER_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.COPPER_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_SICKLE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.COPPER_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.COPPER_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
 
         itemModelGenerator.register(ArmoryItems.SPINDTOX, Models.HANDHELD);
 

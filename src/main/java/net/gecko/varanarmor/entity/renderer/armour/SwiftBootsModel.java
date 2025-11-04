@@ -13,7 +13,7 @@ public class SwiftBootsModel extends AnimatedGeoModel<SwiftBootsItem> {
 
     @Override
     public Identifier getTextureResource(SwiftBootsItem object) {
-        return new Identifier(VaranArmor.MOD_ID,"textures/models/armour/swift_boots_armour.png");
+        return new Identifier(VaranArmor.MOD_ID,"textures/models/armor/swift_boots_armour.png");
     }
 
     @Override

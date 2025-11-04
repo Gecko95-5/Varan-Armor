@@ -1757,5 +1757,89 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.QUARTZ_DIAMOND_DOUBLE_AXE)));
 
         offerNetheriteUpgradeRecipe(exporter, ArmoryItems.QUARTZ_DIAMOND_DOUBLE_AXE, ArmoryItems.QUARTZ_NETHERITE_DOUBLE_AXE);
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_SWORD)
+                .pattern("X")
+                .pattern("X")
+                .pattern("#")
+                .input('X', Items.COPPER_INGOT)
+                .input('#', Items.STICK)
+                .criterion(RecipeProvider.hasItem(Items.COPPER_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_SWORD)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_PICKAXE)
+                .pattern("XXX")
+                .pattern(" # ")
+                .pattern(" # ")
+                .input('X', Items.COPPER_INGOT)
+                .input('#', Items.STICK)
+                .criterion(RecipeProvider.hasItem(Items.COPPER_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_PICKAXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_AXE)
+                .pattern("XX")
+                .pattern("X#")
+                .pattern(" #")
+                .input('X', Items.COPPER_INGOT)
+                .input('#', Items.STICK)
+                .criterion(RecipeProvider.hasItem(Items.COPPER_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_AXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_SHOVEL)
+                .pattern("X")
+                .pattern("#")
+                .pattern("#")
+                .input('X', Items.COPPER_INGOT)
+                .input('#', Items.STICK)
+                .criterion(RecipeProvider.hasItem(Items.COPPER_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_SHOVEL)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_HOE)
+                .pattern("XX")
+                .pattern(" #")
+                .pattern(" #")
+                .input('X', Items.COPPER_INGOT)
+                .input('#', Items.STICK)
+                .criterion(RecipeProvider.hasItem(Items.COPPER_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_HOE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_DAGGER)
+                .pattern(" X")
+                .pattern("# ")
+                .input('X', Items.COPPER_INGOT)
+                .input('#', Items.STICK)
+                .criterion(RecipeProvider.hasItem(Items.COPPER_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_DAGGER)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_CLAYMORE)
+                .pattern(" XX")
+                .pattern("XXX")
+                .pattern("#X ")
+                .input('X', Items.COPPER_INGOT)
+                .input('#', ArmoryItems.BRACED_STICK)
+                .criterion(RecipeProvider.hasItem(Items.COPPER_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_CLAYMORE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_DOUBLE_AXE)
+                .pattern("XXX")
+                .pattern("X/X")
+                .pattern(" # ")
+                .input('X', Items.COPPER_INGOT)
+                .input('/', ArmoryItems.BRACED_STICK)
+                .input('#', Items.STICK)
+                .criterion(RecipeProvider.hasItem(Items.COPPER_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_DOUBLE_AXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.COPPER_SICKLE)
+                .pattern(" XX")
+                .pattern("X X")
+                .pattern(" # ")
+                .input('X', Items.COPPER_INGOT)
+                .input('#', Items.STICK)
+                .criterion(RecipeProvider.hasItem(Items.COPPER_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_SICKLE)));
     }
 }

@@ -282,6 +282,17 @@ public class ArmoryItems {
             new FixedHoeItem(ArmoryToolMaterials.QUARTZ_NETHERITE, -4, 0.0F,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
 
+    public static final Item COPPER_SWORD = registerItem("copper_sword",
+            new SwordItem(ArmoryToolMaterials.COPPER, 3, -2.4F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item COPPER_SHOVEL = registerItem("copper_shovel",
+            new ShovelItem(ArmoryToolMaterials.COPPER, 1.5F, -3.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item COPPER_PICKAXE = registerItem("copper_pickaxe",
+            new PickaxeItem(ArmoryToolMaterials.COPPER, 1, -2.8F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item COPPER_AXE = registerItem("copper_axe",
+            new AxeItem(ArmoryToolMaterials.COPPER, 7.0F, -3.2F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item COPPER_HOE = registerItem("copper_hoe",
+            new FixedHoeItem(ArmoryToolMaterials.COPPER,-1, -2.0F,  new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
     public static final Item FIREBRAND = registerItem("firebrand",
             new FirebrandItem(ArmoryToolMaterials.FIREBRAND, 7.0F, -3.2F,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
@@ -364,6 +375,10 @@ public class ArmoryItems {
             new SwordItem(ArmoryToolMaterials.QUARTZ_NETHERITE, -1, -1.0F,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
 
+    public static final Item COPPER_DAGGER = registerItem("copper_dagger",
+            new SwordItem(ArmoryToolMaterials.COPPER, -1, -1.0F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
     public static final Item WOODEN_CLAYMORE = registerItem("wooden_claymore",
             new ClaymoreItem(ArmoryToolMaterials.HEAVY_WOOD, 9, -3.4F, 600, 3,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
@@ -441,6 +456,10 @@ public class ArmoryItems {
     public static final Item QUARTZ_NETHERITE_CLAYMORE = registerItem("quartz_netherite_claymore",
             new ClaymoreItem(ArmoryToolMaterials.HEAVY_QUARTZ_NETHERITE, 7, -3.4F, 200, 1,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
+
+    public static final Item COPPER_CLAYMORE = registerItem("copper_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_COPPER, 9, -3.4F, 600, 2,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item WOODEN_DOUBLE_AXE = registerItem("wooden_double_axe",
             new DoubleAxeItem(ArmoryToolMaterials.HEAVY_WOOD, 7, -3.4F, 500, 2,
@@ -520,6 +539,10 @@ public class ArmoryItems {
             new DoubleAxeItem(ArmoryToolMaterials.HEAVY_QUARTZ_NETHERITE, 5, -3.4F, 100, 1,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
 
+    public static final Item COPPER_DOUBLE_AXE = registerItem("copper_double_axe",
+            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_COPPER, 7, -3.4F, 500, 1,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
     public static final Item WOODEN_SICKLE = registerItem("wooden_sickle",
             new SickleItem(ToolMaterials.WOOD, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item FLINT_WOODEN_SICKLE = registerItem("flint_wooden_sickle",
@@ -577,6 +600,9 @@ public class ArmoryItems {
     public static final Item QUARTZ_NETHERITE_SICKLE = registerItem("quartz_netherite_sickle",
             new SickleItem(ArmoryToolMaterials.QUARTZ_NETHERITE, 1.75F, -2.1F,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
+
+    public static final Item COPPER_SICKLE = registerItem("copper_sickle",
+            new SickleItem(ArmoryToolMaterials.COPPER, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item SPINDTOX = registerItem("spindtox",
             new PoisonDaggerItem(ArmoryToolMaterials.SPINDTOX, 2, -1.2F,

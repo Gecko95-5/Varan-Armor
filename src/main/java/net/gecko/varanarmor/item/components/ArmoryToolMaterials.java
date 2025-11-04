@@ -9,6 +9,9 @@ import net.minecraft.tag.ItemTags;
 import java.util.function.Supplier;
 
 public enum ArmoryToolMaterials implements ToolMaterial {
+    COPPER (1, 190, 5.0F, 1.0F, 13,
+            () -> Ingredient.ofItems(Items.COPPER_INGOT)),
+
     FLINT_WOOD(0, 72, 3.0F, 0.0F, 15,
             () -> Ingredient.fromTag(ItemTags.PLANKS)),
     FLINT_STONE (1, 189, 5.0F, 1.0F, 5,
@@ -52,6 +55,8 @@ public enum ArmoryToolMaterials implements ToolMaterial {
             () -> Ingredient.fromTag(ItemTags.PLANKS)),
     HEAVY_STONE (1, 168,3.0F, 1.0F, 5,
             () -> Ingredient.fromTag(ItemTags.STONE_TOOL_MATERIALS)),
+    HEAVY_COPPER (1, 243, 4.0F, 1.0F, 13,
+            () -> Ingredient.ofItems(Items.COPPER_INGOT)),
     HEAVY_GOLD (0, 41,11.0F, 0.0F, 22,
             () -> Ingredient.ofItems(Items.GOLD_INGOT)),
     HEAVY_IRON (2, 320,5.0F, 2.0F, 14,

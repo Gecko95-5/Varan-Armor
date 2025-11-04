@@ -14,7 +14,7 @@ public class BracerSuitModel extends AnimatedGeoModel<BracerSuitItem> {
 
     @Override
     public Identifier getTextureResource(BracerSuitItem object) {
-        return new Identifier(VaranArmor.MOD_ID,"textures/models/armour/bracer_suit.png");
+        return new Identifier(VaranArmor.MOD_ID,"textures/models/armor/bracer_suit.png");
     }
 
     @Override

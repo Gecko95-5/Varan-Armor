@@ -14,7 +14,7 @@ public class ParachutePantsModel extends AnimatedGeoModel<ParachutePantsItem> {
 
     @Override
     public Identifier getTextureResource(ParachutePantsItem object) {
-        return new Identifier(VaranArmor.MOD_ID,"textures/models/armour/parachute_pants.png");
+        return new Identifier(VaranArmor.MOD_ID,"textures/models/armor/parachute_pants.png");
     }
 
     @Override
