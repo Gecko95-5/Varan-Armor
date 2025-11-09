@@ -25,6 +25,9 @@
     "varan-armor:flint_netherite_claymore",
     "varan-armor:lapis_netherite_claymore",
     "varan-armor:quartz_netherite_claymore",
-    "varan-armor:copper_claymore"
+    "varan-armor:copper_claymore",
+    "varan-armor:flint_copper_claymore",
+    "varan-armor:lapis_copper_claymore",
+    "varan-armor:quartz_copper_claymore"
   ]
 }

@@ -21,7 +21,10 @@ public enum ArmoryArmourMaterials implements ArmorMaterial {
             SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0f, 0f, () -> Ingredient.ofItems(Items.IRON_BARS)),
 
     PARACHUTE("parachute", 10, new int[] { 0, 2, 0, 0}, 12,
-            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0f, 0f, () -> Ingredient.ofItems(Items.PHANTOM_MEMBRANE));
+            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0f, 0f, () -> Ingredient.ofItems(Items.PHANTOM_MEMBRANE)),
+
+    COPPER("copper", 11, new int[] { 2, 3, 4, 2}, 8,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0f, 0.05F, () -> Ingredient.ofItems(Items.COPPER_INGOT));
 
     private final String name;
     private final int durabilityMultiplier;

@@ -274,6 +274,42 @@ public class ArmoryModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ArmoryItems.COPPER_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
         itemModelGenerator.register(ArmoryItems.COPPER_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
 
+        itemModelGenerator.register(ArmoryItems.FLINT_COPPER_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_COPPER_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_COPPER_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_COPPER_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_COPPER_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.FLINT_COPPER_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_COPPER_SICKLE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.FLINT_COPPER_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_COPPER_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.LAPIS_COPPER_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.LAPIS_COPPER_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.LAPIS_COPPER_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.LAPIS_COPPER_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.LAPIS_COPPER_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.LAPIS_COPPER_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.LAPIS_COPPER_SICKLE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.LAPIS_COPPER_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.LAPIS_COPPER_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.QUARTZ_COPPER_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_COPPER_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_COPPER_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_COPPER_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_COPPER_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.QUARTZ_COPPER_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_COPPER_SICKLE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.QUARTZ_COPPER_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_COPPER_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+
         itemModelGenerator.register(ArmoryItems.SPINDTOX, Models.HANDHELD);
 
         itemModelGenerator.register(ArmoryItems.SWIFT_BOOTS,Models.GENERATED);
@@ -286,6 +322,13 @@ public class ArmoryModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ArmoryItems.WITHER_BONE, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.FIREBRAND, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.COPPER_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.COPPER_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.COPPER_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.COPPER_BOOTS, Models.GENERATED);
+
+        itemModelGenerator.register(ArmoryItems.TANNED_LEATHER, Models.GENERATED);
     }
 
     @Override

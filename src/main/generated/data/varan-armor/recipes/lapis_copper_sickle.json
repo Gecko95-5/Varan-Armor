@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "varan-armor:lapis_rod"
+    },
+    "X": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "pattern": [
+    " XX",
+    "X X",
+    " # "
+  ],
+  "result": {
+    "item": "varan-armor:lapis_copper_sickle"
+  }
+}

@@ -48,6 +48,9 @@ public class ArmoryItems {
     public static final Item HEAVY_QUARTZ_ROD = registerItem("heavy_quartz_rod",
             new Item(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
+    public static final Item TANNED_LEATHER = registerItem("tanned_leather",
+            new Item(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
     public static final Item GOLDEN_FEATHER = registerItem("golden_feather",
             new Item(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
@@ -283,15 +286,48 @@ public class ArmoryItems {
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
 
     public static final Item COPPER_SWORD = registerItem("copper_sword",
-            new SwordItem(ArmoryToolMaterials.COPPER, 3, -2.4F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+            new SwordItem(ArmoryToolMaterials.COPPER, 3, -2.3F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item COPPER_SHOVEL = registerItem("copper_shovel",
-            new ShovelItem(ArmoryToolMaterials.COPPER, 1.5F, -3.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+            new ShovelItem(ArmoryToolMaterials.COPPER, 1.5F, -2.9F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item COPPER_PICKAXE = registerItem("copper_pickaxe",
-            new PickaxeItem(ArmoryToolMaterials.COPPER, 1, -2.8F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+            new PickaxeItem(ArmoryToolMaterials.COPPER, 1, -2.7F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item COPPER_AXE = registerItem("copper_axe",
-            new AxeItem(ArmoryToolMaterials.COPPER, 7.0F, -3.2F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+            new AxeItem(ArmoryToolMaterials.COPPER, 7.0F, -3.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item COPPER_HOE = registerItem("copper_hoe",
             new FixedHoeItem(ArmoryToolMaterials.COPPER,-1, -2.0F,  new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item FLINT_COPPER_SWORD = registerItem("flint_copper_sword",
+            new SwordItem(ArmoryToolMaterials.FLINT_COPPER, 3, -2.3F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item FLINT_COPPER_SHOVEL = registerItem("flint_copper_shovel",
+            new ShovelItem(ArmoryToolMaterials.FLINT_COPPER, 1.5F, -2.9F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item FLINT_COPPER_PICKAXE = registerItem("flint_copper_pickaxe",
+            new PickaxeItem(ArmoryToolMaterials.FLINT_COPPER, 1, -2.7F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item FLINT_COPPER_AXE = registerItem("flint_copper_axe",
+            new AxeItem(ArmoryToolMaterials.FLINT_COPPER, 7.0F, -3.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item FLINT_COPPER_HOE = registerItem("flint_copper_hoe",
+            new FixedHoeItem(ArmoryToolMaterials.FLINT_COPPER,-1, -2.0F,  new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item LAPIS_COPPER_SWORD = registerItem("lapis_copper_sword",
+            new SwordItem(ArmoryToolMaterials.LAPIS_COPPER, 3, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item LAPIS_COPPER_SHOVEL = registerItem("lapis_copper_shovel",
+            new ShovelItem(ArmoryToolMaterials.LAPIS_COPPER, 1.5F, -2.7F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item LAPIS_COPPER_PICKAXE = registerItem("lapis_copper_pickaxe",
+            new PickaxeItem(ArmoryToolMaterials.LAPIS_COPPER, 1, -2.5F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item LAPIS_COPPER_AXE = registerItem("lapis_copper_axe",
+            new AxeItem(ArmoryToolMaterials.LAPIS_COPPER, 7.0F, -2.8F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item LAPIS_COPPER_HOE = registerItem("lapis_copper_hoe",
+            new FixedHoeItem(ArmoryToolMaterials.LAPIS_COPPER,-1, -2.0F,  new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item QUARTZ_COPPER_SWORD = registerItem("quartz_copper_sword",
+            new SwordItem(ArmoryToolMaterials.QUARTZ_COPPER, 3, -2.3F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item QUARTZ_COPPER_SHOVEL = registerItem("quartz_copper_shovel",
+            new ShovelItem(ArmoryToolMaterials.QUARTZ_COPPER, 1.5F, -2.9F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item QUARTZ_COPPER_PICKAXE = registerItem("quartz_copper_pickaxe",
+            new PickaxeItem(ArmoryToolMaterials.QUARTZ_COPPER, 1, -2.7F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item QUARTZ_COPPER_AXE = registerItem("quartz_copper_axe",
+            new AxeItem(ArmoryToolMaterials.QUARTZ_COPPER, 7.0F, -3.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item QUARTZ_COPPER_HOE = registerItem("quartz_copper_hoe",
+            new FixedHoeItem(ArmoryToolMaterials.QUARTZ_COPPER,-1, -2.0F,  new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item FIREBRAND = registerItem("firebrand",
             new FirebrandItem(ArmoryToolMaterials.FIREBRAND, 7.0F, -3.2F,
@@ -300,309 +336,346 @@ public class ArmoryItems {
     public static final Item WOODEN_DAGGER = registerItem("wooden_dagger",
             new SwordItem(ToolMaterials.WOOD, 1, -1.4F,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item FLINT_WOODEN_DAGGER = registerItem("flint_wooden_dagger",
-            new SwordItem(ArmoryToolMaterials.FLINT_WOOD, 1, -1.4F,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item LAPIS_WOODEN_DAGGER = registerItem("lapis_wooden_dagger",
-            new SwordItem(ArmoryToolMaterials.LAPIS_WOOD, 1, -1.2F,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item QUARTZ_WOODEN_DAGGER = registerItem("quartz_wooden_dagger",
-            new SwordItem(ArmoryToolMaterials.QUARTZ_WOOD, 1, -1.4F,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-
-    public static final Item STONE_DAGGER = registerItem("stone_dagger",
-            new SwordItem(ToolMaterials.STONE, 0, -1.2F,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item FLINT_STONE_DAGGER = registerItem("flint_stone_dagger",
-            new SwordItem(ArmoryToolMaterials.FLINT_STONE, 0, -1.2F,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item LAPIS_STONE_DAGGER = registerItem("lapis_stone_dagger",
-            new SwordItem(ArmoryToolMaterials.LAPIS_STONE, 0, -1.0F,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item QUARTZ_STONE_DAGGER = registerItem("quartz_stone_dagger",
-            new SwordItem(ArmoryToolMaterials.QUARTZ_STONE, 0, -1.2F,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-
-    public static final Item GOLDEN_DAGGER = registerItem("golden_dagger",
-            new SwordItem(ToolMaterials.GOLD, 1, -1.0F,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item FLINT_GOLDEN_DAGGER = registerItem("flint_golden_dagger",
-            new SwordItem(ArmoryToolMaterials.FLINT_GOLD, 1, -1.0F,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item LAPIS_GOLDEN_DAGGER = registerItem("lapis_golden_dagger",
-            new SwordItem(ArmoryToolMaterials.LAPIS_GOLD, 1, -0.8F,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item QUARTZ_GOLDEN_DAGGER = registerItem("quartz_golden_dagger",
-            new SwordItem(ArmoryToolMaterials.QUARTZ_GOLD, 1, -1.0F,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-
-    public static final Item IRON_DAGGER = registerItem("iron_dagger",
-            new SwordItem(ToolMaterials.IRON, 0, -1.2F,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item FLINT_IRON_DAGGER = registerItem("flint_iron_dagger",
-            new SwordItem(ArmoryToolMaterials.FLINT_IRON, 0, -1.2F,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item LAPIS_IRON_DAGGER = registerItem("lapis_iron_dagger",
-            new SwordItem(ArmoryToolMaterials.LAPIS_IRON, 0, -1.0F,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item QUARTZ_IRON_DAGGER = registerItem("quartz_iron_dagger",
-            new SwordItem(ArmoryToolMaterials.QUARTZ_IRON, 0, -1.2F,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-
-    public static final Item DIAMOND_DAGGER = registerItem("diamond_dagger",
-            new SwordItem(ToolMaterials.DIAMOND, -1, -1.0F,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item FLINT_DIAMOND_DAGGER = registerItem("flint_diamond_dagger",
-            new SwordItem(ArmoryToolMaterials.FLINT_DIAMOND, -1, -1.0F,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item LAPIS_DIAMOND_DAGGER = registerItem("lapis_diamond_dagger",
-            new SwordItem(ArmoryToolMaterials.LAPIS_DIAMOND, -1, -0.8F,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item QUARTZ_DIAMOND_DAGGER = registerItem("quartz_diamond_dagger",
-            new SwordItem(ArmoryToolMaterials.QUARTZ_DIAMOND, -1, -1.0F,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-
-    public static final Item NETHERITE_DAGGER = registerItem("netherite_dagger",
-            new SwordItem(ToolMaterials.NETHERITE, -1, -1.0F,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
-    public static final Item FLINT_NETHERITE_DAGGER = registerItem("flint_netherite_dagger",
-            new SwordItem(ArmoryToolMaterials.FLINT_NETHERITE, -1, -1.0F,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
-    public static final Item LAPIS_NETHERITE_DAGGER = registerItem("lapis_netherite_dagger",
-            new SwordItem(ArmoryToolMaterials.LAPIS_NETHERITE, -1, -0.8F,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
-    public static final Item QUARTZ_NETHERITE_DAGGER = registerItem("quartz_netherite_dagger",
-            new SwordItem(ArmoryToolMaterials.QUARTZ_NETHERITE, -1, -1.0F,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
-
-    public static final Item COPPER_DAGGER = registerItem("copper_dagger",
-            new SwordItem(ArmoryToolMaterials.COPPER, -1, -1.0F,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-
     public static final Item WOODEN_CLAYMORE = registerItem("wooden_claymore",
             new ClaymoreItem(ArmoryToolMaterials.HEAVY_WOOD, 9, -3.4F, 600, 3,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item WOODEN_DOUBLE_AXE = registerItem("wooden_double_axe",
+            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_WOOD, 7, -3.4F, 500, 2,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item WOODEN_SICKLE = registerItem("wooden_sickle",
+            new SickleItem(ToolMaterials.WOOD, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item FLINT_WOODEN_DAGGER = registerItem("flint_wooden_dagger",
+            new SwordItem(ArmoryToolMaterials.FLINT_WOOD, 1, -1.4F,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item FLINT_WOODEN_CLAYMORE = registerItem("flint_wooden_claymore",
             new ClaymoreItem(ArmoryToolMaterials.HEAVY_FLINT_WOOD, 9, -3.4F, 600, 3,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item LAPIS_WOODEN_CLAYMORE = registerItem("lapis_wooden_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_LAPIS_WOOD, 9, -3.2F, 600, 3,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item QUARTZ_WOODEN_CLAYMORE = registerItem("quartz_wooden_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_QUARTZ_WOOD, 9, -3.4F, 600, 3,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-
-    public static final Item STONE_CLAYMORE = registerItem("stone_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_STONE, 9, -3.4F, 400, 3,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item FLINT_STONE_CLAYMORE = registerItem("flint_stone_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_FLINT_STONE, 9, -3.4F, 400, 3,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item LAPIS_STONE_CLAYMORE = registerItem("lapis_stone_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_LAPIS_STONE, 9, -3.2F, 400, 3,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item QUARTZ_STONE_CLAYMORE = registerItem("quartz_stone_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_QUARTZ_STONE, 9, -3.4F, 400, 3,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-
-    public static final Item GOLDEN_CLAYMORE = registerItem("golden_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_GOLD, 9, -3.4F, 200, 1,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item FLINT_GOLDEN_CLAYMORE = registerItem("flint_golden_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_FLINT_GOLD, 9, -3.4F, 200, 1,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item LAPIS_GOLDEN_CLAYMORE = registerItem("lapis_golden_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_LAPIS_GOLD, 9, -3.2F, 200, 1,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item QUARTZ_GOLDEN_CLAYMORE = registerItem("quartz_golden_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_QUARTZ_GOLD, 9, -3.4F, 200, 1,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-
-    public static final Item IRON_CLAYMORE = registerItem("iron_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_IRON, 8, -3.4F, 400, 2,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item FLINT_IRON_CLAYMORE = registerItem("flint_iron_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_FLINT_IRON, 8, -3.4F, 400, 2,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item LAPIS_IRON_CLAYMORE = registerItem("lapis_iron_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_LAPIS_IRON, 8, -3.2F, 400, 2,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item QUARTZ_IRON_CLAYMORE = registerItem("quartz_iron_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_QUARTZ_IRON, 8, -3.4F, 400, 2,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-
-    public static final Item DIAMOND_CLAYMORE = registerItem("diamond_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_DIAMOND, 7, -3.4F, 200, 2,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item FLINT_DIAMOND_CLAYMORE = registerItem("flint_diamond_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_FLINT_DIAMOND, 7, -3.4F, 200, 2,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item LAPIS_DIAMOND_CLAYMORE = registerItem("lapis_diamond_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_LAPIS_DIAMOND, 7, -3.2F, 200, 2,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item QUARTZ_DIAMOND_CLAYMORE = registerItem("quartz_diamond_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_QUARTZ_DIAMOND, 7, -3.4F, 200, 2,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-
-    public static final Item NETHERITE_CLAYMORE = registerItem("netherite_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_NETHERITE, 7, -3.4F, 200, 1,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
-    public static final Item FLINT_NETHERITE_CLAYMORE = registerItem("flint_netherite_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_FLINT_NETHERITE, 7, -3.4F, 200, 1,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
-    public static final Item LAPIS_NETHERITE_CLAYMORE = registerItem("lapis_netherite_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_LAPIS_NETHERITE, 7, -3.2F, 200, 1,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
-    public static final Item QUARTZ_NETHERITE_CLAYMORE = registerItem("quartz_netherite_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_QUARTZ_NETHERITE, 7, -3.4F, 200, 1,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
-
-    public static final Item COPPER_CLAYMORE = registerItem("copper_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_COPPER, 9, -3.4F, 600, 2,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-
-    public static final Item WOODEN_DOUBLE_AXE = registerItem("wooden_double_axe",
-            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_WOOD, 7, -3.4F, 500, 2,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item FLINT_WOODEN_DOUBLE_AXE = registerItem("flint_wooden_double_axe",
             new DoubleAxeItem(ArmoryToolMaterials.HEAVY_FLINT_WOOD, 7, -3.4F, 500, 2,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item FLINT_WOODEN_SICKLE = registerItem("flint_wooden_sickle",
+            new SickleItem(ArmoryToolMaterials.FLINT_WOOD, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item LAPIS_WOODEN_DAGGER = registerItem("lapis_wooden_dagger",
+            new SwordItem(ArmoryToolMaterials.LAPIS_WOOD, 1, -1.2F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item LAPIS_WOODEN_CLAYMORE = registerItem("lapis_wooden_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_LAPIS_WOOD, 9, -3.2F, 600, 3,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item LAPIS_WOODEN_DOUBLE_AXE = registerItem("lapis_wooden_double_axe",
             new DoubleAxeItem(ArmoryToolMaterials.HEAVY_LAPIS_WOOD, 7, -3.2F, 500, 2,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item LAPIS_WOODEN_SICKLE = registerItem("lapis_wooden_sickle",
+            new SickleItem(ArmoryToolMaterials.LAPIS_WOOD, 1.75F, -1.9F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item QUARTZ_WOODEN_DAGGER = registerItem("quartz_wooden_dagger",
+            new SwordItem(ArmoryToolMaterials.QUARTZ_WOOD, 1, -1.4F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item QUARTZ_WOODEN_CLAYMORE = registerItem("quartz_wooden_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_QUARTZ_WOOD, 9, -3.4F, 600, 3,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item QUARTZ_WOODEN_DOUBLE_AXE = registerItem("quartz_wooden_double_axe",
             new DoubleAxeItem(ArmoryToolMaterials.HEAVY_QUARTZ_WOOD, 7, -3.4F, 500, 2,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item QUARTZ_WOODEN_SICKLE = registerItem("quartz_wooden_sickle",
+            new SickleItem(ArmoryToolMaterials.QUARTZ_WOOD, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
+    public static final Item STONE_DAGGER = registerItem("stone_dagger",
+            new SwordItem(ToolMaterials.STONE, 0, -1.2F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item STONE_CLAYMORE = registerItem("stone_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_STONE, 9, -3.4F, 400, 3,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item STONE_DOUBLE_AXE = registerItem("stone_double_axe",
             new DoubleAxeItem(ArmoryToolMaterials.HEAVY_STONE, 7, -3.4F, 300, 2,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item STONE_SICKLE = registerItem("stone_sickle",
+            new SickleItem(ToolMaterials.STONE, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item FLINT_STONE_DAGGER = registerItem("flint_stone_dagger",
+            new SwordItem(ArmoryToolMaterials.FLINT_STONE, 0, -1.2F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item FLINT_STONE_CLAYMORE = registerItem("flint_stone_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_FLINT_STONE, 9, -3.4F, 400, 3,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item FLINT_STONE_DOUBLE_AXE = registerItem("flint_stone_double_axe",
             new DoubleAxeItem(ArmoryToolMaterials.HEAVY_FLINT_STONE, 7, -3.4F, 300, 2,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item FLINT_STONE_SICKLE = registerItem("flint_stone_sickle",
+            new SickleItem(ArmoryToolMaterials.FLINT_STONE, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item LAPIS_STONE_DAGGER = registerItem("lapis_stone_dagger",
+            new SwordItem(ArmoryToolMaterials.LAPIS_STONE, 0, -1.0F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item LAPIS_STONE_CLAYMORE = registerItem("lapis_stone_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_LAPIS_STONE, 9, -3.2F, 400, 3,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item LAPIS_STONE_DOUBLE_AXE = registerItem("lapis_stone_double_axe",
             new DoubleAxeItem(ArmoryToolMaterials.HEAVY_LAPIS_STONE, 7, -3.2F, 300, 2,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item LAPIS_STONE_SICKLE = registerItem("lapis_stone_sickle",
+            new SickleItem(ArmoryToolMaterials.LAPIS_STONE, 1.75F, -1.9F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item QUARTZ_STONE_DAGGER = registerItem("quartz_stone_dagger",
+            new SwordItem(ArmoryToolMaterials.QUARTZ_STONE, 0, -1.2F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item QUARTZ_STONE_CLAYMORE = registerItem("quartz_stone_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_QUARTZ_STONE, 9, -3.4F, 400, 3,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item QUARTZ_STONE_DOUBLE_AXE = registerItem("quartz_stone_double_axe",
             new DoubleAxeItem(ArmoryToolMaterials.HEAVY_QUARTZ_STONE, 7, -3.4F, 300, 2,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item QUARTZ_STONE_SICKLE = registerItem("quartz_stone_sickle",
+            new SickleItem(ArmoryToolMaterials.QUARTZ_STONE, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
-    public static final Item IRON_DOUBLE_AXE = registerItem("iron_double_axe",
-            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_IRON, 6, -3.4F, 300, 1,
+    public static final Item GOLDEN_DAGGER = registerItem("golden_dagger",
+            new SwordItem(ToolMaterials.GOLD, 1, -1.0F,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item FLINT_IRON_DOUBLE_AXE = registerItem("flint_iron_double_axe",
-            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_FLINT_IRON, 6, -3.4F, 300, 1,
+    public static final Item GOLDEN_CLAYMORE = registerItem("golden_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_GOLD, 9, -3.4F, 200, 1,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item LAPIS_IRON_DOUBLE_AXE = registerItem("lapis_iron_double_axe",
-            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_LAPIS_IRON, 6, -3.2F, 300, 1,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item QUARTZ_IRON_DOUBLE_AXE = registerItem("quartz_iron_double_axe",
-            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_QUARTZ_IRON, 6, -3.4F, 300, 1,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-
     public static final Item GOLDEN_DOUBLE_AXE = registerItem("golden_double_axe",
             new DoubleAxeItem(ArmoryToolMaterials.HEAVY_GOLD, 7, -3.4F, 100, 0,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item GOLDEN_SICKLE = registerItem("golden_sickle",
+            new SickleItem(ToolMaterials.GOLD, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item FLINT_GOLDEN_DAGGER = registerItem("flint_golden_dagger",
+            new SwordItem(ArmoryToolMaterials.FLINT_GOLD, 1, -1.0F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item FLINT_GOLDEN_CLAYMORE = registerItem("flint_golden_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_FLINT_GOLD, 9, -3.4F, 200, 1,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item FLINT_GOLDEN_DOUBLE_AXE = registerItem("flint_golden_double_axe",
             new DoubleAxeItem(ArmoryToolMaterials.HEAVY_FLINT_GOLD, 7, -3.4F, 100, 0,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item FLINT_GOLDEN_SICKLE = registerItem("flint_golden_sickle",
+            new SickleItem(ArmoryToolMaterials.FLINT_GOLD, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item LAPIS_GOLDEN_DAGGER = registerItem("lapis_golden_dagger",
+            new SwordItem(ArmoryToolMaterials.LAPIS_GOLD, 1, -0.8F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item LAPIS_GOLDEN_CLAYMORE = registerItem("lapis_golden_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_LAPIS_GOLD, 9, -3.2F, 200, 1,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item LAPIS_GOLDEN_DOUBLE_AXE = registerItem("lapis_golden_double_axe",
             new DoubleAxeItem(ArmoryToolMaterials.HEAVY_LAPIS_GOLD, 7, -3.2F, 100, 0,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item LAPIS_GOLDEN_SICKLE = registerItem("lapis_golden_sickle",
+            new SickleItem(ArmoryToolMaterials.LAPIS_GOLD, 1.75F, -1.9F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item QUARTZ_GOLDEN_DAGGER = registerItem("quartz_golden_dagger",
+            new SwordItem(ArmoryToolMaterials.QUARTZ_GOLD, 1, -1.0F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item QUARTZ_GOLDEN_CLAYMORE = registerItem("quartz_golden_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_QUARTZ_GOLD, 9, -3.4F, 200, 1,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item QUARTZ_GOLDEN_DOUBLE_AXE = registerItem("quartz_golden_double_axe",
             new DoubleAxeItem(ArmoryToolMaterials.HEAVY_QUARTZ_GOLD, 7, -3.4F, 100, 0,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item QUARTZ_GOLDEN_SICKLE = registerItem("quartz_golden_sickle",
+            new SickleItem(ArmoryToolMaterials.QUARTZ_GOLD, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
+    public static final Item IRON_DAGGER = registerItem("iron_dagger",
+            new SwordItem(ToolMaterials.IRON, 0, -1.2F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item IRON_CLAYMORE = registerItem("iron_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_IRON, 8, -3.4F, 400, 2,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item IRON_DOUBLE_AXE = registerItem("iron_double_axe",
+            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_IRON, 6, -3.4F, 300, 1,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item IRON_SICKLE = registerItem("iron_sickle",
+            new SickleItem(ToolMaterials.IRON, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item FLINT_IRON_DAGGER = registerItem("flint_iron_dagger",
+            new SwordItem(ArmoryToolMaterials.FLINT_IRON, 0, -1.2F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item FLINT_IRON_CLAYMORE = registerItem("flint_iron_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_FLINT_IRON, 8, -3.4F, 400, 2,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item FLINT_IRON_DOUBLE_AXE = registerItem("flint_iron_double_axe",
+            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_FLINT_IRON, 6, -3.4F, 300, 1,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item FLINT_IRON_SICKLE = registerItem("flint_iron_sickle",
+            new SickleItem(ArmoryToolMaterials.FLINT_IRON, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item LAPIS_IRON_DAGGER = registerItem("lapis_iron_dagger",
+            new SwordItem(ArmoryToolMaterials.LAPIS_IRON, 0, -1.0F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item LAPIS_IRON_CLAYMORE = registerItem("lapis_iron_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_LAPIS_IRON, 8, -3.2F, 400, 2,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item LAPIS_IRON_DOUBLE_AXE = registerItem("lapis_iron_double_axe",
+            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_LAPIS_IRON, 6, -3.2F, 300, 1,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item LAPIS_IRON_SICKLE = registerItem("lapis_iron_sickle",
+            new SickleItem(ArmoryToolMaterials.LAPIS_IRON, 1.75F, -1.9F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item QUARTZ_IRON_DAGGER = registerItem("quartz_iron_dagger",
+            new SwordItem(ArmoryToolMaterials.QUARTZ_IRON, 0, -1.2F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item QUARTZ_IRON_CLAYMORE = registerItem("quartz_iron_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_QUARTZ_IRON, 8, -3.4F, 400, 2,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item QUARTZ_IRON_DOUBLE_AXE = registerItem("quartz_iron_double_axe",
+            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_QUARTZ_IRON, 6, -3.4F, 300, 1,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item QUARTZ_IRON_SICKLE = registerItem("quartz_iron_sickle",
+            new SickleItem(ArmoryToolMaterials.QUARTZ_IRON, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item DIAMOND_DAGGER = registerItem("diamond_dagger",
+            new SwordItem(ToolMaterials.DIAMOND, -1, -1.0F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item DIAMOND_CLAYMORE = registerItem("diamond_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_DIAMOND, 7, -3.4F, 200, 2,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item DIAMOND_DOUBLE_AXE = registerItem("diamond_double_axe",
             new DoubleAxeItem(ArmoryToolMaterials.HEAVY_DIAMOND, 6, -3.4F, 300, 1,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item DIAMOND_SICKLE = registerItem("diamond_sickle",
+            new SickleItem(ToolMaterials.DIAMOND, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item FLINT_DIAMOND_DAGGER = registerItem("flint_diamond_dagger",
+            new SwordItem(ArmoryToolMaterials.FLINT_DIAMOND, -1, -1.0F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item FLINT_DIAMOND_CLAYMORE = registerItem("flint_diamond_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_FLINT_DIAMOND, 7, -3.4F, 200, 2,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item FLINT_DIAMOND_DOUBLE_AXE = registerItem("flint_diamond_double_axe",
             new DoubleAxeItem(ArmoryToolMaterials.HEAVY_FLINT_DIAMOND, 6, -3.4F, 300, 1,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item FLINT_DIAMOND_SICKLE = registerItem("flint_diamond_sickle",
+            new SickleItem(ArmoryToolMaterials.FLINT_DIAMOND, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item LAPIS_DIAMOND_DAGGER = registerItem("lapis_diamond_dagger",
+            new SwordItem(ArmoryToolMaterials.LAPIS_DIAMOND, -1, -0.8F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item LAPIS_DIAMOND_CLAYMORE = registerItem("lapis_diamond_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_LAPIS_DIAMOND, 7, -3.2F, 200, 2,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item LAPIS_DIAMOND_DOUBLE_AXE = registerItem("lapis_diamond_double_axe",
             new DoubleAxeItem(ArmoryToolMaterials.HEAVY_LAPIS_DIAMOND, 6, -3.2F, 300, 1,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item LAPIS_DIAMOND_SICKLE = registerItem("lapis_diamond_sickle",
+            new SickleItem(ArmoryToolMaterials.LAPIS_DIAMOND, 1.75F, -1.9F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item QUARTZ_DIAMOND_DAGGER = registerItem("quartz_diamond_dagger",
+            new SwordItem(ArmoryToolMaterials.QUARTZ_DIAMOND, -1, -1.0F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item QUARTZ_DIAMOND_CLAYMORE = registerItem("quartz_diamond_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_QUARTZ_DIAMOND, 7, -3.4F, 200, 2,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item QUARTZ_DIAMOND_DOUBLE_AXE = registerItem("quartz_diamond_double_axe",
             new DoubleAxeItem(ArmoryToolMaterials.HEAVY_QUARTZ_DIAMOND, 6, -3.4F, 300, 1,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item QUARTZ_DIAMOND_SICKLE = registerItem("quartz_diamond_sickle",
+            new SickleItem(ArmoryToolMaterials.QUARTZ_DIAMOND, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
+    public static final Item NETHERITE_DAGGER = registerItem("netherite_dagger",
+            new SwordItem(ToolMaterials.NETHERITE, -1, -1.0F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
+    public static final Item NETHERITE_CLAYMORE = registerItem("netherite_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_NETHERITE, 7, -3.4F, 200, 1,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
     public static final Item NETHERITE_DOUBLE_AXE = registerItem("netherite_double_axe",
             new DoubleAxeItem(ArmoryToolMaterials.HEAVY_NETHERITE, 5, -3.4F, 100, 1,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
+    public static final Item NETHERITE_SICKLE = registerItem("netherite_sickle",
+            new SickleItem(ToolMaterials.NETHERITE, 1.75F, -2.1F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
+
+    public static final Item FLINT_NETHERITE_DAGGER = registerItem("flint_netherite_dagger",
+            new SwordItem(ArmoryToolMaterials.FLINT_NETHERITE, -1, -1.0F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
+    public static final Item FLINT_NETHERITE_CLAYMORE = registerItem("flint_netherite_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_FLINT_NETHERITE, 7, -3.4F, 200, 1,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
     public static final Item FLINT_NETHERITE_DOUBLE_AXE = registerItem("flint_netherite_double_axe",
             new DoubleAxeItem(ArmoryToolMaterials.HEAVY_FLINT_NETHERITE, 5, -3.4F, 100, 1,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
-    public static final Item LAPIS_NETHERITE_DOUBLE_AXE = registerItem("lapis_netherite_double_axe",
-            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_LAPIS_NETHERITE, 5, -3.2F, 100, 1,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
-    public static final Item QUARTZ_NETHERITE_DOUBLE_AXE = registerItem("quartz_netherite_double_axe",
-            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_QUARTZ_NETHERITE, 5, -3.4F, 100, 1,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
-
-    public static final Item COPPER_DOUBLE_AXE = registerItem("copper_double_axe",
-            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_COPPER, 7, -3.4F, 500, 1,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-
-    public static final Item WOODEN_SICKLE = registerItem("wooden_sickle",
-            new SickleItem(ToolMaterials.WOOD, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item FLINT_WOODEN_SICKLE = registerItem("flint_wooden_sickle",
-            new SickleItem(ArmoryToolMaterials.FLINT_WOOD, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item LAPIS_WOODEN_SICKLE = registerItem("lapis_wooden_sickle",
-            new SickleItem(ArmoryToolMaterials.LAPIS_WOOD, 1.75F, -1.9F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item QUARTZ_WOODEN_SICKLE = registerItem("quartz_wooden_sickle",
-            new SickleItem(ArmoryToolMaterials.QUARTZ_WOOD, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-
-    public static final Item STONE_SICKLE = registerItem("stone_sickle",
-            new SickleItem(ToolMaterials.STONE, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item FLINT_STONE_SICKLE = registerItem("flint_stone_sickle",
-            new SickleItem(ArmoryToolMaterials.FLINT_STONE, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item LAPIS_STONE_SICKLE = registerItem("lapis_stone_sickle",
-            new SickleItem(ArmoryToolMaterials.LAPIS_STONE, 1.75F, -1.9F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item QUARTZ_STONE_SICKLE = registerItem("quartz_stone_sickle",
-            new SickleItem(ArmoryToolMaterials.QUARTZ_STONE, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-
-    public static final Item GOLDEN_SICKLE = registerItem("golden_sickle",
-            new SickleItem(ToolMaterials.GOLD, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item FLINT_GOLDEN_SICKLE = registerItem("flint_golden_sickle",
-            new SickleItem(ArmoryToolMaterials.FLINT_GOLD, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item LAPIS_GOLDEN_SICKLE = registerItem("lapis_golden_sickle",
-            new SickleItem(ArmoryToolMaterials.LAPIS_GOLD, 1.75F, -1.9F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item QUARTZ_GOLDEN_SICKLE = registerItem("quartz_golden_sickle",
-            new SickleItem(ArmoryToolMaterials.QUARTZ_GOLD, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-
-    public static final Item IRON_SICKLE = registerItem("iron_sickle",
-            new SickleItem(ToolMaterials.IRON, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item FLINT_IRON_SICKLE = registerItem("flint_iron_sickle",
-            new SickleItem(ArmoryToolMaterials.FLINT_IRON, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item LAPIS_IRON_SICKLE = registerItem("lapis_iron_sickle",
-            new SickleItem(ArmoryToolMaterials.LAPIS_IRON, 1.75F, -1.9F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item QUARTZ_IRON_SICKLE = registerItem("quartz_iron_sickle",
-            new SickleItem(ArmoryToolMaterials.QUARTZ_IRON, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-
-    public static final Item DIAMOND_SICKLE = registerItem("diamond_sickle",
-            new SickleItem(ToolMaterials.DIAMOND, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item FLINT_DIAMOND_SICKLE = registerItem("flint_diamond_sickle",
-            new SickleItem(ArmoryToolMaterials.FLINT_DIAMOND, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item LAPIS_DIAMOND_SICKLE = registerItem("lapis_diamond_sickle",
-            new SickleItem(ArmoryToolMaterials.LAPIS_DIAMOND, 1.75F, -1.9F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item QUARTZ_DIAMOND_SICKLE = registerItem("quartz_diamond_sickle",
-            new SickleItem(ArmoryToolMaterials.QUARTZ_DIAMOND, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-
-    public static final Item NETHERITE_SICKLE = registerItem("netherite_sickle",
-            new SickleItem(ToolMaterials.NETHERITE, 1.75F, -2.1F,
-                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
     public static final Item FLINT_NETHERITE_SICKLE = registerItem("flint_netherite_sickle",
             new SickleItem(ArmoryToolMaterials.FLINT_NETHERITE, 1.75F, -2.1F,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
+
+    public static final Item LAPIS_NETHERITE_DAGGER = registerItem("lapis_netherite_dagger",
+            new SwordItem(ArmoryToolMaterials.LAPIS_NETHERITE, -1, -0.8F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
+    public static final Item LAPIS_NETHERITE_CLAYMORE = registerItem("lapis_netherite_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_LAPIS_NETHERITE, 7, -3.2F, 200, 1,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
+    public static final Item LAPIS_NETHERITE_DOUBLE_AXE = registerItem("lapis_netherite_double_axe",
+            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_LAPIS_NETHERITE, 5, -3.2F, 100, 1,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
     public static final Item LAPIS_NETHERITE_SICKLE = registerItem("lapis_netherite_sickle",
             new SickleItem(ArmoryToolMaterials.LAPIS_NETHERITE, 1.75F, -1.9F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
+
+    public static final Item QUARTZ_NETHERITE_DAGGER = registerItem("quartz_netherite_dagger",
+            new SwordItem(ArmoryToolMaterials.QUARTZ_NETHERITE, -1, -1.0F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
+    public static final Item QUARTZ_NETHERITE_CLAYMORE = registerItem("quartz_netherite_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_QUARTZ_NETHERITE, 7, -3.4F, 200, 1,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
+    public static final Item QUARTZ_NETHERITE_DOUBLE_AXE = registerItem("quartz_netherite_double_axe",
+            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_QUARTZ_NETHERITE, 5, -3.4F, 100, 1,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
     public static final Item QUARTZ_NETHERITE_SICKLE = registerItem("quartz_netherite_sickle",
             new SickleItem(ArmoryToolMaterials.QUARTZ_NETHERITE, 1.75F, -2.1F,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
 
+    public static final Item COPPER_DAGGER = registerItem("copper_dagger",
+            new SwordItem(ArmoryToolMaterials.COPPER, 0, -1.1F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item COPPER_CLAYMORE = registerItem("copper_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_COPPER, 9, -3.3F, 600, 2,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item COPPER_DOUBLE_AXE = registerItem("copper_double_axe",
+            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_COPPER, 7, -3.3F, 500, 1,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item COPPER_SICKLE = registerItem("copper_sickle",
-            new SickleItem(ArmoryToolMaterials.COPPER, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+            new SickleItem(ArmoryToolMaterials.COPPER, 1.75F, -2.0F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item FLINT_COPPER_DAGGER = registerItem("flint_copper_dagger",
+            new SwordItem(ArmoryToolMaterials.FLINT_COPPER, 0, -1.1F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item FLINT_COPPER_CLAYMORE = registerItem("flint_copper_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_FLINT_COPPER, 9, -3.3F, 600, 2,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item FLINT_COPPER_DOUBLE_AXE = registerItem("flint_copper_double_axe",
+            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_FLINT_COPPER, 7, -3.3F, 500, 1,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item FLINT_COPPER_SICKLE = registerItem("flint_copper_sickle",
+            new SickleItem(ArmoryToolMaterials.FLINT_COPPER, 1.75F, -2.0F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item LAPIS_COPPER_DAGGER = registerItem("lapis_copper_dagger",
+            new SwordItem(ArmoryToolMaterials.LAPIS_COPPER, 0, -0.9F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item LAPIS_COPPER_CLAYMORE = registerItem("lapis_copper_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_LAPIS_COPPER, 9, -3.1F, 600, 2,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item LAPIS_COPPER_DOUBLE_AXE = registerItem("lapis_copper_double_axe",
+            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_LAPIS_COPPER, 7, -3.1F, 500, 1,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item LAPIS_COPPER_SICKLE = registerItem("lapis_copper_sickle",
+            new SickleItem(ArmoryToolMaterials.LAPIS_COPPER, 1.75F, -1.8F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item QUARTZ_COPPER_DAGGER = registerItem("quartz_copper_dagger",
+            new SwordItem(ArmoryToolMaterials.QUARTZ_COPPER, 0, -1.1F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item QUARTZ_COPPER_CLAYMORE = registerItem("quartz_copper_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_QUARTZ_COPPER, 9, -3.3F, 600, 2,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item QUARTZ_COPPER_DOUBLE_AXE = registerItem("quartz_copper_double_axe",
+            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_QUARTZ_COPPER, 7, -3.3F, 500, 1,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item QUARTZ_COPPER_SICKLE = registerItem("quartz_copper_sickle",
+            new SickleItem(ArmoryToolMaterials.QUARTZ_COPPER, 1.75F, -2.0F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item SPINDTOX = registerItem("spindtox",
             new PoisonDaggerItem(ArmoryToolMaterials.SPINDTOX, 2, -1.2F,
@@ -610,8 +683,10 @@ public class ArmoryItems {
 
     public static final Item WOODEN_BOW = registerItem("wooden_bow",
             new WoodenBowItem(new Item.Settings().maxDamage(90).group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item LEATHER_BOW = registerItem("leather_bow",
+            new LeatherBowItem(new Item.Settings().maxDamage(201).group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item COPPER_BOW = registerItem("copper_bow",
-            new CopperBowItem(new Item.Settings().maxDamage(201).group(ArmoryItemGroup.VARAN_ARMOR)));
+            new CopperBowItem(new Item.Settings().maxDamage(293).group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item DIAMOND_BOW = registerItem("diamond_bow",
             new DiamondBowItem(new Item.Settings().maxDamage(1787).group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item NETHERITE_BOW = registerItem("netherite_bow",
@@ -633,6 +708,19 @@ public class ArmoryItems {
             new QuartzArrowItem(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item NETHER_ARROW = registerItem("nether_arrow",
             new NetherArrowItem(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item COPPER_HELMET = registerItem("copper_helmet",
+            new ArmorItem(ArmoryArmourMaterials.COPPER, EquipmentSlot.HEAD,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item COPPER_CHESTPLATE = registerItem("copper_chestplate",
+            new ArmorItem(ArmoryArmourMaterials.COPPER, EquipmentSlot.CHEST,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item COPPER_LEGGINGS = registerItem("copper_leggings",
+            new ArmorItem(ArmoryArmourMaterials.COPPER, EquipmentSlot.LEGS,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item COPPER_BOOTS = registerItem("copper_boots",
+            new ArmorItem(ArmoryArmourMaterials.COPPER, EquipmentSlot.FEET,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item MINING_GOOGLES = registerItem("mining_googles",
             new MiningGooglesItem(ArmoryArmourMaterials.GOOGLES, EquipmentSlot.HEAD,

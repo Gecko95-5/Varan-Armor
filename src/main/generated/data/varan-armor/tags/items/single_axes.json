@@ -25,6 +25,9 @@
     "varan-armor:quartz_golden_axe",
     "varan-armor:quartz_diamond_axe",
     "varan-armor:quartz_netherite_axe",
-    "varan-armor:copper_axe"
+    "varan-armor:copper_axe",
+    "varan-armor:flint_copper_axe",
+    "varan-armor:lapis_copper_axe",
+    "varan-armor:quartz_copper_axe"
   ]
 }

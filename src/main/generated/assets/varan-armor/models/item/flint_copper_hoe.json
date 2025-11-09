@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "varan-armor:item/flint_copper_hoe"
+  }
+}

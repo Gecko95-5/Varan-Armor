@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "C": {
+      "item": "varan-armor:tanned_leather"
+    },
+    "X": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    " #X",
+    "C X",
+    " #X"
+  ],
+  "result": {
+    "item": "varan-armor:leather_bow"
+  }
+}

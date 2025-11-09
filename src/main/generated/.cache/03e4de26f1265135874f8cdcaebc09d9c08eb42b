@@ -1,13 +1,13 @@
-// 1.19.2	2025-11-03T20:45:10.8843492	Tags for minecraft:item
-6a0c8129bfa3d3f503774bb1f0bd9bad6eb36ee8 data\varan-armor\tags\items\daggers.json
+// 1.19.2	2025-11-08T21:34:53.5846614	Tags for minecraft:item
+c3c41a6863eb46833c8710a9c35f5de5ea299761 data\varan-armor\tags\items\daggers.json
 405eb8d3767b24720b98a08992a8145adb91dd4f data\varan-armor\tags\items\axes.json
 ddaf42bf734fd744b867307cca090d69226e28aa data\minecraft\tags\items\arrows.json
-8183636ebd12f90e90c7f2b946bf4889c549a352 data\varan-armor\tags\items\double_axes.json
-1c4eacf2ca62c50bd8f7ce5dc8a9ab07cdc7d928 data\varan-armor\tags\items\shovels.json
-8325003ca810033e6438ad855f3abc1302fafb93 data\varan-armor\tags\items\hoes.json
-1b0c2e5509a341489c789ded4177ceabb96c979c data\varan-armor\tags\items\pickaxes.json
+9d6623306c56e7aa63ad19bc7b54acc8aa625d3e data\varan-armor\tags\items\double_axes.json
+073bc31496ed0639a371119ef4bd17487989d8ca data\varan-armor\tags\items\shovels.json
+5baef8eaef4c9d9094648ff16906e558959b54cb data\varan-armor\tags\items\hoes.json
+522887bdd08650ab4ca3f65e55c569724dd93af4 data\varan-armor\tags\items\pickaxes.json
 8252e78ec259a4def93f88d3ed48bc36f62b02b6 data\varan-armor\tags\items\harvesters.json
-fd590a18fabe7d22f76a75da8cde8ee5f9bb6f85 data\varan-armor\tags\items\sickles.json
-1ee67a9b0d667f3ce6ed3039a9e8ecdd2be790ae data\varan-armor\tags\items\claymores.json
-c24e73cf1b6460c42d8c1b790068abd214e75885 data\varan-armor\tags\items\single_axes.json
-ebeb15cefda9d02bae2d6fd5df74d86856dade2e data\varan-armor\tags\items\swords.json
+e24cc5c11b329be955fc6e64438a68dfa3157a04 data\varan-armor\tags\items\sickles.json
+ad9e811f698ddfbe44c44a300cbfb6d3efd6cb0e data\varan-armor\tags\items\claymores.json
+e4f404d5b86e611daaf66c4610e71bac6a21da02 data\varan-armor\tags\items\single_axes.json
+3679d86bcf788bb54493c88b132de65e05e8cc76 data\varan-armor\tags\items\swords.json
