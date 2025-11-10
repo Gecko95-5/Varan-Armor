@@ -51,6 +51,12 @@ public class ArmoryItems {
     public static final Item TANNED_LEATHER = registerItem("tanned_leather",
             new Item(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
+    public static final Item MOLTEN_IRON = registerItem("molten_iron",
+            new Item(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item IRON_PLATE = registerItem("iron_plate",
+            new Item(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
     public static final Item GOLDEN_FEATHER = registerItem("golden_feather",
             new Item(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
@@ -719,6 +725,19 @@ public class ArmoryItems {
             new ArmorItem(ArmoryArmourMaterials.COPPER, EquipmentSlot.LEGS,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item COPPER_BOOTS = registerItem("copper_boots",
+            new ArmorItem(ArmoryArmourMaterials.COPPER, EquipmentSlot.FEET,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item HIGHLAND_HELMET = registerItem("highland_helmet",
+            new ArmorItem(ArmoryArmourMaterials.COPPER, EquipmentSlot.HEAD,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item HIGHLAND_CHESTPLATE = registerItem("highland_chestplate",
+            new ArmorItem(ArmoryArmourMaterials.COPPER, EquipmentSlot.CHEST,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item HIGHLAND_LEGGINGS = registerItem("highland_leggings",
+            new ArmorItem(ArmoryArmourMaterials.COPPER, EquipmentSlot.LEGS,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item HIGHLAND_BOOTS = registerItem("highland_boots",
             new ArmorItem(ArmoryArmourMaterials.COPPER, EquipmentSlot.FEET,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 

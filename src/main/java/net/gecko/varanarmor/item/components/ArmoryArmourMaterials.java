@@ -1,6 +1,7 @@
 package net.gecko.varanarmor.item.components;
 
 import net.gecko.varanarmor.VaranArmor;
+import net.gecko.varanarmor.item.ArmoryItems;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.Items;
@@ -24,7 +25,10 @@ public enum ArmoryArmourMaterials implements ArmorMaterial {
             SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0f, 0f, () -> Ingredient.ofItems(Items.PHANTOM_MEMBRANE)),
 
     COPPER("copper", 11, new int[] { 2, 3, 4, 2}, 8,
-            SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0f, 0.05F, () -> Ingredient.ofItems(Items.COPPER_INGOT));
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0f, 0.05F, () -> Ingredient.ofItems(Items.COPPER_INGOT)),
+
+    HIGHLAND("highland", 19, new int[] { 2, 3, 4, 2}, 8,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0f, 0.05F, () -> Ingredient.ofItems(ArmoryItems.IRON_PLATE));
 
     private final String name;
     private final int durabilityMultiplier;
