@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "cupcake",
+  "ingredients": [
+    {
+      "tag": "varan-armor:cupcakes"
+    },
+    {
+      "item": "minecraft:light_gray_dye"
+    }
+  ],
+  "result": {
+    "item": "varan-armor:light_gray_cupcake"
+  }
+}

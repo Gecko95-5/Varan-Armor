@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "varan-armor:tanned_leather"
+    },
+    "-": {
+      "item": "minecraft:iron_nugget"
+    },
+    "X": {
+      "item": "varan-armor:iron_plate"
+    }
+  },
+  "pattern": [
+    "X X",
+    "X#X",
+    "#-#"
+  ],
+  "result": {
+    "item": "varan-armor:highland_chestplate"
+  }
+}

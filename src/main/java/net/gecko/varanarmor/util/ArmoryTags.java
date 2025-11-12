@@ -28,6 +28,12 @@ public class ArmoryTags {
         public static final TagKey<Item> SWORDS =
                 createTag("swords");
 
+        public static final TagKey<Item> BLADES =
+                createTag("blades");
+
+        public static final TagKey<Item> CUPCAKES =
+                createTag("cupcakes");
+
         public static final TagKey<Item> DAGGERS =
                 createTag("daggers");
 

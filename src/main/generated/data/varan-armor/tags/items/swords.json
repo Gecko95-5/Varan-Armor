@@ -28,8 +28,6 @@
     "varan-armor:copper_sword",
     "varan-armor:flint_copper_sword",
     "varan-armor:lapis_copper_sword",
-    "varan-armor:quartz_copper_sword",
-    "#varan-armor:claymores",
-    "#varan-armor:daggers"
+    "varan-armor:quartz_copper_sword"
   ]
 }

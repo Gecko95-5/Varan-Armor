@@ -119,6 +119,11 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ArmoryItems.QUARTZ_COPPER_DAGGER)
                 .add(ArmoryItems.SPINDTOX);
 
+    getOrCreateTagBuilder(ArmoryTags.Items.BLADES)
+            .addTag(ArmoryTags.Items.CLAYMORES)
+            .addTag(ArmoryTags.Items.DAGGERS)
+            .addTag(ArmoryTags.Items.SWORDS);
+
     getOrCreateTagBuilder(ArmoryTags.Items.SWORDS)
             .add(Items.WOODEN_SWORD)
             .add(Items.STONE_SWORD)
@@ -147,9 +152,7 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
             .add(ArmoryItems.COPPER_SWORD)
             .add(ArmoryItems.FLINT_COPPER_SWORD)
             .add(ArmoryItems.LAPIS_COPPER_SWORD)
-            .add(ArmoryItems.QUARTZ_COPPER_SWORD)
-            .addTag(ArmoryTags.Items.CLAYMORES)
-            .addTag(ArmoryTags.Items.DAGGERS);
+            .add(ArmoryItems.QUARTZ_COPPER_SWORD);
 
     getOrCreateTagBuilder(ArmoryTags.Items.PICKAXES)
             .add(Items.WOODEN_PICKAXE)
@@ -300,5 +303,24 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ArmoryItems.FLINT_COPPER_HOE)
                 .add(ArmoryItems.LAPIS_COPPER_HOE)
                 .add(ArmoryItems.QUARTZ_COPPER_HOE);
+
+        getOrCreateTagBuilder(ArmoryTags.Items.CUPCAKES)
+                .add(ArmoryItems.CUPCAKE)
+                .add(ArmoryItems.WHITE_CUPCAKE)
+                .add(ArmoryItems.RED_CUPCAKE)
+                .add(ArmoryItems.ORANGE_CUPCAKE)
+                .add(ArmoryItems.YELLOW_CUPCAKE)
+                .add(ArmoryItems.LIME_CUPCAKE)
+                .add(ArmoryItems.GREEN_CUPCAKE)
+                .add(ArmoryItems.CYAN_CUPCAKE)
+                .add(ArmoryItems.LIGHT_BLUE_CUPCAKE)
+                .add(ArmoryItems.BLUE_CUPCAKE)
+                .add(ArmoryItems.PURPLE_CUPCAKE)
+                .add(ArmoryItems.MAGENTA_CUPCAKE)
+                .add(ArmoryItems.PINK_CUPCAKE)
+                .add(ArmoryItems.LIGHT_GRAY_CUPCAKE)
+                .add(ArmoryItems.GRAY_CUPCAKE)
+                .add(ArmoryItems.BLACK_CUPCAKE)
+                .add(ArmoryItems.BROWN_CUPCAKE);
     }
 }

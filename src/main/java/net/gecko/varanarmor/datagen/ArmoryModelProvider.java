@@ -329,6 +329,38 @@ public class ArmoryModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ArmoryItems.COPPER_BOOTS, Models.GENERATED);
 
         itemModelGenerator.register(ArmoryItems.TANNED_LEATHER, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.MOLTEN_IRON, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.IRON_PLATE, Models.GENERATED);
+
+        itemModelGenerator.register(ArmoryItems.HIGHLAND_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.HIGHLAND_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.HIGHLAND_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.HIGHLAND_BOOTS, Models.GENERATED);
+
+        itemModelGenerator.register(ArmoryItems.SLIVER_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.SLIVER_NUGGET, Models.GENERATED);
+
+        itemModelGenerator.register(ArmoryItems.SLIVER_APPLE, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.ENCHANTED_SLIVER_APPLE, ArmoryItems.SLIVER_APPLE, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.SLIVER_BEETROOT, Models.GENERATED);
+        
+        itemModelGenerator.register(ArmoryItems.CUPCAKE, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.WHITE_CUPCAKE, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.RED_CUPCAKE, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.ORANGE_CUPCAKE, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.YELLOW_CUPCAKE, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.LIME_CUPCAKE, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.GREEN_CUPCAKE, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.CYAN_CUPCAKE, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.LIGHT_BLUE_CUPCAKE, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.BLUE_CUPCAKE, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.PURPLE_CUPCAKE, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.MAGENTA_CUPCAKE, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.PINK_CUPCAKE, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.LIGHT_GRAY_CUPCAKE, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.GRAY_CUPCAKE, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.BLACK_CUPCAKE, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.BROWN_CUPCAKE, Models.GENERATED);
     }
 
     @Override

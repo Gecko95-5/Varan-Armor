@@ -27,6 +27,10 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class ArmoryItems {
+
+    public static final Item SLIVER_INGOT = registerItem("sliver_ingot",
+            new Item(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
     public static final Item FLINT_ROD = registerItem("flint_rod",
             new Item(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
@@ -48,7 +52,13 @@ public class ArmoryItems {
     public static final Item HEAVY_QUARTZ_ROD = registerItem("heavy_quartz_rod",
             new Item(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
+    public static final Item GOLDEN_FEATHER = registerItem("golden_feather",
+            new Item(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
     public static final Item TANNED_LEATHER = registerItem("tanned_leather",
+            new Item(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item WITHER_BONE = registerItem("wither_bone",
             new Item(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item MOLTEN_IRON = registerItem("molten_iron",
@@ -57,19 +67,19 @@ public class ArmoryItems {
     public static final Item IRON_PLATE = registerItem("iron_plate",
             new Item(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
-    public static final Item GOLDEN_FEATHER = registerItem("golden_feather",
-            new Item(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-
-    public static final Item WITHER_BONE = registerItem("wither_bone",
+    public static final Item SLIVER_NUGGET = registerItem("sliver_nugget",
             new Item(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item POISONOUS_NEEDLE = registerItem("poisonous_needle",
             new Item(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
-    public static final Item HARD_BOILED_EGG = registerItem("hard_boiled_egg",
-            new Item(new Item.Settings().food(ArmoryFoodComponents.HARD_BOILED_EGG).maxCount(16).group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item FRIED_EGG = registerItem("fried_egg",
-            new Item(new Item.Settings().food(ArmoryFoodComponents.FRIED_EGG).group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item SLIVER_BEETROOT = registerItem("sliver_beetroot",
+            new Item(new Item.Settings().food(ArmoryFoodComponents.SLIVER_BEETROOT).group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item SLIVER_APPLE = registerItem("sliver_apple",
+            new Item(new Item.Settings().food(ArmoryFoodComponents.SLIVER_APPLE).group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item ENCHANTED_SLIVER_APPLE = registerItem("enchanted_sliver_apple",
+            new EnchantedGoldenAppleItem(new Item.Settings().food(ArmoryFoodComponents.ENCHANTED_SLIVER_APPLE).group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item SQUID_TENTACLES = registerItem("squid_tentacles",
             new Item(new Item.Settings().food(ArmoryFoodComponents.SQUID_TENTACLES).group(ArmoryItemGroup.VARAN_ARMOR)));
@@ -77,6 +87,46 @@ public class ArmoryItems {
             new Item(new Item.Settings().food(ArmoryFoodComponents.GLOW_SQUID_TENTACLES).group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item COOKED_SQUID_TENTACLES = registerItem("cooked_squid_tentacles",
             new Item(new Item.Settings().food(ArmoryFoodComponents.COOKED_SQUID_TENTACLES).group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item CUPCAKE = registerItem("cupcake",
+            new Item(new Item.Settings().food(ArmoryFoodComponents.CUPCAKE).group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item WHITE_CUPCAKE = registerItem("white_cupcake",
+            new Item(new Item.Settings().food(ArmoryFoodComponents.CUPCAKE).group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item ORANGE_CUPCAKE = registerItem("orange_cupcake",
+            new Item(new Item.Settings().food(ArmoryFoodComponents.CUPCAKE).group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item MAGENTA_CUPCAKE = registerItem("magenta_cupcake",
+            new Item(new Item.Settings().food(ArmoryFoodComponents.CUPCAKE).group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item LIGHT_BLUE_CUPCAKE = registerItem("light_blue_cupcake",
+            new Item(new Item.Settings().food(ArmoryFoodComponents.CUPCAKE).group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item YELLOW_CUPCAKE = registerItem("yellow_cupcake",
+            new Item(new Item.Settings().food(ArmoryFoodComponents.CUPCAKE).group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item LIME_CUPCAKE = registerItem("lime_cupcake",
+            new Item(new Item.Settings().food(ArmoryFoodComponents.CUPCAKE).group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item PINK_CUPCAKE = registerItem("pink_cupcake",
+            new Item(new Item.Settings().food(ArmoryFoodComponents.CUPCAKE).group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item GRAY_CUPCAKE = registerItem("gray_cupcake",
+            new Item(new Item.Settings().food(ArmoryFoodComponents.CUPCAKE).group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item LIGHT_GRAY_CUPCAKE = registerItem("light_gray_cupcake",
+            new Item(new Item.Settings().food(ArmoryFoodComponents.CUPCAKE).group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item CYAN_CUPCAKE = registerItem("cyan_cupcake",
+            new Item(new Item.Settings().food(ArmoryFoodComponents.CUPCAKE).group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item PURPLE_CUPCAKE = registerItem("purple_cupcake",
+            new Item(new Item.Settings().food(ArmoryFoodComponents.CUPCAKE).group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item BLUE_CUPCAKE = registerItem("blue_cupcake",
+            new Item(new Item.Settings().food(ArmoryFoodComponents.CUPCAKE).group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item BROWN_CUPCAKE = registerItem("brown_cupcake",
+            new Item(new Item.Settings().food(ArmoryFoodComponents.CUPCAKE).group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item GREEN_CUPCAKE = registerItem("green_cupcake",
+            new Item(new Item.Settings().food(ArmoryFoodComponents.CUPCAKE).group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item RED_CUPCAKE = registerItem("red_cupcake",
+            new Item(new Item.Settings().food(ArmoryFoodComponents.CUPCAKE).group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item BLACK_CUPCAKE = registerItem("black_cupcake",
+            new Item(new Item.Settings().food(ArmoryFoodComponents.CUPCAKE).group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item HARD_BOILED_EGG = registerItem("hard_boiled_egg",
+            new Item(new Item.Settings().food(ArmoryFoodComponents.HARD_BOILED_EGG).maxCount(16).group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item FRIED_EGG = registerItem("fried_egg",
+            new Item(new Item.Settings().food(ArmoryFoodComponents.FRIED_EGG).group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item FLINT_WOODEN_SWORD = registerItem("flint_wooden_sword",
             new SwordItem(ArmoryToolMaterials.FLINT_WOOD, 3, -2.4F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
@@ -729,16 +779,16 @@ public class ArmoryItems {
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item HIGHLAND_HELMET = registerItem("highland_helmet",
-            new ArmorItem(ArmoryArmourMaterials.COPPER, EquipmentSlot.HEAD,
+            new ArmorItem(ArmoryArmourMaterials.HIGHLAND, EquipmentSlot.HEAD,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item HIGHLAND_CHESTPLATE = registerItem("highland_chestplate",
-            new ArmorItem(ArmoryArmourMaterials.COPPER, EquipmentSlot.CHEST,
+            new ArmorItem(ArmoryArmourMaterials.HIGHLAND, EquipmentSlot.CHEST,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item HIGHLAND_LEGGINGS = registerItem("highland_leggings",
-            new ArmorItem(ArmoryArmourMaterials.COPPER, EquipmentSlot.LEGS,
+            new ArmorItem(ArmoryArmourMaterials.HIGHLAND, EquipmentSlot.LEGS,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item HIGHLAND_BOOTS = registerItem("highland_boots",
-            new ArmorItem(ArmoryArmourMaterials.COPPER, EquipmentSlot.FEET,
+            new ArmorItem(ArmoryArmourMaterials.HIGHLAND, EquipmentSlot.FEET,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item MINING_GOOGLES = registerItem("mining_googles",

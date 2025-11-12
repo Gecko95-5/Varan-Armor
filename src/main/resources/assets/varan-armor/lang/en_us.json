@@ -150,6 +150,32 @@
   "item.varan-armor.blazing_bow": "Blazing Bow",
 
   "item.varan-armor.tanned_leather": "Tanned Leather",
+  "item.varan-armor.molten_iron": "Molten Iron",
+  "item.varan-armor.iron_plate": "Iron Plate",
+
+  "item.varan-armor.sliver_ingot": "Sliver Ingot",
+  "item.varan-armor.sliver_nugget": "Sliver Nugget",
+
+  "item.varan-armor.sliver_apple": "Sliver Apple",
+  "item.varan-armor.enchanted_sliver_apple": "Enchanted Sliver Apple",
+  "item.varan-armor.sliver_beetroot": "Sliver Beetroot",
+
+  "item.varan-armor.cupcake": "Cupcake",
+  "item.varan-armor.white_cupcake": "White Cupcake",
+  "item.varan-armor.light_gray_cupcake": "Light Gray Cupcake",
+  "item.varan-armor.gray_cupcake": "Gray Cupcake",
+  "item.varan-armor.black_cupcake": "Black Cupcake",
+  "item.varan-armor.red_cupcake": "Red Cupcake",
+  "item.varan-armor.orange_cupcake": "Orange Cupcake",
+  "item.varan-armor.yellow_cupcake": "Yellow Cupcake",
+  "item.varan-armor.lime_cupcake": "Lime Cupcake",
+  "item.varan-armor.green_cupcake": "Green Cupcake",
+  "item.varan-armor.cyan_cupcake": "Cyan Cupcake",
+  "item.varan-armor.light_blue_cupcake": "Light Blue Cupcake",
+  "item.varan-armor.blue_cupcake": "Blue Cupcake",
+  "item.varan-armor.purple_cupcake": "Purple Cupcake",
+  "item.varan-armor.magenta_cupcake": "Magenta Cupcake",
+  "item.varan-armor.pink_cupcake": "Pink Cupcake",
 
   "item.varan-armor.squid_fishing_rod": "Squid Fishing Rod",
   "item.varan-armor.nautilus_fishing_rod": "Fishing Rod of the Sea",
@@ -315,6 +341,11 @@
   "item.varan-armor.copper_chestplate": "Copper Chestplate",
   "item.varan-armor.copper_leggings": "Copper Leggings",
   "item.varan-armor.copper_boots": "Copper Boots",
+
+  "item.varan-armor.highland_helmet": "Highland Helmet",
+  "item.varan-armor.highland_chestplate": "Highland Tunic",
+  "item.varan-armor.highland_leggings": "Highland Leggings",
+  "item.varan-armor.highland_boots": "Highland Boots",
 
   "item.varan-armor.spindtox": "Spindtox",
 

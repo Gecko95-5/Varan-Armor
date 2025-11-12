@@ -27,8 +27,8 @@ public enum ArmoryArmourMaterials implements ArmorMaterial {
     COPPER("copper", 11, new int[] { 2, 3, 4, 2}, 8,
             SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0f, 0.05F, () -> Ingredient.ofItems(Items.COPPER_INGOT)),
 
-    HIGHLAND("highland", 19, new int[] { 2, 3, 4, 2}, 8,
-            SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0f, 0.05F, () -> Ingredient.ofItems(ArmoryItems.IRON_PLATE));
+    HIGHLAND("highland", 20, new int[] { 2, 5, 6, 2}, 12,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1f, 0F, () -> Ingredient.ofItems(ArmoryItems.IRON_PLATE));
 
     private final String name;
     private final int durabilityMultiplier;

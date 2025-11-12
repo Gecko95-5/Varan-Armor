@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "item": "varan-armor:molten_iron"
+    }
+  },
+  "pattern": [
+    "XXX"
+  ],
+  "result": {
+    "item": "varan-armor:iron_plate"
+  }
+}

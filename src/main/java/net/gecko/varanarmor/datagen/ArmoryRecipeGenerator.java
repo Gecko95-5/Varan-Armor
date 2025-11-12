@@ -3,11 +3,13 @@ package net.gecko.varanarmor.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.gecko.varanarmor.item.ArmoryItems;
+import net.gecko.varanarmor.util.ArmoryTags;
 import net.minecraft.data.server.RecipeProvider;
 import net.minecraft.data.server.recipe.CookingRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.RecipeSerializer;
@@ -2139,5 +2141,165 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(Items.COPPER_INGOT),
                         RecipeProvider.conditionsFromItem(Items.COPPER_INGOT))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.QUARTZ_COPPER_SICKLE)));
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.IRON_INGOT), ArmoryItems.MOLTEN_IRON,
+                        0.35f, 200).criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter, new Identifier("molten_iron_from_smelting"));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.IRON_PLATE)
+                .pattern("XXX")
+                .input('X', ArmoryItems.MOLTEN_IRON)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.MOLTEN_IRON),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.MOLTEN_IRON))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.IRON_PLATE)));
+
+        ShapelessRecipeJsonBuilder.create(ArmoryItems.SLIVER_INGOT,2)
+                .input(Items.IRON_INGOT)
+                .input(Items.IRON_INGOT)
+                .input(Items.GOLD_NUGGET)
+                .input(Items.GOLD_NUGGET)
+                .input(Items.GOLD_NUGGET)
+                .input(Items.GOLD_NUGGET)
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_INGOT)));
+
+        ShapelessRecipeJsonBuilder.create(ArmoryItems.SLIVER_NUGGET,9)
+                        .input(ArmoryItems.SLIVER_INGOT)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_NUGGET)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_INGOT)
+                .pattern("XXX")
+                .pattern("XXX")
+                .pattern("XXX")
+                .input('X', ArmoryItems.SLIVER_NUGGET)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
+                .offerTo(exporter, new Identifier("sliver_ingot_from_sliver_nuggets"));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.HIGHLAND_HELMET)
+                .pattern("X#X")
+                .pattern("X X")
+                .input('X', ArmoryItems.IRON_PLATE)
+                .input('#', ArmoryItems.TANNED_LEATHER)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.IRON_PLATE),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.IRON_PLATE))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.HIGHLAND_HELMET)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.HIGHLAND_CHESTPLATE)
+                .pattern("X X")
+                .pattern("X#X")
+                .pattern("#-#")
+                .input('X', ArmoryItems.IRON_PLATE)
+                .input('#', ArmoryItems.TANNED_LEATHER)
+                .input('-', Items.IRON_NUGGET)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.IRON_PLATE),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.IRON_PLATE))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.HIGHLAND_CHESTPLATE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.HIGHLAND_LEGGINGS)
+                .pattern("#X#")
+                .pattern("X X")
+                .pattern("# #")
+                .input('X', ArmoryItems.IRON_PLATE)
+                .input('#', ArmoryItems.TANNED_LEATHER)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.IRON_PLATE),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.IRON_PLATE))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.HIGHLAND_LEGGINGS)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.HIGHLAND_BOOTS)
+                .pattern("X X")
+                .pattern("# #")
+                .input('X', ArmoryItems.IRON_PLATE)
+                .input('#', ArmoryItems.TANNED_LEATHER)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.IRON_PLATE),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.IRON_PLATE))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.HIGHLAND_BOOTS)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_APPLE)
+                .pattern("XXX")
+                .pattern("XAX")
+                .pattern("XXX")
+                .input('X', ArmoryItems.SLIVER_INGOT)
+                .input('A', Items.APPLE)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_APPLE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_BEETROOT)
+                .pattern("XXX")
+                .pattern("XBX")
+                .pattern("XXX")
+                .input('X', ArmoryItems.SLIVER_NUGGET)
+                .input('B', Items.BEETROOT)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_NUGGET),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_NUGGET))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_BEETROOT)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.CUPCAKE,2)
+                .pattern("A")
+                .pattern("B")
+                .pattern("C")
+                .input('A', Items.MILK_BUCKET)
+                .input('B', Items.SUGAR)
+                .input('C', Items.WHEAT)
+                .criterion(RecipeProvider.hasItem(Items.MILK_BUCKET),
+                        RecipeProvider.conditionsFromItem(Items.MILK_BUCKET))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.CUPCAKE)));
+
+        offerCupcakeRecipe(exporter, ArmoryItems.WHITE_CUPCAKE, Items.WHITE_DYE);
+        offerColouredCupcakeRecipe(exporter, ArmoryItems.WHITE_CUPCAKE, Items.WHITE_DYE, "dyed_white_cupcake");
+        offerCupcakeRecipe(exporter, ArmoryItems.LIGHT_GRAY_CUPCAKE, Items.LIGHT_GRAY_DYE);
+        offerColouredCupcakeRecipe(exporter, ArmoryItems.LIGHT_GRAY_CUPCAKE, Items.LIGHT_GRAY_DYE, "dyed_light_gray_cupcake");
+        offerCupcakeRecipe(exporter, ArmoryItems.GRAY_CUPCAKE, Items.GRAY_DYE);
+        offerColouredCupcakeRecipe(exporter, ArmoryItems.GRAY_CUPCAKE, Items.GRAY_DYE, "dyed_gray_cupcake");
+        offerCupcakeRecipe(exporter, ArmoryItems.BLACK_CUPCAKE, Items.BLACK_DYE);
+        offerColouredCupcakeRecipe(exporter, ArmoryItems.BLACK_CUPCAKE, Items.BLACK_DYE, "dyed_black_cupcake");
+        offerCupcakeRecipe(exporter, ArmoryItems.RED_CUPCAKE, Items.RED_DYE);
+        offerColouredCupcakeRecipe(exporter, ArmoryItems.RED_CUPCAKE, Items.RED_DYE, "dyed_red_cupcake");
+        offerCupcakeRecipe(exporter, ArmoryItems.BROWN_CUPCAKE, Items.BROWN_DYE);
+        offerColouredCupcakeRecipe(exporter, ArmoryItems.BROWN_CUPCAKE, Items.BROWN_DYE, "dyed_brown_cupcake");
+        offerCupcakeRecipe(exporter, ArmoryItems.ORANGE_CUPCAKE, Items.ORANGE_DYE);
+        offerColouredCupcakeRecipe(exporter, ArmoryItems.ORANGE_CUPCAKE, Items.ORANGE_DYE, "dyed_orange_cupcake");
+        offerCupcakeRecipe(exporter, ArmoryItems.YELLOW_CUPCAKE, Items.YELLOW_DYE);
+        offerColouredCupcakeRecipe(exporter, ArmoryItems.YELLOW_CUPCAKE, Items.YELLOW_DYE, "dyed_yellow_cupcake");
+        offerCupcakeRecipe(exporter, ArmoryItems.LIME_CUPCAKE, Items.LIME_DYE);
+        offerColouredCupcakeRecipe(exporter, ArmoryItems.LIME_CUPCAKE, Items.LIME_DYE, "dyed_lime_cupcake");
+        offerCupcakeRecipe(exporter, ArmoryItems.GREEN_CUPCAKE, Items.GREEN_DYE);
+        offerColouredCupcakeRecipe(exporter, ArmoryItems.GREEN_CUPCAKE, Items.GREEN_DYE, "dyed_green_cupcake");
+        offerCupcakeRecipe(exporter, ArmoryItems.CYAN_CUPCAKE, Items.CYAN_DYE);
+        offerColouredCupcakeRecipe(exporter, ArmoryItems.CYAN_CUPCAKE, Items.CYAN_DYE, "dyed_cyan_cupcake");
+        offerCupcakeRecipe(exporter, ArmoryItems.LIGHT_BLUE_CUPCAKE, Items.LIGHT_BLUE_DYE);
+        offerColouredCupcakeRecipe(exporter, ArmoryItems.LIGHT_BLUE_CUPCAKE, Items.LIGHT_BLUE_DYE, "dyed_light_blue_cupcake");
+        offerCupcakeRecipe(exporter, ArmoryItems.BLUE_CUPCAKE, Items.BLUE_DYE);
+        offerColouredCupcakeRecipe(exporter, ArmoryItems.BLUE_CUPCAKE, Items.BLUE_DYE, "dyed_blue_cupcake");
+        offerCupcakeRecipe(exporter, ArmoryItems.PURPLE_CUPCAKE, Items.PURPLE_DYE);
+        offerColouredCupcakeRecipe(exporter, ArmoryItems.PURPLE_CUPCAKE, Items.PURPLE_DYE, "dyed_purple_cupcake");
+        offerCupcakeRecipe(exporter, ArmoryItems.MAGENTA_CUPCAKE, Items.MAGENTA_DYE);
+        offerColouredCupcakeRecipe(exporter, ArmoryItems.MAGENTA_CUPCAKE, Items.MAGENTA_DYE, "dyed_magenta_cupcake");
+        offerCupcakeRecipe(exporter, ArmoryItems.PINK_CUPCAKE, Items.PINK_DYE);
+        offerColouredCupcakeRecipe(exporter, ArmoryItems.PINK_CUPCAKE, Items.PINK_DYE, "dyed_pink_cupcake");
+    }
+    public static void offerCupcakeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible dyeInput) {
+        ShapedRecipeJsonBuilder.create(output,2)
+                .input('A', Items.MILK_BUCKET)
+                .input('B', Items.SUGAR)
+                .input('C', Items.WHEAT)
+                .input('D', dyeInput)
+                .pattern(" A")
+                .pattern("DB")
+                .pattern(" C")
+                .group("cupcake")
+                .criterion(RecipeProvider.hasItem(Items.MILK_BUCKET),
+                        RecipeProvider.conditionsFromItem(Items.MILK_BUCKET))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(output)));
+    }
+    public static void offerColouredCupcakeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible dyeInput,
+                                                  String dyedRecipeName) {
+        ShapelessRecipeJsonBuilder.create(output)
+                .input(ArmoryTags.Items.CUPCAKES)
+                .input(dyeInput)
+                .group("cupcake")
+                .criterion("has_cupcake", RecipeProvider.conditionsFromTag(ArmoryTags.Items.CUPCAKES))
+                .offerTo(exporter, new Identifier(dyedRecipeName));
     }
 }

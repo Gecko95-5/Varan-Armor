@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#varan-armor:claymores",
+    "#varan-armor:daggers",
+    "#varan-armor:swords"
+  ]
+}
