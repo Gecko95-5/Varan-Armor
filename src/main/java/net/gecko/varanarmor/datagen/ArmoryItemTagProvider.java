@@ -56,7 +56,8 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
             .add(ArmoryItems.COPPER_SICKLE)
             .add(ArmoryItems.FLINT_COPPER_SICKLE)
             .add(ArmoryItems.LAPIS_COPPER_SICKLE)
-            .add(ArmoryItems.QUARTZ_COPPER_SICKLE);
+            .add(ArmoryItems.QUARTZ_COPPER_SICKLE)
+            .add(ArmoryItems.SLIVER_SICKLE);
 
         getOrCreateTagBuilder(ArmoryTags.Items.CLAYMORES)
                 .add(ArmoryItems.WOODEN_CLAYMORE)
@@ -86,7 +87,8 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ArmoryItems.COPPER_CLAYMORE)
                 .add(ArmoryItems.FLINT_COPPER_CLAYMORE)
                 .add(ArmoryItems.LAPIS_COPPER_CLAYMORE)
-                .add(ArmoryItems.QUARTZ_COPPER_CLAYMORE);
+                .add(ArmoryItems.QUARTZ_COPPER_CLAYMORE)
+                .add(ArmoryItems.SLIVER_CLAYMORE);
 
         getOrCreateTagBuilder(ArmoryTags.Items.DAGGERS)
                 .add(ArmoryItems.WOODEN_DAGGER)
@@ -117,6 +119,7 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ArmoryItems.FLINT_COPPER_DAGGER)
                 .add(ArmoryItems.LAPIS_COPPER_DAGGER)
                 .add(ArmoryItems.QUARTZ_COPPER_DAGGER)
+                .add(ArmoryItems.SLIVER_DAGGER)
                 .add(ArmoryItems.SPINDTOX);
 
     getOrCreateTagBuilder(ArmoryTags.Items.BLADES)
@@ -152,7 +155,8 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
             .add(ArmoryItems.COPPER_SWORD)
             .add(ArmoryItems.FLINT_COPPER_SWORD)
             .add(ArmoryItems.LAPIS_COPPER_SWORD)
-            .add(ArmoryItems.QUARTZ_COPPER_SWORD);
+            .add(ArmoryItems.QUARTZ_COPPER_SWORD)
+            .add(ArmoryItems.SLIVER_SWORD);
 
     getOrCreateTagBuilder(ArmoryTags.Items.PICKAXES)
             .add(Items.WOODEN_PICKAXE)
@@ -182,7 +186,8 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
             .add(ArmoryItems.COPPER_PICKAXE)
             .add(ArmoryItems.FLINT_COPPER_PICKAXE)
             .add(ArmoryItems.LAPIS_COPPER_PICKAXE)
-            .add(ArmoryItems.QUARTZ_COPPER_PICKAXE);
+            .add(ArmoryItems.QUARTZ_COPPER_PICKAXE)
+            .add(ArmoryItems.SLIVER_PICKAXE);
 
         getOrCreateTagBuilder(ArmoryTags.Items.SINGLE_AXES)
                 .add(Items.WOODEN_AXE)
@@ -212,7 +217,8 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ArmoryItems.COPPER_AXE)
                 .add(ArmoryItems.FLINT_COPPER_AXE)
                 .add(ArmoryItems.LAPIS_COPPER_AXE)
-                .add(ArmoryItems.QUARTZ_COPPER_AXE);
+                .add(ArmoryItems.QUARTZ_COPPER_AXE)
+                .add(ArmoryItems.SLIVER_AXE);
 
         getOrCreateTagBuilder(ArmoryTags.Items.DOUBLE_AXES)
                 .add(ArmoryItems.WOODEN_DOUBLE_AXE)
@@ -242,7 +248,8 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ArmoryItems.COPPER_DOUBLE_AXE)
                 .add(ArmoryItems.FLINT_COPPER_DOUBLE_AXE)
                 .add(ArmoryItems.LAPIS_COPPER_DOUBLE_AXE)
-                .add(ArmoryItems.QUARTZ_COPPER_DOUBLE_AXE);
+                .add(ArmoryItems.QUARTZ_COPPER_DOUBLE_AXE)
+                .add(ArmoryItems.SLIVER_DOUBLE_AXE);
 
         getOrCreateTagBuilder(ArmoryTags.Items.SHOVELS)
                 .add(Items.WOODEN_SHOVEL)
@@ -272,7 +279,8 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ArmoryItems.COPPER_SHOVEL)
                 .add(ArmoryItems.FLINT_COPPER_SHOVEL)
                 .add(ArmoryItems.LAPIS_COPPER_SHOVEL)
-                .add(ArmoryItems.QUARTZ_COPPER_SHOVEL);
+                .add(ArmoryItems.QUARTZ_COPPER_SHOVEL)
+                .add(ArmoryItems.SLIVER_SHOVEL);
 
         getOrCreateTagBuilder(ArmoryTags.Items.HOES)
                 .add(Items.WOODEN_HOE)
@@ -302,7 +310,8 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ArmoryItems.COPPER_HOE)
                 .add(ArmoryItems.FLINT_COPPER_HOE)
                 .add(ArmoryItems.LAPIS_COPPER_HOE)
-                .add(ArmoryItems.QUARTZ_COPPER_HOE);
+                .add(ArmoryItems.QUARTZ_COPPER_HOE)
+                .add(ArmoryItems.SLIVER_HOE);
 
         getOrCreateTagBuilder(ArmoryTags.Items.CUPCAKES)
                 .add(ArmoryItems.CUPCAKE)

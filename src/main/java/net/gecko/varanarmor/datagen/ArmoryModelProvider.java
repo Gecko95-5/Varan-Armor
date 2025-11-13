@@ -343,6 +343,18 @@ public class ArmoryModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ArmoryItems.SLIVER_APPLE, Models.GENERATED);
         itemModelGenerator.register(ArmoryItems.ENCHANTED_SLIVER_APPLE, ArmoryItems.SLIVER_APPLE, Models.GENERATED);
         itemModelGenerator.register(ArmoryItems.SLIVER_BEETROOT, Models.GENERATED);
+
+        itemModelGenerator.register(ArmoryItems.SLIVER_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.SLIVER_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.SLIVER_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.SLIVER_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.SLIVER_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.SLIVER_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.SLIVER_SICKLE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.SLIVER_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.SLIVER_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
         
         itemModelGenerator.register(ArmoryItems.CUPCAKE, Models.GENERATED);
         itemModelGenerator.register(ArmoryItems.WHITE_CUPCAKE, Models.GENERATED);

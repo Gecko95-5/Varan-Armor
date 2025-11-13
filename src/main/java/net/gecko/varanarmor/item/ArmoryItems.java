@@ -385,6 +385,17 @@ public class ArmoryItems {
     public static final Item QUARTZ_COPPER_HOE = registerItem("quartz_copper_hoe",
             new FixedHoeItem(ArmoryToolMaterials.QUARTZ_COPPER,-1, -2.0F,  new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
+    public static final Item SLIVER_SWORD = registerItem("sliver_sword",
+            new SwordItem(ArmoryToolMaterials.SLIVER, 3, -2.4F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item SLIVER_SHOVEL = registerItem("sliver_shovel",
+            new ShovelItem(ArmoryToolMaterials.SLIVER, 1.5F, -3.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item SLIVER_PICKAXE = registerItem("sliver_pickaxe",
+            new PickaxeItem(ArmoryToolMaterials.SLIVER, 1, -2.8F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item SLIVER_AXE = registerItem("sliver_axe",
+            new AxeItem(ArmoryToolMaterials.SLIVER, 6.0F, -3.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item SLIVER_HOE = registerItem("sliver_hoe",
+            new FixedHoeItem(ArmoryToolMaterials.SLIVER, -2, -1.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
     public static final Item FIREBRAND = registerItem("firebrand",
             new FirebrandItem(ArmoryToolMaterials.FIREBRAND, 7.0F, -3.2F,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
@@ -732,6 +743,18 @@ public class ArmoryItems {
     public static final Item QUARTZ_COPPER_SICKLE = registerItem("quartz_copper_sickle",
             new SickleItem(ArmoryToolMaterials.QUARTZ_COPPER, 1.75F, -2.0F,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item SLIVER_DAGGER = registerItem("sliver_dagger",
+            new SwordItem(ArmoryToolMaterials.SLIVER, 0, -1.2F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item SLIVER_CLAYMORE = registerItem("sliver_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_SLIVER, 8, -3.4F, 300, 2,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item SLIVER_DOUBLE_AXE = registerItem("sliver_double_axe",
+            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_SLIVER, 6, -3.4F, 200, 1,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item SLIVER_SICKLE = registerItem("sliver_sickle",
+            new SickleItem(ArmoryToolMaterials.SLIVER, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item SPINDTOX = registerItem("spindtox",
             new PoisonDaggerItem(ArmoryToolMaterials.SPINDTOX, 2, -1.2F,

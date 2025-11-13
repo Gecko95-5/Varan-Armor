@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "varan-armor:braced_stick"
+    },
+    "X": {
+      "item": "varan-armor:sliver_ingot"
+    }
+  },
+  "pattern": [
+    " XX",
+    "XXX",
+    "#X "
+  ],
+  "result": {
+    "item": "varan-armor:sliver_claymore"
+  }
+}

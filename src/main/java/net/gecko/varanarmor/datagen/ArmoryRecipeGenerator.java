@@ -2153,11 +2153,9 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(ArmoryItems.MOLTEN_IRON))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.IRON_PLATE)));
 
-        ShapelessRecipeJsonBuilder.create(ArmoryItems.SLIVER_INGOT,2)
+        ShapelessRecipeJsonBuilder.create(ArmoryItems.SLIVER_INGOT)
                 .input(Items.IRON_INGOT)
-                .input(Items.IRON_INGOT)
-                .input(Items.GOLD_NUGGET)
-                .input(Items.GOLD_NUGGET)
+                .input(Items.LAPIS_LAZULI)
                 .input(Items.GOLD_NUGGET)
                 .input(Items.GOLD_NUGGET)
                 .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
@@ -2278,6 +2276,90 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
         offerColouredCupcakeRecipe(exporter, ArmoryItems.MAGENTA_CUPCAKE, Items.MAGENTA_DYE, "dyed_magenta_cupcake");
         offerCupcakeRecipe(exporter, ArmoryItems.PINK_CUPCAKE, Items.PINK_DYE);
         offerColouredCupcakeRecipe(exporter, ArmoryItems.PINK_CUPCAKE, Items.PINK_DYE, "dyed_pink_cupcake");
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_SWORD)
+                .pattern("X")
+                .pattern("X")
+                .pattern("#")
+                .input('X', ArmoryItems.SLIVER_INGOT)
+                .input('#', Items.STICK)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_SWORD)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_PICKAXE)
+                .pattern("XXX")
+                .pattern(" # ")
+                .pattern(" # ")
+                .input('X', ArmoryItems.SLIVER_INGOT)
+                .input('#', Items.STICK)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_PICKAXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_AXE)
+                .pattern("XX")
+                .pattern("X#")
+                .pattern(" #")
+                .input('X', ArmoryItems.SLIVER_INGOT)
+                .input('#', Items.STICK)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_AXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_SHOVEL)
+                .pattern("X")
+                .pattern("#")
+                .pattern("#")
+                .input('X', ArmoryItems.SLIVER_INGOT)
+                .input('#', Items.STICK)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_SHOVEL)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_HOE)
+                .pattern("XX")
+                .pattern(" #")
+                .pattern(" #")
+                .input('X', ArmoryItems.SLIVER_INGOT)
+                .input('#', Items.STICK)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_HOE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_DAGGER)
+                .pattern(" X")
+                .pattern("# ")
+                .input('X', ArmoryItems.SLIVER_INGOT)
+                .input('#', Items.STICK)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_DAGGER)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_CLAYMORE)
+                .pattern(" XX")
+                .pattern("XXX")
+                .pattern("#X ")
+                .input('X', ArmoryItems.SLIVER_INGOT)
+                .input('#', ArmoryItems.BRACED_STICK)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_CLAYMORE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_DOUBLE_AXE)
+                .pattern("XXX")
+                .pattern("X/X")
+                .pattern(" # ")
+                .input('X', ArmoryItems.SLIVER_INGOT)
+                .input('/', ArmoryItems.BRACED_STICK)
+                .input('#', Items.STICK)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_DOUBLE_AXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_SICKLE)
+                .pattern(" XX")
+                .pattern("X X")
+                .pattern(" # ")
+                .input('X', ArmoryItems.SLIVER_INGOT)
+                .input('#', Items.STICK)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_SICKLE)));
     }
     public static void offerCupcakeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible dyeInput) {
         ShapedRecipeJsonBuilder.create(output,2)

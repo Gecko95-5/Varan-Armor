@@ -1,15 +1,15 @@
-// 1.19.2	2025-11-11T22:22:03.9564725	Tags for minecraft:item
-c3c41a6863eb46833c8710a9c35f5de5ea299761 data\varan-armor\tags\items\daggers.json
+// 1.19.2	2025-11-12T23:02:52.6718665	Tags for minecraft:item
+bdebc10d00a4988d4e70747a7045e6e57cdd8c61 data\varan-armor\tags\items\daggers.json
 405eb8d3767b24720b98a08992a8145adb91dd4f data\varan-armor\tags\items\axes.json
 ddaf42bf734fd744b867307cca090d69226e28aa data\minecraft\tags\items\arrows.json
-9d6623306c56e7aa63ad19bc7b54acc8aa625d3e data\varan-armor\tags\items\double_axes.json
-073bc31496ed0639a371119ef4bd17487989d8ca data\varan-armor\tags\items\shovels.json
-5baef8eaef4c9d9094648ff16906e558959b54cb data\varan-armor\tags\items\hoes.json
-522887bdd08650ab4ca3f65e55c569724dd93af4 data\varan-armor\tags\items\pickaxes.json
+a87ec73ba738c2d87bd0c73d6b02d23155904721 data\varan-armor\tags\items\double_axes.json
+21579432a44b312963d251b1d23c3ff6f8904251 data\varan-armor\tags\items\shovels.json
+65d4605eb856b2115924be2ac6ad7991cae2cf79 data\varan-armor\tags\items\hoes.json
+566a1bd890050e4eb9220a00bc7977c3780a775b data\varan-armor\tags\items\pickaxes.json
 8252e78ec259a4def93f88d3ed48bc36f62b02b6 data\varan-armor\tags\items\harvesters.json
-ad9e811f698ddfbe44c44a300cbfb6d3efd6cb0e data\varan-armor\tags\items\claymores.json
+d411688f8103e96645077f8314f55889ac917f6d data\varan-armor\tags\items\claymores.json
 b8fd8630236bfdbaadfd0f65c01b9863d332e247 data\varan-armor\tags\items\cupcakes.json
 55dd5470b13e67d44f8b56a6ad45f073b75d0ef4 data\varan-armor\tags\items\blades.json
-e24cc5c11b329be955fc6e64438a68dfa3157a04 data\varan-armor\tags\items\sickles.json
-e4f404d5b86e611daaf66c4610e71bac6a21da02 data\varan-armor\tags\items\single_axes.json
-2896884c7a188eaedfaf42ce2aa0b4b75600392b data\varan-armor\tags\items\swords.json
+0c9b73fd6d0a4e1cf2094d0002995a2c4ab35f2a data\varan-armor\tags\items\sickles.json
+7fefc347e626053034a6e6646bfd964916fa6474 data\varan-armor\tags\items\single_axes.json
+4f63e36fff82e3abd00be3f90232a18cfc6e243d data\varan-armor\tags\items\swords.json

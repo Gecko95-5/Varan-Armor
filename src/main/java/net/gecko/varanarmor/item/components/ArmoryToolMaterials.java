@@ -11,6 +11,8 @@ import java.util.function.Supplier;
 public enum ArmoryToolMaterials implements ToolMaterial {
     COPPER (1, 190, 7.0F, 1.0F, 13,
             () -> Ingredient.ofItems(Items.COPPER_INGOT)),
+    SLIVER (2, 378, 9.0F, 2.0F, 18,
+            () -> Ingredient.ofItems(ArmoryItems.SLIVER_INGOT)),
 
     FLINT_WOOD(0, 72, 3.0F, 0.0F, 15,
             () -> Ingredient.fromTag(ItemTags.PLANKS)),
@@ -67,6 +69,8 @@ public enum ArmoryToolMaterials implements ToolMaterial {
             () -> Ingredient.ofItems(Items.GOLD_INGOT)),
     HEAVY_IRON (2, 320,5.0F, 2.0F, 14,
             () -> Ingredient.ofItems(Items.IRON_INGOT)),
+    HEAVY_SLIVER (2, 484, 7.0F, 2.0F, 18,
+            () -> Ingredient.ofItems(ArmoryItems.SLIVER_INGOT)),
     HEAVY_DIAMOND (3, 1998,7.0F, 3.0F, 10,
             () -> Ingredient.ofItems(Items.DIAMOND)),
     HEAVY_NETHERITE (4, 2600,8.0F, 4.0F, 15,
