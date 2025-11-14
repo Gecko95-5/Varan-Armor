@@ -2,6 +2,7 @@ package net.gecko.varanarmor.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.gecko.varanarmor.block.ArmoryBlocks;
 import net.gecko.varanarmor.item.ArmoryItems;
 import net.gecko.varanarmor.util.ArmoryModels;
 import net.minecraft.data.client.BlockStateModelGenerator;
@@ -328,6 +329,11 @@ public class ArmoryModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ArmoryItems.COPPER_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ArmoryItems.COPPER_BOOTS, Models.GENERATED);
 
+        itemModelGenerator.register(ArmoryItems.SLIVER_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.SLIVER_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.SLIVER_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.SLIVER_BOOTS, Models.GENERATED);
+
         itemModelGenerator.register(ArmoryItems.TANNED_LEATHER, Models.GENERATED);
         itemModelGenerator.register(ArmoryItems.MOLTEN_IRON, Models.GENERATED);
         itemModelGenerator.register(ArmoryItems.IRON_PLATE, Models.GENERATED);
@@ -377,6 +383,6 @@ public class ArmoryModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-
+        blockStateModelGenerator.registerSimpleCubeAll(ArmoryBlocks.SLIVER_BLOCK);
     }
 }

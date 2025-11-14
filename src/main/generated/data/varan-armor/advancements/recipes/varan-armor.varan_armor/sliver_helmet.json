@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_sliver_block": {
+    "has_sliver_ingot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "varan-armor:sliver_block"
+              "varan-armor:sliver_ingot"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:sliver_ingot"
+        "recipe": "minecraft:sliver_helmet"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_sliver_block",
+      "has_sliver_ingot",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:sliver_ingot"
+      "minecraft:sliver_helmet"
     ]
   }
 }

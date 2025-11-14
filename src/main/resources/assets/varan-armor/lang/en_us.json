@@ -1,4 +1,6 @@
 {
+  "block.varan-armor.sliver_block": "Block of Sliver",
+
   "item.varan-armor.golden_feather": "Golden Feather",
 
   "item.varan-armor.squid_tentacles": "Squid Tentacles",
@@ -364,6 +366,11 @@
   "item.varan-armor.mining_googles": "Mining Googles",
   "item.varan-armor.bracer_suit": "Bracer Suit",
   "item.varan-armor.parachute_pants": "Parachute Pants",
+
+  "item.varan-armor.sliver_helmet": "Sliver Helmet",
+  "item.varan-armor.sliver_chestplate": "Sliver Chestplate",
+  "item.varan-armor.sliver_leggings": "Sliver Leggings",
+  "item.varan-armor.sliver_boots": "Sliver Boots",
 
   "item.minecraft.potion.effect.fatal_poison_potion": "Potion of Fatal Poison",
   "item.minecraft.splash_potion.effect.fatal_poison_potion": "Splash Potion of Fatal Poison",

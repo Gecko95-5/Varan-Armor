@@ -2,6 +2,7 @@ package net.gecko.varanarmor.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.gecko.varanarmor.block.ArmoryBlocks;
 import net.gecko.varanarmor.item.ArmoryItems;
 import net.gecko.varanarmor.util.ArmoryTags;
 import net.minecraft.data.server.RecipeProvider;
@@ -2160,7 +2161,7 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                 .input(Items.GOLD_NUGGET)
                 .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
                         RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_INGOT)));
+                .offerTo(exporter, new Identifier("sliver_ingot_from_iron_ingot"));
 
         ShapelessRecipeJsonBuilder.create(ArmoryItems.SLIVER_NUGGET,9)
                         .input(ArmoryItems.SLIVER_INGOT)
@@ -2360,6 +2361,39 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
                         RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_SICKLE)));
+
+        offerReversibleCompactingRecipes(exporter, ArmoryItems.SLIVER_INGOT, ArmoryBlocks.SLIVER_BLOCK);
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_HELMET)
+                .pattern("XXX")
+                .pattern("X X")
+                .input('X', ArmoryItems.SLIVER_INGOT)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_HELMET)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_CHESTPLATE)
+                .pattern("X X")
+                .pattern("XXX")
+                .pattern("XXX")
+                .input('X', ArmoryItems.SLIVER_INGOT)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_CHESTPLATE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_LEGGINGS)
+                .pattern("XXX")
+                .pattern("X X")
+                .pattern("X X")
+                .input('X', ArmoryItems.SLIVER_INGOT)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_LEGGINGS)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_BOOTS)
+                .pattern("X X")
+                .pattern("X X")
+                .input('X', ArmoryItems.SLIVER_INGOT)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_BOOTS)));
     }
     public static void offerCupcakeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible dyeInput) {
         ShapedRecipeJsonBuilder.create(output,2)

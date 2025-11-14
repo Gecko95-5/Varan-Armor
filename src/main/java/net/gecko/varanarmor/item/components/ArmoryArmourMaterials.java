@@ -27,6 +27,9 @@ public enum ArmoryArmourMaterials implements ArmorMaterial {
     COPPER("copper", 11, new int[] { 2, 3, 4, 2}, 8,
             SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0f, 0.05F, () -> Ingredient.ofItems(Items.COPPER_INGOT)),
 
+    SLIVER("sliver", 22, new int[] {2, 5, 6, 2}, 18,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0f, 0F, () -> Ingredient.ofItems(ArmoryItems.SLIVER_INGOT)),
+
     HIGHLAND("highland", 20, new int[] { 2, 5, 6, 2}, 12,
             SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1f, 0F, () -> Ingredient.ofItems(ArmoryItems.IRON_PLATE));
 

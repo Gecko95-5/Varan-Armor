@@ -801,6 +801,19 @@ public class ArmoryItems {
             new ArmorItem(ArmoryArmourMaterials.COPPER, EquipmentSlot.FEET,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
+    public static final Item SLIVER_HELMET = registerItem("sliver_helmet",
+            new ArmorItem(ArmoryArmourMaterials.SLIVER, EquipmentSlot.HEAD,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item SLIVER_CHESTPLATE = registerItem("sliver_chestplate",
+            new ArmorItem(ArmoryArmourMaterials.SLIVER, EquipmentSlot.CHEST,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item SLIVER_LEGGINGS = registerItem("sliver_leggings",
+            new ArmorItem(ArmoryArmourMaterials.SLIVER, EquipmentSlot.LEGS,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item SLIVER_BOOTS = registerItem("sliver_boots",
+            new ArmorItem(ArmoryArmourMaterials.SLIVER, EquipmentSlot.FEET,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
     public static final Item HIGHLAND_HELMET = registerItem("highland_helmet",
             new ArmorItem(ArmoryArmourMaterials.HIGHLAND, EquipmentSlot.HEAD,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));

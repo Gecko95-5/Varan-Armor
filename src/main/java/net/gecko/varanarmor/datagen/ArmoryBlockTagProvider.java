@@ -2,6 +2,7 @@ package net.gecko.varanarmor.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.gecko.varanarmor.block.ArmoryBlocks;
 import net.gecko.varanarmor.util.ArmoryTags;
 import net.minecraft.block.Blocks;
 import net.minecraft.tag.BlockTags;
@@ -47,5 +48,11 @@ public class ArmoryBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(Blocks.INFESTED_STONE_BRICKS)
                 .add(Blocks.INFESTED_CRACKED_STONE_BRICKS)
                 .add(Blocks.INFESTED_DEEPSLATE);
+
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(ArmoryBlocks.SLIVER_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
+                .add(ArmoryBlocks.SLIVER_BLOCK);
     }
 }
