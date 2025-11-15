@@ -29,6 +29,9 @@
     "varan-armor:flint_copper_claymore",
     "varan-armor:lapis_copper_claymore",
     "varan-armor:quartz_copper_claymore",
-    "varan-armor:sliver_claymore"
+    "varan-armor:sliver_claymore",
+    "varan-armor:flint_sliver_claymore",
+    "varan-armor:lapis_sliver_claymore",
+    "varan-armor:quartz_sliver_claymore"
   ]
 }

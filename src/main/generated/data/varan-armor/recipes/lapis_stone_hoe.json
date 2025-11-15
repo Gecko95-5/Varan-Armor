@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "group": "stone_hoes",
   "key": {
     "#": {
       "item": "varan-armor:lapis_rod"

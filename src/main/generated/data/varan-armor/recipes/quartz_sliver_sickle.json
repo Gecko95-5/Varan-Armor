@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "sliver_sickles",
+  "key": {
+    "#": {
+      "item": "varan-armor:quartz_rod"
+    },
+    "X": {
+      "item": "varan-armor:sliver_ingot"
+    }
+  },
+  "pattern": [
+    " XX",
+    "X X",
+    " # "
+  ],
+  "result": {
+    "item": "varan-armor:quartz_sliver_sickle"
+  }
+}

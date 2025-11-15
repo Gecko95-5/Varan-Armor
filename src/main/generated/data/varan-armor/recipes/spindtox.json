@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:fermented_spider_eye"
+    },
+    "X": {
+      "item": "varan-armor:poisonous_needle"
+    }
+  },
+  "pattern": [
+    " X",
+    "# "
+  ],
+  "result": {
+    "item": "varan-armor:spindtox"
+  }
+}

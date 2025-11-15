@@ -29,6 +29,9 @@
     "varan-armor:flint_copper_sword",
     "varan-armor:lapis_copper_sword",
     "varan-armor:quartz_copper_sword",
-    "varan-armor:sliver_sword"
+    "varan-armor:sliver_sword",
+    "varan-armor:flint_sliver_sword",
+    "varan-armor:lapis_sliver_sword",
+    "varan-armor:quartz_sliver_sword"
   ]
 }

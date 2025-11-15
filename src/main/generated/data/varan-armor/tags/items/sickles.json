@@ -29,6 +29,9 @@
     "varan-armor:flint_copper_sickle",
     "varan-armor:lapis_copper_sickle",
     "varan-armor:quartz_copper_sickle",
-    "varan-armor:sliver_sickle"
+    "varan-armor:sliver_sickle",
+    "varan-armor:flint_sliver_sickle",
+    "varan-armor:lapis_sliver_sickle",
+    "varan-armor:quartz_sliver_sickle"
   ]
 }

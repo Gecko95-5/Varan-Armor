@@ -102,6 +102,6 @@ public class CopperBowItem extends BowItem {
     }
     @Override
     public int getEnchantability() {
-        return 12;
+        return 13;
     }
 }

@@ -1,0 +1,6 @@
+{
+    "parent": "varan-armor:item/sliver_bow",
+    "textures": {
+        "layer0": "varan-armor:item/sliver_bow_pulling_2"
+    }
+}

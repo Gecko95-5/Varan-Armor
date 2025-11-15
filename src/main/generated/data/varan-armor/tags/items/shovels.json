@@ -29,6 +29,9 @@
     "varan-armor:flint_copper_shovel",
     "varan-armor:lapis_copper_shovel",
     "varan-armor:quartz_copper_shovel",
-    "varan-armor:sliver_shovel"
+    "varan-armor:sliver_shovel",
+    "varan-armor:flint_sliver_shovel",
+    "varan-armor:lapis_sliver_shovel",
+    "varan-armor:quartz_sliver_shovel"
   ]
 }

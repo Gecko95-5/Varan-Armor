@@ -361,6 +361,42 @@ public class ArmoryModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ArmoryItems.SLIVER_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
         itemModelGenerator.register(ArmoryItems.SLIVER_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.FLINT_SLIVER_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_SLIVER_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_SLIVER_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_SLIVER_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_SLIVER_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.FLINT_SLIVER_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_SLIVER_SICKLE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.FLINT_SLIVER_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.FLINT_SLIVER_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.LAPIS_SLIVER_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.LAPIS_SLIVER_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.LAPIS_SLIVER_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.LAPIS_SLIVER_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.LAPIS_SLIVER_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.LAPIS_SLIVER_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.LAPIS_SLIVER_SICKLE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.LAPIS_SLIVER_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.LAPIS_SLIVER_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.QUARTZ_SLIVER_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_SLIVER_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_SLIVER_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_SLIVER_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_SLIVER_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.QUARTZ_SLIVER_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_SLIVER_SICKLE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.QUARTZ_SLIVER_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.QUARTZ_SLIVER_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
         
         itemModelGenerator.register(ArmoryItems.CUPCAKE, Models.GENERATED);
         itemModelGenerator.register(ArmoryItems.WHITE_CUPCAKE, Models.GENERATED);

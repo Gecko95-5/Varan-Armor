@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "sliver_double_axes",
+  "key": {
+    "#": {
+      "item": "varan-armor:flint_rod"
+    },
+    "/": {
+      "item": "varan-armor:heavy_flint_rod"
+    },
+    "X": {
+      "item": "varan-armor:sliver_ingot"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "X/X",
+    " # "
+  ],
+  "result": {
+    "item": "varan-armor:flint_sliver_double_axe"
+  }
+}

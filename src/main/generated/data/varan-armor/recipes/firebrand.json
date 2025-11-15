@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "varan-armor:wither_bone"
+    },
+    "X": {
+      "item": "minecraft:blaze_powder"
+    },
+    "^": {
+      "item": "minecraft:fire_charge"
+    }
+  },
+  "pattern": [
+    "X^",
+    "X#",
+    " #"
+  ],
+  "result": {
+    "item": "varan-armor:firebrand"
+  }
+}

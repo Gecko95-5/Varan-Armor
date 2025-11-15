@@ -11,7 +11,9 @@ public class ArmoryModelPredicateProvider {
     public static void registerChangingModels(){
         registerBow(ArmoryItems.WOODEN_BOW);
         registerBow(ArmoryItems.LEATHER_BOW);
+        registerBow(ArmoryItems.GOLDEN_BOW);
         registerBow(ArmoryItems.COPPER_BOW);
+        registerBow(ArmoryItems.SLIVER_BOW);
         registerBow(ArmoryItems.DIAMOND_BOW);
         registerBow(ArmoryItems.NETHERITE_BOW);
         registerBow(ArmoryItems.BLAZING_BOW);

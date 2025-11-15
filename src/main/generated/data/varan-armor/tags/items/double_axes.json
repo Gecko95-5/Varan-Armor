@@ -29,6 +29,9 @@
     "varan-armor:flint_copper_double_axe",
     "varan-armor:lapis_copper_double_axe",
     "varan-armor:quartz_copper_double_axe",
-    "varan-armor:sliver_double_axe"
+    "varan-armor:sliver_double_axe",
+    "varan-armor:flint_sliver_double_axe",
+    "varan-armor:lapis_sliver_double_axe",
+    "varan-armor:quartz_sliver_double_axe"
   ]
 }

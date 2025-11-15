@@ -135,7 +135,9 @@
 
   "item.varan-armor.wooden_bow": "Wooden Bow",
   "item.varan-armor.leather_bow": "Leather Bow",
+  "item.varan-armor.golden_bow": "Golden Bow",
   "item.varan-armor.copper_bow": "Copper Bow",
+  "item.varan-armor.sliver_bow": "Sliver Bow",
   "item.varan-armor.diamond_bow": "Diamond Bow",
   "item.varan-armor.netherite_bow": "Netherite Bow",
 
@@ -354,6 +356,39 @@
   "item.varan-armor.sliver_double_axe": "Sliver Double-Axe",
   "item.varan-armor.sliver_dagger": "Sliver Dagger",
   "item.varan-armor.sliver_sickle": "Sliver Sickle",
+
+  "item.varan-armor.flint_sliver_sword": "Sliver Sword",
+  "item.varan-armor.flint_sliver_pickaxe": "Sliver Pickaxe",
+  "item.varan-armor.flint_sliver_axe": "Sliver Axe",
+  "item.varan-armor.flint_sliver_shovel": "Sliver Shovel",
+  "item.varan-armor.flint_sliver_hoe": "Sliver Hoe",
+
+  "item.varan-armor.flint_sliver_claymore": "Sliver Claymore",
+  "item.varan-armor.flint_sliver_double_axe": "Sliver Double-Axe",
+  "item.varan-armor.flint_sliver_dagger": "Sliver Dagger",
+  "item.varan-armor.flint_sliver_sickle": "Sliver Sickle",
+
+  "item.varan-armor.lapis_sliver_sword": "Sliver Sword",
+  "item.varan-armor.lapis_sliver_pickaxe": "Sliver Pickaxe",
+  "item.varan-armor.lapis_sliver_axe": "Sliver Axe",
+  "item.varan-armor.lapis_sliver_shovel": "Sliver Shovel",
+  "item.varan-armor.lapis_sliver_hoe": "Sliver Hoe",
+
+  "item.varan-armor.lapis_sliver_claymore": "Sliver Claymore",
+  "item.varan-armor.lapis_sliver_double_axe": "Sliver Double-Axe",
+  "item.varan-armor.lapis_sliver_dagger": "Sliver Dagger",
+  "item.varan-armor.lapis_sliver_sickle": "Sliver Sickle",
+
+  "item.varan-armor.quartz_sliver_sword": "Sliver Sword",
+  "item.varan-armor.quartz_sliver_pickaxe": "Sliver Pickaxe",
+  "item.varan-armor.quartz_sliver_axe": "Sliver Axe",
+  "item.varan-armor.quartz_sliver_shovel": "Sliver Shovel",
+  "item.varan-armor.quartz_sliver_hoe": "Sliver Hoe",
+
+  "item.varan-armor.quartz_sliver_claymore": "Sliver Claymore",
+  "item.varan-armor.quartz_sliver_double_axe": "Sliver Double-Axe",
+  "item.varan-armor.quartz_sliver_dagger": "Sliver Dagger",
+  "item.varan-armor.quartz_sliver_sickle": "Sliver Sickle",
 
   "item.varan-armor.highland_helmet": "Highland Helmet",
   "item.varan-armor.highland_chestplate": "Highland Tunic",

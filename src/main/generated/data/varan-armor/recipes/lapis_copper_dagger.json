@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "group": "copper_daggers",
   "key": {
     "#": {
       "item": "varan-armor:lapis_rod"
