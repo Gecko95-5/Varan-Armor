@@ -161,6 +161,17 @@ public class ArmoryItems {
     public static final Item QUARTZ_WOODEN_HOE = registerItem("quartz_wooden_hoe",
             new FixedHoeItem(ArmoryToolMaterials.QUARTZ_WOOD,0, -3.0F,  new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
+    public static final Item BAMBOO_WOODEN_SWORD = registerItem("bamboo_wooden_sword",
+            new SwordItem(ArmoryToolMaterials.BAMBOO_WOOD, 3, -2.3F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item BAMBOO_WOODEN_SHOVEL = registerItem("bamboo_wooden_shovel",
+            new ShovelItem(ArmoryToolMaterials.BAMBOO_WOOD, 1.5F, -2.9F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item BAMBOO_WOODEN_PICKAXE = registerItem("bamboo_wooden_pickaxe",
+            new PickaxeItem(ArmoryToolMaterials.BAMBOO_WOOD, 1, -2.7F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item BAMBOO_WOODEN_AXE = registerItem("bamboo_wooden_axe",
+            new AxeItem(ArmoryToolMaterials.BAMBOO_WOOD, 6.0F, -3.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item BAMBOO_WOODEN_HOE = registerItem("bamboo_wooden_hoe",
+            new FixedHoeItem(ArmoryToolMaterials.BAMBOO_WOOD,0, -3.0F,  new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
     public static final Item FLINT_STONE_SWORD = registerItem("flint_stone_sword",
             new SwordItem(ArmoryToolMaterials.FLINT_STONE, 3, -2.4F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item FLINT_STONE_SHOVEL = registerItem("flint_stone_shovel",
@@ -193,6 +204,17 @@ public class ArmoryItems {
             new AxeItem(ArmoryToolMaterials.QUARTZ_STONE, 7.0F, -3.2F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item QUARTZ_STONE_HOE = registerItem("quartz_stone_hoe",
             new FixedHoeItem(ArmoryToolMaterials.QUARTZ_STONE,-1, -2.0F,  new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item BAMBOO_STONE_SWORD = registerItem("bamboo_stone_sword",
+            new SwordItem(ArmoryToolMaterials.BAMBOO_STONE, 3, -2.3F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item BAMBOO_STONE_SHOVEL = registerItem("bamboo_stone_shovel",
+            new ShovelItem(ArmoryToolMaterials.BAMBOO_STONE, 1.5F, -2.9F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item BAMBOO_STONE_PICKAXE = registerItem("bamboo_stone_pickaxe",
+            new PickaxeItem(ArmoryToolMaterials.BAMBOO_STONE, 1, -2.7F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item BAMBOO_STONE_AXE = registerItem("bamboo_stone_axe",
+            new AxeItem(ArmoryToolMaterials.BAMBOO_STONE, 7.0F, -3.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item BAMBOO_STONE_HOE = registerItem("bamboo_stone_hoe",
+            new FixedHoeItem(ArmoryToolMaterials.BAMBOO_STONE,-1, -2.0F,  new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item FLINT_GOLDEN_SWORD = registerItem("flint_golden_sword",
             new SwordItem(ArmoryToolMaterials.FLINT_GOLD, 3, -2.4F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
@@ -227,6 +249,17 @@ public class ArmoryItems {
     public static final Item QUARTZ_GOLDEN_HOE = registerItem("quartz_golden_hoe",
             new FixedHoeItem(ArmoryToolMaterials.QUARTZ_GOLD, 0, -3.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
+    public static final Item BAMBOO_GOLDEN_SWORD = registerItem("bamboo_golden_sword",
+            new SwordItem(ArmoryToolMaterials.BAMBOO_GOLD, 3, -2.3F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item BAMBOO_GOLDEN_SHOVEL = registerItem("bamboo_golden_shovel",
+            new ShovelItem(ArmoryToolMaterials.BAMBOO_GOLD, 1.5F, -2.9F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item BAMBOO_GOLDEN_PICKAXE = registerItem("bamboo_golden_pickaxe",
+            new PickaxeItem(ArmoryToolMaterials.BAMBOO_GOLD, 1, -2.7F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item BAMBOO_GOLDEN_AXE = registerItem("bamboo_golden_axe",
+            new AxeItem(ArmoryToolMaterials.BAMBOO_GOLD, 6.0F, -2.9F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item BAMBOO_GOLDEN_HOE = registerItem("bamboo_golden_hoe",
+            new FixedHoeItem(ArmoryToolMaterials.BAMBOO_GOLD, 0, -3.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
     public static final Item FLINT_IRON_SWORD = registerItem("flint_iron_sword",
             new SwordItem(ArmoryToolMaterials.FLINT_IRON, 3, -2.4F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item FLINT_IRON_SHOVEL = registerItem("flint_iron_shovel",
@@ -260,6 +293,17 @@ public class ArmoryItems {
     public static final Item QUARTZ_IRON_HOE = registerItem("quartz_iron_hoe",
             new FixedHoeItem(ArmoryToolMaterials.QUARTZ_IRON, -2, -1.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
+    public static final Item BAMBOO_IRON_SWORD = registerItem("bamboo_iron_sword",
+            new SwordItem(ArmoryToolMaterials.BAMBOO_IRON, 3, -2.3F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item BAMBOO_IRON_SHOVEL = registerItem("bamboo_iron_shovel",
+            new ShovelItem(ArmoryToolMaterials.BAMBOO_IRON, 1.5F, -2.9F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item BAMBOO_IRON_PICKAXE = registerItem("bamboo_iron_pickaxe",
+            new PickaxeItem(ArmoryToolMaterials.BAMBOO_IRON, 1, -2.7F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item BAMBOO_IRON_AXE = registerItem("bamboo_iron_axe",
+            new AxeItem(ArmoryToolMaterials.BAMBOO_IRON, 6.0F, -3.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item BAMBOO = registerItem("bamboo_iron_hoe",
+            new FixedHoeItem(ArmoryToolMaterials.BAMBOO_IRON, -2, -1.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
     public static final Item FLINT_DIAMOND_SWORD = registerItem("flint_diamond_sword",
             new SwordItem(ArmoryToolMaterials.FLINT_DIAMOND, 3, -2.4F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item FLINT_DIAMOND_SHOVEL = registerItem("flint_diamond_shovel",
@@ -292,6 +336,17 @@ public class ArmoryItems {
             new AxeItem(ArmoryToolMaterials.QUARTZ_DIAMOND, 5.0F, -3.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item QUARTZ_DIAMOND_HOE = registerItem("quartz_diamond_hoe",
             new FixedHoeItem(ArmoryToolMaterials.QUARTZ_DIAMOND, -3, 0.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item BAMBOO_DIAMOND_SWORD = registerItem("bamboo_diamond_sword",
+            new SwordItem(ArmoryToolMaterials.BAMBOO_DIAMOND, 3, -2.3F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item BAMBOO_DIAMOND_SHOVEL = registerItem("bamboo_diamond_shovel",
+            new ShovelItem(ArmoryToolMaterials.BAMBOO_DIAMOND, 1.5F, -2.9F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item BAMBOO_DIAMOND_PICKAXE = registerItem("bamboo_diamond_pickaxe",
+            new PickaxeItem(ArmoryToolMaterials.BAMBOO_DIAMOND, 1, -2.7F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item BAMBOO_DIAMOND_AXE = registerItem("bamboo_diamond_axe",
+            new AxeItem(ArmoryToolMaterials.BAMBOO_DIAMOND, 5.0F, -2.9F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item BAMBOO_DIAMOND_HOE = registerItem("bamboo_diamond_hoe",
+            new FixedHoeItem(ArmoryToolMaterials.BAMBOO_DIAMOND, -3, 0.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item FLINT_NETHERITE_SWORD = registerItem("flint_netherite_sword",
             new SwordItem(ArmoryToolMaterials.FLINT_NETHERITE, 3, -2.4F,
@@ -341,6 +396,22 @@ public class ArmoryItems {
             new FixedHoeItem(ArmoryToolMaterials.QUARTZ_NETHERITE, -4, 0.0F,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
 
+    public static final Item BAMBOO_NETHERITE_SWORD = registerItem("bamboo_netherite_sword",
+            new SwordItem(ArmoryToolMaterials.BAMBOO_NETHERITE, 3, -2.3F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
+    public static final Item BAMBOO_NETHERITE_SHOVEL = registerItem("bamboo_netherite_shovel",
+            new ShovelItem(ArmoryToolMaterials.BAMBOO_NETHERITE, 1.5F, -2.9F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
+    public static final Item BAMBOO_NETHERITE_PICKAXE = registerItem("bamboo_netherite_pickaxe",
+            new PickaxeItem(ArmoryToolMaterials.BAMBOO_NETHERITE, 1, -2.7F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
+    public static final Item BAMBOO_NETHERITE_AXE = registerItem("bamboo_netherite_axe",
+            new AxeItem(ArmoryToolMaterials.BAMBOO_NETHERITE, 5.0F, -2.9F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
+    public static final Item BAMBOO_NETHERITE_HOE = registerItem("bamboo_netherite_hoe",
+            new FixedHoeItem(ArmoryToolMaterials.BAMBOO_NETHERITE, -4, 0.0F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
+
     public static final Item COPPER_SWORD = registerItem("copper_sword",
             new SwordItem(ArmoryToolMaterials.COPPER, 3, -2.3F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item COPPER_SHOVEL = registerItem("copper_shovel",
@@ -385,49 +456,71 @@ public class ArmoryItems {
     public static final Item QUARTZ_COPPER_HOE = registerItem("quartz_copper_hoe",
             new FixedHoeItem(ArmoryToolMaterials.QUARTZ_COPPER,-1, -2.0F,  new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
+    public static final Item BAMBOO_COPPER_SWORD = registerItem("bamboo_copper_sword",
+            new SwordItem(ArmoryToolMaterials.BAMBOO_COPPER, 3, -2.2F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item BAMBOO_COPPER_SHOVEL = registerItem("bamboo_copper_shovel",
+            new ShovelItem(ArmoryToolMaterials.BAMBOO_COPPER, 1.5F, -2.8F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item BAMBOO_COPPER_PICKAXE = registerItem("bamboo_copper_pickaxe",
+            new PickaxeItem(ArmoryToolMaterials.BAMBOO_COPPER, 1, -2.6F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item BAMBOO_COPPER_AXE = registerItem("bamboo_copper_axe",
+            new AxeItem(ArmoryToolMaterials.BAMBOO_COPPER, 7.0F, -2.9F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item BAMBOO_COPPER_HOE = registerItem("bamboo_copper_hoe",
+            new FixedHoeItem(ArmoryToolMaterials.BAMBOO_COPPER,-1, -2.0F,  new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
     public static final Item SLIVER_SWORD = registerItem("sliver_sword",
-            new SwordItem(ArmoryToolMaterials.SLIVER, 3, -2.4F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+            new SwordItem(ArmoryToolMaterials.SILVER, 3, -2.4F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item SLIVER_SHOVEL = registerItem("sliver_shovel",
-            new ShovelItem(ArmoryToolMaterials.SLIVER, 1.5F, -3.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+            new ShovelItem(ArmoryToolMaterials.SILVER, 1.5F, -3.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item SLIVER_PICKAXE = registerItem("sliver_pickaxe",
-            new PickaxeItem(ArmoryToolMaterials.SLIVER, 1, -2.8F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+            new PickaxeItem(ArmoryToolMaterials.SILVER, 1, -2.8F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item SLIVER_AXE = registerItem("sliver_axe",
-            new AxeItem(ArmoryToolMaterials.SLIVER, 6.0F, -3.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+            new AxeItem(ArmoryToolMaterials.SILVER, 6.0F, -3.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item SLIVER_HOE = registerItem("sliver_hoe",
-            new FixedHoeItem(ArmoryToolMaterials.SLIVER, -2, -1.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+            new FixedHoeItem(ArmoryToolMaterials.SILVER, -2, -1.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item FLINT_SLIVER_SWORD = registerItem("flint_sliver_sword",
-            new SwordItem(ArmoryToolMaterials.FLINT_SLIVER, 3, -2.4F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+            new SwordItem(ArmoryToolMaterials.FLINT_SILVER, 3, -2.4F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item FLINT_SLIVER_SHOVEL = registerItem("flint_sliver_shovel",
-            new ShovelItem(ArmoryToolMaterials.FLINT_SLIVER, 1.5F, -3.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+            new ShovelItem(ArmoryToolMaterials.FLINT_SILVER, 1.5F, -3.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item FLINT_SLIVER_PICKAXE = registerItem("flint_sliver_pickaxe",
-            new PickaxeItem(ArmoryToolMaterials.FLINT_SLIVER, 1, -2.8F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+            new PickaxeItem(ArmoryToolMaterials.FLINT_SILVER, 1, -2.8F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item FLINT_SLIVER_AXE = registerItem("flint_sliver_axe",
-            new AxeItem(ArmoryToolMaterials.FLINT_SLIVER, 6.0F, -3.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+            new AxeItem(ArmoryToolMaterials.FLINT_SILVER, 6.0F, -3.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item FLINT_SLIVER_HOE = registerItem("flint_sliver_hoe",
-            new FixedHoeItem(ArmoryToolMaterials.FLINT_SLIVER, -2, -1.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+            new FixedHoeItem(ArmoryToolMaterials.FLINT_SILVER, -2, -1.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item LAPIS_SLIVER_SWORD = registerItem("lapis_sliver_sword",
-            new SwordItem(ArmoryToolMaterials.LAPIS_SLIVER, 3, -2.2F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+            new SwordItem(ArmoryToolMaterials.LAPIS_SILVER, 3, -2.2F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item LAPIS_SLIVER_SHOVEL = registerItem("lapis_sliver_shovel",
-            new ShovelItem(ArmoryToolMaterials.LAPIS_SLIVER, 1.5F, -2.8F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+            new ShovelItem(ArmoryToolMaterials.LAPIS_SILVER, 1.5F, -2.8F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item LAPIS_SLIVER_PICKAXE = registerItem("lapis_sliver_pickaxe",
-            new PickaxeItem(ArmoryToolMaterials.LAPIS_SLIVER, 1, -2.6F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+            new PickaxeItem(ArmoryToolMaterials.LAPIS_SILVER, 1, -2.6F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item LAPIS_SLIVER_AXE = registerItem("lapis_sliver_axe",
-            new AxeItem(ArmoryToolMaterials.LAPIS_SLIVER, 6.0F, -2.9F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+            new AxeItem(ArmoryToolMaterials.LAPIS_SILVER, 6.0F, -2.9F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item LAPIS_SLIVER_HOE = registerItem("lapis_sliver_hoe",
-            new FixedHoeItem(ArmoryToolMaterials.LAPIS_SLIVER, -2, -1.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+            new FixedHoeItem(ArmoryToolMaterials.LAPIS_SILVER, -2, -1.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item QUARTZ_SLIVER_SWORD = registerItem("quartz_sliver_sword",
-            new SwordItem(ArmoryToolMaterials.QUARTZ_SLIVER, 3, -2.4F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+            new SwordItem(ArmoryToolMaterials.QUARTZ_SILVER, 3, -2.4F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item QUARTZ_SLIVER_SHOVEL = registerItem("quartz_sliver_shovel",
-            new ShovelItem(ArmoryToolMaterials.QUARTZ_SLIVER, 1.5F, -3.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+            new ShovelItem(ArmoryToolMaterials.QUARTZ_SILVER, 1.5F, -3.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item QUARTZ_SLIVER_PICKAXE = registerItem("quartz_sliver_pickaxe",
-            new PickaxeItem(ArmoryToolMaterials.QUARTZ_SLIVER, 1, -2.8F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+            new PickaxeItem(ArmoryToolMaterials.QUARTZ_SILVER, 1, -2.8F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item QUARTZ_SLIVER_AXE = registerItem("quartz_sliver_axe",
-            new AxeItem(ArmoryToolMaterials.QUARTZ_SLIVER, 6.0F, -3.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+            new AxeItem(ArmoryToolMaterials.QUARTZ_SILVER, 6.0F, -3.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item QUARTZ_SLIVER_HOE = registerItem("quartz_sliver_hoe",
-            new FixedHoeItem(ArmoryToolMaterials.QUARTZ_SLIVER, -2, -1.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+            new FixedHoeItem(ArmoryToolMaterials.QUARTZ_SILVER, -2, -1.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item BAMBOO_SILVER_SWORD = registerItem("bamboo_silver_sword",
+            new SwordItem(ArmoryToolMaterials.BAMBOO_SILVER, 3, -2.4F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item BAMBOO_SILVER_SHOVEL = registerItem("bamboo_silver_shovel",
+            new ShovelItem(ArmoryToolMaterials.BAMBOO_SILVER, 1.5F, -3.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item BAMBOO_SILVER_PICKAXE = registerItem("bamboo_silver_pickaxe",
+            new PickaxeItem(ArmoryToolMaterials.BAMBOO_SILVER, 1, -2.8F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item BAMBOO_SILVER_AXE = registerItem("bamboo_silver_axe",
+            new AxeItem(ArmoryToolMaterials.BAMBOO_SILVER, 6.0F, -3.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item BAMBOO_SILVER_HOE = registerItem("bamboo_silver_hoe",
+            new FixedHoeItem(ArmoryToolMaterials.BAMBOO_SILVER, -2, -1.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item FIREBRAND = registerItem("firebrand",
             new FirebrandItem(ArmoryToolMaterials.FIREBRAND, 7.0F, -3.2F,
@@ -778,52 +871,52 @@ public class ArmoryItems {
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item SLIVER_DAGGER = registerItem("sliver_dagger",
-            new SwordItem(ArmoryToolMaterials.SLIVER, 0, -1.2F,
+            new SwordItem(ArmoryToolMaterials.SILVER, 0, -1.2F,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item SLIVER_CLAYMORE = registerItem("sliver_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_SLIVER, 8, -3.4F, 300, 2,
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_SILVER, 8, -3.4F, 300, 2,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item SLIVER_DOUBLE_AXE = registerItem("sliver_double_axe",
-            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_SLIVER, 6, -3.4F, 200, 1,
+            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_SILVER, 6, -3.4F, 200, 1,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item SLIVER_SICKLE = registerItem("sliver_sickle",
-            new SickleItem(ArmoryToolMaterials.SLIVER, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+            new SickleItem(ArmoryToolMaterials.SILVER, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item FLINT_SLIVER_DAGGER = registerItem("flint_sliver_dagger",
-            new SwordItem(ArmoryToolMaterials.FLINT_SLIVER, 0, -1.2F,
+            new SwordItem(ArmoryToolMaterials.FLINT_SILVER, 0, -1.2F,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item FLINT_SLIVER_CLAYMORE = registerItem("flint_sliver_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_FLINT_SLIVER, 8, -3.4F, 300, 2,
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_FLINT_SILVER, 8, -3.4F, 300, 2,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item FLINT_SLIVER_DOUBLE_AXE = registerItem("flint_sliver_double_axe",
-            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_FLINT_SLIVER, 6, -3.4F, 200, 1,
+            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_FLINT_SILVER, 6, -3.4F, 200, 1,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item FLINT_SLIVER_SICKLE = registerItem("flint_sliver_sickle",
-            new SickleItem(ArmoryToolMaterials.FLINT_SLIVER, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+            new SickleItem(ArmoryToolMaterials.FLINT_SILVER, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item LAPIS_SLIVER_DAGGER = registerItem("lapis_sliver_dagger",
-            new SwordItem(ArmoryToolMaterials.LAPIS_SLIVER, 0, -1.2F,
+            new SwordItem(ArmoryToolMaterials.LAPIS_SILVER, 0, -1.2F,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item LAPIS_SLIVER_CLAYMORE = registerItem("lapis_sliver_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_LAPIS_SLIVER, 8, -3.2F, 300, 2,
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_LAPIS_SILVER, 8, -3.2F, 300, 2,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item LAPIS_SLIVER_DOUBLE_AXE = registerItem("lapis_sliver_double_axe",
-            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_LAPIS_SLIVER, 6, -3.2F, 200, 1,
+            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_LAPIS_SILVER, 6, -3.2F, 200, 1,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item LAPIS_SLIVER_SICKLE = registerItem("lapis_sliver_sickle",
-            new SickleItem(ArmoryToolMaterials.LAPIS_SLIVER, 1.75F, -1.9F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+            new SickleItem(ArmoryToolMaterials.LAPIS_SILVER, 1.75F, -1.9F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item QUARTZ_SLIVER_DAGGER = registerItem("quartz_sliver_dagger",
-            new SwordItem(ArmoryToolMaterials.QUARTZ_SLIVER, 0, -1.2F,
+            new SwordItem(ArmoryToolMaterials.QUARTZ_SILVER, 0, -1.2F,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item QUARTZ_SLIVER_CLAYMORE = registerItem("quartz_sliver_claymore",
-            new ClaymoreItem(ArmoryToolMaterials.HEAVY_QUARTZ_SLIVER, 8, -3.4F, 300, 2,
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_QUARTZ_SILVER, 8, -3.4F, 300, 2,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item QUARTZ_SLIVER_DOUBLE_AXE = registerItem("quartz_sliver_double_axe",
-            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_QUARTZ_SLIVER, 6, -3.4F, 200, 1,
+            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_QUARTZ_SILVER, 6, -3.4F, 200, 1,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item QUARTZ_SLIVER_SICKLE = registerItem("quartz_sliver_sickle",
-            new SickleItem(ArmoryToolMaterials.QUARTZ_SLIVER, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+            new SickleItem(ArmoryToolMaterials.QUARTZ_SILVER, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item SPINDTOX = registerItem("spindtox",
             new PoisonDaggerItem(ArmoryToolMaterials.SPINDTOX, 2, -1.2F,
