@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "sliver_sickles",
+  "group": "silver_sickles",
   "key": {
     "#": {
       "item": "minecraft:stick"

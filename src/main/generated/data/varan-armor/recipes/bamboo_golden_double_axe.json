@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "golden_double_axes",
+  "key": {
+    "#": {
+      "item": "minecraft:bamboo"
+    },
+    "/": {
+      "item": "varan-armor:braced_bamboo"
+    },
+    "X": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "X/X",
+    " # "
+  ],
+  "result": {
+    "item": "varan-armor:bamboo_golden_double_axe"
+  }
+}

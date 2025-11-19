@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "sliver_claymore",
+  "group": "silver_claymore",
   "key": {
     "#": {
       "item": "varan-armor:heavy_flint_rod"

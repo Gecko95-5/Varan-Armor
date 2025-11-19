@@ -133,6 +133,42 @@
   "item.varan-armor.quartz_netherite_shovel": "Netherite Shovel",
   "item.varan-armor.quartz_netherite_hoe": "Netherite Hoe",
 
+  "item.varan-armor.bamboo_wooden_sword": "Wooden Sword",
+  "item.varan-armor.bamboo_wooden_pickaxe": "Wooden Pickaxe",
+  "item.varan-armor.bamboo_wooden_axe": "Wooden Axe",
+  "item.varan-armor.bamboo_wooden_shovel": "Wooden Shovel",
+  "item.varan-armor.bamboo_wooden_hoe": "Wooden Hoe",
+
+  "item.varan-armor.bamboo_stone_sword": "Stone Sword",
+  "item.varan-armor.bamboo_stone_pickaxe": "Stone Pickaxe",
+  "item.varan-armor.bamboo_stone_axe": "Stone Axe",
+  "item.varan-armor.bamboo_stone_shovel": "Stone Shovel",
+  "item.varan-armor.bamboo_stone_hoe": "Stone Hoe",
+
+  "item.varan-armor.bamboo_iron_sword": "Iron Sword",
+  "item.varan-armor.bamboo_iron_pickaxe": "Iron Pickaxe",
+  "item.varan-armor.bamboo_iron_axe": "Iron Axe",
+  "item.varan-armor.bamboo_iron_shovel": "Iron Shovel",
+  "item.varan-armor.bamboo_iron_hoe": "Iron Hoe",
+
+  "item.varan-armor.bamboo_golden_sword": "Golden Sword",
+  "item.varan-armor.bamboo_golden_pickaxe": "Golden Pickaxe",
+  "item.varan-armor.bamboo_golden_axe": "Golden Axe",
+  "item.varan-armor.bamboo_golden_shovel": "Golden Shovel",
+  "item.varan-armor.bamboo_golden_hoe": "Golden Hoe",
+
+  "item.varan-armor.bamboo_diamond_sword": "Diamond Sword",
+  "item.varan-armor.bamboo_diamond_pickaxe": "Diamond Pickaxe",
+  "item.varan-armor.bamboo_diamond_axe": "Diamond Axe",
+  "item.varan-armor.bamboo_diamond_shovel": "Diamond Shovel",
+  "item.varan-armor.bamboo_diamond_hoe": "Diamond Hoe",
+
+  "item.varan-armor.bamboo_netherite_sword": "Netherite Sword",
+  "item.varan-armor.bamboo_netherite_pickaxe": "Netherite Pickaxe",
+  "item.varan-armor.bamboo_netherite_axe": "Netherite Axe",
+  "item.varan-armor.bamboo_netherite_shovel": "Netherite Shovel",
+  "item.varan-armor.bamboo_netherite_hoe": "Netherite Hoe",
+
   "item.varan-armor.wooden_bow": "Wooden Bow",
   "item.varan-armor.leather_bow": "Leather Bow",
   "item.varan-armor.golden_bow": "Golden Bow",
@@ -209,9 +245,16 @@
   "item.varan-armor.quartz_golden_sickle": "Golden Sickle",
   "item.varan-armor.quartz_diamond_sickle": "Diamond Sickle",
 
+  "item.varan-armor.bamboo_wooden_sickle": "Wooden Sickle",
+  "item.varan-armor.bamboo_stone_sickle": "Stone Sickle",
+  "item.varan-armor.bamboo_iron_sickle": "Iron Sickle",
+  "item.varan-armor.bamboo_golden_sickle": "Golden Sickle",
+  "item.varan-armor.bamboo_diamond_sickle": "Diamond Sickle",
+
   "item.varan-armor.flint_netherite_sickle": "Netherite Sickle",
   "item.varan-armor.lapis_netherite_sickle": "Netherite Sickle",
   "item.varan-armor.quartz_netherite_sickle": "Netherite Sickle",
+  "item.varan-armor.bamboo_netherite_sickle": "Netherite Sickle",
 
   "item.varan-armor.wooden_claymore": "Wooden Claymore",
   "item.varan-armor.stone_claymore": "Stone Claymore",
@@ -241,6 +284,13 @@
   "item.varan-armor.quartz_diamond_claymore": "Diamond Claymore",
   "item.varan-armor.quartz_netherite_claymore": "Netherite Claymore",
 
+  "item.varan-armor.bamboo_wooden_claymore": "Wooden Claymore",
+  "item.varan-armor.bamboo_stone_claymore": "Stone Claymore",
+  "item.varan-armor.bamboo_golden_claymore": "Golden Claymore",
+  "item.varan-armor.bamboo_iron_claymore": "Iron Claymore",
+  "item.varan-armor.bamboo_diamond_claymore": "Diamond Claymore",
+  "item.varan-armor.bamboo_netherite_claymore": "Netherite Claymore",
+
   "item.varan-armor.wooden_dagger": "Wooden Dagger",
   "item.varan-armor.stone_dagger": "Stone Dagger",
   "item.varan-armor.iron_dagger": "Iron Dagger",
@@ -269,6 +319,13 @@
   "item.varan-armor.quartz_diamond_dagger": "Diamond Dagger",
   "item.varan-armor.quartz_netherite_dagger": "Netherite Dagger",
 
+  "item.varan-armor.bamboo_wooden_dagger": "Wooden Dagger",
+  "item.varan-armor.bamboo_stone_dagger": "Stone Dagger",
+  "item.varan-armor.bamboo_iron_dagger": "Iron Dagger",
+  "item.varan-armor.bamboo_golden_dagger": "Golden Dagger",
+  "item.varan-armor.bamboo_diamond_dagger": "Diamond Dagger",
+  "item.varan-armor.bamboo_netherite_dagger": "Netherite Dagger",
+
   "item.varan-armor.wooden_double_axe": "Wooden Double-Axe",
   "item.varan-armor.stone_double_axe": "Stone Double-Axe",
   "item.varan-armor.iron_double_axe": "Iron Double-Axe",
@@ -296,6 +353,13 @@
   "item.varan-armor.quartz_golden_double_axe": "Golden Double-Axe",
   "item.varan-armor.quartz_diamond_double_axe": "Diamond Double-Axe",
   "item.varan-armor.quartz_netherite_double_axe": "Netherite Double-Axe",
+
+  "item.varan-armor.bamboo_wooden_double_axe": "Wooden Double-Axe",
+  "item.varan-armor.bamboo_stone_double_axe": "Stone Double-Axe",
+  "item.varan-armor.bamboo_iron_double_axe": "Iron Double-Axe",
+  "item.varan-armor.bamboo_golden_double_axe": "Golden Double-Axe",
+  "item.varan-armor.bamboo_diamond_double_axe": "Diamond Double-Axe",
+  "item.varan-armor.bamboo_netherite_double_axe": "Netherite Double-Axe",
 
   "item.varan-armor.copper_sword": "Copper Sword",
   "item.varan-armor.copper_pickaxe": "Copper Pickaxe",
@@ -340,6 +404,17 @@
   "item.varan-armor.quartz_copper_double_axe": "Copper Double-Axe",
   "item.varan-armor.quartz_copper_dagger": "Copper Dagger",
   "item.varan-armor.quartz_copper_sickle": "Copper Sickle",
+
+  "item.varan-armor.bamboo_copper_sword": "Copper Sword",
+  "item.varan-armor.bamboo_copper_pickaxe": "Copper Pickaxe",
+  "item.varan-armor.bamboo_copper_axe": "Copper Axe",
+  "item.varan-armor.bamboo_copper_shovel": "Copper Shovel",
+  "item.varan-armor.bamboo_copper_hoe": "Copper Hoe",
+
+  "item.varan-armor.bamboo_copper_claymore": "Copper Claymore",
+  "item.varan-armor.bamboo_copper_double_axe": "Copper Double-Axe",
+  "item.varan-armor.bamboo_copper_dagger": "Copper Dagger",
+  "item.varan-armor.bamboo_copper_sickle": "Copper Sickle",
 
   "item.varan-armor.copper_helmet": "Copper Helmet",
   "item.varan-armor.copper_chestplate": "Copper Chestplate",
@@ -389,6 +464,19 @@
   "item.varan-armor.quartz_sliver_double_axe": "Silver Double-Axe",
   "item.varan-armor.quartz_sliver_dagger": "Silver Dagger",
   "item.varan-armor.quartz_sliver_sickle": "Silver Sickle",
+
+  "item.varan-armor.bamboo_silver_sword": "Silver Sword",
+  "item.varan-armor.bamboo_silver_pickaxe": "Silver Pickaxe",
+  "item.varan-armor.bamboo_silver_axe": "Silver Axe",
+  "item.varan-armor.bamboo_silver_shovel": "Silver Shovel",
+  "item.varan-armor.bamboo_silver_hoe": "Silver Hoe",
+
+  "item.varan-armor.bamboo_silver_claymore": "Silver Claymore",
+  "item.varan-armor.bamboo_silver_double_axe": "Silver Double-Axe",
+  "item.varan-armor.bamboo_silver_dagger": "Silver Dagger",
+  "item.varan-armor.bamboo_silver_sickle": "Silver Sickle",
+
+  "item.varan-armor.braced_bamboo": "Braced Bamboo",
 
   "item.varan-armor.highland_helmet": "Highland Helmet",
   "item.varan-armor.highland_chestplate": "Highland Tunic",

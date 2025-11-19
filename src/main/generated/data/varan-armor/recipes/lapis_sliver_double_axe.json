@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "sliver_double_axes",
+  "group": "silver_double_axes",
   "key": {
     "#": {
       "item": "varan-armor:lapis_rod"

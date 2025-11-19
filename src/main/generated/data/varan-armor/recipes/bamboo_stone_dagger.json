@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stone_daggers",
+  "key": {
+    "#": {
+      "item": "minecraft:bamboo"
+    },
+    "X": {
+      "tag": "minecraft:stone_tool_materials"
+    }
+  },
+  "pattern": [
+    " X",
+    "# "
+  ],
+  "result": {
+    "item": "varan-armor:bamboo_stone_dagger"
+  }
+}

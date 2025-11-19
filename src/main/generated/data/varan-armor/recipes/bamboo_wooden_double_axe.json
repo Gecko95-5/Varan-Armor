@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_double_axes",
+  "key": {
+    "#": {
+      "item": "minecraft:bamboo"
+    },
+    "/": {
+      "item": "varan-armor:braced_bamboo"
+    },
+    "X": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "X/X",
+    " # "
+  ],
+  "result": {
+    "item": "varan-armor:bamboo_wooden_double_axe"
+  }
+}

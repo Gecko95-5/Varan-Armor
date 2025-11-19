@@ -32,4 +32,6 @@ public class ArmoryFoodComponents {
             .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION,6000, 0), 1.0f).alwaysEdible().build();
 
     public static final FoodComponent SLIVER_BEETROOT = new FoodComponent.Builder().hunger(2).saturationModifier(1.2F).snack().build();
+
+    public static final FoodComponent ONION = new FoodComponent.Builder().hunger(2).saturationModifier(0.4F).build();
 }

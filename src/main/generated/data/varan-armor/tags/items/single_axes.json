@@ -25,13 +25,21 @@
     "varan-armor:quartz_golden_axe",
     "varan-armor:quartz_diamond_axe",
     "varan-armor:quartz_netherite_axe",
+    "varan-armor:bamboo_wooden_axe",
+    "varan-armor:bamboo_stone_axe",
+    "varan-armor:bamboo_iron_axe",
+    "varan-armor:bamboo_golden_axe",
+    "varan-armor:bamboo_diamond_axe",
+    "varan-armor:bamboo_netherite_axe",
     "varan-armor:copper_axe",
     "varan-armor:flint_copper_axe",
     "varan-armor:lapis_copper_axe",
     "varan-armor:quartz_copper_axe",
+    "varan-armor:bamboo_copper_axe",
     "varan-armor:sliver_axe",
     "varan-armor:flint_sliver_axe",
     "varan-armor:lapis_sliver_axe",
-    "varan-armor:quartz_sliver_axe"
+    "varan-armor:quartz_sliver_axe",
+    "varan-armor:bamboo_silver_axe"
   ]
 }

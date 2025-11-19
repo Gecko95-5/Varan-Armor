@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "base": {
+    "item": "varan-armor:bamboo_diamond_dagger"
+  },
+  "result": {
+    "item": "varan-armor:bamboo_netherite_dagger"
+  }
+}

@@ -25,13 +25,21 @@
     "varan-armor:quartz_golden_shovel",
     "varan-armor:quartz_diamond_shovel",
     "varan-armor:quartz_netherite_shovel",
+    "varan-armor:bamboo_wooden_shovel",
+    "varan-armor:bamboo_stone_shovel",
+    "varan-armor:bamboo_iron_shovel",
+    "varan-armor:bamboo_golden_shovel",
+    "varan-armor:bamboo_diamond_shovel",
+    "varan-armor:bamboo_netherite_shovel",
     "varan-armor:copper_shovel",
     "varan-armor:flint_copper_shovel",
     "varan-armor:lapis_copper_shovel",
     "varan-armor:quartz_copper_shovel",
+    "varan-armor:bamboo_copper_shovel",
     "varan-armor:sliver_shovel",
     "varan-armor:flint_sliver_shovel",
     "varan-armor:lapis_sliver_shovel",
-    "varan-armor:quartz_sliver_shovel"
+    "varan-armor:quartz_sliver_shovel",
+    "varan-armor:bamboo_silver_shovel"
   ]
 }

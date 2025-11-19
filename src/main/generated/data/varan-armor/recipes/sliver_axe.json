@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "sliver_axes",
+  "group": "silver_axes",
   "key": {
     "#": {
       "item": "minecraft:stick"

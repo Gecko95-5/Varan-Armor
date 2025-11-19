@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "diamond_shovels",
+  "key": {
+    "#": {
+      "item": "minecraft:bamboo"
+    },
+    "X": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    "X",
+    "#",
+    "#"
+  ],
+  "result": {
+    "item": "varan-armor:bamboo_diamond_shovel"
+  }
+}
