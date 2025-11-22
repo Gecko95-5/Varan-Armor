@@ -1,6 +1,7 @@
 package net.gecko.varanarmor.item;
 
 import net.gecko.varanarmor.VaranArmor;
+import net.gecko.varanarmor.block.ArmoryBlocks;
 import net.gecko.varanarmor.item.armour.model.BracerSuitItem;
 import net.gecko.varanarmor.item.armour.model.MiningGooglesItem;
 import net.gecko.varanarmor.item.armour.model.ParachutePantsItem;
@@ -12,14 +13,14 @@ import net.gecko.varanarmor.item.arrow.QuartzArrowItem;
 import net.gecko.varanarmor.item.components.ArmoryArmourMaterials;
 import net.gecko.varanarmor.item.components.ArmoryFoodComponents;
 import net.gecko.varanarmor.item.components.ArmoryToolMaterials;
+import net.gecko.varanarmor.item.tools.ClaymoreItem;
 import net.gecko.varanarmor.item.tools.DoubleAxeItem;
 import net.gecko.varanarmor.item.tools.FixedHoeItem;
-import net.gecko.varanarmor.item.tools.ClaymoreItem;
-import net.gecko.varanarmor.item.tools.special.FirebrandItem;
 import net.gecko.varanarmor.item.tools.SickleItem;
 import net.gecko.varanarmor.item.tools.bow.*;
 import net.gecko.varanarmor.item.tools.fishing_rods.NautilusFishingRodItem;
 import net.gecko.varanarmor.item.tools.fishing_rods.SquidFishingRodItem;
+import net.gecko.varanarmor.item.tools.special.FirebrandItem;
 import net.gecko.varanarmor.item.tools.special.PoisonDaggerItem;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
@@ -76,8 +77,11 @@ public class ArmoryItems {
     public static final Item POISONOUS_NEEDLE = registerItem("poisonous_needle",
             new Item(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
+    public static final Item ONION_SEEDS = registerItem("onion_seeds",
+            new AliasedBlockItem(ArmoryBlocks.ONIONS,new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
     public static final Item ONION = registerItem("onion",
-            new Item(new Item.Settings().food(ArmoryFoodComponents.SLIVER_BEETROOT).group(ArmoryItemGroup.VARAN_ARMOR)));
+            new Item(new Item.Settings().food(ArmoryFoodComponents.ONION).group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item SLIVER_BEETROOT = registerItem("sliver_beetroot",
             new Item(new Item.Settings().food(ArmoryFoodComponents.SLIVER_BEETROOT).group(ArmoryItemGroup.VARAN_ARMOR)));

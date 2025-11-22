@@ -2,6 +2,7 @@ package net.gecko.varanarmor.block;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.gecko.varanarmor.VaranArmor;
+import net.gecko.varanarmor.block.custom.OnionBlock;
 import net.gecko.varanarmor.item.ArmoryItemGroup;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -18,8 +19,16 @@ public class ArmoryBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).mapColor(MapColor.LIGHT_BLUE_GRAY)),
             ArmoryItemGroup.VARAN_ARMOR);
 
+    public static final Block ONIONS = registerBlockWithoutItem("onions",
+            new OnionBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)),
+            ArmoryItemGroup.VARAN_ARMOR);
+
     private static Block registerBlock(String name, Block block, ItemGroup tab){
         registerBlockItem(name,block,tab);
+        return Registry.register(Registry.BLOCK,new Identifier(VaranArmor.MOD_ID,name),block);
+    }
+
+    private static Block registerBlockWithoutItem(String name, Block block, ItemGroup tab){
         return Registry.register(Registry.BLOCK,new Identifier(VaranArmor.MOD_ID,name),block);
     }
 

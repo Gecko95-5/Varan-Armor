@@ -20,6 +20,13 @@
                   "predicate": {
                     "tag": "varan-armor:harvesters"
                   }
+                },
+                {
+                  "block": "minecraft:beetroots",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "age": "3"
+                  }
                 }
               ],
               "functions": [

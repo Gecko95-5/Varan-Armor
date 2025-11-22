@@ -1,7 +1,9 @@
 package net.gecko.varanarmor;
 
 import net.fabricmc.api.ClientModInitializer;
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
+import net.gecko.varanarmor.block.ArmoryBlocks;
 import net.gecko.varanarmor.entity.ArmoryEntities;
 import net.gecko.varanarmor.entity.renderer.CustomArrowRenderer;
 import net.gecko.varanarmor.entity.renderer.NautilusBobberRenderer;
@@ -12,12 +14,14 @@ import net.gecko.varanarmor.entity.renderer.armour.ParachutePantsRenderer;
 import net.gecko.varanarmor.entity.renderer.armour.SwiftBootsRenderer;
 import net.gecko.varanarmor.item.ArmoryItems;
 import net.gecko.varanarmor.util.ArmoryModelPredicateProvider;
+import net.minecraft.client.render.RenderLayer;
 import net.minecraft.util.Identifier;
 import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 
 public class VaranArmorClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
+        BlockRenderLayerMap.INSTANCE.putBlock(ArmoryBlocks.ONIONS, RenderLayer.getCutout());
         ArmoryModelPredicateProvider.registerChangingModels();
 
         EntityRendererRegistry.register(ArmoryEntities.SQUID_BOBBER, SquidBobberRenderer::new);

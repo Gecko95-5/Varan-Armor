@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "varan-armor:block/onions_stage0"
+    },
+    "age=1": {
+      "model": "varan-armor:block/onions_stage1"
+    },
+    "age=2": {
+      "model": "varan-armor:block/onions_stage2"
+    },
+    "age=3": {
+      "model": "varan-armor:block/onions_stage3"
+    },
+    "age=4": {
+      "model": "varan-armor:block/onions_stage4"
+    },
+    "age=5": {
+      "model": "varan-armor:block/onions_stage5"
+    },
+    "age=6": {
+      "model": "varan-armor:block/onions_stage6"
+    },
+    "age=7": {
+      "model": "varan-armor:block/onions_stage7"
+    }
+  }
+}

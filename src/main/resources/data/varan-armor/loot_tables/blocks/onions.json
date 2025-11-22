@@ -22,7 +22,7 @@
                   }
                 },
                 {
-                  "block": "minecraft:wheat",
+                  "block": "varan-armor:onions",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "age": "7"
@@ -45,24 +45,24 @@
                   "function": "minecraft:apply_bonus"
                 }
               ],
-              "name": "minecraft:wheat"
+              "name": "varan-armor:onion"
             },
             {
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "block": "minecraft:wheat",
+                  "block": "varan-armor:onions",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "age": "7"
                   }
                 }
               ],
-              "name": "minecraft:wheat"
+              "name": "varan-armor:onion"
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:wheat_seeds"
+              "name": "varan-armor:onion_seeds"
             }
           ]
         }
@@ -73,7 +73,7 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "block": "minecraft:wheat",
+          "block": "varan-armor:onions",
           "condition": "minecraft:block_state_property",
           "properties": {
             "age": "7"
@@ -94,7 +94,7 @@
               }
             }
           ],
-          "name": "minecraft:wheat_seeds"
+          "name": "varan-armor:onion_seeds"
         }
       ],
       "rolls": 1.0

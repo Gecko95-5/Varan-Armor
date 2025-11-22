@@ -3,6 +3,7 @@ package net.gecko.varanarmor.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.gecko.varanarmor.block.ArmoryBlocks;
+import net.gecko.varanarmor.block.custom.OnionBlock;
 import net.gecko.varanarmor.item.ArmoryItems;
 import net.gecko.varanarmor.util.ArmoryModels;
 import net.minecraft.data.client.BlockStateModelGenerator;
@@ -484,6 +485,8 @@ public class ArmoryModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ArmoryItems.BAMBOO_SILVER_DAGGER, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.BAMBOO_SILVER_SICKLE, Models.HANDHELD);
 
+        itemModelGenerator.register(ArmoryItems.ONION, Models.GENERATED);
+
         itemModelGenerator.register(ArmoryItems.BAMBOO_SILVER_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
         itemModelGenerator.register(ArmoryItems.BAMBOO_SILVER_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
         
@@ -509,5 +512,7 @@ public class ArmoryModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ArmoryBlocks.SLIVER_BLOCK);
+
+        blockStateModelGenerator.registerCrop(ArmoryBlocks.ONIONS, OnionBlock.AGE,0,1,2,3,4,5,6,7);
     }
 }

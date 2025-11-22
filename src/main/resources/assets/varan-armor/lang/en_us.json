@@ -1,7 +1,11 @@
 {
   "block.varan-armor.sliver_block": "Block of Silver",
+  "block.varan-armor.onions": "Onion Plant",
 
   "item.varan-armor.golden_feather": "Golden Feather",
+
+  "item.varan-armor.onion_seeds": "Onion Seeds",
+  "item.varan-armor.onion": "Onion",
 
   "item.varan-armor.squid_tentacles": "Squid Tentacles",
   "item.varan-armor.cooked_squid_tentacles": "Cooked Squid Tentacles",
