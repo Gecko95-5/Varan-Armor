@@ -964,6 +964,13 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                 0.35f, 200).criterion(hasItem(ArmoryItems.SQUID_TENTACLES),conditionsFromItem(ArmoryItems.SQUID_TENTACLES))
                 .offerTo(exporter,new Identifier("cooked_squid_tentacles_form_squid_tentacles"));
 
+        CookingRecipeJsonBuilder.createSmoking(Ingredient.ofItems(ArmoryItems.SQUID_TENTACLES), ArmoryItems.COOKED_SQUID_TENTACLES,
+                        0.35f, 200).criterion(hasItem(ArmoryItems.SQUID_TENTACLES), conditionsFromItem(ArmoryItems.SQUID_TENTACLES))
+                .offerTo(exporter, new Identifier("cooked_squid_tentacles_form_squid_tentacles_from_smoking"));
+
+        offerCookingRecipe(exporter, "campfire", RecipeSerializer.CAMPFIRE_COOKING, 600,
+                ArmoryItems.SQUID_TENTACLES, ArmoryItems.COOKED_SQUID_TENTACLES,0.35f);
+
         ShapelessRecipeJsonBuilder.create(Items.INK_SAC,2)
                         .input(ArmoryItems.SQUID_TENTACLES)
                                 .criterion(hasItem(ArmoryItems.SQUID_TENTACLES),conditionsFromItem(ArmoryItems.SQUID_TENTACLES))
@@ -972,6 +979,10 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
         CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(ArmoryItems.GLOW_SQUID_TENTACLES), ArmoryItems.COOKED_SQUID_TENTACLES,
                 0.35f, 200).criterion(hasItem(ArmoryItems.GLOW_SQUID_TENTACLES),conditionsFromItem(ArmoryItems.GLOW_SQUID_TENTACLES))
                 .offerTo(exporter,new Identifier("cooked_squid_tentacles_form_glow_squid_tentacles"));
+
+        CookingRecipeJsonBuilder.createSmoking(Ingredient.ofItems(ArmoryItems.GLOW_SQUID_TENTACLES), ArmoryItems.COOKED_SQUID_TENTACLES,
+                        0.35f, 200).criterion(hasItem(ArmoryItems.GLOW_SQUID_TENTACLES), conditionsFromItem(ArmoryItems.GLOW_SQUID_TENTACLES))
+                .offerTo(exporter, new Identifier("cooked_squid_tentacles_form_glow_squid_tentacles_from_smoking"));
 
         ShapelessRecipeJsonBuilder.create(Items.GLOW_INK_SAC,2)
                 .input(ArmoryItems.GLOW_SQUID_TENTACLES)
@@ -2894,17 +2905,6 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.QUARTZ_SLIVER_SICKLE)));
 
-        ShapedRecipeJsonBuilder.create(ArmoryItems.FIREBRAND)
-                .pattern("X^")
-                .pattern("X#")
-                .pattern(" #")
-                .input('X', Items.BLAZE_POWDER)
-                .input('#', ArmoryItems.WITHER_BONE)
-                .input('^', Items.FIRE_CHARGE)
-                .criterion(RecipeProvider.hasItem(ArmoryItems.WITHER_BONE),
-                        RecipeProvider.conditionsFromItem(ArmoryItems.WITHER_BONE))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.FIREBRAND)));
-
         ShapedRecipeJsonBuilder.create(ArmoryItems.SPINDTOX)
                 .pattern(" X")
                 .pattern("# ")
@@ -3559,7 +3559,7 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
                         RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BAMBOO_SILVER_SICKLE)));
-        
+
         ShapedRecipeJsonBuilder.create(ArmoryItems.BRACED_BAMBOO,2)
                 .pattern("#")
                 .pattern("X")
@@ -3569,6 +3569,726 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(Items.BAMBOO),
                         RecipeProvider.conditionsFromItem(Items.BAMBOO))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BRACED_BAMBOO)));
+
+        ShapelessRecipeJsonBuilder.create(ArmoryItems.BEEF_PIE)
+                .input(Items.COOKED_BEEF)
+                .input(Items.CARROT)
+                .input(ArmoryItems.ONION)
+                .input(Items.WHEAT)
+                .criterion(RecipeProvider.hasItem(Items.COOKED_BEEF),
+                        RecipeProvider.conditionsFromItem(Items.COOKED_BEEF))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BEEF_PIE)));
+
+        ShapelessRecipeJsonBuilder.create(ArmoryItems.CHICKEN_PIE)
+                .input(Items.COOKED_CHICKEN)
+                .input(Items.POTATO)
+                .input(ArmoryItems.ONION)
+                .input(Items.WHEAT)
+                .criterion(RecipeProvider.hasItem(Items.COOKED_CHICKEN),
+                        RecipeProvider.conditionsFromItem(Items.COOKED_CHICKEN))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.CHICKEN_PIE)));
+
+        ShapelessRecipeJsonBuilder.create(ArmoryItems.RAW_OMELET)
+                .input(Items.EGG)
+                .input(Items.BROWN_MUSHROOM)
+                .input(ArmoryItems.ONION)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.ONION),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.ONION))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.RAW_OMELET)));
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(ArmoryItems.RAW_OMELET), ArmoryItems.COOKED_OMELET,
+                        0.35f, 200).criterion(hasItem(ArmoryItems.RAW_OMELET),conditionsFromItem(ArmoryItems.RAW_OMELET))
+                .offerTo(exporter,new Identifier("cooked_omelet_form_smelting"));
+
+        CookingRecipeJsonBuilder.createSmoking(Ingredient.ofItems(ArmoryItems.RAW_OMELET), ArmoryItems.COOKED_OMELET,
+                        0.35f, 200).criterion(hasItem(ArmoryItems.RAW_OMELET), conditionsFromItem(ArmoryItems.RAW_OMELET))
+                .offerTo(exporter, new Identifier("cooked_omelet_from_smoking"));
+
+        offerCookingRecipe(exporter, "campfire", RecipeSerializer.CAMPFIRE_COOKING, 600,
+                ArmoryItems.RAW_OMELET, ArmoryItems.COOKED_OMELET,0.35f);
+
+        ShapedRecipeJsonBuilder.create(Items.SADDLE)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" - ")
+                .input('#', ArmoryItems.TANNED_LEATHER)
+                .input('X', Items.STRING)
+                .input('-', Items.IRON_NUGGET)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.TANNED_LEATHER),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.TANNED_LEATHER))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(Items.SADDLE)));
+
+        ShapelessRecipeJsonBuilder.create(Items.NAME_TAG)
+                .input(Items.STRING)
+                .input(Items.INK_SAC)
+                .input(Items.PAPER)
+                .criterion(RecipeProvider.hasItem(Items.INK_SAC),
+                        RecipeProvider.conditionsFromItem(Items.INK_SAC))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(Items.NAME_TAG)));
+
+        ShapelessRecipeJsonBuilder.create(Items.EXPERIENCE_BOTTLE)
+                .input(Items.GLASS_BOTTLE)
+                .input(Items.LAPIS_LAZULI)
+                .input(Items.GLOWSTONE_DUST)
+                .criterion(RecipeProvider.hasItem(Items.GLASS_BOTTLE),
+                        RecipeProvider.conditionsFromItem(Items.GLASS_BOTTLE))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(Items.EXPERIENCE_BOTTLE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_WOODEN_SWORD)
+                .pattern("X")
+                .pattern("X")
+                .pattern("#")
+                .input('X', ItemTags.PLANKS)
+                .input('#', Items.BLAZE_ROD)
+                .group("wooden_swords")
+                .criterion("has_planks", conditionsFromTag(ItemTags.PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_WOODEN_SWORD)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_WOODEN_PICKAXE)
+                .pattern("XXX")
+                .pattern(" # ")
+                .pattern(" # ")
+                .input('X', ItemTags.PLANKS)
+                .input('#', Items.BLAZE_ROD)
+                .group("wooden_pickaxes")
+                .criterion("has_planks", conditionsFromTag(ItemTags.PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_WOODEN_PICKAXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_WOODEN_AXE)
+                .pattern("XX")
+                .pattern("X#")
+                .pattern(" #")
+                .input('X', ItemTags.PLANKS)
+                .input('#', Items.BLAZE_ROD)
+                .group("wooden_axes")
+                .criterion("has_planks", conditionsFromTag(ItemTags.PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_WOODEN_AXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_WOODEN_SHOVEL)
+                .pattern("X")
+                .pattern("#")
+                .pattern("#")
+                .input('X', ItemTags.PLANKS)
+                .input('#', Items.BLAZE_ROD)
+                .group("wooden_shovels")
+                .criterion("has_planks", conditionsFromTag(ItemTags.PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_WOODEN_SHOVEL)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_WOODEN_HOE)
+                .pattern("XX")
+                .pattern(" #")
+                .pattern(" #")
+                .input('X', ItemTags.PLANKS)
+                .input('#', Items.BLAZE_ROD)
+                .group("wooden_hoes")
+                .criterion("has_planks", conditionsFromTag(ItemTags.PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_WOODEN_HOE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_STONE_SWORD)
+                .pattern("X")
+                .pattern("X")
+                .pattern("#")
+                .input('X', ItemTags.STONE_TOOL_MATERIALS)
+                .input('#', Items.BLAZE_ROD)
+                .group("stone_swords")
+                .criterion("has_cobblestone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_STONE_SWORD)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_STONE_PICKAXE)
+                .pattern("XXX")
+                .pattern(" # ")
+                .pattern(" # ")
+                .input('X', ItemTags.STONE_TOOL_MATERIALS)
+                .input('#', Items.BLAZE_ROD)
+                .group("stone_pickaxes")
+                .criterion("has_cobblestone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_STONE_PICKAXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_STONE_AXE)
+                .pattern("XX")
+                .pattern("X#")
+                .pattern(" #")
+                .input('X', ItemTags.STONE_TOOL_MATERIALS)
+                .input('#', Items.BLAZE_ROD)
+                .group("stone_axes")
+                .criterion("has_cobblestone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_STONE_AXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_STONE_SHOVEL)
+                .pattern("X")
+                .pattern("#")
+                .pattern("#")
+                .input('X', ItemTags.STONE_TOOL_MATERIALS)
+                .input('#', Items.BLAZE_ROD)
+                .group("stone_shovels")
+                .criterion("has_cobblestone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_STONE_SHOVEL)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_STONE_HOE)
+                .pattern("XX")
+                .pattern(" #")
+                .pattern(" #")
+                .input('X', ItemTags.STONE_TOOL_MATERIALS)
+                .input('#', Items.BLAZE_ROD)
+                .group("stone_hoes")
+                .criterion("has_cobblestone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_STONE_HOE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_IRON_SWORD)
+                .pattern("X")
+                .pattern("X")
+                .pattern("#")
+                .input('X', Items.IRON_INGOT)
+                .input('#', Items.BLAZE_ROD)
+                .group("iron_swords")
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_IRON_SWORD)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_IRON_PICKAXE)
+                .pattern("XXX")
+                .pattern(" # ")
+                .pattern(" # ")
+                .input('X', Items.IRON_INGOT)
+                .input('#', Items.BLAZE_ROD)
+                .group("iron_pickaxes")
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_IRON_PICKAXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_IRON_AXE)
+                .pattern("XX")
+                .pattern("X#")
+                .pattern(" #")
+                .input('X', Items.IRON_INGOT)
+                .input('#', Items.BLAZE_ROD)
+                .group("iron_axes")
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_IRON_AXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_IRON_SHOVEL)
+                .pattern("X")
+                .pattern("#")
+                .pattern("#")
+                .input('X', Items.IRON_INGOT)
+                .input('#', Items.BLAZE_ROD)
+                .group("iron_shovels")
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_IRON_SHOVEL)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_IRON_HOE)
+                .pattern("XX")
+                .pattern(" #")
+                .pattern(" #")
+                .input('X', Items.IRON_INGOT)
+                .input('#', Items.BLAZE_ROD)
+                .group("iron_hoes")
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_IRON_HOE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_GOLDEN_SWORD)
+                .pattern("X")
+                .pattern("X")
+                .pattern("#")
+                .input('X', Items.GOLD_INGOT)
+                .input('#', Items.BLAZE_ROD)
+                .group("golden_swords")
+                .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_GOLDEN_SWORD)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_GOLDEN_PICKAXE)
+                .pattern("XXX")
+                .pattern(" # ")
+                .pattern(" # ")
+                .input('X', Items.GOLD_INGOT)
+                .input('#', Items.BLAZE_ROD)
+                .group("golden_pickaxes")
+                .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_GOLDEN_PICKAXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_GOLDEN_AXE)
+                .pattern("XX")
+                .pattern("X#")
+                .pattern(" #")
+                .input('X', Items.GOLD_INGOT)
+                .input('#', Items.BLAZE_ROD)
+                .group("golden_axes")
+                .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_GOLDEN_AXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_GOLDEN_SHOVEL)
+                .pattern("X")
+                .pattern("#")
+                .pattern("#")
+                .input('X', Items.GOLD_INGOT)
+                .input('#', Items.BLAZE_ROD)
+                .group("golden_shovels")
+                .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_GOLDEN_SHOVEL)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_GOLDEN_HOE)
+                .pattern("XX")
+                .pattern(" #")
+                .pattern(" #")
+                .input('X', Items.GOLD_INGOT)
+                .input('#', Items.BLAZE_ROD)
+                .group("golden_hoes")
+                .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_GOLDEN_HOE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_DIAMOND_SWORD)
+                .pattern("X")
+                .pattern("X")
+                .pattern("#")
+                .input('X', Items.DIAMOND)
+                .input('#', Items.BLAZE_ROD)
+                .group("diamond_swords")
+                .criterion(RecipeProvider.hasItem(Items.DIAMOND),
+                        RecipeProvider.conditionsFromItem(Items.DIAMOND))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_DIAMOND_SWORD)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_DIAMOND_PICKAXE)
+                .pattern("XXX")
+                .pattern(" # ")
+                .pattern(" # ")
+                .input('X', Items.DIAMOND)
+                .input('#', Items.BLAZE_ROD)
+                .group("diamond_pickaxes")
+                .criterion(RecipeProvider.hasItem(Items.DIAMOND),
+                        RecipeProvider.conditionsFromItem(Items.DIAMOND))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_DIAMOND_PICKAXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_DIAMOND_AXE)
+                .pattern("XX")
+                .pattern("X#")
+                .pattern(" #")
+                .input('X', Items.DIAMOND)
+                .input('#', Items.BLAZE_ROD)
+                .group("diamond_axes")
+                .criterion(RecipeProvider.hasItem(Items.DIAMOND),
+                        RecipeProvider.conditionsFromItem(Items.DIAMOND))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_DIAMOND_AXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_DIAMOND_SHOVEL)
+                .pattern("X")
+                .pattern("#")
+                .pattern("#")
+                .input('X', Items.DIAMOND)
+                .input('#', Items.BLAZE_ROD)
+                .group("diamond_shovels")
+                .criterion(RecipeProvider.hasItem(Items.DIAMOND),
+                        RecipeProvider.conditionsFromItem(Items.DIAMOND))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_DIAMOND_SHOVEL)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_DIAMOND_HOE)
+                .pattern("XX")
+                .pattern(" #")
+                .pattern(" #")
+                .input('X', Items.DIAMOND)
+                .input('#', Items.BLAZE_ROD)
+                .group("diamond_hoes")
+                .criterion(RecipeProvider.hasItem(Items.DIAMOND),
+                        RecipeProvider.conditionsFromItem(Items.DIAMOND))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_DIAMOND_HOE)));
+
+        offerNetheriteUpgradeRecipe(exporter, ArmoryItems.BLAZE_DIAMOND_SWORD, ArmoryItems.BLAZE_NETHERITE_SWORD);
+        offerNetheriteUpgradeRecipe(exporter, ArmoryItems.BLAZE_DIAMOND_PICKAXE, ArmoryItems.BLAZE_NETHERITE_PICKAXE);
+        offerNetheriteUpgradeRecipe(exporter, ArmoryItems.BLAZE_DIAMOND_SHOVEL, ArmoryItems.BLAZE_NETHERITE_SHOVEL);
+        offerNetheriteUpgradeRecipe(exporter, ArmoryItems.BLAZE_DIAMOND_AXE, ArmoryItems.BLAZE_NETHERITE_AXE);
+        offerNetheriteUpgradeRecipe(exporter, ArmoryItems.BLAZE_DIAMOND_HOE, ArmoryItems.BLAZE_NETHERITE_HOE);
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_WOODEN_SICKLE)
+                .pattern(" XX")
+                .pattern("X X")
+                .pattern(" # ")
+                .input('X', ItemTags.PLANKS)
+                .input('#', Items.BLAZE_ROD)
+                .group("wooden_sickles")
+                .criterion("has_planks", conditionsFromTag(ItemTags.PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_WOODEN_SICKLE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_STONE_SICKLE)
+                .pattern(" XX")
+                .pattern("X X")
+                .pattern(" # ")
+                .input('X', ItemTags.STONE_TOOL_MATERIALS)
+                .input('#', Items.BLAZE_ROD)
+                .group("stone_sickles")
+                .criterion("has_cobblestone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_STONE_SICKLE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_GOLDEN_SICKLE)
+                .pattern(" XX")
+                .pattern("X X")
+                .pattern(" # ")
+                .input('X', Items.GOLD_INGOT)
+                .input('#', Items.BLAZE_ROD)
+                .group("golden_sickles")
+                .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_GOLDEN_SICKLE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_IRON_SICKLE)
+                .pattern(" XX")
+                .pattern("X X")
+                .pattern(" # ")
+                .input('X', Items.IRON_INGOT)
+                .input('#', Items.BLAZE_ROD)
+                .group("iron_sickles")
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_IRON_SICKLE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_DIAMOND_SICKLE)
+                .pattern(" XX")
+                .pattern("X X")
+                .pattern(" # ")
+                .input('X', Items.DIAMOND)
+                .input('#', Items.BLAZE_ROD)
+                .group("diamond_sickles")
+                .criterion(RecipeProvider.hasItem(Items.DIAMOND),
+                        RecipeProvider.conditionsFromItem(Items.DIAMOND))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_DIAMOND_SICKLE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_WOODEN_CLAYMORE)
+                .pattern(" XX")
+                .pattern("XXX")
+                .pattern("#X ")
+                .input('X', ItemTags.PLANKS)
+                .input('#', ArmoryItems.HEAVY_BLAZE_ROD)
+                .group("wooden_claymore")
+                .criterion("has_planks", conditionsFromTag(ItemTags.PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_WOODEN_CLAYMORE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_STONE_CLAYMORE)
+                .pattern(" XX")
+                .pattern("XXX")
+                .pattern("#X ")
+                .input('X', ItemTags.STONE_TOOL_MATERIALS)
+                .input('#', ArmoryItems.HEAVY_BLAZE_ROD)
+                .group("stone_claymore")
+                .criterion("has_cobblestone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_STONE_CLAYMORE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_IRON_CLAYMORE)
+                .pattern(" XX")
+                .pattern("XXX")
+                .pattern("#X ")
+                .input('X', Items.IRON_INGOT)
+                .input('#', ArmoryItems.HEAVY_BLAZE_ROD)
+                .group("iron_claymore")
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_IRON_CLAYMORE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_GOLDEN_CLAYMORE)
+                .pattern(" XX")
+                .pattern("XXX")
+                .pattern("#X ")
+                .input('X', Items.GOLD_INGOT)
+                .input('#', ArmoryItems.HEAVY_BLAZE_ROD)
+                .group("golden_claymore")
+                .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_GOLDEN_CLAYMORE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_DIAMOND_CLAYMORE)
+                .pattern(" XX")
+                .pattern("XXX")
+                .pattern("#X ")
+                .input('X', Items.DIAMOND)
+                .input('#', ArmoryItems.HEAVY_BLAZE_ROD)
+                .group("diamond_claymore")
+                .criterion(RecipeProvider.hasItem(Items.DIAMOND),
+                        RecipeProvider.conditionsFromItem(Items.DIAMOND))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_DIAMOND_CLAYMORE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_WOODEN_DAGGER)
+                .pattern(" X")
+                .pattern("# ")
+                .input('X', ItemTags.PLANKS)
+                .input('#', Items.BLAZE_ROD)
+                .group("wooden_daggers")
+                .criterion("has_planks", conditionsFromTag(ItemTags.PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_WOODEN_DAGGER)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_STONE_DAGGER)
+                .pattern(" X")
+                .pattern("# ")
+                .input('X', ItemTags.STONE_TOOL_MATERIALS)
+                .input('#', Items.BLAZE_ROD)
+                .group("stone_daggers")
+                .criterion("has_cobblestone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_STONE_DAGGER)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_IRON_DAGGER)
+                .pattern(" X")
+                .pattern("# ")
+                .input('X', Items.IRON_INGOT)
+                .input('#', Items.BLAZE_ROD)
+                .group("iron_daggers")
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_IRON_DAGGER)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_GOLDEN_DAGGER)
+                .pattern(" X")
+                .pattern("# ")
+                .input('X', Items.GOLD_INGOT)
+                .input('#', Items.BLAZE_ROD)
+                .group("golden_daggers")
+                .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_GOLDEN_DAGGER)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_DIAMOND_DAGGER)
+                .pattern(" X")
+                .pattern("# ")
+                .input('X', Items.DIAMOND)
+                .input('#', Items.BLAZE_ROD)
+                .group("diamond_daggers")
+                .criterion(RecipeProvider.hasItem(Items.DIAMOND),
+                        RecipeProvider.conditionsFromItem(Items.DIAMOND))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_DIAMOND_DAGGER)));
+
+        offerNetheriteUpgradeRecipe(exporter, ArmoryItems.BLAZE_DIAMOND_DAGGER, ArmoryItems.BLAZE_NETHERITE_DAGGER);
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_WOODEN_DOUBLE_AXE)
+                .pattern("XXX")
+                .pattern("X/X")
+                .pattern(" # ")
+                .input('X', ItemTags.PLANKS)
+                .input('/', ArmoryItems.HEAVY_BLAZE_ROD)
+                .input('#', Items.BLAZE_ROD)
+                .group("wooden_double_axes")
+                .criterion("has_planks", conditionsFromTag(ItemTags.PLANKS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_WOODEN_DOUBLE_AXE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_STONE_DOUBLE_AXE)
+                .pattern("XXX")
+                .pattern("X/X")
+                .pattern(" # ")
+                .input('X', ItemTags.STONE_TOOL_MATERIALS)
+                .input('/', ArmoryItems.HEAVY_BLAZE_ROD)
+                .input('#', Items.BLAZE_ROD)
+                .group("stone_double_axes")
+                .criterion("has_cobblestone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_STONE_DOUBLE_AXE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_IRON_DOUBLE_AXE)
+                .pattern("XXX")
+                .pattern("X/X")
+                .pattern(" # ")
+                .input('X', Items.IRON_INGOT)
+                .input('/', ArmoryItems.HEAVY_BLAZE_ROD)
+                .input('#', Items.BLAZE_ROD)
+                .group("iron_double_axes")
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_IRON_DOUBLE_AXE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_GOLDEN_DOUBLE_AXE)
+                .pattern("XXX")
+                .pattern("X/X")
+                .pattern(" # ")
+                .input('X', Items.GOLD_INGOT)
+                .input('/', ArmoryItems.HEAVY_BLAZE_ROD)
+                .input('#', Items.BLAZE_ROD)
+                .group("golden_double_axes")
+                .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_GOLDEN_DOUBLE_AXE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_DIAMOND_DOUBLE_AXE)
+                .pattern("XXX")
+                .pattern("X/X")
+                .pattern(" # ")
+                .input('X', Items.DIAMOND)
+                .input('/', ArmoryItems.HEAVY_BLAZE_ROD)
+                .input('#', Items.BLAZE_ROD)
+                .group("diamond_double_axes")
+                .criterion(RecipeProvider.hasItem(Items.DIAMOND),
+                        RecipeProvider.conditionsFromItem(Items.DIAMOND))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_DIAMOND_DOUBLE_AXE)));
+
+        offerNetheriteUpgradeRecipe(exporter, ArmoryItems.BLAZE_DIAMOND_DOUBLE_AXE, ArmoryItems.BLAZE_NETHERITE_DOUBLE_AXE);
+
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_COPPER_SWORD)
+                .pattern("X")
+                .pattern("X")
+                .pattern("#")
+                .input('X', Items.COPPER_INGOT)
+                .input('#', Items.BLAZE_ROD)
+                .group("copper_swords")
+                .criterion(RecipeProvider.hasItem(Items.COPPER_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_COPPER_SWORD)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_COPPER_PICKAXE)
+                .pattern("XXX")
+                .pattern(" # ")
+                .pattern(" # ")
+                .input('X', Items.COPPER_INGOT)
+                .input('#', Items.BLAZE_ROD)
+                .group("copper_pickaxes")
+                .criterion(RecipeProvider.hasItem(Items.COPPER_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_COPPER_PICKAXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_COPPER_AXE)
+                .pattern("XX")
+                .pattern("X#")
+                .pattern(" #")
+                .input('X', Items.COPPER_INGOT)
+                .input('#', Items.BLAZE_ROD)
+                .group("copper_axes")
+                .criterion(RecipeProvider.hasItem(Items.COPPER_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_COPPER_AXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_COPPER_SHOVEL)
+                .pattern("X")
+                .pattern("#")
+                .pattern("#")
+                .input('X', Items.COPPER_INGOT)
+                .input('#', Items.BLAZE_ROD)
+                .group("copper_shovels")
+                .criterion(RecipeProvider.hasItem(Items.COPPER_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_COPPER_SHOVEL)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_COPPER_HOE)
+                .pattern("XX")
+                .pattern(" #")
+                .pattern(" #")
+                .input('X', Items.COPPER_INGOT)
+                .input('#', Items.BLAZE_ROD)
+                .group("copper_hoes")
+                .criterion(RecipeProvider.hasItem(Items.COPPER_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_COPPER_HOE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_COPPER_DAGGER)
+                .pattern(" X")
+                .pattern("# ")
+                .input('X', Items.COPPER_INGOT)
+                .input('#', Items.BLAZE_ROD)
+                .group("copper_daggers")
+                .criterion(RecipeProvider.hasItem(Items.COPPER_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_COPPER_DAGGER)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_COPPER_CLAYMORE)
+                .pattern(" XX")
+                .pattern("XXX")
+                .pattern("#X ")
+                .input('X', Items.COPPER_INGOT)
+                .input('#', ArmoryItems.HEAVY_BLAZE_ROD)
+                .group("copper_claymore")
+                .criterion(RecipeProvider.hasItem(Items.COPPER_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_COPPER_CLAYMORE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_COPPER_DOUBLE_AXE)
+                .pattern("XXX")
+                .pattern("X/X")
+                .pattern(" # ")
+                .input('X', Items.COPPER_INGOT)
+                .input('/', ArmoryItems.HEAVY_BLAZE_ROD)
+                .input('#', Items.BLAZE_ROD)
+                .group("copper_double_axes")
+                .criterion(RecipeProvider.hasItem(Items.COPPER_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_COPPER_DOUBLE_AXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_COPPER_SICKLE)
+                .pattern(" XX")
+                .pattern("X X")
+                .pattern(" # ")
+                .input('X', Items.COPPER_INGOT)
+                .input('#', Items.BLAZE_ROD)
+                .group("copper_sickles")
+                .criterion(RecipeProvider.hasItem(Items.COPPER_INGOT),
+                        RecipeProvider.conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_COPPER_SICKLE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_SILVER_SWORD)
+                .pattern("X")
+                .pattern("X")
+                .pattern("#")
+                .input('X', ArmoryItems.SLIVER_INGOT)
+                .input('#', Items.BLAZE_ROD)
+                .group("silver_swords")
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_SILVER_SWORD)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_SILVER_PICKAXE)
+                .pattern("XXX")
+                .pattern(" # ")
+                .pattern(" # ")
+                .input('X', ArmoryItems.SLIVER_INGOT)
+                .input('#', Items.BLAZE_ROD)
+                .group("silver_pickaxes")
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_SILVER_PICKAXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_SILVER_AXE)
+                .pattern("XX")
+                .pattern("X#")
+                .pattern(" #")
+                .input('X', ArmoryItems.SLIVER_INGOT)
+                .input('#', Items.BLAZE_ROD)
+                .group("silver_axes")
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_SILVER_AXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_SILVER_SHOVEL)
+                .pattern("X")
+                .pattern("#")
+                .pattern("#")
+                .input('X', ArmoryItems.SLIVER_INGOT)
+                .input('#', Items.BLAZE_ROD)
+                .group("silver_shovels")
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_SILVER_SHOVEL)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_SILVER_HOE)
+                .pattern("XX")
+                .pattern(" #")
+                .pattern(" #")
+                .input('X', ArmoryItems.SLIVER_INGOT)
+                .input('#', Items.BLAZE_ROD)
+                .group("silver_hoes")
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_SILVER_HOE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_SILVER_DAGGER)
+                .pattern(" X")
+                .pattern("# ")
+                .input('X', ArmoryItems.SLIVER_INGOT)
+                .input('#', Items.BLAZE_ROD)
+                .group("silver_daggers")
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_SILVER_DAGGER)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_SILVER_CLAYMORE)
+                .pattern(" XX")
+                .pattern("XXX")
+                .pattern("#X ")
+                .input('X', ArmoryItems.SLIVER_INGOT)
+                .input('#', ArmoryItems.HEAVY_BLAZE_ROD)
+                .group("silver_claymore")
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_SILVER_CLAYMORE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_SILVER_DOUBLE_AXE)
+                .pattern("XXX")
+                .pattern("X/X")
+                .pattern(" # ")
+                .input('X', ArmoryItems.SLIVER_INGOT)
+                .input('/', ArmoryItems.HEAVY_BLAZE_ROD)
+                .input('#', Items.BLAZE_ROD)
+                .group("silver_double_axes")
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_SILVER_DOUBLE_AXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.BLAZE_SILVER_SICKLE)
+                .pattern(" XX")
+                .pattern("X X")
+                .pattern(" # ")
+                .input('X', ArmoryItems.SLIVER_INGOT)
+                .input('#', Items.BLAZE_ROD)
+                .group("silver_sickles")
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BLAZE_SILVER_SICKLE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.HEAVY_BLAZE_ROD,2)
+                .pattern("#")
+                .pattern("X")
+                .pattern("#")
+                .input('#', Items.BLAZE_ROD)
+                .input('X', Items.GLOWSTONE_DUST)
+                .criterion(RecipeProvider.hasItem(Items.BLAZE_ROD),
+                        RecipeProvider.conditionsFromItem(Items.BLAZE_ROD))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.HEAVY_BLAZE_ROD)));
     }
     public static void offerCupcakeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible dyeInput) {
         ShapedRecipeJsonBuilder.create(output,2)

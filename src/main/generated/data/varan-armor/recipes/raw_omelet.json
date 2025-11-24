@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "minecraft:brown_mushroom"
+    },
+    {
+      "item": "varan-armor:onion"
+    }
+  ],
+  "result": {
+    "item": "varan-armor:raw_omelet"
+  }
+}

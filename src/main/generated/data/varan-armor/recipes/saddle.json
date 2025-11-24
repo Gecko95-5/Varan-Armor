@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "varan-armor:tanned_leather"
+    },
+    "-": {
+      "item": "minecraft:iron_nugget"
+    },
+    "X": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#X#",
+    " - "
+  ],
+  "result": {
+    "item": "minecraft:saddle"
+  }
+}

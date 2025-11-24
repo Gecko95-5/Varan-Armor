@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "diamond_double_axes",
+  "key": {
+    "#": {
+      "item": "minecraft:blaze_rod"
+    },
+    "/": {
+      "item": "varan-armor:heavy_blaze_rod"
+    },
+    "X": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "X/X",
+    " # "
+  ],
+  "result": {
+    "item": "varan-armor:blaze_diamond_double_axe"
+  }
+}

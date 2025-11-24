@@ -144,6 +144,37 @@ public class ArmoryModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ArmoryItems.BAMBOO_DIAMOND_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.BAMBOO_DIAMOND_HOE, Models.HANDHELD);
 
+
+        itemModelGenerator.register(ArmoryItems.BLAZE_WOODEN_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_WOODEN_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_WOODEN_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_WOODEN_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_WOODEN_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.BLAZE_STONE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_STONE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_STONE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_STONE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_STONE_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.BLAZE_IRON_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_IRON_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_IRON_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_IRON_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_IRON_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.BLAZE_GOLDEN_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_GOLDEN_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_GOLDEN_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_GOLDEN_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_GOLDEN_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.BLAZE_DIAMOND_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_DIAMOND_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_DIAMOND_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_DIAMOND_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_DIAMOND_HOE, Models.HANDHELD);
+
         itemModelGenerator.register(ArmoryItems.FLINT_NETHERITE_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.FLINT_NETHERITE_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.FLINT_NETHERITE_AXE, Models.HANDHELD);
@@ -167,6 +198,12 @@ public class ArmoryModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ArmoryItems.BAMBOO_NETHERITE_AXE, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.BAMBOO_NETHERITE_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.BAMBOO_NETHERITE_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.BLAZE_NETHERITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_NETHERITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_NETHERITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_NETHERITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_NETHERITE_HOE, Models.HANDHELD);
 
         itemModelGenerator.register(ArmoryItems.IRON_ARROW, Models.GENERATED);
         itemModelGenerator.register(ArmoryItems.AMETHYST_ARROW, Models.GENERATED);
@@ -210,10 +247,17 @@ public class ArmoryModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ArmoryItems.BAMBOO_IRON_SICKLE, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.BAMBOO_DIAMOND_SICKLE, Models.HANDHELD);
 
+        itemModelGenerator.register(ArmoryItems.BLAZE_WOODEN_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_STONE_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_GOLDEN_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_IRON_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_DIAMOND_SICKLE, Models.HANDHELD);
+
         itemModelGenerator.register(ArmoryItems.FLINT_NETHERITE_SICKLE, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.LAPIS_NETHERITE_SICKLE, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.QUARTZ_NETHERITE_SICKLE, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.BAMBOO_NETHERITE_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_NETHERITE_SICKLE, Models.HANDHELD);
 
         itemModelGenerator.register(ArmoryItems.WOODEN_DAGGER, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.STONE_DAGGER, Models.HANDHELD);
@@ -226,37 +270,44 @@ public class ArmoryModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ArmoryItems.LAPIS_WOODEN_DAGGER, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.QUARTZ_WOODEN_DAGGER, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.BAMBOO_WOODEN_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_WOODEN_DAGGER, Models.HANDHELD);
                 
         itemModelGenerator.register(ArmoryItems.FLINT_STONE_DAGGER, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.LAPIS_STONE_DAGGER, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.QUARTZ_STONE_DAGGER, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.BAMBOO_STONE_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_STONE_DAGGER, Models.HANDHELD);
                 
         itemModelGenerator.register(ArmoryItems.FLINT_IRON_DAGGER, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.LAPIS_IRON_DAGGER, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.QUARTZ_IRON_DAGGER, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.BAMBOO_IRON_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_IRON_DAGGER, Models.HANDHELD);
                 
         itemModelGenerator.register(ArmoryItems.FLINT_GOLDEN_DAGGER, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.LAPIS_GOLDEN_DAGGER, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.QUARTZ_GOLDEN_DAGGER, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.BAMBOO_GOLDEN_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_GOLDEN_DAGGER, Models.HANDHELD);
                 
         itemModelGenerator.register(ArmoryItems.FLINT_DIAMOND_DAGGER, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.LAPIS_DIAMOND_DAGGER, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.QUARTZ_DIAMOND_DAGGER, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.BAMBOO_DIAMOND_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_DIAMOND_DAGGER, Models.HANDHELD);
                 
         itemModelGenerator.register(ArmoryItems.FLINT_NETHERITE_DAGGER, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.LAPIS_NETHERITE_DAGGER, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.QUARTZ_NETHERITE_DAGGER, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.BAMBOO_NETHERITE_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_NETHERITE_DAGGER, Models.HANDHELD);
 
         itemModelGenerator.register(ArmoryItems.BRACED_STICK, ArmoryModels.BRACED_HANDHELD);
         itemModelGenerator.register(ArmoryItems.BRACED_BAMBOO, ArmoryModels.BRACED_HANDHELD);
         itemModelGenerator.register(ArmoryItems.HEAVY_FLINT_ROD, ArmoryModels.BRACED_HANDHELD);
         itemModelGenerator.register(ArmoryItems.HEAVY_LAPIS_ROD, ArmoryModels.BRACED_HANDHELD);
         itemModelGenerator.register(ArmoryItems.HEAVY_QUARTZ_ROD, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.HEAVY_BLAZE_ROD, ArmoryModels.BRACED_HANDHELD);
 
         itemModelGenerator.register(ArmoryItems.WOODEN_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
         itemModelGenerator.register(ArmoryItems.STONE_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
@@ -286,13 +337,19 @@ public class ArmoryModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ArmoryItems.QUARTZ_DIAMOND_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
         itemModelGenerator.register(ArmoryItems.QUARTZ_NETHERITE_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
 
-
         itemModelGenerator.register(ArmoryItems.BAMBOO_WOODEN_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
         itemModelGenerator.register(ArmoryItems.BAMBOO_STONE_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
         itemModelGenerator.register(ArmoryItems.BAMBOO_IRON_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
         itemModelGenerator.register(ArmoryItems.BAMBOO_GOLDEN_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
         itemModelGenerator.register(ArmoryItems.BAMBOO_DIAMOND_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
         itemModelGenerator.register(ArmoryItems.BAMBOO_NETHERITE_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.BLAZE_WOODEN_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_STONE_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_IRON_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_GOLDEN_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_DIAMOND_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_NETHERITE_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
 
         itemModelGenerator.register(ArmoryItems.WOODEN_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
         itemModelGenerator.register(ArmoryItems.STONE_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
@@ -328,6 +385,13 @@ public class ArmoryModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ArmoryItems.BAMBOO_GOLDEN_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
         itemModelGenerator.register(ArmoryItems.BAMBOO_DIAMOND_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
         itemModelGenerator.register(ArmoryItems.BAMBOO_NETHERITE_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.BLAZE_WOODEN_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_STONE_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_IRON_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_GOLDEN_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_DIAMOND_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_NETHERITE_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
 
         itemModelGenerator.register(ArmoryItems.COPPER_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.COPPER_PICKAXE, Models.HANDHELD);
@@ -388,6 +452,18 @@ public class ArmoryModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ArmoryItems.BAMBOO_COPPER_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
         itemModelGenerator.register(ArmoryItems.BAMBOO_COPPER_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.BLAZE_COPPER_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_COPPER_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_COPPER_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_COPPER_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_COPPER_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.BLAZE_COPPER_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_COPPER_SICKLE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.BLAZE_COPPER_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_COPPER_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
 
         itemModelGenerator.register(ArmoryItems.SPINDTOX, Models.HANDHELD);
 
@@ -485,11 +561,29 @@ public class ArmoryModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ArmoryItems.BAMBOO_SILVER_DAGGER, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.BAMBOO_SILVER_SICKLE, Models.HANDHELD);
 
-        itemModelGenerator.register(ArmoryItems.ONION, Models.GENERATED);
-
         itemModelGenerator.register(ArmoryItems.BAMBOO_SILVER_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
         itemModelGenerator.register(ArmoryItems.BAMBOO_SILVER_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
-        
+
+        itemModelGenerator.register(ArmoryItems.BLAZE_SILVER_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_SILVER_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_SILVER_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_SILVER_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_SILVER_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.BLAZE_SILVER_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_SILVER_SICKLE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.BLAZE_SILVER_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.BLAZE_SILVER_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.ONION, Models.GENERATED);
+
+        itemModelGenerator.register(ArmoryItems.BEEF_PIE, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.CHICKEN_PIE, Models.GENERATED);
+
+        itemModelGenerator.register(ArmoryItems.RAW_OMELET, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.COOKED_OMELET, Models.GENERATED);
+
         itemModelGenerator.register(ArmoryItems.CUPCAKE, Models.GENERATED);
         itemModelGenerator.register(ArmoryItems.WHITE_CUPCAKE, Models.GENERATED);
         itemModelGenerator.register(ArmoryItems.RED_CUPCAKE, Models.GENERATED);
@@ -507,6 +601,8 @@ public class ArmoryModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ArmoryItems.GRAY_CUPCAKE, Models.GENERATED);
         itemModelGenerator.register(ArmoryItems.BLACK_CUPCAKE, Models.GENERATED);
         itemModelGenerator.register(ArmoryItems.BROWN_CUPCAKE, Models.GENERATED);
+
+        itemModelGenerator.register(ArmoryItems.HAWKBRAND, Models.HANDHELD);
     }
 
     @Override

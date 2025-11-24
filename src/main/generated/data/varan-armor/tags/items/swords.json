@@ -31,15 +31,23 @@
     "varan-armor:bamboo_golden_sword",
     "varan-armor:bamboo_diamond_sword",
     "varan-armor:bamboo_netherite_sword",
+    "varan-armor:blaze_wooden_sword",
+    "varan-armor:blaze_stone_sword",
+    "varan-armor:blaze_iron_sword",
+    "varan-armor:blaze_golden_sword",
+    "varan-armor:blaze_diamond_sword",
+    "varan-armor:blaze_netherite_sword",
     "varan-armor:copper_sword",
     "varan-armor:flint_copper_sword",
     "varan-armor:lapis_copper_sword",
     "varan-armor:quartz_copper_sword",
     "varan-armor:bamboo_copper_sword",
+    "varan-armor:blaze_copper_sword",
     "varan-armor:sliver_sword",
     "varan-armor:flint_sliver_sword",
     "varan-armor:lapis_sliver_sword",
     "varan-armor:quartz_sliver_sword",
-    "varan-armor:bamboo_silver_sword"
+    "varan-armor:bamboo_silver_sword",
+    "varan-armor:blaze_silver_sword"
   ]
 }

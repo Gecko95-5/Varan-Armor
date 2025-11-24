@@ -6,7 +6,9 @@
     "BowItemMixin",
     "FishingBobberEntityMixin",
     "FishingBobberRendererMixin",
-    "PlayerEntityMixin"
+    "PiglinBruteEntityMixin",
+    "PlayerEntityMixin",
+    "ZombifiedPiglinEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1

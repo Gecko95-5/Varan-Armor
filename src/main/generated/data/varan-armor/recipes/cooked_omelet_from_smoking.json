@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "varan-armor:raw_omelet"
+  },
+  "result": "varan-armor:cooked_omelet"
+}

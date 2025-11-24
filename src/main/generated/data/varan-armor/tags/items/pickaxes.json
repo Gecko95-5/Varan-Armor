@@ -31,15 +31,23 @@
     "varan-armor:bamboo_golden_pickaxe",
     "varan-armor:bamboo_diamond_pickaxe",
     "varan-armor:bamboo_netherite_pickaxe",
+    "varan-armor:blaze_wooden_pickaxe",
+    "varan-armor:blaze_stone_pickaxe",
+    "varan-armor:blaze_iron_pickaxe",
+    "varan-armor:blaze_golden_pickaxe",
+    "varan-armor:blaze_diamond_pickaxe",
+    "varan-armor:blaze_netherite_pickaxe",
     "varan-armor:copper_pickaxe",
     "varan-armor:flint_copper_pickaxe",
     "varan-armor:lapis_copper_pickaxe",
     "varan-armor:quartz_copper_pickaxe",
     "varan-armor:bamboo_copper_pickaxe",
+    "varan-armor:blaze_copper_pickaxe",
     "varan-armor:sliver_pickaxe",
     "varan-armor:flint_sliver_pickaxe",
     "varan-armor:lapis_sliver_pickaxe",
     "varan-armor:quartz_sliver_pickaxe",
-    "varan-armor:bamboo_silver_pickaxe"
+    "varan-armor:bamboo_silver_pickaxe",
+    "varan-armor:blaze_silver_pickaxe"
   ]
 }

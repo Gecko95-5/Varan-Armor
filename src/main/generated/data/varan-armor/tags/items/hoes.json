@@ -31,15 +31,23 @@
     "varan-armor:bamboo_golden_hoe",
     "varan-armor:bamboo_diamond_hoe",
     "varan-armor:bamboo_netherite_hoe",
+    "varan-armor:blaze_wooden_hoe",
+    "varan-armor:blaze_stone_hoe",
+    "varan-armor:blaze_iron_hoe",
+    "varan-armor:blaze_golden_hoe",
+    "varan-armor:blaze_diamond_hoe",
+    "varan-armor:blaze_netherite_hoe",
     "varan-armor:copper_hoe",
     "varan-armor:flint_copper_hoe",
     "varan-armor:lapis_copper_hoe",
     "varan-armor:quartz_copper_hoe",
     "varan-armor:bamboo_copper_hoe",
+    "varan-armor:blaze_copper_hoe",
     "varan-armor:sliver_hoe",
     "varan-armor:flint_sliver_hoe",
     "varan-armor:lapis_sliver_hoe",
     "varan-armor:quartz_sliver_hoe",
-    "varan-armor:bamboo_silver_hoe"
+    "varan-armor:bamboo_silver_hoe",
+    "varan-armor:blaze_silver_hoe"
   ]
 }

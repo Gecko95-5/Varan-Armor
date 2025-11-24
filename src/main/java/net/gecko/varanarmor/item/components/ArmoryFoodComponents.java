@@ -10,9 +10,9 @@ public class ArmoryFoodComponents {
 
     public static final FoodComponent COOKED_SQUID_TENTACLES = new FoodComponent.Builder().hunger(4).saturationModifier(0.7F).build();
 
-    public static final FoodComponent HARD_BOILED_EGG = new FoodComponent.Builder().hunger(3).saturationModifier(0.3F).snack().build();
+    public static final FoodComponent HARD_BOILED_EGG = new FoodComponent.Builder().hunger(3).saturationModifier(0.3F).snack().meat().build();
 
-    public static final FoodComponent FRIED_EGG = new FoodComponent.Builder().hunger(3).saturationModifier(0.7F).build();
+    public static final FoodComponent FRIED_EGG = new FoodComponent.Builder().hunger(3).saturationModifier(0.7F).meat().build();
 
     public static final FoodComponent CUPCAKE = new FoodComponent.Builder().hunger(4).saturationModifier(0.2F).build();
 
@@ -34,4 +34,13 @@ public class ArmoryFoodComponents {
     public static final FoodComponent SLIVER_BEETROOT = new FoodComponent.Builder().hunger(2).saturationModifier(1.2F).snack().build();
 
     public static final FoodComponent ONION = new FoodComponent.Builder().hunger(2).saturationModifier(0.4F).build();
+
+    public static final FoodComponent BEEF_PIE = new FoodComponent.Builder().hunger(10).saturationModifier(0.6F).build();
+
+    public static final FoodComponent CHICKEN_PIE = new FoodComponent.Builder().hunger(10).saturationModifier(0.4F).build();
+
+    public static final FoodComponent OMELET = new FoodComponent.Builder().hunger(6).saturationModifier(1.1F).meat().build();
+
+    public static final FoodComponent RAW_OMELET = new FoodComponent.Builder().hunger(2).saturationModifier(0.4F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.HUNGER,600,0),0.2f).meat().build();
 }
