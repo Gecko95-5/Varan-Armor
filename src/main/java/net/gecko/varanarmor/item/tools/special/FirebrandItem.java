@@ -28,7 +28,7 @@ public class FirebrandItem extends AxeItem {
         if (target.isOnFire()){
             target.playSound(SoundEvents.BLOCK_FIRE_EXTINGUISH, 1.0f, 1.0f);
             target.extinguish();
-            target.damage(DamageSource.GENERIC,5);
+            target.damage(DamageSource.MAGIC,5);
         } else {
             target.setOnFireFor(5);
         }

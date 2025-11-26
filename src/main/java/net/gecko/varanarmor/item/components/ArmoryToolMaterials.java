@@ -204,7 +204,7 @@ public enum ArmoryToolMaterials implements ToolMaterial {
     FIREBRAND (3, 1748,5.0F, 3.0F, 6,
                            () -> Ingredient.ofItems(ArmoryItems.WITHER_BONE)),
 
-    HAWKBRAND (3, 742,0.0F, 3.5F, 8,
+    HEARTSTEALER (3, 742,0.0F, 3.5F, 8,
             () -> Ingredient.ofItems(ArmoryItems.WITHER_BONE)),
 
     SPINDTOX (3, 562,2.0F, 0.0F, 2,

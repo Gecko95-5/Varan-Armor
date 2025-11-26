@@ -232,7 +232,8 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
             .add(ArmoryItems.LAPIS_SLIVER_SWORD)
             .add(ArmoryItems.QUARTZ_SLIVER_SWORD)
             .add(ArmoryItems.BAMBOO_SILVER_SWORD)
-            .add(ArmoryItems.BLAZE_SILVER_SWORD);
+            .add(ArmoryItems.BLAZE_SILVER_SWORD)
+            .add(ArmoryItems.HEARTSTEALER);
 
     getOrCreateTagBuilder(ArmoryTags.Items.PICKAXES)
             .add(Items.WOODEN_PICKAXE)

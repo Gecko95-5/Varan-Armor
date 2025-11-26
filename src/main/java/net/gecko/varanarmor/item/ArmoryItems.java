@@ -21,8 +21,8 @@ import net.gecko.varanarmor.item.tools.bow.*;
 import net.gecko.varanarmor.item.tools.fishing_rods.NautilusFishingRodItem;
 import net.gecko.varanarmor.item.tools.fishing_rods.SquidFishingRodItem;
 import net.gecko.varanarmor.item.tools.special.FirebrandItem;
-import net.gecko.varanarmor.item.tools.special.HawkbrandItem;
-import net.gecko.varanarmor.item.tools.special.PoisonDaggerItem;
+import net.gecko.varanarmor.item.tools.special.HeartstealerItem;
+import net.gecko.varanarmor.item.tools.special.SpindtoxItem;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
@@ -641,8 +641,8 @@ public class ArmoryItems {
     public static final Item BLAZE_SILVER_HOE = registerItem("blaze_silver_hoe",
             new FixedHoeItem(ArmoryToolMaterials.BLAZE_SILVER, -2, -1.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
-    public static final Item HAWKBRAND = registerItem("hawkbrand",
-            new HawkbrandItem(ArmoryToolMaterials.HAWKBRAND, 3, -2.4F,
+    public static final Item HEARTSTEALER = registerItem("heartstealer",
+            new HeartstealerItem(ArmoryToolMaterials.HEARTSTEALER, 2, -2.4F,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item FIREBRAND = registerItem("firebrand",
             new FirebrandItem(ArmoryToolMaterials.FIREBRAND, 7.0F, -3.2F,
@@ -1237,7 +1237,7 @@ public class ArmoryItems {
             new SickleItem(ArmoryToolMaterials.BLAZE_SILVER, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item SPINDTOX = registerItem("spindtox",
-            new PoisonDaggerItem(ArmoryToolMaterials.SPINDTOX, 2, -1.2F,
+            new SpindtoxItem(ArmoryToolMaterials.SPINDTOX, 2, -1.2F,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item WOODEN_BOW = registerItem("wooden_bow",

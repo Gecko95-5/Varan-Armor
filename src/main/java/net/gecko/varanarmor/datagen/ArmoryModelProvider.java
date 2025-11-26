@@ -602,7 +602,7 @@ public class ArmoryModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ArmoryItems.BLACK_CUPCAKE, Models.GENERATED);
         itemModelGenerator.register(ArmoryItems.BROWN_CUPCAKE, Models.GENERATED);
 
-        itemModelGenerator.register(ArmoryItems.HAWKBRAND, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.HEARTSTEALER, Models.HANDHELD);
     }
 
     @Override
