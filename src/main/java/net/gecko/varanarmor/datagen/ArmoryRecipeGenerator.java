@@ -4289,6 +4289,26 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(Items.BLAZE_ROD),
                         RecipeProvider.conditionsFromItem(Items.BLAZE_ROD))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.HEAVY_BLAZE_ROD)));
+
+        ShapelessRecipeJsonBuilder.create(ArmoryItems.APPLE_PIE)
+                .input(Items.APPLE)
+                .input(Items.APPLE)
+                .input(Items.SUGAR)
+                .input(Items.WHEAT)
+                .criterion(RecipeProvider.hasItem(Items.APPLE),
+                        RecipeProvider.conditionsFromItem(Items.APPLE))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.APPLE_PIE)));
+
+        ShapelessRecipeJsonBuilder.create(ArmoryItems.BERRY_PIE)
+                .input(Items.SWEET_BERRIES)
+                .input(Items.GLOW_BERRIES)
+                .input(Items.SUGAR)
+                .input(Items.WHEAT)
+                .criterion(RecipeProvider.hasItem(Items.SWEET_BERRIES),
+                        RecipeProvider.conditionsFromItem(Items.SWEET_BERRIES))
+                .criterion(RecipeProvider.hasItem(Items.GLOW_BERRIES),
+                        RecipeProvider.conditionsFromItem(Items.GLOW_BERRIES))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BERRY_PIE)));
     }
     public static void offerCupcakeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible dyeInput) {
         ShapedRecipeJsonBuilder.create(output,2)

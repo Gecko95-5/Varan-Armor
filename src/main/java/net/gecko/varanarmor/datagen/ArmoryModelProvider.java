@@ -580,6 +580,8 @@ public class ArmoryModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ArmoryItems.BEEF_PIE, Models.GENERATED);
         itemModelGenerator.register(ArmoryItems.CHICKEN_PIE, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.APPLE_PIE,Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.BERRY_PIE,Models.GENERATED);
 
         itemModelGenerator.register(ArmoryItems.RAW_OMELET, Models.GENERATED);
         itemModelGenerator.register(ArmoryItems.COOKED_OMELET, Models.GENERATED);

@@ -1,4 +1,4 @@
-// 1.19.2	2025-11-26T11:18:04.3481437	Recipes
+// 1.19.2	2025-11-28T11:06:06.2967685	Recipes
 ae2d1209ff5baab97335ec9425c6af7ffd275ff1 data\varan-armor\advancements\recipes\varan-armor.varan_armor\iron_sickle.json
 7d501aa69f7a2d864d05b2332372079a7d8c6310 data\varan-armor\advancements\recipes\varan-armor.varan_armor\quartz_copper_claymore.json
 aed05a9b2a98aaf22ab689887b2cb63eb3bd6a01 data\varan-armor\recipes\copper_double_axe.json
@@ -545,6 +545,7 @@ ca0e1036a242698b7baf353f9698bfb6d9406c6c data\varan-armor\advancements\recipes\v
 06ead41dda1f87ddb051a10a2792954c561a2c27 data\varan-armor\advancements\recipes\varan-armor.varan_armor\lapis_wooden_axe.json
 01d56fd470372cf17062372fd8ca7f4eacc353b0 data\varan-armor\advancements\recipes\varan-armor.varan_armor\dyed_magenta_cupcake.json
 dfcefc89a656a13cfaa4a3ee7a832b73f94ab9f0 data\varan-armor\recipes\netherite_claymore_smithing.json
+08ea51a28c288d1677c0d03c615b679d1a554a6c data\varan-armor\recipes\apple_pie.json
 de973b3cc6d1f657c2990218bedf0ca44b8df9f9 data\varan-armor\recipes\quartz_copper_sickle.json
 12253b5544ead73fb4dbfea1a45b4d167aeb3d59 data\varan-armor\advancements\recipes\varan-armor.varan_armor\quartz_golden_double_axe.json
 3a24f8a69de0f9c4e92c95170701d0af32d000c2 data\varan-armor\recipes\lapis_stone_claymore.json
@@ -566,6 +567,7 @@ eac448f4cd95f1234edb913695e5e486fde42113 data\varan-armor\advancements\recipes\v
 d6c0a92403bb2e8fb18a568586c37032a0a99be0 data\varan-armor\recipes\flint_iron_double_axe.json
 4b631015075aefa7f0dd3b5f01fb0e8a2819e625 data\varan-armor\recipes\lapis_rod.json
 1b3d6106d2ba6ff52b9e51b3d3949037f2b24d6e data\varan-armor\advancements\recipes\varan-armor.varan_armor\lapis_stone_sword.json
+c75ec905a3939f038093d4d7e2b6da8651d92fbe data\varan-armor\advancements\recipes\varan-armor.varan_armor\apple_pie.json
 951730686ca331bada9aab425368b08385bb72aa data\varan-armor\recipes\iron_sickle.json
 e5984c26b598bab9b69635e4164669c314af0fcf data\varan-armor\recipes\bamboo_iron_sword.json
 8e562fc126eb8b474fdf9659c81e31ae88484ca0 data\varan-armor\advancements\recipes\varan-armor.varan_armor\lapis_diamond_sword.json
@@ -699,6 +701,7 @@ ecad7a59897759f5c69d6f20df1ae392bef4d43f data\varan-armor\recipes\orange_cupcake
 beb0f069d7cf7d7fa49a44dcc1010b7f03dd423f data\varan-armor\advancements\recipes\varan-armor.varan_armor\copper_dagger.json
 644ba85f0200db73ee95cb47bfca8a5be60a95c7 data\varan-armor\advancements\recipes\varan-armor.varan_armor\flint_diamond_dagger.json
 316b1ad0e3ed13a7c38a75c87cef26e4054d8f4f data\varan-armor\advancements\recipes\varan-armor.varan_armor\copper_shovel.json
+ff20502793e1b6c76cbd950f00c886b48eb8fa42 data\varan-armor\advancements\recipes\varan-armor.varan_armor\berry_pie.json
 f4b1149bf107f1d1a0c45392a2209159f2548e8a data\varan-armor\recipes\flint_wooden_axe.json
 29b35e4a52f38ee2b82dfb2d89c2e8bc65d9f722 data\varan-armor\advancements\recipes\varan-armor.varan_armor\lapis_copper_axe.json
 be192b28ce56f4930ad4ab1a3f74cbfa03988a3a data\varan-armor\recipes\beef_pie.json
@@ -903,6 +906,7 @@ ef4be3fd21c726e599cf8fb6e30a7e518deed95b data\varan-armor\recipes\blaze_iron_hoe
 15ae86f2dd01d287b0e7a2a13517be26df58b535 data\varan-armor\advancements\recipes\varan-armor.varan_armor\diamond_sickle.json
 3c2476eba4521fa026100a7a6933dc7c33688b8c data\varan-armor\recipes\quartz_diamond_shovel.json
 d4c96bac6819a28b8edc785c09ce0132f1666938 data\varan-armor\advancements\recipes\varan-armor.varan_armor\sliver_ingot.json
+f6cea65744cf2e1902a501c7555ffe1636a7b4fe data\varan-armor\recipes\berry_pie.json
 ddb5829026027698ef213d7c0b1828d18c809d2d data\varan-armor\recipes\highland_helmet.json
 4e87fcac64f05ef81a329623f37ef97a4c9b285d data\varan-armor\advancements\recipes\varan-armor.varan_armor\quartz_diamond_double_axe.json
 e8ee1030fdcddbc18fe549a19941a4ed983d40c9 data\varan-armor\recipes\lapis_netherite_claymore_smithing.json

@@ -39,6 +39,10 @@ public class ArmoryFoodComponents {
 
     public static final FoodComponent CHICKEN_PIE = new FoodComponent.Builder().hunger(10).saturationModifier(0.4F).build();
 
+    public static final FoodComponent APPLE_PIE = new FoodComponent.Builder().hunger(6).saturationModifier(1.2F).build();
+
+    public static final FoodComponent BERRY_PIE = new FoodComponent.Builder().hunger(6).saturationModifier(0.8F).build();
+
     public static final FoodComponent OMELET = new FoodComponent.Builder().hunger(6).saturationModifier(1.1F).meat().build();
 
     public static final FoodComponent RAW_OMELET = new FoodComponent.Builder().hunger(2).saturationModifier(0.4F)

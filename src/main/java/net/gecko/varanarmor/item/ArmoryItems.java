@@ -93,12 +93,6 @@ public class ArmoryItems {
     public static final Item COOKED_OMELET = registerItem("cooked_omelet",
             new Item(new Item.Settings().food(ArmoryFoodComponents.OMELET).group(ArmoryItemGroup.VARAN_ARMOR)));
 
-    public static final Item CHICKEN_PIE = registerItem("chicken_pie",
-            new Item(new Item.Settings().food(ArmoryFoodComponents.CHICKEN_PIE).group(ArmoryItemGroup.VARAN_ARMOR)));
-
-    public static final Item BEEF_PIE = registerItem("beef_pie",
-            new Item(new Item.Settings().food(ArmoryFoodComponents.BEEF_PIE).group(ArmoryItemGroup.VARAN_ARMOR)));
-
     public static final Item SLIVER_BEETROOT = registerItem("sliver_beetroot",
             new Item(new Item.Settings().food(ArmoryFoodComponents.SLIVER_BEETROOT).group(ArmoryItemGroup.VARAN_ARMOR)));
 
@@ -113,6 +107,18 @@ public class ArmoryItems {
             new Item(new Item.Settings().food(ArmoryFoodComponents.GLOW_SQUID_TENTACLES).group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item COOKED_SQUID_TENTACLES = registerItem("cooked_squid_tentacles",
             new Item(new Item.Settings().food(ArmoryFoodComponents.COOKED_SQUID_TENTACLES).group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item CHICKEN_PIE = registerItem("chicken_pie",
+            new Item(new Item.Settings().food(ArmoryFoodComponents.CHICKEN_PIE).group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item BEEF_PIE = registerItem("beef_pie",
+            new Item(new Item.Settings().food(ArmoryFoodComponents.BEEF_PIE).group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item APPLE_PIE = registerItem("apple_pie",
+            new Item(new Item.Settings().food(ArmoryFoodComponents.APPLE_PIE).group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item BERRY_PIE = registerItem("berry_pie",
+            new Item(new Item.Settings().food(ArmoryFoodComponents.BERRY_PIE).group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item CUPCAKE = registerItem("cupcake",
             new Item(new Item.Settings().food(ArmoryFoodComponents.CUPCAKE).group(ArmoryItemGroup.VARAN_ARMOR)));
