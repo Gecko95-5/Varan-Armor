@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "silver_nugget",
+  "ingredient": {
+    "item": "varan-armor:sliver_sickle"
+  },
+  "result": "varan-armor:sliver_nugget"
+}

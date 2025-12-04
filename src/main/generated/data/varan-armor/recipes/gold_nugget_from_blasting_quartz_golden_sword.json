@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "gold_nugget",
+  "ingredient": {
+    "item": "varan-armor:quartz_golden_sword"
+  },
+  "result": "minecraft:gold_nugget"
+}

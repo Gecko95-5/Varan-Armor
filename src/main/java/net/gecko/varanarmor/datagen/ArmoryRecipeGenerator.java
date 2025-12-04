@@ -17,15 +17,84 @@ import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.tag.ItemTags;
 import net.minecraft.util.Identifier;
 
+import java.util.List;
 import java.util.function.Consumer;
 
 public class ArmoryRecipeGenerator extends FabricRecipeProvider {
+
+    private static final List<ItemConvertible> SILVER_SMELTABLES = List.of(ArmoryItems.SLIVER_AXE,
+            ArmoryItems.SLIVER_PICKAXE, ArmoryItems.SLIVER_SICKLE, ArmoryItems.SLIVER_CLAYMORE, ArmoryItems.SLIVER_SWORD,
+            ArmoryItems.SLIVER_HOE, ArmoryItems.SLIVER_SHOVEL, ArmoryItems.SLIVER_DOUBLE_AXE, ArmoryItems.SLIVER_DAGGER,
+            ArmoryItems.SLIVER_BOOTS, ArmoryItems.SLIVER_LEGGINGS, ArmoryItems.SLIVER_CHESTPLATE, ArmoryItems.SLIVER_HELMET,
+            ArmoryItems.FLINT_SLIVER_AXE, ArmoryItems.FLINT_SLIVER_PICKAXE, ArmoryItems.FLINT_SLIVER_SICKLE,
+            ArmoryItems.FLINT_SLIVER_CLAYMORE, ArmoryItems.FLINT_SLIVER_SWORD, ArmoryItems.FLINT_SLIVER_HOE,
+            ArmoryItems.FLINT_SLIVER_SHOVEL, ArmoryItems.FLINT_SLIVER_DOUBLE_AXE, ArmoryItems.FLINT_SLIVER_DAGGER,
+            ArmoryItems.LAPIS_SLIVER_AXE, ArmoryItems.LAPIS_SLIVER_PICKAXE, ArmoryItems.LAPIS_SLIVER_SICKLE,
+            ArmoryItems.LAPIS_SLIVER_CLAYMORE, ArmoryItems.LAPIS_SLIVER_SWORD, ArmoryItems.LAPIS_SLIVER_HOE,
+            ArmoryItems.LAPIS_SLIVER_SHOVEL, ArmoryItems.LAPIS_SLIVER_DOUBLE_AXE, ArmoryItems.LAPIS_SLIVER_DAGGER,
+            ArmoryItems.QUARTZ_SLIVER_AXE, ArmoryItems.QUARTZ_SLIVER_PICKAXE, ArmoryItems.QUARTZ_SLIVER_SICKLE,
+            ArmoryItems.QUARTZ_SLIVER_CLAYMORE, ArmoryItems.QUARTZ_SLIVER_SWORD, ArmoryItems.QUARTZ_SLIVER_HOE,
+            ArmoryItems.QUARTZ_SLIVER_SHOVEL, ArmoryItems.QUARTZ_SLIVER_DOUBLE_AXE, ArmoryItems.QUARTZ_SLIVER_DAGGER,
+            ArmoryItems.BAMBOO_SILVER_AXE, ArmoryItems.BAMBOO_SILVER_PICKAXE, ArmoryItems.BAMBOO_SILVER_SICKLE,
+            ArmoryItems.BAMBOO_SILVER_CLAYMORE, ArmoryItems.BAMBOO_SILVER_SWORD, ArmoryItems.BAMBOO_SILVER_HOE,
+            ArmoryItems.BAMBOO_SILVER_SHOVEL, ArmoryItems.BAMBOO_SILVER_DOUBLE_AXE, ArmoryItems.BAMBOO_SILVER_DAGGER,
+            ArmoryItems.BLAZE_SILVER_AXE, ArmoryItems.BLAZE_SILVER_PICKAXE, ArmoryItems.BLAZE_SILVER_SICKLE,
+            ArmoryItems.BLAZE_SILVER_CLAYMORE, ArmoryItems.BLAZE_SILVER_SWORD, ArmoryItems.BLAZE_SILVER_HOE,
+            ArmoryItems.BLAZE_SILVER_SHOVEL, ArmoryItems.BLAZE_SILVER_DOUBLE_AXE, ArmoryItems.BLAZE_SILVER_DAGGER);
+
+    private static final List<ItemConvertible> IRON_SMELTABLES = List.of(ArmoryItems.FLINT_IRON_AXE,
+            ArmoryItems.FLINT_IRON_PICKAXE, ArmoryItems.FLINT_IRON_SICKLE,
+            ArmoryItems.FLINT_IRON_CLAYMORE, ArmoryItems.FLINT_IRON_SWORD, ArmoryItems.FLINT_IRON_HOE,
+            ArmoryItems.FLINT_IRON_SHOVEL, ArmoryItems.FLINT_IRON_DOUBLE_AXE, ArmoryItems.FLINT_IRON_DAGGER,
+            ArmoryItems.LAPIS_IRON_AXE, ArmoryItems.LAPIS_IRON_PICKAXE, ArmoryItems.LAPIS_IRON_SICKLE,
+            ArmoryItems.LAPIS_IRON_CLAYMORE, ArmoryItems.LAPIS_IRON_SWORD, ArmoryItems.LAPIS_IRON_HOE,
+            ArmoryItems.LAPIS_IRON_SHOVEL, ArmoryItems.LAPIS_IRON_DOUBLE_AXE, ArmoryItems.LAPIS_IRON_DAGGER,
+            ArmoryItems.QUARTZ_IRON_AXE, ArmoryItems.QUARTZ_IRON_PICKAXE, ArmoryItems.QUARTZ_IRON_SICKLE,
+            ArmoryItems.QUARTZ_IRON_CLAYMORE, ArmoryItems.QUARTZ_IRON_SWORD, ArmoryItems.QUARTZ_IRON_HOE,
+            ArmoryItems.QUARTZ_IRON_SHOVEL, ArmoryItems.QUARTZ_IRON_DOUBLE_AXE, ArmoryItems.QUARTZ_IRON_DAGGER,
+            ArmoryItems.BAMBOO_IRON_AXE, ArmoryItems.BAMBOO_IRON_PICKAXE, ArmoryItems.BAMBOO_IRON_SICKLE,
+            ArmoryItems.BAMBOO_IRON_CLAYMORE, ArmoryItems.BAMBOO_IRON_SWORD, ArmoryItems.BAMBOO_IRON_HOE,
+            ArmoryItems.BAMBOO_IRON_SHOVEL, ArmoryItems.BAMBOO_IRON_DOUBLE_AXE, ArmoryItems.BAMBOO_IRON_DAGGER,
+            ArmoryItems.BLAZE_IRON_AXE, ArmoryItems.BLAZE_IRON_PICKAXE, ArmoryItems.BLAZE_IRON_SICKLE,
+            ArmoryItems.BLAZE_IRON_CLAYMORE, ArmoryItems.BLAZE_IRON_SWORD, ArmoryItems.BLAZE_IRON_HOE,
+            ArmoryItems.BLAZE_IRON_SHOVEL, ArmoryItems.BLAZE_IRON_DOUBLE_AXE, ArmoryItems.BLAZE_IRON_DAGGER);
+
+    private static final List<ItemConvertible> GOLD_SMELTABLES = List.of(ArmoryItems.FLINT_GOLDEN_AXE,
+            ArmoryItems.FLINT_GOLDEN_PICKAXE, ArmoryItems.FLINT_GOLDEN_SICKLE,
+            ArmoryItems.FLINT_GOLDEN_CLAYMORE, ArmoryItems.FLINT_GOLDEN_SWORD, ArmoryItems.FLINT_GOLDEN_HOE,
+            ArmoryItems.FLINT_GOLDEN_SHOVEL, ArmoryItems.FLINT_GOLDEN_DOUBLE_AXE, ArmoryItems.FLINT_GOLDEN_DAGGER,
+            ArmoryItems.LAPIS_GOLDEN_AXE, ArmoryItems.LAPIS_GOLDEN_PICKAXE, ArmoryItems.LAPIS_GOLDEN_SICKLE,
+            ArmoryItems.LAPIS_GOLDEN_CLAYMORE, ArmoryItems.LAPIS_GOLDEN_SWORD, ArmoryItems.LAPIS_GOLDEN_HOE,
+            ArmoryItems.LAPIS_GOLDEN_SHOVEL, ArmoryItems.LAPIS_GOLDEN_DOUBLE_AXE, ArmoryItems.LAPIS_GOLDEN_DAGGER,
+            ArmoryItems.QUARTZ_GOLDEN_AXE, ArmoryItems.QUARTZ_GOLDEN_PICKAXE, ArmoryItems.QUARTZ_GOLDEN_SICKLE,
+            ArmoryItems.QUARTZ_GOLDEN_CLAYMORE, ArmoryItems.QUARTZ_GOLDEN_SWORD, ArmoryItems.QUARTZ_GOLDEN_HOE,
+            ArmoryItems.QUARTZ_GOLDEN_SHOVEL, ArmoryItems.QUARTZ_GOLDEN_DOUBLE_AXE, ArmoryItems.QUARTZ_GOLDEN_DAGGER,
+            ArmoryItems.BAMBOO_GOLDEN_AXE, ArmoryItems.BAMBOO_GOLDEN_PICKAXE, ArmoryItems.BAMBOO_GOLDEN_SICKLE,
+            ArmoryItems.BAMBOO_GOLDEN_CLAYMORE, ArmoryItems.BAMBOO_GOLDEN_SWORD, ArmoryItems.BAMBOO_GOLDEN_HOE,
+            ArmoryItems.BAMBOO_GOLDEN_SHOVEL, ArmoryItems.BAMBOO_GOLDEN_DOUBLE_AXE, ArmoryItems.BAMBOO_GOLDEN_DAGGER,
+            ArmoryItems.BLAZE_GOLDEN_AXE, ArmoryItems.BLAZE_GOLDEN_PICKAXE, ArmoryItems.BLAZE_GOLDEN_SICKLE,
+            ArmoryItems.BLAZE_GOLDEN_CLAYMORE, ArmoryItems.BLAZE_GOLDEN_SWORD, ArmoryItems.BLAZE_GOLDEN_HOE,
+            ArmoryItems.BLAZE_GOLDEN_SHOVEL, ArmoryItems.BLAZE_GOLDEN_DOUBLE_AXE, ArmoryItems.BLAZE_GOLDEN_DAGGER);
+
     public ArmoryRecipeGenerator(FabricDataGenerator dataGenerator) {
         super(dataGenerator);
     }
 
+
     @Override
     protected void generateRecipes(Consumer<RecipeJsonProvider> exporter) {
+        offerSmelting(exporter, SILVER_SMELTABLES, ArmoryItems.SLIVER_NUGGET,
+                0.25f, 200, "silver_nugget");
+        offerBlasting(exporter, SILVER_SMELTABLES, ArmoryItems.SLIVER_NUGGET,
+                0.25f, 100, "silver_nugget");
+        offerSmelting(exporter, IRON_SMELTABLES, Items.IRON_NUGGET,
+                0.25f, 200, "iron_nugget");
+        offerBlasting(exporter, IRON_SMELTABLES, Items.IRON_NUGGET,
+                0.25f, 100, "iron_nugget");
+        offerSmelting(exporter, GOLD_SMELTABLES, Items.GOLD_NUGGET,
+                0.25f, 200, "gold_nugget");
+        offerBlasting(exporter, GOLD_SMELTABLES, Items.GOLD_NUGGET,
+                0.25f, 100, "gold_nugget");
 
         ShapedRecipeJsonBuilder.create(ArmoryItems.FLINT_ROD,4)
                 .pattern("#")
@@ -2377,13 +2446,13 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.IRON_PLATE)));
 
         ShapelessRecipeJsonBuilder.create(ArmoryItems.SLIVER_INGOT)
-                .input(Items.IRON_INGOT)
-                .input(Items.LAPIS_LAZULI)
+                .input(ArmoryItems.MOLTEN_IRON)
                 .input(Items.GOLD_NUGGET)
                 .input(Items.GOLD_NUGGET)
-                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT),
-                        RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
-                .offerTo(exporter, new Identifier("sliver_ingot_from_iron_ingot"));
+                .input(Items.GOLD_NUGGET)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.MOLTEN_IRON),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.MOLTEN_IRON))
+                .offerTo(exporter, new Identifier("sliver_ingot_from_molten_iron"));
 
         ShapelessRecipeJsonBuilder.create(ArmoryItems.SLIVER_NUGGET,9)
                         .input(ArmoryItems.SLIVER_INGOT)
