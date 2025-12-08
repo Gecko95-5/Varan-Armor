@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "minecraft:wool"
+    },
+    "L": {
+      "item": "minecraft:iron_leggings"
+    },
+    "X": {
+      "item": "varan-armor:iron_plate"
+    }
+  },
+  "pattern": [
+    "#L#",
+    "X X",
+    "X X"
+  ],
+  "result": {
+    "item": "varan-armor:stalwart_leggings"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "minecraft:wool"
+    },
+    "C": {
+      "item": "minecraft:iron_chestplate"
+    },
+    "X": {
+      "item": "varan-armor:iron_plate"
+    }
+  },
+  "pattern": [
+    "X X",
+    "XCX",
+    "X#X"
+  ],
+  "result": {
+    "item": "varan-armor:stalwart_chestplate"
+  }
+}

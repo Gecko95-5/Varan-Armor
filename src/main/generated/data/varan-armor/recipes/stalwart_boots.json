@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "minecraft:iron_leggings"
+    },
+    "X": {
+      "item": "varan-armor:iron_plate"
+    }
+  },
+  "pattern": [
+    "XBX",
+    "X X"
+  ],
+  "result": {
+    "item": "varan-armor:stalwart_boots"
+  }
+}

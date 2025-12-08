@@ -4378,6 +4378,44 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(Items.GLOW_BERRIES),
                         RecipeProvider.conditionsFromItem(Items.GLOW_BERRIES))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.BERRY_PIE)));
+
+        ShapedRecipeJsonBuilder.create(ArmoryItems.STALWART_HELMET)
+                .pattern("#X#")
+                .pattern("XHX")
+                .input('X', ArmoryItems.IRON_PLATE)
+                .input('#', ItemTags.WOOL)
+                .input('H', Items.IRON_HELMET)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.IRON_PLATE),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.IRON_PLATE))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.STALWART_HELMET)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.STALWART_CHESTPLATE)
+                .pattern("X X")
+                .pattern("XCX")
+                .pattern("X#X")
+                .input('X', ArmoryItems.IRON_PLATE)
+                .input('#', ItemTags.WOOL)
+                .input('C', Items.IRON_CHESTPLATE)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.IRON_PLATE),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.IRON_PLATE))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.STALWART_CHESTPLATE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.STALWART_LEGGINGS)
+                .pattern("#L#")
+                .pattern("X X")
+                .pattern("X X")
+                .input('X', ArmoryItems.IRON_PLATE)
+                .input('#', ItemTags.WOOL)
+                .input('L', Items.IRON_LEGGINGS)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.IRON_PLATE),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.IRON_PLATE))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.STALWART_LEGGINGS)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.STALWART_BOOTS)
+                .pattern("XBX")
+                .pattern("X X")
+                .input('X', ArmoryItems.IRON_PLATE)
+                .input('B', Items.IRON_LEGGINGS)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.IRON_PLATE),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.IRON_PLATE))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.STALWART_BOOTS)));
     }
     public static void offerCupcakeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible dyeInput) {
         ShapedRecipeJsonBuilder.create(output,2)

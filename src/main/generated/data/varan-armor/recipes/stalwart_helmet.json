@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "minecraft:wool"
+    },
+    "H": {
+      "item": "minecraft:iron_helmet"
+    },
+    "X": {
+      "item": "varan-armor:iron_plate"
+    }
+  },
+  "pattern": [
+    "#X#",
+    "XHX"
+  ],
+  "result": {
+    "item": "varan-armor:stalwart_helmet"
+  }
+}

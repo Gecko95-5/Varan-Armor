@@ -1,4 +1,4 @@
-// 1.19.2	2025-12-04T12:11:28.4519428	Models
+// 1.19.2	2025-12-06T23:54:51.5569497	Models
 93f726cb9db260f791994e4537c95fc97e5b2b56 assets\varan-armor\models\item\flint_wooden_claymore.json
 b56d289bdc51c4690e5c4c8fcc11b6313a3383f5 assets\varan-armor\models\item\flint_stone_claymore.json
 8e0b3d21aed75f802df9f0b7d3788fd44b0d1017 assets\varan-armor\models\item\lapis_copper_sword.json
@@ -56,6 +56,8 @@ dda669b6aa46d65a405a514cdfd18af7f61ab296 assets\varan-armor\models\item\quartz_a
 5219723734dfaf52daf05ee96a57ccaae57340c7 assets\varan-armor\models\item\bamboo_silver_double_axe.json
 ea1b79e2187409a1713367b80a17f3f0dffeff37 assets\varan-armor\models\item\flint_wooden_axe.json
 657200c79f4d072b5a648a082e1c79f92163eeee assets\varan-armor\models\item\flint_sliver_axe.json
+e9bcea82697971127841009c87756f712000218d assets\varan-armor\models\item\stalwart_boots.json
+35a5174362a838372d449a154c8bec7b189011a8 assets\varan-armor\models\item\stalwart_chestplate.json
 c51fa02b1927e220bcdc167ecd556edcf633c8b4 assets\varan-armor\models\item\bamboo_copper_sickle.json
 feeb75e81c48e7027791174c1c6d3d5821d4b4e2 assets\varan-armor\models\item\flint_wooden_sickle.json
 2cc2ba4dbd8636389c558ed1d1f9e4d9eaa0bc5e assets\varan-armor\models\item\bamboo_diamond_claymore.json
@@ -87,6 +89,7 @@ c819f8e57cea5e16b1cd2e669e4d5d7a2a54e188 assets\varan-armor\models\item\quartz_s
 fd4dbe80cd26ce0d7f5e256b4ccc18888943f7f2 assets\varan-armor\models\item\diamond_double_axe.json
 b5490a2629c886c4f66da646d21f812426325647 assets\varan-armor\models\item\quartz_iron_dagger.json
 2266a863662009aeec7a1165c084f297e015227e assets\varan-armor\models\item\quartz_wooden_sickle.json
+9c7ff6ee40a1174fd2ce20d2ef9cfed99efef652 assets\varan-armor\models\item\stalwart_helmet.json
 d9df6e8ef8f2bf59aeb4dd71bd48bd6b04520a49 assets\varan-armor\blockstates\onions.json
 b4adc1db4b5d50212c27831197b8b28141242d02 assets\varan-armor\models\item\quartz_sliver_dagger.json
 74e1f90e860ebc18a820c07d2d8411e14128842e assets\varan-armor\models\item\flint_copper_shovel.json
@@ -393,6 +396,7 @@ b5e96a9ca43931d96fd62c9fdd22d58939252e1d assets\varan-armor\models\item\quartz_s
 b9e52bce6170576f1b978c769dea7d8f74df634f assets\varan-armor\models\item\blaze_iron_axe.json
 58f733382d863278ffa3b4514e4249417279d311 assets\varan-armor\models\item\flint_netherite_claymore.json
 223228e89397a401a182f15465a33edb9369045c assets\varan-armor\models\item\blaze_silver_dagger.json
+7bb25b929af4efb1b7727da1e3f75e01fca851a7 assets\varan-armor\models\item\stalwart_leggings.json
 ee013ca28320291e5dc2911944fa3aaee3b7405e assets\varan-armor\models\item\bamboo_diamond_sickle.json
 c09fbaedf005a196f0616b9fef0b45ba622540cf assets\varan-armor\models\item\bamboo_golden_double_axe.json
 ba201294894e325c2fe910f14173bcc12347b1d0 assets\varan-armor\models\item\lapis_sliver_axe.json

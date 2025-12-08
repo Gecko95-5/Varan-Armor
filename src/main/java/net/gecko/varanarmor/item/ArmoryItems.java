@@ -1317,6 +1317,19 @@ public class ArmoryItems {
             new ArmorItem(ArmoryArmourMaterials.HIGHLAND, EquipmentSlot.FEET,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
+    public static final Item STALWART_HELMET = registerItem("stalwart_helmet",
+            new ArmorItem(ArmoryArmourMaterials.STALWART, EquipmentSlot.HEAD,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item STALWART_CHESTPLATE = registerItem("stalwart_chestplate",
+            new ArmorItem(ArmoryArmourMaterials.STALWART, EquipmentSlot.CHEST,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item STALWART_LEGGINGS = registerItem("stalwart_leggings",
+            new ArmorItem(ArmoryArmourMaterials.STALWART, EquipmentSlot.LEGS,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item STALWART_BOOTS = registerItem("stalwart_boots",
+            new ArmorItem(ArmoryArmourMaterials.STALWART, EquipmentSlot.FEET,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
     public static final Item MINING_GOOGLES = registerItem("mining_googles",
             new MiningGooglesItem(ArmoryArmourMaterials.GOOGLES, EquipmentSlot.HEAD,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));

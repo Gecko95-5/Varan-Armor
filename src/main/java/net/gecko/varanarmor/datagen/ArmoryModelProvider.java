@@ -497,6 +497,11 @@ public class ArmoryModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ArmoryItems.HIGHLAND_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ArmoryItems.HIGHLAND_BOOTS, Models.GENERATED);
 
+        itemModelGenerator.register(ArmoryItems.STALWART_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.STALWART_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.STALWART_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.STALWART_BOOTS, Models.GENERATED);
+
         itemModelGenerator.register(ArmoryItems.SLIVER_INGOT, Models.GENERATED);
         itemModelGenerator.register(ArmoryItems.SLIVER_NUGGET, Models.GENERATED);
 
