@@ -6,10 +6,8 @@ import net.gecko.varanarmor.block.ArmoryBlocks;
 import net.gecko.varanarmor.item.ArmoryItems;
 import net.gecko.varanarmor.util.ArmoryTags;
 import net.minecraft.data.server.RecipeProvider;
-import net.minecraft.data.server.recipe.CookingRecipeJsonBuilder;
-import net.minecraft.data.server.recipe.RecipeJsonProvider;
-import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
-import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.*;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
@@ -3670,7 +3668,7 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter,new Identifier("cooked_omelet_form_smelting"));
 
         CookingRecipeJsonBuilder.createSmoking(Ingredient.ofItems(ArmoryItems.RAW_OMELET), ArmoryItems.COOKED_OMELET,
-                        0.35f, 200).criterion(hasItem(ArmoryItems.RAW_OMELET), conditionsFromItem(ArmoryItems.RAW_OMELET))
+                        0.35f, 100).criterion(hasItem(ArmoryItems.RAW_OMELET), conditionsFromItem(ArmoryItems.RAW_OMELET))
                 .offerTo(exporter, new Identifier("cooked_omelet_from_smoking"));
 
         offerCookingRecipe(exporter, "campfire", RecipeSerializer.CAMPFIRE_COOKING, 600,
@@ -4416,6 +4414,35 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(ArmoryItems.IRON_PLATE),
                         RecipeProvider.conditionsFromItem(ArmoryItems.IRON_PLATE))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.STALWART_BOOTS)));
+
+        ShapelessRecipeJsonBuilder.create(ArmoryItems.STEEL_COMPOUND)
+                .input(ArmoryItems.MOLTEN_IRON)
+                .input(ArmoryItems.MOLTEN_IRON)
+                .input(ArmoryItems.MOLTEN_IRON)
+                .input(ArmoryItems.MOLTEN_IRON)
+                .input(Items.RAW_COPPER_BLOCK)
+                .input(Items.RAW_COPPER_BLOCK)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.MOLTEN_IRON),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.MOLTEN_IRON))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.STEEL_COMPOUND)));
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(ArmoryItems.STEEL_COMPOUND), ArmoryItems.STEEL_INGOT,
+                        0.35f, 1000).criterion(hasItem(ArmoryItems.STEEL_COMPOUND),conditionsFromItem(ArmoryItems.STEEL_COMPOUND))
+                .offerTo(exporter,new Identifier("steel_ingot_form_smelting"));
+
+        CookingRecipeJsonBuilder.createBlasting(Ingredient.ofItems(ArmoryItems.STEEL_COMPOUND), ArmoryItems.STEEL_INGOT,
+                        0.35f, 500).criterion(hasItem(ArmoryItems.STEEL_COMPOUND),conditionsFromItem(ArmoryItems.STEEL_COMPOUND))
+                .offerTo(exporter,new Identifier("steel_ingot_form_blasting"));
+
+        offerSteelUpgradeRecipe(exporter, Items.IRON_SWORD, ArmoryItems.STEEL_SWORD);
+        offerSteelUpgradeRecipe(exporter, Items.IRON_PICKAXE, ArmoryItems.STEEL_PICKAXE);
+        offerSteelUpgradeRecipe(exporter, Items.IRON_AXE, ArmoryItems.STEEL_AXE);
+        offerSteelUpgradeRecipe(exporter, Items.IRON_SHOVEL, ArmoryItems.STEEL_SHOVEL);
+        offerSteelUpgradeRecipe(exporter, Items.IRON_HOE, ArmoryItems.STEEL_HOE);
+        offerSteelUpgradeRecipe(exporter, ArmoryItems.IRON_CLAYMORE, ArmoryItems.STEEL_CLAYMORE);
+        offerSteelUpgradeRecipe(exporter, ArmoryItems.IRON_SICKLE, ArmoryItems.STEEL_SICKLE);
+        offerSteelUpgradeRecipe(exporter, ArmoryItems.IRON_DAGGER, ArmoryItems.STEEL_DAGGER);
+        offerSteelUpgradeRecipe(exporter, ArmoryItems.IRON_DOUBLE_AXE, ArmoryItems.STEEL_DOUBLE_AXE);
     }
     public static void offerCupcakeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible dyeInput) {
         ShapedRecipeJsonBuilder.create(output,2)
@@ -4439,5 +4466,8 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                 .group("cupcake")
                 .criterion("has_cupcake", RecipeProvider.conditionsFromTag(ArmoryTags.Items.CUPCAKES))
                 .offerTo(exporter, new Identifier(dyedRecipeName));
+    }
+    public static void offerSteelUpgradeRecipe(Consumer<RecipeJsonProvider> exporter, Item input, Item output) {
+        SmithingRecipeJsonBuilder.create(Ingredient.ofItems(input), Ingredient.ofItems(ArmoryItems.STEEL_INGOT), output).criterion("has_steel_ingot", RecipeProvider.conditionsFromItem(ArmoryItems.STEEL_INGOT)).offerTo(exporter, RecipeProvider.getItemPath(output) + "_smithing");
     }
 }

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 1000,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "varan-armor:steel_compound"
+  },
+  "result": "varan-armor:steel_ingot"
+}

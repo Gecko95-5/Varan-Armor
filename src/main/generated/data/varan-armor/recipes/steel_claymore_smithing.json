@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "varan-armor:steel_ingot"
+  },
+  "base": {
+    "item": "varan-armor:iron_claymore"
+  },
+  "result": {
+    "item": "varan-armor:steel_claymore"
+  }
+}

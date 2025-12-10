@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "varan-armor:molten_iron"
+    },
+    {
+      "item": "varan-armor:molten_iron"
+    },
+    {
+      "item": "varan-armor:molten_iron"
+    },
+    {
+      "item": "varan-armor:molten_iron"
+    },
+    {
+      "item": "minecraft:raw_copper_block"
+    },
+    {
+      "item": "minecraft:raw_copper_block"
+    }
+  ],
+  "result": {
+    "item": "varan-armor:steel_compound"
+  }
+}

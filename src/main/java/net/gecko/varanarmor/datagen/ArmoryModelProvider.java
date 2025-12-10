@@ -581,6 +581,23 @@ public class ArmoryModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ArmoryItems.BLAZE_SILVER_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
         itemModelGenerator.register(ArmoryItems.BLAZE_SILVER_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
 
+        itemModelGenerator.register(ArmoryItems.STEEL_COMPOUND, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.STEEL_INGOT, Models.GENERATED);
+
+        itemModelGenerator.register(ArmoryItems.STEEL_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.STEEL_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.STEEL_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.STEEL_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.STEEL_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.STEEL_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.STEEL_SICKLE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.STEEL_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.STEEL_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.OBSIDASTROM, ArmoryModels.BRACED_HANDHELD);
+
         itemModelGenerator.register(ArmoryItems.ONION, Models.GENERATED);
 
         itemModelGenerator.register(ArmoryItems.BEEF_PIE, Models.GENERATED);

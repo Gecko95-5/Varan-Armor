@@ -22,6 +22,7 @@ import net.gecko.varanarmor.item.tools.fishing_rods.NautilusFishingRodItem;
 import net.gecko.varanarmor.item.tools.fishing_rods.SquidFishingRodItem;
 import net.gecko.varanarmor.item.tools.special.FirebrandItem;
 import net.gecko.varanarmor.item.tools.special.HeartstealerItem;
+import net.gecko.varanarmor.item.tools.special.ObsidastromItem;
 import net.gecko.varanarmor.item.tools.special.SpindtoxItem;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
@@ -32,6 +33,12 @@ public class ArmoryItems {
 
     public static final Item SLIVER_INGOT = registerItem("sliver_ingot",
             new Item(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item STEEL_COMPOUND = registerItem("steel_compound",
+            new Item(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item STEEL_INGOT = registerItem("steel_ingot",
+            new Item(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
 
     public static final Item FLINT_ROD = registerItem("flint_rod",
             new Item(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
@@ -647,6 +654,17 @@ public class ArmoryItems {
     public static final Item BLAZE_SILVER_HOE = registerItem("blaze_silver_hoe",
             new FixedHoeItem(ArmoryToolMaterials.BLAZE_SILVER, -2, -1.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
+    public static final Item STEEL_SWORD = registerItem("steel_sword",
+            new SwordItem(ArmoryToolMaterials.STEEL, 3, -2.4F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item STEEL_SHOVEL = registerItem("steel_shovel",
+            new ShovelItem(ArmoryToolMaterials.STEEL, 1.5F, -3.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item STEEL_PICKAXE = registerItem("steel_pickaxe",
+            new PickaxeItem(ArmoryToolMaterials.STEEL, 1, -2.8F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item STEEL_AXE = registerItem("steel_axe",
+            new AxeItem(ArmoryToolMaterials.STEEL, 5.0F, -3.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item STEEL_HOE = registerItem("steel_hoe",
+            new FixedHoeItem(ArmoryToolMaterials.STEEL, -2, -1.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
     public static final Item HEARTSTEALER = registerItem("heartstealer",
             new HeartstealerItem(ArmoryToolMaterials.HEARTSTEALER, 2, -2.4F,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
@@ -1242,8 +1260,23 @@ public class ArmoryItems {
     public static final Item BLAZE_SILVER_SICKLE = registerItem("blaze_silver_sickle",
             new SickleItem(ArmoryToolMaterials.BLAZE_SILVER, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
+    public static final Item STEEL_DAGGER = registerItem("steel_dagger",
+            new SwordItem(ArmoryToolMaterials.STEEL, -1, -1.0F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item STEEL_CLAYMORE = registerItem("steel_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_STEEL, 7, -3.4F, 200, 1,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item STEEL_DOUBLE_AXE = registerItem("steel_double_axe",
+            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_STEEL, 6, -3.4F, 300, 0,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item STEEL_SICKLE = registerItem("steel_sickle",
+            new SickleItem(ArmoryToolMaterials.STEEL, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
     public static final Item SPINDTOX = registerItem("spindtox",
             new SpindtoxItem(ArmoryToolMaterials.SPINDTOX, 2, -1.2F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item OBSIDASTROM = registerItem("obsidastrom",
+            new ObsidastromItem(ArmoryToolMaterials.OBSIDASTROM, 7, -3.4F, 600, 3,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item WOODEN_BOW = registerItem("wooden_bow",

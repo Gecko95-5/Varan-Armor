@@ -76,7 +76,8 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
             .add(ArmoryItems.LAPIS_SLIVER_SICKLE)
             .add(ArmoryItems.QUARTZ_SLIVER_SICKLE)
             .add(ArmoryItems.BAMBOO_SILVER_SICKLE)
-            .add(ArmoryItems.BLAZE_SILVER_SICKLE);
+            .add(ArmoryItems.BLAZE_SILVER_SICKLE)
+            .add(ArmoryItems.STEEL_SICKLE);
 
         getOrCreateTagBuilder(ArmoryTags.Items.CLAYMORES)
                 .add(ArmoryItems.WOODEN_CLAYMORE)
@@ -126,7 +127,8 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ArmoryItems.LAPIS_SLIVER_CLAYMORE)
                 .add(ArmoryItems.QUARTZ_SLIVER_CLAYMORE)
                 .add(ArmoryItems.BAMBOO_SILVER_CLAYMORE)
-                .add(ArmoryItems.BLAZE_SILVER_CLAYMORE);
+                .add(ArmoryItems.BLAZE_SILVER_CLAYMORE)
+                .add(ArmoryItems.STEEL_CLAYMORE);
 
         getOrCreateTagBuilder(ArmoryTags.Items.DAGGERS)
                 .add(ArmoryItems.WOODEN_DAGGER)
@@ -177,6 +179,7 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ArmoryItems.QUARTZ_SLIVER_DAGGER)
                 .add(ArmoryItems.BAMBOO_SILVER_DAGGER)
                 .add(ArmoryItems.BLAZE_SILVER_DAGGER)
+                .add(ArmoryItems.STEEL_DAGGER)
                 .add(ArmoryItems.SPINDTOX);
 
     getOrCreateTagBuilder(ArmoryTags.Items.BLADES)
@@ -233,6 +236,7 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
             .add(ArmoryItems.QUARTZ_SLIVER_SWORD)
             .add(ArmoryItems.BAMBOO_SILVER_SWORD)
             .add(ArmoryItems.BLAZE_SILVER_SWORD)
+            .add(ArmoryItems.STEEL_SWORD)
             .add(ArmoryItems.HEARTSTEALER);
 
     getOrCreateTagBuilder(ArmoryTags.Items.PICKAXES)
@@ -283,7 +287,8 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
             .add(ArmoryItems.LAPIS_SLIVER_PICKAXE)
             .add(ArmoryItems.QUARTZ_SLIVER_PICKAXE)
             .add(ArmoryItems.BAMBOO_SILVER_PICKAXE)
-            .add(ArmoryItems.BLAZE_SILVER_PICKAXE);
+            .add(ArmoryItems.BLAZE_SILVER_PICKAXE)
+            .add(ArmoryItems.STEEL_PICKAXE);
 
         getOrCreateTagBuilder(ArmoryTags.Items.SINGLE_AXES)
                 .add(Items.WOODEN_AXE)
@@ -333,7 +338,8 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ArmoryItems.LAPIS_SLIVER_AXE)
                 .add(ArmoryItems.QUARTZ_SLIVER_AXE)
                 .add(ArmoryItems.BAMBOO_SILVER_AXE)
-                .add(ArmoryItems.BLAZE_SILVER_AXE);
+                .add(ArmoryItems.BLAZE_SILVER_AXE)
+                .add(ArmoryItems.STEEL_AXE);
 
         getOrCreateTagBuilder(ArmoryTags.Items.DOUBLE_AXES)
                 .add(ArmoryItems.WOODEN_DOUBLE_AXE)
@@ -383,7 +389,8 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ArmoryItems.LAPIS_SLIVER_DOUBLE_AXE)
                 .add(ArmoryItems.QUARTZ_SLIVER_DOUBLE_AXE)
                 .add(ArmoryItems.BAMBOO_SILVER_DOUBLE_AXE)
-                .add(ArmoryItems.BLAZE_SILVER_DOUBLE_AXE);
+                .add(ArmoryItems.BLAZE_SILVER_DOUBLE_AXE)
+                .add(ArmoryItems.STEEL_DOUBLE_AXE);
 
         getOrCreateTagBuilder(ArmoryTags.Items.SHOVELS)
                 .add(Items.WOODEN_SHOVEL)
@@ -433,7 +440,8 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ArmoryItems.LAPIS_SLIVER_SHOVEL)
                 .add(ArmoryItems.QUARTZ_SLIVER_SHOVEL)
                 .add(ArmoryItems.BAMBOO_SILVER_SHOVEL)
-                .add(ArmoryItems.BLAZE_SILVER_SHOVEL);
+                .add(ArmoryItems.BLAZE_SILVER_SHOVEL)
+                .add(ArmoryItems.STEEL_SHOVEL);
 
         getOrCreateTagBuilder(ArmoryTags.Items.HOES)
                 .add(Items.WOODEN_HOE)
@@ -483,7 +491,8 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ArmoryItems.LAPIS_SLIVER_HOE)
                 .add(ArmoryItems.QUARTZ_SLIVER_HOE)
                 .add(ArmoryItems.BAMBOO_SILVER_HOE)
-                .add(ArmoryItems.BLAZE_SILVER_HOE);
+                .add(ArmoryItems.BLAZE_SILVER_HOE)
+                .add(ArmoryItems.STEEL_HOE);
 
         getOrCreateTagBuilder(ArmoryTags.Items.CUPCAKES)
                 .add(ArmoryItems.CUPCAKE)
