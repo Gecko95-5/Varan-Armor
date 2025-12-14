@@ -646,7 +646,14 @@
   "item.minecraft.lingering_potion.effect.long_blindness_potion": "Lingering Potion of Blindness",
   "item.minecraft.tipped_arrow.effect.long_blindness_potion": "Arrow of Blindness",
 
+  "item.minecraft.potion.effect.curse_potion": "Potion of Curse",
+  "item.minecraft.splash_potion.effect.curse_potion": "Splash Potion of Curse",
+  "item.minecraft.lingering_potion.effect.curse_potion": "Lingering Potion of Curse",
+  "item.minecraft.tipped_arrow.effect.curse_potion": "Arrow of Curse",
+
   "effect.varan-armor.fatal_poison": "Fatal Poison",
+
+  "effect.varan-armor.curse": "Curse",
 
   "itemGroup.varan-armor.varan_armor": "Variant Armoury"
 }

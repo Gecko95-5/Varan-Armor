@@ -23,6 +23,8 @@ public class ArmoryPotions {
     public static Potion BLINDNESS_POTION;
     public static Potion LONG_BLINDNESS_POTION;
 
+    public static Potion CURSE_POTION;
+
 
     public static Potion registerFatalPotion(String name) {
         return Registry.register(Registry.POTION, new Identifier(VaranArmor.MOD_ID, name),
@@ -46,7 +48,11 @@ public class ArmoryPotions {
     }
     public static Potion registerLongBlindnessPotion(String name) {
         return Registry.register(Registry.POTION, new Identifier(VaranArmor.MOD_ID, name),
-                new Potion(new StatusEffectInstance(StatusEffects.BLINDNESS, 4800, 0)));
+                new Potion(new StatusEffectInstance(ArmoryEffects.CURSE, 4800, 0)));
+    }
+    public static Potion registerCursePotion(String name) {
+        return Registry.register(Registry.POTION, new Identifier(VaranArmor.MOD_ID, name),
+                new Potion(new StatusEffectInstance(StatusEffects.BLINDNESS, 1800, 0)));
     }
     public static void registerPotions(){
         FATAL_POISON_POTION = registerFatalPotion("fatal_poison_potion");
@@ -57,6 +63,8 @@ public class ArmoryPotions {
 
         BLINDNESS_POTION = registerBlindnessPotion("blindness_potion");
         LONG_BLINDNESS_POTION = registerLongBlindnessPotion("long_blindness_potion");
+
+        CURSE_POTION = registerCursePotion("curse_potion");
 
         registerPotionRecipes();
     }
@@ -76,6 +84,6 @@ public class ArmoryPotions {
         BrewingRecipeRegistry.registerPotionRecipe(Potions.AWKWARD, Items.INK_SAC, ArmoryPotions.BLINDNESS_POTION);
         BrewingRecipeRegistry.registerPotionRecipe(ArmoryPotions.BLINDNESS_POTION, Items.REDSTONE, ArmoryPotions.LONG_BLINDNESS_POTION);
 
-
+        BrewingRecipeRegistry.registerPotionRecipe(Potions.AWKWARD, Items.SOUL_SAND, ArmoryPotions.CURSE_POTION);
     }
 }

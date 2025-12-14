@@ -3,8 +3,6 @@ package net.gecko.varanarmor.effects;
 import net.gecko.varanarmor.VaranArmor;
 import net.gecko.varanarmor.effects.statuseffects.CurseEffect;
 import net.gecko.varanarmor.effects.statuseffects.FatalPoisonEffect;
-import net.minecraft.entity.attribute.EntityAttributeModifier;
-import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.util.Identifier;
