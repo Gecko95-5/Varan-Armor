@@ -33,7 +33,7 @@ public enum ArmoryArmourMaterials implements ArmorMaterial {
     HIGHLAND("highland", 17, new int[] { 2, 5, 6, 2}, 12,
             SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1f, 0F, () -> Ingredient.ofItems(ArmoryItems.TANNED_LEATHER)),
 
-    STALWART("highland", 26, new int[] { 2, 5, 6, 2}, 12,
+    STALWART("stalwart", 26, new int[] { 2, 5, 6, 2}, 12,
             SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1f, 0.5F, () -> Ingredient.ofItems(ArmoryItems.IRON_PLATE));
 
     private final String name;
