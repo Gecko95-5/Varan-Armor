@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "varan-armor:wooden_sickle",
+    "varan-armor:oak_sickle",
+    "varan-armor:spruce_sickle",
+    "varan-armor:birch_sickle",
+    "varan-armor:jungle_sickle",
+    "varan-armor:acacia_sickle",
+    "varan-armor:crimson_sickle"
+  ]
+}

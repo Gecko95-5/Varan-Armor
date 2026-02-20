@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:wooden_pickaxe",
+    "varan-armor:oak_pickaxe",
+    "varan-armor:spruce_pickaxe",
+    "varan-armor:birch_pickaxe",
+    "varan-armor:jungle_pickaxe",
+    "varan-armor:acacia_pickaxe",
+    "varan-armor:crimson_pickaxe"
+  ]
+}

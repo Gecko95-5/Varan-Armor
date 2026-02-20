@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "varan-armor:lapis_rod"
+      "item": "minecraft:lapis_lazuli"
     },
     "X": {
       "item": "minecraft:amethyst_shard"

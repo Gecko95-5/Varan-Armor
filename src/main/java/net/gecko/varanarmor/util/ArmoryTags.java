@@ -58,6 +58,36 @@ public class ArmoryTags {
         public static final TagKey<Item> SICKLES =
                 createTag("sickles");
 
+        public static final TagKey<Item> WOODEN_AXES =
+                createTag("wooden_axes");
+
+        public static final TagKey<Item> WOODEN_SWORDS =
+                createTag("wooden_swords");
+
+        public static final TagKey<Item> WOODEN_DAGGERS =
+                createTag("wooden_daggers");
+
+        public static final TagKey<Item> WOODEN_CLAYMORES =
+                createTag("wooden_claymores");
+
+        public static final TagKey<Item> WOODEN_PICKAXES =
+                createTag("wooden_pickaxes");
+
+        public static final TagKey<Item> WOODEN_SINGLE_AXES =
+                createTag("wooden_single_axes");
+
+        public static final TagKey<Item> WOODEN_DOUBLE_AXES =
+                createTag("wooden_double_axes");
+
+        public static final TagKey<Item> WOODEN_SHOVELS =
+                createTag("wooden_shovels");
+
+        public static final TagKey<Item> WOODEN_HOES =
+                createTag("wooden_hoes");
+
+        public static final TagKey<Item> WOODEN_SICKLES =
+                createTag("wooden_sickles");
+
         private static TagKey<Item> createTag(String name){
             return TagKey.of(Registry.ITEM_KEY, Identifier.of(VaranArmor.MOD_ID, name));
         }

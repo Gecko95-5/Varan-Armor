@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:wooden_hoe",
+    "varan-armor:oak_hoe",
+    "varan-armor:spruce_hoe",
+    "varan-armor:birch_hoe",
+    "varan-armor:jungle_hoe",
+    "varan-armor:acacia_hoe",
+    "varan-armor:crimson_hoe"
+  ]
+}

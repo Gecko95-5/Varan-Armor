@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:wooden_shovel",
+    "varan-armor:oak_shovel",
+    "varan-armor:spruce_shovel",
+    "varan-armor:birch_shovel",
+    "varan-armor:jungle_shovel",
+    "varan-armor:acacia_shovel",
+    "varan-armor:crimson_shovel"
+  ]
+}

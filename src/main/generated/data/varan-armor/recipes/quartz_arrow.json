@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "varan-armor:quartz_rod"
+      "item": "minecraft:quartz"
     },
     "X": {
       "item": "minecraft:ghast_tear"

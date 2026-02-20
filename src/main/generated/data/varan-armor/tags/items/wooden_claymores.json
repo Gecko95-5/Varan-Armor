@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "varan-armor:wooden_claymore",
+    "varan-armor:oak_claymore",
+    "varan-armor:spruce_claymore",
+    "varan-armor:birch_claymore",
+    "varan-armor:jungle_claymore",
+    "varan-armor:acacia_claymore",
+    "varan-armor:crimson_claymore"
+  ]
+}

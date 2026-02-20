@@ -25,12 +25,12 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_lapis_rod": {
+    "has_lapis_lazuli": {
       "conditions": {
         "items": [
           {
             "items": [
-              "varan-armor:lapis_rod"
+              "minecraft:lapis_lazuli"
             ]
           }
         ]
@@ -47,7 +47,7 @@
   "requirements": [
     [
       "has_amethyst_shard",
-      "has_lapis_rod",
+      "has_lapis_lazuli",
       "has_feather",
       "has_the_recipe"
     ]

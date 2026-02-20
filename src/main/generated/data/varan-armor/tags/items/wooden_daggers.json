@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "varan-armor:wooden_dagger",
+    "varan-armor:oak_dagger",
+    "varan-armor:spruce_dagger",
+    "varan-armor:birch_dagger",
+    "varan-armor:jungle_dagger",
+    "varan-armor:acacia_dagger",
+    "varan-armor:crimson_dagger"
+  ]
+}

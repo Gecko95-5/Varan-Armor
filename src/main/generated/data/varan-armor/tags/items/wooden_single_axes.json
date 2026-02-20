@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:wooden_axe",
+    "varan-armor:oak_axe",
+    "varan-armor:spruce_axe",
+    "varan-armor:birch_axe",
+    "varan-armor:jungle_axe",
+    "varan-armor:acacia_axe",
+    "varan-armor:crimson_axe"
+  ]
+}

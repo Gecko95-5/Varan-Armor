@@ -25,12 +25,12 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_quartz_rod": {
+    "has_quartz": {
       "conditions": {
         "items": [
           {
             "items": [
-              "varan-armor:quartz_rod"
+              "minecraft:quartz"
             ]
           }
         ]
@@ -47,7 +47,7 @@
   "requirements": [
     [
       "has_ghast_tear",
-      "has_quartz_rod",
+      "has_quartz",
       "has_golden_feather",
       "has_the_recipe"
     ]

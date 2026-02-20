@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "varan-armor:flint_rod"
+      "item": "minecraft:flint"
     },
     "X": {
       "item": "minecraft:iron_nugget"

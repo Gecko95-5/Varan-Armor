@@ -8,5 +8,5 @@ import net.minecraft.util.Identifier;
 
 public class ArmoryItemGroup {
     public static final ItemGroup VARAN_ARMOR = FabricItemGroupBuilder.build(
-            new Identifier(VaranArmor.MOD_ID,"varan_armor"), () -> new ItemStack(ArmoryItems.QUARTZ_ROD));
+            new Identifier(VaranArmor.MOD_ID,"varan_armor"), () -> new ItemStack(ArmoryItems.COPPER_CLAYMORE));
 }

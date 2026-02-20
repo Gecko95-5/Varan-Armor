@@ -13,7 +13,7 @@ public class ObsidastromItem extends ClaymoreItem {
     }
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-            target.addStatusEffect(new StatusEffectInstance(ArmoryEffects.CURSE,600,0),attacker);
+            target.addStatusEffect(new StatusEffectInstance(ArmoryEffects.CURSED_POISON,600,0),attacker);
         return super.postHit(stack, target, attacker);
     }
 }

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:wooden_sword",
+    "varan-armor:oak_sword",
+    "varan-armor:spruce_sword",
+    "varan-armor:birch_sword",
+    "varan-armor:jungle_sword",
+    "varan-armor:acacia_sword",
+    "varan-armor:crimson_sword"
+  ]
+}
