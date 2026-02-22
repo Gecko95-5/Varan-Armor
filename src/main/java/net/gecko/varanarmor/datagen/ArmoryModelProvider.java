@@ -206,6 +206,30 @@ public class ArmoryModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ArmoryItems.ACACIA_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
         itemModelGenerator.register(ArmoryItems.ACACIA_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
 
+        itemModelGenerator.register(ArmoryItems.DARK_OAK_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.DARK_OAK_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.DARK_OAK_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.DARK_OAK_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.DARK_OAK_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.DARK_OAK_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.DARK_OAK_SICKLE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.DARK_OAK_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.DARK_OAK_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.MANGROVE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.MANGROVE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.MANGROVE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.MANGROVE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.MANGROVE_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.MANGROVE_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.MANGROVE_SICKLE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.MANGROVE_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.MANGROVE_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+
         itemModelGenerator.register(ArmoryItems.CRIMSON_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.CRIMSON_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ArmoryItems.CRIMSON_AXE, Models.HANDHELD);
@@ -217,6 +241,18 @@ public class ArmoryModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ArmoryItems.CRIMSON_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
         itemModelGenerator.register(ArmoryItems.CRIMSON_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.WARPED_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.WARPED_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.WARPED_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.WARPED_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.WARPED_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.WARPED_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.WARPED_SICKLE, Models.HANDHELD);
+
+        itemModelGenerator.register(ArmoryItems.WARPED_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.WARPED_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
 
         itemModelGenerator.register(ArmoryItems.ONION, Models.GENERATED);
 

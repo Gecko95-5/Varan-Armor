@@ -1135,6 +1135,39 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
         offerWoodenToolVariantRecipe(exporter, ArmoryItems.CRIMSON_SICKLE, ArmoryTags.Items.WOODEN_SICKLES, Items.CRIMSON_PLANKS);
         offerWoodenToolVariantRecipe(exporter, ArmoryItems.CRIMSON_DAGGER, ArmoryTags.Items.WOODEN_DAGGERS, Items.CRIMSON_PLANKS);
         offerWoodenToolVariantRecipe(exporter, ArmoryItems.CRIMSON_DOUBLE_AXE, ArmoryTags.Items.WOODEN_DOUBLE_AXES, Items.CRIMSON_PLANKS);
+
+        offerWoodenToolVariantRecipe(exporter, ArmoryItems.DARK_OAK_SWORD, ArmoryTags.Items.WOODEN_SWORDS, Items.DARK_OAK_PLANKS);
+        offerWoodenToolVariantRecipe(exporter, ArmoryItems.DARK_OAK_PICKAXE, ArmoryTags.Items.WOODEN_PICKAXES, Items.DARK_OAK_PLANKS);
+        offerWoodenToolVariantRecipe(exporter, ArmoryItems.DARK_OAK_AXE, ArmoryTags.Items.WOODEN_SINGLE_AXES, Items.DARK_OAK_PLANKS);
+        offerWoodenToolVariantRecipe(exporter, ArmoryItems.DARK_OAK_SHOVEL, ArmoryTags.Items.WOODEN_SHOVELS, Items.DARK_OAK_PLANKS);
+        offerWoodenToolVariantRecipe(exporter, ArmoryItems.DARK_OAK_HOE, ArmoryTags.Items.WOODEN_HOES, Items.DARK_OAK_PLANKS);
+
+        offerWoodenToolVariantRecipe(exporter, ArmoryItems.DARK_OAK_CLAYMORE, ArmoryTags.Items.WOODEN_CLAYMORES, Items.DARK_OAK_PLANKS);
+        offerWoodenToolVariantRecipe(exporter, ArmoryItems.DARK_OAK_SICKLE, ArmoryTags.Items.WOODEN_SICKLES, Items.DARK_OAK_PLANKS);
+        offerWoodenToolVariantRecipe(exporter, ArmoryItems.DARK_OAK_DAGGER, ArmoryTags.Items.WOODEN_DAGGERS, Items.DARK_OAK_PLANKS);
+        offerWoodenToolVariantRecipe(exporter, ArmoryItems.DARK_OAK_DOUBLE_AXE, ArmoryTags.Items.WOODEN_DOUBLE_AXES, Items.DARK_OAK_PLANKS);
+
+        offerWoodenToolVariantRecipe(exporter, ArmoryItems.MANGROVE_SWORD, ArmoryTags.Items.WOODEN_SWORDS, Items.MANGROVE_PLANKS);
+        offerWoodenToolVariantRecipe(exporter, ArmoryItems.MANGROVE_PICKAXE, ArmoryTags.Items.WOODEN_PICKAXES, Items.MANGROVE_PLANKS);
+        offerWoodenToolVariantRecipe(exporter, ArmoryItems.MANGROVE_AXE, ArmoryTags.Items.WOODEN_SINGLE_AXES, Items.MANGROVE_PLANKS);
+        offerWoodenToolVariantRecipe(exporter, ArmoryItems.MANGROVE_SHOVEL, ArmoryTags.Items.WOODEN_SHOVELS, Items.MANGROVE_PLANKS);
+        offerWoodenToolVariantRecipe(exporter, ArmoryItems.MANGROVE_HOE, ArmoryTags.Items.WOODEN_HOES, Items.MANGROVE_PLANKS);
+
+        offerWoodenToolVariantRecipe(exporter, ArmoryItems.MANGROVE_CLAYMORE, ArmoryTags.Items.WOODEN_CLAYMORES, Items.MANGROVE_PLANKS);
+        offerWoodenToolVariantRecipe(exporter, ArmoryItems.MANGROVE_SICKLE, ArmoryTags.Items.WOODEN_SICKLES, Items.MANGROVE_PLANKS);
+        offerWoodenToolVariantRecipe(exporter, ArmoryItems.MANGROVE_DAGGER, ArmoryTags.Items.WOODEN_DAGGERS, Items.MANGROVE_PLANKS);
+        offerWoodenToolVariantRecipe(exporter, ArmoryItems.MANGROVE_DOUBLE_AXE, ArmoryTags.Items.WOODEN_DOUBLE_AXES, Items.MANGROVE_PLANKS);
+
+        offerWoodenToolVariantRecipe(exporter, ArmoryItems.WARPED_SWORD, ArmoryTags.Items.WOODEN_SWORDS, Items.WARPED_PLANKS);
+        offerWoodenToolVariantRecipe(exporter, ArmoryItems.WARPED_PICKAXE, ArmoryTags.Items.WOODEN_PICKAXES, Items.WARPED_PLANKS);
+        offerWoodenToolVariantRecipe(exporter, ArmoryItems.WARPED_AXE, ArmoryTags.Items.WOODEN_SINGLE_AXES, Items.WARPED_PLANKS);
+        offerWoodenToolVariantRecipe(exporter, ArmoryItems.WARPED_SHOVEL, ArmoryTags.Items.WOODEN_SHOVELS, Items.WARPED_PLANKS);
+        offerWoodenToolVariantRecipe(exporter, ArmoryItems.WARPED_HOE, ArmoryTags.Items.WOODEN_HOES, Items.WARPED_PLANKS);
+
+        offerWoodenToolVariantRecipe(exporter, ArmoryItems.WARPED_CLAYMORE, ArmoryTags.Items.WOODEN_CLAYMORES, Items.WARPED_PLANKS);
+        offerWoodenToolVariantRecipe(exporter, ArmoryItems.WARPED_SICKLE, ArmoryTags.Items.WOODEN_SICKLES, Items.WARPED_PLANKS);
+        offerWoodenToolVariantRecipe(exporter, ArmoryItems.WARPED_DAGGER, ArmoryTags.Items.WOODEN_DAGGERS, Items.WARPED_PLANKS);
+        offerWoodenToolVariantRecipe(exporter, ArmoryItems.WARPED_DOUBLE_AXE, ArmoryTags.Items.WOODEN_DOUBLE_AXES, Items.WARPED_PLANKS);
     }
     public static void offerCupcakeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible dyeInput) {
         ShapedRecipeJsonBuilder.create(output,2)

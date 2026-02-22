@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "TagKey[minecraft:item / varan-armor:wooden_claymores]",
+  "key": {
+    "#": {
+      "item": "minecraft:mangrove_planks"
+    },
+    "$": {
+      "tag": "varan-armor:wooden_claymores"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#$#",
+    " # "
+  ],
+  "result": {
+    "item": "varan-armor:mangrove_claymore"
+  }
+}

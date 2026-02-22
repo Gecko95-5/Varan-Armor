@@ -198,6 +198,28 @@ public class ArmoryItems {
     public static final Item ACACIA_HOE = registerItem("acacia_hoe",
             new FixedHoeItem(ToolMaterials.WOOD, 0, -3.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
+    public static final Item DARK_OAK_SWORD = registerItem("dark_oak_sword",
+            new SwordItem(ToolMaterials.WOOD, 3, -2.4F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item DARK_OAK_SHOVEL = registerItem("dark_oak_shovel",
+            new ShovelItem(ToolMaterials.WOOD, 1.5F, -3.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item DARK_OAK_PICKAXE = registerItem("dark_oak_pickaxe",
+            new PickaxeItem(ToolMaterials.WOOD, 1, -2.8F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item DARK_OAK_AXE = registerItem("dark_oak_axe",
+            new AxeItem(ToolMaterials.WOOD, 6.0F, -3.2F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item DARK_OAK_HOE = registerItem("dark_oak_hoe",
+            new FixedHoeItem(ToolMaterials.WOOD, 0, -3.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item MANGROVE_SWORD = registerItem("mangrove_sword",
+            new SwordItem(ToolMaterials.WOOD, 3, -2.4F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item MANGROVE_SHOVEL = registerItem("mangrove_shovel",
+            new ShovelItem(ToolMaterials.WOOD, 1.5F, -3.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item MANGROVE_PICKAXE = registerItem("mangrove_pickaxe",
+            new PickaxeItem(ToolMaterials.WOOD, 1, -2.8F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item MANGROVE_AXE = registerItem("mangrove_axe",
+            new AxeItem(ToolMaterials.WOOD, 6.0F, -3.2F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item MANGROVE_HOE = registerItem("mangrove_hoe",
+            new FixedHoeItem(ToolMaterials.WOOD, 0, -3.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
     public static final Item CRIMSON_SWORD = registerItem("crimson_sword",
             new SwordItem(ToolMaterials.WOOD, 3, -2.4F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item CRIMSON_SHOVEL = registerItem("crimson_shovel",
@@ -207,6 +229,17 @@ public class ArmoryItems {
     public static final Item CRIMSON_AXE = registerItem("crimson_axe",
             new AxeItem(ToolMaterials.WOOD, 6.0F, -3.2F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item CRIMSON_HOE = registerItem("crimson_hoe",
+            new FixedHoeItem(ToolMaterials.WOOD, 0, -3.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item WARPED_SWORD = registerItem("warped_sword",
+            new SwordItem(ToolMaterials.WOOD, 3, -2.4F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item WARPED_SHOVEL = registerItem("warped_shovel",
+            new ShovelItem(ToolMaterials.WOOD, 1.5F, -3.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item WARPED_PICKAXE = registerItem("warped_pickaxe",
+            new PickaxeItem(ToolMaterials.WOOD, 1, -2.8F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item WARPED_AXE = registerItem("warped_axe",
+            new AxeItem(ToolMaterials.WOOD, 6.0F, -3.2F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item WARPED_HOE = registerItem("warped_hoe",
             new FixedHoeItem(ToolMaterials.WOOD, 0, -3.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item COPPER_SWORD = registerItem("copper_sword",
@@ -321,6 +354,30 @@ public class ArmoryItems {
     public static final Item ACACIA_SICKLE = registerItem("acacia_sickle",
             new SickleItem(ToolMaterials.WOOD, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
+    public static final Item DARK_OAK_DAGGER = registerItem("dark_oak_dagger",
+            new SwordItem(ToolMaterials.WOOD, 1, -1.4F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item DARK_OAK_CLAYMORE = registerItem("dark_oak_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_WOOD, 9, -3.4F, 600, 3,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item DARK_OAK_DOUBLE_AXE = registerItem("dark_oak_double_axe",
+            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_WOOD, 7, -3.4F, 500, 2,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item DARK_OAK_SICKLE = registerItem("dark_oak_sickle",
+            new SickleItem(ToolMaterials.WOOD, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item MANGROVE_DAGGER = registerItem("mangrove_dagger",
+            new SwordItem(ToolMaterials.WOOD, 1, -1.4F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item MANGROVE_CLAYMORE = registerItem("mangrove_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_WOOD, 9, -3.4F, 600, 3,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item MANGROVE_DOUBLE_AXE = registerItem("mangrove_double_axe",
+            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_WOOD, 7, -3.4F, 500, 2,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item MANGROVE_SICKLE = registerItem("mangrove_sickle",
+            new SickleItem(ToolMaterials.WOOD, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
     public static final Item CRIMSON_DAGGER = registerItem("crimson_dagger",
             new SwordItem(ToolMaterials.WOOD, 1, -1.4F,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
@@ -331,6 +388,18 @@ public class ArmoryItems {
             new DoubleAxeItem(ArmoryToolMaterials.HEAVY_WOOD, 7, -3.4F, 500, 2,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item CRIMSON_SICKLE = registerItem("crimson_sickle",
+            new SickleItem(ToolMaterials.WOOD, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item WARPED_DAGGER = registerItem("warped_dagger",
+            new SwordItem(ToolMaterials.WOOD, 1, -1.4F,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item WARPED_CLAYMORE = registerItem("warped_claymore",
+            new ClaymoreItem(ArmoryToolMaterials.HEAVY_WOOD, 9, -3.4F, 600, 3,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item WARPED_DOUBLE_AXE = registerItem("warped_double_axe",
+            new DoubleAxeItem(ArmoryToolMaterials.HEAVY_WOOD, 7, -3.4F, 500, 2,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item WARPED_SICKLE = registerItem("warped_sickle",
             new SickleItem(ToolMaterials.WOOD, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item STONE_DAGGER = registerItem("stone_dagger",

@@ -39,7 +39,7 @@ public class SliverBowItem extends BowItem {
                     if (!world.isClient) {
                         ArrowItem arrowItem = (ArrowItem)(itemStack.getItem() instanceof ArrowItem ? itemStack.getItem() : Items.ARROW);
                         PersistentProjectileEntity persistentProjectileEntity = arrowItem.createArrow(world, itemStack, playerEntity);
-                        persistentProjectileEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0F, f * 3.5f, 0.5f);
+                        persistentProjectileEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0F, f * 3.0f, 0.5f);
                         if (f == 1.0F) {
                             persistentProjectileEntity.setCritical(true);
                         }
@@ -51,7 +51,7 @@ public class SliverBowItem extends BowItem {
 
                         int k = EnchantmentHelper.getLevel(Enchantments.PUNCH, stack);
                         if (k > 0) {
-                            persistentProjectileEntity.setPunch(k);
+                            persistentProjectileEntity.setPunch(k + 1);
                         }
 
                         if (EnchantmentHelper.getLevel(Enchantments.FLAME, stack) > 0) {

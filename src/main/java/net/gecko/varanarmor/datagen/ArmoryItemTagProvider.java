@@ -46,7 +46,10 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ArmoryItems.BIRCH_SICKLE)
                 .add(ArmoryItems.JUNGLE_SICKLE)
                 .add(ArmoryItems.ACACIA_SICKLE)
-                .add(ArmoryItems.CRIMSON_SICKLE);
+                .add(ArmoryItems.DARK_OAK_SICKLE)
+                .add(ArmoryItems.MANGROVE_SICKLE)
+                .add(ArmoryItems.CRIMSON_SICKLE)
+                .add(ArmoryItems.WARPED_SICKLE);
 
         getOrCreateTagBuilder(ArmoryTags.Items.CLAYMORES)
                 .addTag(ArmoryTags.Items.WOODEN_CLAYMORES)
@@ -66,7 +69,10 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ArmoryItems.BIRCH_CLAYMORE)
                 .add(ArmoryItems.JUNGLE_CLAYMORE)
                 .add(ArmoryItems.ACACIA_CLAYMORE)
-                .add(ArmoryItems.CRIMSON_CLAYMORE);
+                .add(ArmoryItems.DARK_OAK_CLAYMORE)
+                .add(ArmoryItems.MANGROVE_CLAYMORE)
+                .add(ArmoryItems.CRIMSON_CLAYMORE)
+                .add(ArmoryItems.WARPED_CLAYMORE);
 
         getOrCreateTagBuilder(ArmoryTags.Items.DAGGERS)
                 .addTag(ArmoryTags.Items.WOODEN_DAGGERS)
@@ -87,7 +93,10 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ArmoryItems.BIRCH_DAGGER)
                 .add(ArmoryItems.JUNGLE_DAGGER)
                 .add(ArmoryItems.ACACIA_DAGGER)
-                .add(ArmoryItems.CRIMSON_DAGGER);
+                .add(ArmoryItems.DARK_OAK_DAGGER)
+                .add(ArmoryItems.MANGROVE_DAGGER)
+                .add(ArmoryItems.CRIMSON_DAGGER)
+                .add(ArmoryItems.WARPED_DAGGER);
 
     getOrCreateTagBuilder(ArmoryTags.Items.BLADES)
             .addTag(ArmoryTags.Items.CLAYMORES)
@@ -113,7 +122,10 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ArmoryItems.BIRCH_SWORD)
                 .add(ArmoryItems.JUNGLE_SWORD)
                 .add(ArmoryItems.ACACIA_SWORD)
-                .add(ArmoryItems.CRIMSON_SWORD);
+                .add(ArmoryItems.DARK_OAK_SWORD)
+                .add(ArmoryItems.MANGROVE_SWORD)
+                .add(ArmoryItems.CRIMSON_SWORD)
+                .add(ArmoryItems.WARPED_SWORD);
 
     getOrCreateTagBuilder(ArmoryTags.Items.PICKAXES)
             .addTag(ArmoryTags.Items.WOODEN_PICKAXES)
@@ -133,7 +145,10 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ArmoryItems.BIRCH_PICKAXE)
                 .add(ArmoryItems.JUNGLE_PICKAXE)
                 .add(ArmoryItems.ACACIA_PICKAXE)
-                .add(ArmoryItems.CRIMSON_PICKAXE);
+                .add(ArmoryItems.DARK_OAK_PICKAXE)
+                .add(ArmoryItems.MANGROVE_PICKAXE)
+                .add(ArmoryItems.CRIMSON_PICKAXE)
+                .add(ArmoryItems.WARPED_PICKAXE);
 
         getOrCreateTagBuilder(ArmoryTags.Items.SINGLE_AXES)
                 .addTag(ArmoryTags.Items.WOODEN_SINGLE_AXES)
@@ -153,7 +168,10 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ArmoryItems.BIRCH_AXE)
                 .add(ArmoryItems.JUNGLE_AXE)
                 .add(ArmoryItems.ACACIA_AXE)
-                .add(ArmoryItems.CRIMSON_AXE);
+                .add(ArmoryItems.DARK_OAK_AXE)
+                .add(ArmoryItems.MANGROVE_AXE)
+                .add(ArmoryItems.CRIMSON_AXE)
+                .add(ArmoryItems.WARPED_AXE);
 
         getOrCreateTagBuilder(ArmoryTags.Items.DOUBLE_AXES)
                 .addTag(ArmoryTags.Items.WOODEN_DOUBLE_AXES)
@@ -173,7 +191,10 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ArmoryItems.BIRCH_DOUBLE_AXE)
                 .add(ArmoryItems.JUNGLE_DOUBLE_AXE)
                 .add(ArmoryItems.ACACIA_DOUBLE_AXE)
-                .add(ArmoryItems.CRIMSON_DOUBLE_AXE);
+                .add(ArmoryItems.DARK_OAK_DOUBLE_AXE)
+                .add(ArmoryItems.MANGROVE_DOUBLE_AXE)
+                .add(ArmoryItems.CRIMSON_DOUBLE_AXE)
+                .add(ArmoryItems.WARPED_DOUBLE_AXE);
 
         getOrCreateTagBuilder(ArmoryTags.Items.SHOVELS)
                 .addTag(ArmoryTags.Items.WOODEN_SHOVELS)
@@ -193,7 +214,10 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ArmoryItems.BIRCH_SHOVEL)
                 .add(ArmoryItems.JUNGLE_SHOVEL)
                 .add(ArmoryItems.ACACIA_SHOVEL)
-                .add(ArmoryItems.CRIMSON_SHOVEL);
+                .add(ArmoryItems.DARK_OAK_SHOVEL)
+                .add(ArmoryItems.MANGROVE_SHOVEL)
+                .add(ArmoryItems.CRIMSON_SHOVEL)
+                .add(ArmoryItems.WARPED_SHOVEL);
 
         getOrCreateTagBuilder(ArmoryTags.Items.HOES)
                 .addTag(ArmoryTags.Items.WOODEN_HOES)
@@ -213,7 +237,10 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ArmoryItems.BIRCH_HOE)
                 .add(ArmoryItems.JUNGLE_HOE)
                 .add(ArmoryItems.ACACIA_HOE)
-                .add(ArmoryItems.CRIMSON_HOE);
+                .add(ArmoryItems.DARK_OAK_HOE)
+                .add(ArmoryItems.MANGROVE_HOE)
+                .add(ArmoryItems.CRIMSON_HOE)
+                .add(ArmoryItems.WARPED_HOE);
 
         getOrCreateTagBuilder(ArmoryTags.Items.CUPCAKES)
                 .add(ArmoryItems.CUPCAKE)
