@@ -50,9 +50,11 @@ public class ArmoryBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(Blocks.INFESTED_DEEPSLATE);
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(ArmoryBlocks.SLIVER_BLOCK);
+                .add(ArmoryBlocks.SILVER_BLOCK)
+                .add(ArmoryBlocks.STEEL_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
-                .add(ArmoryBlocks.SLIVER_BLOCK);
+                .add(ArmoryBlocks.SILVER_BLOCK)
+                .add(ArmoryBlocks.STEEL_BLOCK);
     }
 }

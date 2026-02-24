@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "minecraft:apple"
+    },
+    "X": {
+      "item": "varan-armor:silver_ingot"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "XAX",
+    "XXX"
+  ],
+  "result": {
+    "item": "varan-armor:silver_apple"
+  }
+}

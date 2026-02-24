@@ -24,6 +24,7 @@ public class ArmoryModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ArmoryItems.AMETHYST_ARROW, Models.GENERATED);
         itemModelGenerator.register(ArmoryItems.QUARTZ_ARROW, Models.GENERATED);
         itemModelGenerator.register(ArmoryItems.NETHER_ARROW, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.STEEL_ARROW, Models.GENERATED);
 
         itemModelGenerator.register(ArmoryItems.GOLDEN_FEATHER, Models.GENERATED);
 
@@ -91,10 +92,15 @@ public class ArmoryModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ArmoryItems.COPPER_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ArmoryItems.COPPER_BOOTS, Models.GENERATED);
 
-        itemModelGenerator.register(ArmoryItems.SLIVER_HELMET, Models.GENERATED);
-        itemModelGenerator.register(ArmoryItems.SLIVER_CHESTPLATE, Models.GENERATED);
-        itemModelGenerator.register(ArmoryItems.SLIVER_LEGGINGS, Models.GENERATED);
-        itemModelGenerator.register(ArmoryItems.SLIVER_BOOTS, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.SILVER_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.SILVER_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.SILVER_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.SILVER_BOOTS, Models.GENERATED);
+
+        itemModelGenerator.register(ArmoryItems.STEEL_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.STEEL_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.STEEL_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.STEEL_BOOTS, Models.GENERATED);
 
         itemModelGenerator.register(ArmoryItems.TANNED_LEATHER, Models.GENERATED);
         itemModelGenerator.register(ArmoryItems.MOLTEN_IRON, Models.GENERATED);
@@ -110,24 +116,24 @@ public class ArmoryModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ArmoryItems.STALWART_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ArmoryItems.STALWART_BOOTS, Models.GENERATED);
 
-        itemModelGenerator.register(ArmoryItems.SLIVER_INGOT, Models.GENERATED);
-        itemModelGenerator.register(ArmoryItems.SLIVER_NUGGET, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.SILVER_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.SILVER_NUGGET, Models.GENERATED);
 
-        itemModelGenerator.register(ArmoryItems.SLIVER_APPLE, Models.GENERATED);
-        itemModelGenerator.register(ArmoryItems.ENCHANTED_SLIVER_APPLE, ArmoryItems.SLIVER_APPLE, Models.GENERATED);
-        itemModelGenerator.register(ArmoryItems.SLIVER_BEETROOT, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.SILVER_APPLE, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.ENCHANTED_SILVER_APPLE, ArmoryItems.SILVER_APPLE, Models.GENERATED);
+        itemModelGenerator.register(ArmoryItems.SILVER_BEETROOT, Models.GENERATED);
 
-        itemModelGenerator.register(ArmoryItems.SLIVER_SWORD, Models.HANDHELD);
-        itemModelGenerator.register(ArmoryItems.SLIVER_PICKAXE, Models.HANDHELD);
-        itemModelGenerator.register(ArmoryItems.SLIVER_AXE, Models.HANDHELD);
-        itemModelGenerator.register(ArmoryItems.SLIVER_SHOVEL, Models.HANDHELD);
-        itemModelGenerator.register(ArmoryItems.SLIVER_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.SILVER_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.SILVER_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.SILVER_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.SILVER_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.SILVER_HOE, Models.HANDHELD);
 
-        itemModelGenerator.register(ArmoryItems.SLIVER_DAGGER, Models.HANDHELD);
-        itemModelGenerator.register(ArmoryItems.SLIVER_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.SILVER_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ArmoryItems.SILVER_SICKLE, Models.HANDHELD);
 
-        itemModelGenerator.register(ArmoryItems.SLIVER_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
-        itemModelGenerator.register(ArmoryItems.SLIVER_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.SILVER_CLAYMORE, ArmoryModels.BRACED_HANDHELD);
+        itemModelGenerator.register(ArmoryItems.SILVER_DOUBLE_AXE, ArmoryModels.BRACED_HANDHELD);
 
         itemModelGenerator.register(ArmoryItems.STEEL_COMPOUND, Models.GENERATED);
         itemModelGenerator.register(ArmoryItems.STEEL_INGOT, Models.GENERATED);
@@ -287,7 +293,8 @@ public class ArmoryModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerSimpleCubeAll(ArmoryBlocks.SLIVER_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ArmoryBlocks.SILVER_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ArmoryBlocks.STEEL_BLOCK);
 
         blockStateModelGenerator.registerCrop(ArmoryBlocks.ONIONS, OnionBlock.AGE,0,1,2,3,4,5,6,7);
     }

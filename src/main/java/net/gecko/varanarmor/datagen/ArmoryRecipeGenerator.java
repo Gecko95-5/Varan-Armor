@@ -21,10 +21,15 @@ import java.util.function.Consumer;
 
 public class ArmoryRecipeGenerator extends FabricRecipeProvider {
 
-    private static final List<ItemConvertible> SILVER_SMELTABLES = List.of(ArmoryItems.SLIVER_AXE,
-            ArmoryItems.SLIVER_PICKAXE, ArmoryItems.SLIVER_SICKLE, ArmoryItems.SLIVER_CLAYMORE, ArmoryItems.SLIVER_SWORD,
-            ArmoryItems.SLIVER_HOE, ArmoryItems.SLIVER_SHOVEL, ArmoryItems.SLIVER_DOUBLE_AXE, ArmoryItems.SLIVER_DAGGER,
-            ArmoryItems.SLIVER_BOOTS, ArmoryItems.SLIVER_LEGGINGS, ArmoryItems.SLIVER_CHESTPLATE, ArmoryItems.SLIVER_HELMET);
+    private static final List<ItemConvertible> SILVER_SMELTABLES = List.of(ArmoryItems.SILVER_AXE,
+            ArmoryItems.SILVER_PICKAXE, ArmoryItems.SILVER_SICKLE, ArmoryItems.SILVER_CLAYMORE, ArmoryItems.SILVER_SWORD,
+            ArmoryItems.SILVER_HOE, ArmoryItems.SILVER_SHOVEL, ArmoryItems.SILVER_DOUBLE_AXE, ArmoryItems.SILVER_DAGGER,
+            ArmoryItems.SILVER_BOOTS, ArmoryItems.SILVER_LEGGINGS, ArmoryItems.SILVER_CHESTPLATE, ArmoryItems.SILVER_HELMET);
+
+    private static final List<ItemConvertible> STEEL_SMELTABLES = List.of(ArmoryItems.SILVER_AXE,
+            ArmoryItems.SILVER_PICKAXE, ArmoryItems.SILVER_SICKLE, ArmoryItems.SILVER_CLAYMORE, ArmoryItems.SILVER_SWORD,
+            ArmoryItems.SILVER_HOE, ArmoryItems.SILVER_SHOVEL, ArmoryItems.SILVER_DOUBLE_AXE, ArmoryItems.SILVER_DAGGER,
+            ArmoryItems.SILVER_BOOTS, ArmoryItems.SILVER_LEGGINGS, ArmoryItems.SILVER_CHESTPLATE, ArmoryItems.SILVER_HELMET);
 
     public ArmoryRecipeGenerator(FabricDataGenerator dataGenerator) {
         super(dataGenerator);
@@ -33,9 +38,9 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
 
     @Override
     protected void generateRecipes(Consumer<RecipeJsonProvider> exporter) {
-        offerSmelting(exporter, SILVER_SMELTABLES, ArmoryItems.SLIVER_NUGGET,
+        offerSmelting(exporter, SILVER_SMELTABLES, ArmoryItems.SILVER_NUGGET,
                 0.25f, 200, "silver_nugget");
-        offerBlasting(exporter, SILVER_SMELTABLES, ArmoryItems.SLIVER_NUGGET,
+        offerBlasting(exporter, SILVER_SMELTABLES, ArmoryItems.SILVER_NUGGET,
                 0.25f, 100, "silver_nugget");
 
         ShapedRecipeJsonBuilder.create(ArmoryItems.IRON_ARROW,4)
@@ -133,16 +138,16 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(Items.COPPER_INGOT))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.COPPER_BOW)));
 
-        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_BOW)
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SILVER_BOW)
                 .pattern(" #X")
                 .pattern("C X")
                 .pattern(" #X")
                 .input('X', Items.STRING)
                 .input('#', Items.STICK)
-                .input('C',ArmoryItems.SLIVER_INGOT)
-                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
-                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_BOW)));
+                .input('C',ArmoryItems.SILVER_INGOT)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SILVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SILVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SILVER_BOW)));
 
         ShapedRecipeJsonBuilder.create(ArmoryItems.GOLDEN_BOW)
                 .pattern(" #X")
@@ -669,29 +674,29 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(ArmoryItems.MOLTEN_IRON))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.IRON_PLATE)));
 
-        ShapelessRecipeJsonBuilder.create(ArmoryItems.SLIVER_INGOT)
+        ShapelessRecipeJsonBuilder.create(ArmoryItems.SILVER_INGOT)
                 .input(ArmoryItems.MOLTEN_IRON)
                 .input(Items.GOLD_NUGGET)
                 .input(Items.GOLD_NUGGET)
                 .input(Items.GOLD_NUGGET)
                 .criterion(RecipeProvider.hasItem(ArmoryItems.MOLTEN_IRON),
                         RecipeProvider.conditionsFromItem(ArmoryItems.MOLTEN_IRON))
-                .offerTo(exporter, new Identifier("sliver_ingot_from_molten_iron"));
+                .offerTo(exporter, new Identifier("silver_ingot_from_molten_iron"));
 
-        ShapelessRecipeJsonBuilder.create(ArmoryItems.SLIVER_NUGGET,9)
-                        .input(ArmoryItems.SLIVER_INGOT)
-                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
-                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_NUGGET)));
+        ShapelessRecipeJsonBuilder.create(ArmoryItems.SILVER_NUGGET,9)
+                        .input(ArmoryItems.SILVER_INGOT)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SILVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SILVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SILVER_NUGGET)));
 
-        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_INGOT)
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SILVER_INGOT)
                 .pattern("XXX")
                 .pattern("XXX")
                 .pattern("XXX")
-                .input('X', ArmoryItems.SLIVER_NUGGET)
-                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
-                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
-                .offerTo(exporter, new Identifier("sliver_ingot_from_sliver_nuggets"));
+                .input('X', ArmoryItems.SILVER_NUGGET)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SILVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SILVER_INGOT))
+                .offerTo(exporter, new Identifier("silver_ingot_from_silver_nuggets"));
 
         ShapedRecipeJsonBuilder.create(ArmoryItems.HIGHLAND_HELMET)
                 .pattern("X#X")
@@ -729,25 +734,25 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(ArmoryItems.IRON_PLATE))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.HIGHLAND_BOOTS)));
 
-        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_APPLE)
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SILVER_APPLE)
                 .pattern("XXX")
                 .pattern("XAX")
                 .pattern("XXX")
-                .input('X', ArmoryItems.SLIVER_INGOT)
+                .input('X', ArmoryItems.SILVER_INGOT)
                 .input('A', Items.APPLE)
-                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
-                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_APPLE)));
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SILVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SILVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SILVER_APPLE)));
 
-        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_BEETROOT)
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SILVER_BEETROOT)
                 .pattern("XXX")
                 .pattern("XBX")
                 .pattern("XXX")
-                .input('X', ArmoryItems.SLIVER_NUGGET)
+                .input('X', ArmoryItems.SILVER_NUGGET)
                 .input('B', Items.BEETROOT)
-                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_NUGGET),
-                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_NUGGET))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_BEETROOT)));
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SILVER_NUGGET),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SILVER_NUGGET))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SILVER_BEETROOT)));
 
         ShapedRecipeJsonBuilder.create(ArmoryItems.CUPCAKE,2)
                 .pattern("A")
@@ -793,131 +798,131 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
         offerCupcakeRecipe(exporter, ArmoryItems.PINK_CUPCAKE, Items.PINK_DYE);
         offerColouredCupcakeRecipe(exporter, ArmoryItems.PINK_CUPCAKE, Items.PINK_DYE, "dyed_pink_cupcake");
 
-        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_SWORD)
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SILVER_SWORD)
                 .pattern("X")
                 .pattern("X")
                 .pattern("#")
-                .input('X', ArmoryItems.SLIVER_INGOT)
+                .input('X', ArmoryItems.SILVER_INGOT)
                 .input('#', Items.STICK)
                 .group("silver_swords")
-                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
-                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_SWORD)));
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SILVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SILVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SILVER_SWORD)));
 
-        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_PICKAXE)
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SILVER_PICKAXE)
                 .pattern("XXX")
                 .pattern(" # ")
                 .pattern(" # ")
-                .input('X', ArmoryItems.SLIVER_INGOT)
+                .input('X', ArmoryItems.SILVER_INGOT)
                 .input('#', Items.STICK)
                 .group("silver_pickaxes")
-                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
-                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_PICKAXE)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_AXE)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SILVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SILVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SILVER_PICKAXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SILVER_AXE)
                 .pattern("XX")
                 .pattern("X#")
                 .pattern(" #")
-                .input('X', ArmoryItems.SLIVER_INGOT)
+                .input('X', ArmoryItems.SILVER_INGOT)
                 .input('#', Items.STICK)
                 .group("silver_axes")
-                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
-                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_AXE)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_SHOVEL)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SILVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SILVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SILVER_AXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SILVER_SHOVEL)
                 .pattern("X")
                 .pattern("#")
                 .pattern("#")
-                .input('X', ArmoryItems.SLIVER_INGOT)
+                .input('X', ArmoryItems.SILVER_INGOT)
                 .input('#', Items.STICK)
                 .group("silver_shovels")
-                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
-                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_SHOVEL)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_HOE)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SILVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SILVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SILVER_SHOVEL)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SILVER_HOE)
                 .pattern("XX")
                 .pattern(" #")
                 .pattern(" #")
-                .input('X', ArmoryItems.SLIVER_INGOT)
+                .input('X', ArmoryItems.SILVER_INGOT)
                 .input('#', Items.STICK)
                 .group("silver_hoes")
-                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
-                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_HOE)));
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SILVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SILVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SILVER_HOE)));
 
-        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_DAGGER)
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SILVER_DAGGER)
                 .pattern(" X")
                 .pattern("# ")
-                .input('X', ArmoryItems.SLIVER_INGOT)
+                .input('X', ArmoryItems.SILVER_INGOT)
                 .input('#', Items.STICK)
                 .group("silver_dagger")
-                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
-                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_DAGGER)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_CLAYMORE)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SILVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SILVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SILVER_DAGGER)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SILVER_CLAYMORE)
                 .pattern(" XX")
                 .pattern("XXX")
                 .pattern("#X ")
-                .input('X', ArmoryItems.SLIVER_INGOT)
+                .input('X', ArmoryItems.SILVER_INGOT)
                 .input('#', ArmoryItems.BRACED_STICK)
                 .group("silver_claymore")
-                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
-                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_CLAYMORE)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_DOUBLE_AXE)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SILVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SILVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SILVER_CLAYMORE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SILVER_DOUBLE_AXE)
                 .pattern("XXX")
                 .pattern("X/X")
                 .pattern(" # ")
-                .input('X', ArmoryItems.SLIVER_INGOT)
+                .input('X', ArmoryItems.SILVER_INGOT)
                 .input('/', ArmoryItems.BRACED_STICK)
                 .input('#', Items.STICK)
                 .group("silver_double_axes")
-                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
-                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_DOUBLE_AXE)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_SICKLE)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SILVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SILVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SILVER_DOUBLE_AXE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SILVER_SICKLE)
                 .pattern(" XX")
                 .pattern("X X")
                 .pattern(" # ")
-                .input('X', ArmoryItems.SLIVER_INGOT)
+                .input('X', ArmoryItems.SILVER_INGOT)
                 .input('#', Items.STICK)
                 .group("silver_sickles")
-                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
-                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_SICKLE)));
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SILVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SILVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SILVER_SICKLE)));
 
-        offerReversibleCompactingRecipes(exporter, ArmoryItems.SLIVER_INGOT, ArmoryBlocks.SLIVER_BLOCK);
+        offerReversibleCompactingRecipes(exporter, ArmoryItems.SILVER_INGOT, ArmoryBlocks.SILVER_BLOCK);
 
-        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_HELMET)
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SILVER_HELMET)
                 .pattern("XXX")
                 .pattern("X X")
-                .input('X', ArmoryItems.SLIVER_INGOT)
-                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
-                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_HELMET)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_CHESTPLATE)
+                .input('X', ArmoryItems.SILVER_INGOT)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SILVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SILVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SILVER_HELMET)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SILVER_CHESTPLATE)
                 .pattern("X X")
                 .pattern("XXX")
                 .pattern("XXX")
-                .input('X', ArmoryItems.SLIVER_INGOT)
-                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
-                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_CHESTPLATE)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_LEGGINGS)
+                .input('X', ArmoryItems.SILVER_INGOT)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SILVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SILVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SILVER_CHESTPLATE)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SILVER_LEGGINGS)
                 .pattern("XXX")
                 .pattern("X X")
                 .pattern("X X")
-                .input('X', ArmoryItems.SLIVER_INGOT)
-                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
-                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_LEGGINGS)));
-        ShapedRecipeJsonBuilder.create(ArmoryItems.SLIVER_BOOTS)
+                .input('X', ArmoryItems.SILVER_INGOT)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SILVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SILVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SILVER_LEGGINGS)));
+        ShapedRecipeJsonBuilder.create(ArmoryItems.SILVER_BOOTS)
                 .pattern("X X")
                 .pattern("X X")
-                .input('X', ArmoryItems.SLIVER_INGOT)
-                .criterion(RecipeProvider.hasItem(ArmoryItems.SLIVER_INGOT),
-                        RecipeProvider.conditionsFromItem(ArmoryItems.SLIVER_INGOT))
-                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SLIVER_BOOTS)));
+                .input('X', ArmoryItems.SILVER_INGOT)
+                .criterion(RecipeProvider.hasItem(ArmoryItems.SILVER_INGOT),
+                        RecipeProvider.conditionsFromItem(ArmoryItems.SILVER_INGOT))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ArmoryItems.SILVER_BOOTS)));
 
         ShapelessRecipeJsonBuilder.create(ArmoryItems.BEEF_PIE)
                 .input(Items.COOKED_BEEF)
@@ -1168,6 +1173,16 @@ public class ArmoryRecipeGenerator extends FabricRecipeProvider {
         offerWoodenToolVariantRecipe(exporter, ArmoryItems.WARPED_SICKLE, ArmoryTags.Items.WOODEN_SICKLES, Items.WARPED_PLANKS);
         offerWoodenToolVariantRecipe(exporter, ArmoryItems.WARPED_DAGGER, ArmoryTags.Items.WOODEN_DAGGERS, Items.WARPED_PLANKS);
         offerWoodenToolVariantRecipe(exporter, ArmoryItems.WARPED_DOUBLE_AXE, ArmoryTags.Items.WOODEN_DOUBLE_AXES, Items.WARPED_PLANKS);
+
+        offerSteelUpgradeRecipe(exporter, ArmoryItems.IRON_ARROW, ArmoryItems.STEEL_ARROW);
+        offerSteelUpgradeRecipe(exporter, Items.BOW, ArmoryItems.STEEL_BOW);
+
+        offerSteelUpgradeRecipe(exporter, Items.IRON_HELMET, ArmoryItems.STEEL_HELMET);
+        offerSteelUpgradeRecipe(exporter, Items.IRON_CHESTPLATE, ArmoryItems.STEEL_CHESTPLATE);
+        offerSteelUpgradeRecipe(exporter, Items.IRON_LEGGINGS, ArmoryItems.STEEL_LEGGINGS);
+        offerSteelUpgradeRecipe(exporter, Items.IRON_BOOTS, ArmoryItems.STEEL_BOOTS);
+
+        offerReversibleCompactingRecipes(exporter, ArmoryItems.STEEL_INGOT, ArmoryBlocks.STEEL_BLOCK);
     }
     public static void offerCupcakeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible dyeInput) {
         ShapedRecipeJsonBuilder.create(output,2)

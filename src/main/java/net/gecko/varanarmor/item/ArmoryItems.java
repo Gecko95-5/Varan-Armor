@@ -6,10 +6,7 @@ import net.gecko.varanarmor.item.armour.model.BracerSuitItem;
 import net.gecko.varanarmor.item.armour.model.MiningGooglesItem;
 import net.gecko.varanarmor.item.armour.model.ParachutePantsItem;
 import net.gecko.varanarmor.item.armour.model.SwiftBootsItem;
-import net.gecko.varanarmor.item.arrow.AmethystArrowItem;
-import net.gecko.varanarmor.item.arrow.IronArrowItem;
-import net.gecko.varanarmor.item.arrow.NetherArrowItem;
-import net.gecko.varanarmor.item.arrow.QuartzArrowItem;
+import net.gecko.varanarmor.item.arrow.*;
 import net.gecko.varanarmor.item.components.ArmoryArmourMaterials;
 import net.gecko.varanarmor.item.components.ArmoryFoodComponents;
 import net.gecko.varanarmor.item.components.ArmoryToolMaterials;
@@ -31,7 +28,7 @@ import net.minecraft.util.registry.Registry;
 
 public class ArmoryItems {
 
-    public static final Item SLIVER_INGOT = registerItem("sliver_ingot",
+    public static final Item SILVER_INGOT = registerItem("silver_ingot",
             new Item(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item STEEL_COMPOUND = registerItem("steel_compound",
@@ -58,7 +55,7 @@ public class ArmoryItems {
     public static final Item IRON_PLATE = registerItem("iron_plate",
             new Item(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
-    public static final Item SLIVER_NUGGET = registerItem("sliver_nugget",
+    public static final Item SILVER_NUGGET = registerItem("silver_nugget",
             new Item(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item POISONOUS_NEEDLE = registerItem("poisonous_needle",
@@ -76,13 +73,13 @@ public class ArmoryItems {
     public static final Item COOKED_OMELET = registerItem("cooked_omelet",
             new Item(new Item.Settings().food(ArmoryFoodComponents.OMELET).group(ArmoryItemGroup.VARAN_ARMOR)));
 
-    public static final Item SLIVER_BEETROOT = registerItem("sliver_beetroot",
-            new Item(new Item.Settings().food(ArmoryFoodComponents.SLIVER_BEETROOT).group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item SILVER_BEETROOT = registerItem("silver_beetroot",
+            new Item(new Item.Settings().food(ArmoryFoodComponents.SILVER_BEETROOT).group(ArmoryItemGroup.VARAN_ARMOR)));
 
-    public static final Item SLIVER_APPLE = registerItem("sliver_apple",
-            new Item(new Item.Settings().food(ArmoryFoodComponents.SLIVER_APPLE).group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item ENCHANTED_SLIVER_APPLE = registerItem("enchanted_sliver_apple",
-            new EnchantedGoldenAppleItem(new Item.Settings().food(ArmoryFoodComponents.ENCHANTED_SLIVER_APPLE).group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item SILVER_APPLE = registerItem("silver_apple",
+            new Item(new Item.Settings().food(ArmoryFoodComponents.SILVER_APPLE).group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item ENCHANTED_SILVER_APPLE = registerItem("enchanted_silver_apple",
+            new EnchantedGoldenAppleItem(new Item.Settings().food(ArmoryFoodComponents.ENCHANTED_SILVER_APPLE).group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item SQUID_TENTACLES = registerItem("squid_tentacles",
             new Item(new Item.Settings().food(ArmoryFoodComponents.SQUID_TENTACLES).group(ArmoryItemGroup.VARAN_ARMOR)));
@@ -253,15 +250,15 @@ public class ArmoryItems {
     public static final Item COPPER_HOE = registerItem("copper_hoe",
             new FixedHoeItem(ArmoryToolMaterials.COPPER,-1, -2.0F,  new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
-    public static final Item SLIVER_SWORD = registerItem("sliver_sword",
+    public static final Item SILVER_SWORD = registerItem("silver_sword",
             new SwordItem(ArmoryToolMaterials.SILVER, 3, -2.4F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item SLIVER_SHOVEL = registerItem("sliver_shovel",
+    public static final Item SILVER_SHOVEL = registerItem("silver_shovel",
             new ShovelItem(ArmoryToolMaterials.SILVER, 1.5F, -3.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item SLIVER_PICKAXE = registerItem("sliver_pickaxe",
+    public static final Item SILVER_PICKAXE = registerItem("silver_pickaxe",
             new PickaxeItem(ArmoryToolMaterials.SILVER, 1, -2.8F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item SLIVER_AXE = registerItem("sliver_axe",
+    public static final Item SILVER_AXE = registerItem("silver_axe",
             new AxeItem(ArmoryToolMaterials.SILVER, 6.0F, -3.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item SLIVER_HOE = registerItem("sliver_hoe",
+    public static final Item SILVER_HOE = registerItem("silver_hoe",
             new FixedHoeItem(ArmoryToolMaterials.SILVER, -2, -1.0F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item STEEL_SWORD = registerItem("steel_sword",
@@ -476,16 +473,16 @@ public class ArmoryItems {
             new SickleItem(ArmoryToolMaterials.COPPER, 1.75F, -2.0F,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
-    public static final Item SLIVER_DAGGER = registerItem("sliver_dagger",
+    public static final Item SILVER_DAGGER = registerItem("silver_dagger",
             new SwordItem(ArmoryToolMaterials.SILVER, 0, -1.2F,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item SLIVER_CLAYMORE = registerItem("sliver_claymore",
+    public static final Item SILVER_CLAYMORE = registerItem("silver_claymore",
             new ClaymoreItem(ArmoryToolMaterials.HEAVY_SILVER, 8, -3.4F, 300, 2,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item SLIVER_DOUBLE_AXE = registerItem("sliver_double_axe",
+    public static final Item SILVER_DOUBLE_AXE = registerItem("silver_double_axe",
             new DoubleAxeItem(ArmoryToolMaterials.HEAVY_SILVER, 6, -3.4F, 200, 1,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item SLIVER_SICKLE = registerItem("sliver_sickle",
+    public static final Item SILVER_SICKLE = registerItem("silver_sickle",
             new SickleItem(ArmoryToolMaterials.SILVER, 1.75F, -2.1F, new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item STEEL_DAGGER = registerItem("steel_dagger",
@@ -515,10 +512,12 @@ public class ArmoryItems {
             new GoldenBowItem(new Item.Settings().maxDamage(49).group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item COPPER_BOW = registerItem("copper_bow",
             new CopperBowItem(new Item.Settings().maxDamage(293).group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item SLIVER_BOW = registerItem("sliver_bow",
-            new SliverBowItem(new Item.Settings().maxDamage(585).group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item SILVER_BOW = registerItem("silver_bow",
+            new SilverBowItem(new Item.Settings().maxDamage(585).group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item DIAMOND_BOW = registerItem("diamond_bow",
             new DiamondBowItem(new Item.Settings().maxDamage(1787).group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item STEEL_BOW = registerItem("steel_bow",
+            new SteelBowItem(new Item.Settings().maxDamage(2024).group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item NETHERITE_BOW = registerItem("netherite_bow",
             new NetheriteBowItem(new Item.Settings().maxDamage(2218).group(ArmoryItemGroup.VARAN_ARMOR).fireproof()));
 
@@ -534,6 +533,8 @@ public class ArmoryItems {
             new IronArrowItem(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item AMETHYST_ARROW = registerItem("amethyst_arrow",
             new AmethystArrowItem(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item STEEL_ARROW = registerItem("steel_arrow",
+            new SteelArrowItem(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item QUARTZ_ARROW = registerItem("quartz_arrow",
             new QuartzArrowItem(new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
     public static final Item NETHER_ARROW = registerItem("nether_arrow",
@@ -552,17 +553,30 @@ public class ArmoryItems {
             new ArmorItem(ArmoryArmourMaterials.COPPER, EquipmentSlot.FEET,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
-    public static final Item SLIVER_HELMET = registerItem("sliver_helmet",
-            new ArmorItem(ArmoryArmourMaterials.SLIVER, EquipmentSlot.HEAD,
+    public static final Item SILVER_HELMET = registerItem("silver_helmet",
+            new ArmorItem(ArmoryArmourMaterials.SILVER, EquipmentSlot.HEAD,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item SLIVER_CHESTPLATE = registerItem("sliver_chestplate",
-            new ArmorItem(ArmoryArmourMaterials.SLIVER, EquipmentSlot.CHEST,
+    public static final Item SILVER_CHESTPLATE = registerItem("silver_chestplate",
+            new ArmorItem(ArmoryArmourMaterials.SILVER, EquipmentSlot.CHEST,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item SLIVER_LEGGINGS = registerItem("sliver_leggings",
-            new ArmorItem(ArmoryArmourMaterials.SLIVER, EquipmentSlot.LEGS,
+    public static final Item SILVER_LEGGINGS = registerItem("silver_leggings",
+            new ArmorItem(ArmoryArmourMaterials.SILVER, EquipmentSlot.LEGS,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
-    public static final Item SLIVER_BOOTS = registerItem("sliver_boots",
-            new ArmorItem(ArmoryArmourMaterials.SLIVER, EquipmentSlot.FEET,
+    public static final Item SILVER_BOOTS = registerItem("silver_boots",
+            new ArmorItem(ArmoryArmourMaterials.SILVER, EquipmentSlot.FEET,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+
+    public static final Item STEEL_HELMET = registerItem("steel_helmet",
+            new ArmorItem(ArmoryArmourMaterials.STEEL, EquipmentSlot.HEAD,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item STEEL_CHESTPLATE = registerItem("steel_chestplate",
+            new ArmorItem(ArmoryArmourMaterials.STEEL, EquipmentSlot.CHEST,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item STEEL_LEGGINGS = registerItem("steel_leggings",
+            new ArmorItem(ArmoryArmourMaterials.STEEL, EquipmentSlot.LEGS,
+                    new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
+    public static final Item STEEL_BOOTS = registerItem("steel_boots",
+            new ArmorItem(ArmoryArmourMaterials.STEEL, EquipmentSlot.FEET,
                     new Item.Settings().group(ArmoryItemGroup.VARAN_ARMOR)));
 
     public static final Item HIGHLAND_HELMET = registerItem("highland_helmet",

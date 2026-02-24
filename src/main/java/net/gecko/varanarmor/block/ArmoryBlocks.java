@@ -15,9 +15,13 @@ import net.minecraft.util.registry.Registry;
 
 public class ArmoryBlocks {
 
-    public static final Block SLIVER_BLOCK = registerBlock("sliver_block",
+    public static final Block SILVER_BLOCK = registerBlock("silver_block",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).mapColor(MapColor.LIGHT_BLUE_GRAY)),
             ArmoryItemGroup.VARAN_ARMOR);
+
+    public static final Block STEEL_BLOCK = registerBlock("steel_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).mapColor(MapColor.TERRACOTTA_CYAN)
+                    .strength(10.0F, 12.0F)), ArmoryItemGroup.VARAN_ARMOR);
 
     public static final Block ONIONS = registerBlockWithoutItem("onions",
             new OnionBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)),

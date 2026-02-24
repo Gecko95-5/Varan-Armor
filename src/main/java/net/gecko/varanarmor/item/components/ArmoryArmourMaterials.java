@@ -27,11 +27,14 @@ public enum ArmoryArmourMaterials implements ArmorMaterial {
     COPPER("copper", 11, new int[] { 2, 3, 4, 2}, 8,
             SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0f, 0.05F, () -> Ingredient.ofItems(Items.COPPER_INGOT)),
 
-    SLIVER("sliver", 22, new int[] {2, 5, 6, 2}, 18,
-            SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0f, 0F, () -> Ingredient.ofItems(ArmoryItems.SLIVER_INGOT)),
+    SILVER("silver", 22, new int[] {2, 5, 6, 2}, 18,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0f, 0F, () -> Ingredient.ofItems(ArmoryItems.SILVER_INGOT)),
+
+    STEEL("steel", 33, new int[] {3, 6, 8, 3}, 7,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON, 2.5f, 0.05F, () -> Ingredient.ofItems(ArmoryItems.STEEL_INGOT)),
 
     HIGHLAND("highland", 17, new int[] { 2, 5, 6, 2}, 12,
-            SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1f, 0F, () -> Ingredient.ofItems(ArmoryItems.TANNED_LEATHER)),
+            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 1f, 0F, () -> Ingredient.ofItems(ArmoryItems.TANNED_LEATHER)),
 
     STALWART("stalwart", 26, new int[] { 2, 5, 6, 2}, 12,
             SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1f, 0.5F, () -> Ingredient.ofItems(ArmoryItems.IRON_PLATE));

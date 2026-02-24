@@ -2,10 +2,7 @@ package net.gecko.varanarmor.entity;
 
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.gecko.varanarmor.VaranArmor;
-import net.gecko.varanarmor.entity.arrow.AmethystArrowEntity;
-import net.gecko.varanarmor.entity.arrow.IronArrowEntity;
-import net.gecko.varanarmor.entity.arrow.NetherArrowEntity;
-import net.gecko.varanarmor.entity.arrow.QuartzArrowEntity;
+import net.gecko.varanarmor.entity.arrow.*;
 import net.gecko.varanarmor.entity.bobbers.NautilusFishingBobberEntity;
 import net.gecko.varanarmor.entity.bobbers.SquidFishingBobberEntity;
 import net.minecraft.entity.EntityDimensions;
@@ -35,6 +32,11 @@ public class ArmoryEntities {
     public static final EntityType<NetherArrowEntity> NETHER_ARROW = Registry.register(Registry.ENTITY_TYPE,
             new Identifier(VaranArmor.MOD_ID, "nether_arrow"),
             FabricEntityTypeBuilder.<NetherArrowEntity>create(SpawnGroup.MISC, NetherArrowEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.5F, 0.5F)).build());
+
+    public static final EntityType<SteelArrowEntity> STEEL_ARROW = Registry.register(Registry.ENTITY_TYPE,
+            new Identifier(VaranArmor.MOD_ID, "steel_arrow"),
+            FabricEntityTypeBuilder.<SteelArrowEntity>create(SpawnGroup.MISC, SteelArrowEntity::new)
                     .dimensions(EntityDimensions.fixed(0.5F, 0.5F)).build());
 
     public static final EntityType<SquidFishingBobberEntity> SQUID_BOBBER = Registry.register(Registry.ENTITY_TYPE,

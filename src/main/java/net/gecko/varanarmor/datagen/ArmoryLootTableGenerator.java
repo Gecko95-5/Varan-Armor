@@ -18,7 +18,9 @@ public class ArmoryLootTableGenerator extends SimpleFabricLootTableProvider {
 
     @Override
     public void accept(BiConsumer<Identifier, LootTable.Builder> identifierBuilderBiConsumer) {
-        identifierBuilderBiConsumer.accept(new Identifier(VaranArmor.MOD_ID,"blocks/sliver_block"),
-                BlockLootTableGenerator.drops(ArmoryBlocks.SLIVER_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranArmor.MOD_ID,"blocks/silver_block"),
+                BlockLootTableGenerator.drops(ArmoryBlocks.SILVER_BLOCK));
+        identifierBuilderBiConsumer.accept(new Identifier(VaranArmor.MOD_ID,"blocks/steel_block"),
+                BlockLootTableGenerator.drops(ArmoryBlocks.STEEL_BLOCK));
     }
 }

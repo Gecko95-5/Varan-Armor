@@ -12,7 +12,7 @@ public enum ArmoryToolMaterials implements ToolMaterial {
     COPPER (1, 190, 6.5F, 1.0F, 13,
             () -> Ingredient.ofItems(Items.COPPER_INGOT)),
     SILVER(2, 378, 7.5F, 2.0F, 18,
-            () -> Ingredient.ofItems(ArmoryItems.SLIVER_INGOT)),
+            () -> Ingredient.ofItems(ArmoryItems.SILVER_INGOT)),
     STEEL(2, 1760, 9.5F, 3.5F, 7,
             () -> Ingredient.ofItems(ArmoryItems.STEEL_INGOT)),
 
@@ -27,7 +27,7 @@ public enum ArmoryToolMaterials implements ToolMaterial {
     HEAVY_IRON (2, 320,5.0F, 2.0F, 14,
             () -> Ingredient.ofItems(Items.IRON_INGOT)),
     HEAVY_SILVER(2, 484, 6.5F, 2.0F, 18,
-            () -> Ingredient.ofItems(ArmoryItems.SLIVER_INGOT)),
+            () -> Ingredient.ofItems(ArmoryItems.SILVER_INGOT)),
     HEAVY_DIAMOND (3, 1998,7.0F, 3.0F, 10,
             () -> Ingredient.ofItems(Items.DIAMOND)),
     HEAVY_STEEL (2, 2253,7.5F, 3.5F, 7,

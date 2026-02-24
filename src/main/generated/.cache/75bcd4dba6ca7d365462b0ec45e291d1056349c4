@@ -1,4 +1,4 @@
-// 1.19.2	2026-02-21T11:46:33.0107405	Tags for minecraft:block
-9a7f68b7d8bf36dfc4f27b05f32ff2c88bfc00b1 data\minecraft\tags\blocks\mineable\pickaxe.json
+// 1.19.2	2026-02-24T12:01:52.1013915	Tags for minecraft:block
+9385804a7fede5e4101da30a06c9b7534749a68f data\minecraft\tags\blocks\mineable\pickaxe.json
 d881f80b439cda194d964d18c84b5bf589c19d46 data\varan-armor\tags\blocks\mineable\sickle.json
-9a7f68b7d8bf36dfc4f27b05f32ff2c88bfc00b1 data\minecraft\tags\blocks\needs_iron_tool.json
+9385804a7fede5e4101da30a06c9b7534749a68f data\minecraft\tags\blocks\needs_iron_tool.json

@@ -30,6 +30,9 @@ public class VaranArmorClient implements ClientModInitializer {
         EntityRendererRegistry.register(ArmoryEntities.IRON_ARROW, ctx -> new CustomArrowRenderer
                 (ctx, new Identifier(VaranArmor.MOD_ID,"textures/entity/projectiles/iron_arrow.png")));
 
+        EntityRendererRegistry.register(ArmoryEntities.STEEL_ARROW, ctx -> new CustomArrowRenderer
+                (ctx, new Identifier(VaranArmor.MOD_ID,"textures/entity/projectiles/steel_arrow.png")));
+
         EntityRendererRegistry.register(ArmoryEntities.AMETHYST_ARROW, ctx -> new CustomArrowRenderer
                 (ctx, new Identifier(VaranArmor.MOD_ID,"textures/entity/projectiles/amethyst_arrow.png")));
 

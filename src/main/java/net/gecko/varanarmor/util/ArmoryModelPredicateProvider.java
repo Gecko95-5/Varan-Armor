@@ -13,10 +13,11 @@ public class ArmoryModelPredicateProvider {
         registerBow(ArmoryItems.LEATHER_BOW);
         registerBow(ArmoryItems.GOLDEN_BOW);
         registerBow(ArmoryItems.COPPER_BOW);
-        registerBow(ArmoryItems.SLIVER_BOW);
+        registerBow(ArmoryItems.SILVER_BOW);
         registerBow(ArmoryItems.DIAMOND_BOW);
         registerBow(ArmoryItems.NETHERITE_BOW);
         registerBow(ArmoryItems.BLAZING_BOW);
+        registerBow(ArmoryItems.STEEL_BOW);
         registerFishingRod(ArmoryItems.SQUID_FISHING_ROD);
         registerFishingRod(ArmoryItems.NAUTILUS_FISHING_ROD);
     }

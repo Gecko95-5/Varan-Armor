@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "varan-armor:sliver_block"
+    "varan-armor:silver_block",
+    "varan-armor:steel_block"
   ]
 }

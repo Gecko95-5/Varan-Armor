@@ -18,7 +18,8 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ArmoryItems.IRON_ARROW)
                 .add(ArmoryItems.AMETHYST_ARROW)
                 .add(ArmoryItems.QUARTZ_ARROW)
-                .add(ArmoryItems.NETHER_ARROW);
+                .add(ArmoryItems.NETHER_ARROW)
+                .add(ArmoryItems.STEEL_ARROW);
 
     getOrCreateTagBuilder(ArmoryTags.Items.HARVESTERS)
             .addTag(ArmoryTags.Items.SICKLES)
@@ -36,7 +37,7 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
             .add(ArmoryItems.DIAMOND_SICKLE)
             .add(ArmoryItems.NETHERITE_SICKLE)
             .add(ArmoryItems.COPPER_SICKLE)
-            .add(ArmoryItems.SLIVER_SICKLE)
+            .add(ArmoryItems.SILVER_SICKLE)
             .add(ArmoryItems.STEEL_SICKLE);
 
         getOrCreateTagBuilder(ArmoryTags.Items.WOODEN_SICKLES)
@@ -59,7 +60,7 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ArmoryItems.DIAMOND_CLAYMORE)
                 .add(ArmoryItems.NETHERITE_CLAYMORE)
                 .add(ArmoryItems.COPPER_CLAYMORE)
-                .add(ArmoryItems.SLIVER_CLAYMORE)
+                .add(ArmoryItems.SILVER_CLAYMORE)
                 .add(ArmoryItems.STEEL_CLAYMORE);
 
         getOrCreateTagBuilder(ArmoryTags.Items.WOODEN_CLAYMORES)
@@ -82,7 +83,7 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ArmoryItems.DIAMOND_DAGGER)
                 .add(ArmoryItems.NETHERITE_DAGGER)
                 .add(ArmoryItems.COPPER_DAGGER)
-                .add(ArmoryItems.SLIVER_DAGGER)
+                .add(ArmoryItems.SILVER_DAGGER)
                 .add(ArmoryItems.STEEL_DAGGER)
                 .add(ArmoryItems.SPINDTOX);
 
@@ -111,7 +112,7 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
             .add(Items.DIAMOND_SWORD)
             .add(Items.NETHERITE_SWORD)
             .add(ArmoryItems.COPPER_SWORD)
-            .add(ArmoryItems.SLIVER_SWORD)
+            .add(ArmoryItems.SILVER_SWORD)
             .add(ArmoryItems.STEEL_SWORD)
             .add(ArmoryItems.HEARTSTEALER);
 
@@ -135,7 +136,7 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
             .add(Items.DIAMOND_PICKAXE)
             .add(Items.NETHERITE_PICKAXE)
             .add(ArmoryItems.COPPER_PICKAXE)
-            .add(ArmoryItems.SLIVER_PICKAXE)
+            .add(ArmoryItems.SILVER_PICKAXE)
             .add(ArmoryItems.STEEL_PICKAXE);
 
         getOrCreateTagBuilder(ArmoryTags.Items.WOODEN_PICKAXES)
@@ -158,7 +159,7 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(Items.DIAMOND_AXE)
                 .add(Items.NETHERITE_AXE)
                 .add(ArmoryItems.COPPER_AXE)
-                .add(ArmoryItems.SLIVER_AXE)
+                .add(ArmoryItems.SILVER_AXE)
                 .add(ArmoryItems.STEEL_AXE);
 
         getOrCreateTagBuilder(ArmoryTags.Items.WOODEN_SINGLE_AXES)
@@ -181,7 +182,7 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ArmoryItems.DIAMOND_DOUBLE_AXE)
                 .add(ArmoryItems.NETHERITE_DOUBLE_AXE)
                 .add(ArmoryItems.COPPER_DOUBLE_AXE)
-                .add(ArmoryItems.SLIVER_DOUBLE_AXE)
+                .add(ArmoryItems.SILVER_DOUBLE_AXE)
                 .add(ArmoryItems.STEEL_DOUBLE_AXE);
 
         getOrCreateTagBuilder(ArmoryTags.Items.WOODEN_DOUBLE_AXES)
@@ -204,7 +205,7 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(Items.DIAMOND_SHOVEL)
                 .add(Items.NETHERITE_SHOVEL)
                 .add(ArmoryItems.COPPER_SHOVEL)
-                .add(ArmoryItems.SLIVER_SHOVEL)
+                .add(ArmoryItems.SILVER_SHOVEL)
                 .add(ArmoryItems.STEEL_SHOVEL);
 
         getOrCreateTagBuilder(ArmoryTags.Items.WOODEN_SHOVELS)
@@ -227,7 +228,7 @@ public class ArmoryItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(Items.DIAMOND_HOE)
                 .add(Items.NETHERITE_HOE)
                 .add(ArmoryItems.COPPER_HOE)
-                .add(ArmoryItems.SLIVER_HOE)
+                .add(ArmoryItems.SILVER_HOE)
                 .add(ArmoryItems.STEEL_HOE);
 
         getOrCreateTagBuilder(ArmoryTags.Items.WOODEN_HOES)

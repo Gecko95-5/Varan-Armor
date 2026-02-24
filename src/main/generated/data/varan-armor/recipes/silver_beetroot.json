@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "minecraft:beetroot"
+    },
+    "X": {
+      "item": "varan-armor:silver_nugget"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "XBX",
+    "XXX"
+  ],
+  "result": {
+    "item": "varan-armor:silver_beetroot"
+  }
+}

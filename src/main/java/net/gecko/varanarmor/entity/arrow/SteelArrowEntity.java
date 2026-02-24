@@ -51,7 +51,7 @@ public class SteelArrowEntity extends PersistentProjectileEntity {
     public void onEntityHit(EntityHitResult entityHitResult) {
         super.onEntityHit(entityHitResult);
         Entity entity = entityHitResult.getEntity();
-        double damage = 8.5;
+        double damage = 6.5;
         int i = MathHelper.ceil(MathHelper.clamp(damage, 0.0, 2.147483647E9));
         if (this.getPierceLevel() > 0) {
             if (this.piercedEntities == null) {

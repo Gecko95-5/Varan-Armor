@@ -52,6 +52,8 @@ public class SteelBowItem extends BowItem {
                         int k = EnchantmentHelper.getLevel(Enchantments.PUNCH, stack);
                         if (k > 0) {
                             persistentProjectileEntity.setPunch(k + 2);
+                        } else {
+                            persistentProjectileEntity.setPunch(2);
                         }
 
                         if (EnchantmentHelper.getLevel(Enchantments.FLAME, stack) > 0) {
@@ -61,7 +63,7 @@ public class SteelBowItem extends BowItem {
                         stack.damage(1, playerEntity, p -> p.sendToolBreakStatus(playerEntity.getActiveHand()));
                         if (bl2 || playerEntity.getAbilities().creativeMode && (itemStack.isOf(Items.SPECTRAL_ARROW) || itemStack.isOf(Items.TIPPED_ARROW)
                                 || itemStack.isOf(ArmoryItems.IRON_ARROW) || itemStack.isOf(ArmoryItems.AMETHYST_ARROW) || itemStack.isOf(ArmoryItems.QUARTZ_ARROW)
-                                || itemStack.isOf(ArmoryItems.NETHER_ARROW))) {
+                                || itemStack.isOf(ArmoryItems.NETHER_ARROW) || itemStack.isOf(ArmoryItems.STEEL_ARROW))) {
                             persistentProjectileEntity.pickupType = PersistentProjectileEntity.PickupPermission.CREATIVE_ONLY;
                         }
 
